@@ -135632,5 +135632,38 @@
     "updated": "2023-08-14",
     "nearbySpots": null,
     "nearbyFood": null
+  },
+  {
+    "contentId": "m0001",
+    "name": "고산자연휴양림 무궁화오토캠핑장",
+    "type": "자동차야영장",
+    "operator": "자연휴양림",
+    "lineIntro": "전북 완주 고산자연휴양림 안의 오토캠핑장",
+    "intro": "전북특별자치도 완주군 고산자연휴양림 내에 있는 오토캠핑장이다. 휴양림의 숲과 계곡을 끼고 있어 자연 속 캠핑을 즐길 수 있으며, 휴양림 산책로와 연계해 이용하기 좋다. 운영·예약 정보는 방문 전 완주군 고산자연휴양림 안내처를 통해 확인하는 것을 권장한다.",
+    "address": "전북특별자치도 완주군 고산면 고산휴양림로 89",
+    "region": "전북특별자치도",
+    "sigungu": "완주군",
+    "lat": "35.974170146415695",
+    "lng": "127.23120952485095",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "manual"
   }
 ]

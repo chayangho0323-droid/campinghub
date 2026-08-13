@@ -139,6 +139,48 @@ async function main() {
       updated: c.modifiedtime || "",
     }));
 
+  // ── 수동 등록 캠핑장 합치기 ──
+  // 고캠핑 API에 등록되지 않은 캠핑장(자연휴양림 야영장 등)을 manual-campings.json에
+  // 직접 적어두면 여기서 합쳐진다. 이미 API에 같은 이름이 있으면 건너뜀
+  try {
+    const manual = JSON.parse(fs.readFileSync("manual-campings.json", "utf-8"));
+    const existingNames = new Set(campings.map((c) => c.name.replace(/\s/g, "")));
+    let added = 0;
+    for (const m of manual) {
+      if (existingNames.has((m.name || "").replace(/\s/g, ""))) continue;
+      campings.push({
+        contentId: m.contentId,
+        name: m.name,
+        type: m.type || "",
+        operator: m.operator || "",
+        lineIntro: m.lineIntro || "",
+        intro: m.intro || "",
+        address: m.address || "",
+        region: m.region || "",
+        sigungu: m.sigungu || "",
+        lat: m.lat || "",
+        lng: m.lng || "",
+        tel: m.tel || "",
+        homepage: m.homepage || "",
+        reserveUrl: m.reserveUrl || "",
+        image: m.image || "",
+        facilities: m.facilities || "",
+        pet: m.pet || "",
+        brazier: m.brazier || "",
+        theme: m.theme || "",
+        operPeriod: m.operPeriod || "",
+        siteCounts: m.siteCounts || { general: 0, auto: 0, glamp: 0, caravan: 0 },
+        toilets: m.toilets || 0,
+        showers: m.showers || 0,
+        glampFacilities: "",
+        caravanFacilities: "",
+        updated: "manual",
+      });
+      added++;
+    }
+    if (added) console.log(`📌 수동 등록 캠핑장 ${added}건 추가 (manual-campings.json)`);
+  } catch {}
+
   // ── 주변 관광지/맛집 붙이기 (캐시: 이미 받은 곳은 재요청 안 함) ──
   let cache = {};
   try {

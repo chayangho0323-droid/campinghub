@@ -6,7 +6,56 @@ require("dotenv").config();
 const fs = require("fs");
 
 const BASE_URL = "https://apis.data.go.kr/B551011/GoCamping/basedList";
+// 주변 관광지/맛집은 관광정보 서비스의 위치기반 조회 사용 (FestivalHub와 동일)
+const NEARBY_URL = "https://apis.data.go.kr/B551011/KorService2/locationBasedList2";
 const SERVICE_KEY = process.env.TOUR_API_KEY;
+
+// 좌표 반경 10km의 장소를 가까운 순으로 5개 (contentTypeId: 12=관광지, 39=음식점)
+async function fetchNearby(lat, lng, contentTypeId) {
+  try {
+    const params = new URLSearchParams({
+      serviceKey: SERVICE_KEY,
+      MobileOS: "ETC",
+      MobileApp: "CampingHub",
+      _type: "json",
+      mapX: lng, // 주의: mapX가 경도!
+      mapY: lat,
+      radius: "10000",
+      contentTypeId,
+      arrange: "E", // 거리순
+      numOfRows: "5",
+    });
+    const res = await fetch(`${NEARBY_URL}?${params.toString()}`);
+    const text = await res.text();
+    if (text.trim().startsWith("<")) throw new Error("XML 에러 응답");
+    const data = JSON.parse(text);
+    if (data?.response?.header?.resultCode !== "0000") {
+      throw new Error(`API 에러 code=${data?.response?.header?.resultCode}`);
+    }
+    let items = data?.response?.body?.items?.item ?? [];
+    if (!Array.isArray(items)) items = [items];
+    return items.map((i) => ({
+      name: i.title,
+      dist: Math.round(Number(i.dist)),
+      image: i.firstimage || "",
+      addr: i.addr1 || "",
+    }));
+  } catch (err) {
+    return null; // 실패 표시 — 다음 실행 때 다시 시도됨 (자가 복구)
+  }
+}
+
+// 배열을 size개씩 잘라서 순서대로 처리
+async function mapInBatches(items, size, fn) {
+  const results = [];
+  for (let i = 0; i < items.length; i += size) {
+    results.push(...(await Promise.all(items.slice(i, i + size).map(fn))));
+    if ((i / size) % 50 === 0 && i > 0) {
+      console.log(`   주변 정보 ${Math.min(i + size, items.length)}/${items.length}건`);
+    }
+  }
+  return results;
+}
 
 // 한 페이지를 가져온다
 async function fetchPage(pageNo) {
@@ -90,8 +139,29 @@ async function main() {
       updated: c.modifiedtime || "",
     }));
 
-  fs.writeFileSync("campings.json", JSON.stringify(campings, null, 2), "utf-8");
-  console.log(`✅ campings.json 저장 완료 — 캠핑장 ${campings.length}건`);
+  // ── 주변 관광지/맛집 붙이기 (캐시: 이미 받은 곳은 재요청 안 함) ──
+  let cache = {};
+  try {
+    const prev = JSON.parse(fs.readFileSync("campings.json", "utf-8"));
+    for (const p of prev) cache[p.contentId] = p;
+    console.log(`♻️  기존 campings.json에서 ${prev.length}건 캐시 로드`);
+  } catch {}
+
+  console.log("📍 주변 관광지/맛집 수집 시작 (처음엔 10분 이상 걸릴 수 있음)");
+  const enriched = await mapInBatches(campings, 5, async (c) => {
+    const cc = cache[c.contentId] || {};
+    const nearbySpots = Array.isArray(cc.nearbySpots)
+      ? cc.nearbySpots
+      : await fetchNearby(c.lat, c.lng, "12");
+    const nearbyFood = Array.isArray(cc.nearbyFood)
+      ? cc.nearbyFood
+      : await fetchNearby(c.lat, c.lng, "39");
+    return { ...c, nearbySpots, nearbyFood };
+  });
+
+  fs.writeFileSync("campings.json", JSON.stringify(enriched, null, 2), "utf-8");
+  console.log(`✅ campings.json 저장 완료 — 캠핑장 ${enriched.length}건`);
+  console.log(`   주변 정보 확보: ${enriched.filter((c) => Array.isArray(c.nearbyFood) && c.nearbyFood.length).length}건`);
 
   // 수집 결과 요약
   const forest = campings.filter(

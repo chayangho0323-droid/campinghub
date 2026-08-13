@@ -219,6 +219,25 @@ function buildPage(c, all) {
     ? `<section class="nearby-section"><h2>🗺️ ${region} 지역의 다른 캠핑장</h2><div class="nearby-row">${relatedCards}</div></section>`
     : "";
 
+  // ── 주변 관광지/맛집 카드 — 클릭하면 네이버지도 검색이 새 탭으로 (FestivalHub와 동일) ──
+  const nearbyCards = (list) =>
+    (list || [])
+      .map((p) => {
+        const query = `${(p.addr || "").split(" ").slice(0, 2).join(" ")} ${p.name}`.trim();
+        return `
+        <a class="nearby-card nearby-link" target="_blank" rel="noopener"
+           href="https://map.naver.com/p/search/${encodeURIComponent(query)}" title="네이버지도에서 보기">
+          ${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" />` : `<div class="nearby-noimg">📷</div>`}
+          <div class="nearby-name">${esc(p.name)}</div>
+          <div class="nearby-dist">📍 ${p.dist >= 1000 ? (p.dist / 1000).toFixed(1) + "km" : p.dist + "m"} · 지도 보기</div>
+        </a>`;
+      })
+      .join("");
+  const nearbySection = (title, icon, list) =>
+    Array.isArray(list) && list.length
+      ? `<section class="nearby-section"><h2>${icon} ${title}</h2><div class="nearby-row">${nearbyCards(list)}</div></section>`
+      : "";
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Campground",
@@ -278,6 +297,8 @@ function buildPage(c, all) {
       ${intro}
       <section class="map-section"><h2>오시는 길</h2><div id="map"></div>${directions}</section>
       ${relatedSection}
+      ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}
+      ${nearbySection("주변 맛집", "🍜", c.nearbyFood)}
       <section class="nearby-section coupang-section">
         <h2>🎒 캠핑 준비물</h2>
         <div class="dir-buttons">

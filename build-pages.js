@@ -8,6 +8,17 @@ const path = require("path");
 // 배포 주소 (campinghub.kr 도메인 — 2026-08 구입)
 const SITE_URL = "https://campinghub.kr";
 
+// 구글 애널리틱스(GA4) 방문자 통계 코드 — 모든 생성 페이지의 <head>에 들어간다
+const GA_SNIPPET = `
+  <!-- Google Analytics (방문자 통계) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8273JMD6NN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8273JMD6NN');
+  </script>`;
+
 // 쿠팡 파트너스 — 캠핑용품이라 이 사이트와 궁합이 더 좋다 (FestivalHub과 같은 링크)
 const COUPANG_ITEMS = [
   { name: "🪑 캠핑의자", url: "https://link.coupang.com/a/f7LuGkEJMq" },
@@ -132,6 +143,7 @@ function buildListPage({ filename, title, heading, subtitle, description, items 
   <meta property="og:description" content="${esc(description)}" />
   <meta property="og:url" content="${SITE_URL}/${filename}" />
   <link rel="stylesheet" href="style.css" />
+  ${GA_SNIPPET}
 </head>
 <body>
   <header class="site-header">
@@ -267,6 +279,7 @@ function buildPage(c, all) {
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
+  ${GA_SNIPPET}
 </head>
 <body>
   <main class="detail-container">

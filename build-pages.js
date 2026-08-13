@@ -95,7 +95,7 @@ function footerHtml(prefix = "") {
   return `
   <footer class="site-footer">
     <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
-    <p><a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a></p>
+    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a></p>
   </footer>`;
 }
 
@@ -408,6 +408,7 @@ console.log(`✅ 지역별 페이지 ${regionFiles.length}개 생성 (${regionsA
 const today = new Date().toISOString().slice(0, 10);
 const urls = [
   `${SITE_URL}/`,
+  `${SITE_URL}/about.html`,
   ...themeFiles.map((f) => `${SITE_URL}/${f}`),
   ...regionFiles.map((f) => `${SITE_URL}/${f}`),
   ...campings.map((c) => `${SITE_URL}/camping/${c.contentId}.html`),

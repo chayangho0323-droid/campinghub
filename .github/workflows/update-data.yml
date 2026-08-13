@@ -1,0 +1,39 @@
+# 매일 새벽 3시 30분(한국시간)에 캠핑장 데이터를 갱신하고 배포하는 자동화 설정.
+# FestivalHub(3시)와 시간을 30분 어긋나게 해서 API 하루 한도를 나눠 쓴다.
+# 주변 관광지/맛집이 아직 없는 캠핑장은 매일 조금씩 자동으로 채워진다 (자가복구 캐시).
+
+name: 캠핑장 데이터 자동 갱신
+
+on:
+  schedule:
+    - cron: "30 18 * * *" # UTC 18:30 = 한국시간 새벽 03:30
+  workflow_dispatch: # Actions 탭에서 수동 실행 버튼
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      # API 키는 저장소 Secrets에서 주입 (Settings > Secrets and variables > Actions에 TOUR_API_KEY 등록 필요)
+      - run: node fetch-campings.js
+        env:
+          TOUR_API_KEY: ${{ secrets.TOUR_API_KEY }}
+
+      - run: node build-pages.js
+
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "자동 데이터 갱신 $(date -u +'%Y-%m-%d')"
+          git push

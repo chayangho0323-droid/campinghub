@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chayangho0323-droid.github.io/campinghub/sitemap.xml
+Sitemap: https://campinghub.kr/sitemap.xml

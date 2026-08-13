@@ -5,8 +5,8 @@
 const fs = require("fs");
 const path = require("path");
 
-// 배포 주소. 도메인을 사면 이 한 줄만 바꾸고 다시 빌드
-const SITE_URL = "https://chayangho0323-droid.github.io/campinghub";
+// 배포 주소 (campinghub.kr 도메인 — 2026-08 구입)
+const SITE_URL = "https://campinghub.kr";
 
 // 쿠팡 파트너스 — 캠핑용품이라 이 사이트와 궁합이 더 좋다 (FestivalHub과 같은 링크)
 const COUPANG_ITEMS = [

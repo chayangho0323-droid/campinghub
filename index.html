@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampingHub — 전국 캠핑장·휴양림 모아보기 | 글램핑·카라반·반려동물 캠핑장 검색</title>
+  <meta name="description" content="전국 캠핑장 3,000여 곳을 한눈에! 글램핑, 카라반, 휴양림, 반려동물 동반 캠핑장을 지역별·시설별로 검색하고 예약처로 바로 연결됩니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CampingHub — 전국 캠핑장·휴양림 모아보기" />
+  <meta property="og:description" content="글램핑·카라반·휴양림·반려동물 캠핑장을 지역별로 검색!" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>🏕️ CampingHub</h1>
+    <p class="subtitle">전국 캠핑장과 휴양림을 한눈에 — 시설·지역별로 골라보세요</p>
+  </header>
+
+  <!-- 검색과 필터. 실제 동작은 app.js가 담당 -->
+  <section class="controls">
+    <input type="search" id="search-input" placeholder="캠핑장 이름 검색..." />
+    <select id="region-filter">
+      <option value="">전체 지역</option>
+      <!-- 지역 목록은 app.js가 데이터를 보고 자동으로 채움 -->
+    </select>
+    <select id="type-filter">
+      <option value="">전체 유형</option>
+      <option value="일반야영장">일반야영장</option>
+      <option value="자동차야영장">오토캠핑</option>
+      <option value="글램핑">글램핑</option>
+      <option value="카라반">카라반</option>
+    </select>
+    <label class="toggle" data-tip="반려동물 동반이 가능하다고 등록된 캠핑장만 보여줍니다. 소형견만 가능한 곳도 포함돼요.">
+      <input type="checkbox" id="only-pet" />
+      🐕 반려동물 가능만
+    </label>
+    <label class="toggle" data-tip="카드의 하트(🤍)를 눌러 찜해둔 캠핑장만 모아 봅니다. 찜 목록은 지금 쓰는 브라우저에만 저장됩니다.">
+      <input type="checkbox" id="only-fav" />
+      ❤️ 찜한 곳만
+    </label>
+  </section>
+
+  <!-- 테마/지역 바로가기 칩. app.js가 채움 -->
+  <nav id="quick-links" class="quick-links sticky-desktop"></nav>
+
+  <p id="result-count" class="result-count"></p>
+
+  <main id="camping-list" class="festival-grid"></main>
+
+  <!-- 우측 하단 맨 위로 버튼 -->
+  <a class="to-top" href="#" aria-label="맨 위로">↑</a>
+
+  <footer class="site-footer">
+    <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
+    <p><a href="theme-forest.html">🌲 휴양림·국공립</a> · <a href="theme-glamping.html">⛺ 글램핑</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

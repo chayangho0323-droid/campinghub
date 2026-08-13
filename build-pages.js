@@ -408,3 +408,20 @@ fs.writeFileSync(
 );
 fs.writeFileSync("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`, "utf-8");
 console.log(`✅ sitemap.xml (${urls.length}개 주소) + robots.txt 생성`);
+
+// 홈 목록용 경량 데이터 — campings.json(5MB+)은 소개글·주변정보까지 담고 있어 무거우므로
+// 목록 화면에 필요한 필드만 추린 작은 파일을 따로 만든다 (app.js가 이걸 읽음)
+const slim = campings.map((c) => ({
+  contentId: c.contentId,
+  name: c.name,
+  type: c.type,
+  operator: c.operator,
+  region: c.region,
+  sigungu: c.sigungu,
+  address: (c.address || "").split(" ").slice(0, 2).join(" "),
+  image: c.image,
+  pet: c.pet,
+  facilities: (c.facilities || "").split(",").filter(Boolean).slice(0, 3).join(","),
+}));
+fs.writeFileSync("campings-list.json", JSON.stringify(slim), "utf-8");
+console.log(`✅ campings-list.json 생성 (목록용 경량본, ${Math.round(JSON.stringify(slim).length / 1024)}KB)`);

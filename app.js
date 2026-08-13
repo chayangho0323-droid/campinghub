@@ -161,8 +161,9 @@ function fillQuickLinks() {
 // ─── 시작 ───
 async function init() {
   try {
-    const res = await fetch("campings.json");
-    if (!res.ok) throw new Error(`campings.json 로드 실패 (${res.status})`);
+    // 목록용 경량 데이터 (전체 campings.json은 5MB가 넘어서 목록엔 이 작은 파일을 씀)
+    const res = await fetch("campings-list.json");
+    if (!res.ok) throw new Error(`campings-list.json 로드 실패 (${res.status})`);
     allCampings = await res.json();
     fillRegionOptions();
     fillQuickLinks();

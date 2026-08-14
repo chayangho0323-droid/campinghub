@@ -43,14 +43,17 @@
       <option value="글램핑">글램핑</option>
       <option value="카라반">카라반</option>
     </select>
-    <label class="toggle" data-tip="반려동물 동반이 가능하다고 등록된 캠핑장만 보여줍니다. 소형견만 가능한 곳도 포함돼요.">
-      <input type="checkbox" id="only-pet" />
-      🐕 반려동물 가능만
-    </label>
-    <label class="toggle" data-tip="카드의 하트(🤍)를 눌러 찜해둔 캠핑장만 모아 봅니다. 찜 목록은 지금 쓰는 브라우저에만 저장됩니다.">
-      <input type="checkbox" id="only-fav" />
-      ❤️ 찜한 곳만
-    </label>
+    <!-- 체크박스 두 개는 한 묶음으로 — 모바일에서 흩어지지 않고 함께 줄바꿈됨 -->
+    <div class="toggle-group">
+      <label class="toggle" data-tip="반려동물 동반이 가능하다고 등록된 캠핑장만 보여줍니다. 소형견만 가능한 곳도 포함돼요.">
+        <input type="checkbox" id="only-pet" />
+        🐕 반려동물 가능만
+      </label>
+      <label class="toggle" data-tip="카드의 하트(🤍)를 눌러 찜해둔 캠핑장만 모아 봅니다. 찜 목록은 지금 쓰는 브라우저에만 저장됩니다.">
+        <input type="checkbox" id="only-fav" />
+        ❤️ 찜한 곳만
+      </label>
+    </div>
   </section>
 
   <!-- 테마/지역 바로가기 칩. app.js가 채움 -->

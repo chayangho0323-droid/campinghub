@@ -8,6 +8,10 @@ const path = require("path");
 // 배포 주소 (campinghub.kr 도메인 — 2026-08 구입)
 const SITE_URL = "https://campinghub.kr";
 
+// 캠핑장 제보 구글 폼 (사이트에 없는 캠핑장을 방문자가 알려주는 창구)
+// 폼을 바꾸면 이 주소만 교체하면 됨
+const REPORT_FORM_URL = "https://forms.gle/xpe2ywAmuXH7tzG78";
+
 // 구글 애널리틱스(GA4) 방문자 통계 코드 — 모든 생성 페이지의 <head>에 들어간다
 const GA_SNIPPET = `
   <!-- Google Analytics (방문자 통계) -->
@@ -96,6 +100,7 @@ function footerHtml(prefix = "") {
   <footer class="site-footer">
     <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
     <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a></p>
+    <p><a class="report-link" href="${REPORT_FORM_URL}" target="_blank" rel="noopener">📮 여기 없는 캠핑장 제보하기</a></p>
   </footer>`;
 }
 

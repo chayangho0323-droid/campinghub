@@ -798,3 +798,19 @@ body {
   align-items: center;
   gap: 0 12px;
 }
+
+/* 제보하기 링크 — 푸터에서 눈에 띄게 */
+.report-link {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 6px 14px;
+  border: 1px solid #1a8b45;
+  border-radius: 20px;
+  color: #1a8b45 !important;
+  font-weight: 600;
+}
+
+.report-link:hover {
+  background: #1a8b45;
+  color: #fff !important;
+}

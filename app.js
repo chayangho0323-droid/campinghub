@@ -83,6 +83,18 @@ function render() {
   shown.sort((a, b) => a.name.localeCompare(b.name, "ko"));
   countEl.textContent = `${shown.length}개의 캠핑장`;
 
+  // 결과가 하나도 없을 때: 제보 동기가 가장 높은 순간이라 제보 버튼을 크게 안내
+  if (shown.length === 0) {
+    listEl.innerHTML = `
+      <div class="empty-result">
+        <p class="empty-title">🔍 조건에 맞는 캠핑장이 없습니다</p>
+        <p class="empty-desc">검색어나 필터를 바꿔보세요.<br />
+        혹시 <strong>알고 계신 캠핑장인데 여기 없나요?</strong></p>
+        <a class="report-btn big" href="https://forms.gle/xpe2ywAmuXH7tzG78" target="_blank" rel="noopener">📮 캠핑장 제보하기</a>
+      </div>`;
+    return;
+  }
+
   listEl.innerHTML = shown
     .map((c) => {
       const faved = favorites.includes(c.contentId);

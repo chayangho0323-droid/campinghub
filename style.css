@@ -1,8 +1,8 @@
-/* ─── 기본 초기화 ─────────────────────────────── */
+﻿/* ??? 湲곕낯 珥덇린????????????????????????????????? */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* 패딩을 넣어도 요소 크기가 안 커지게 */
+  box-sizing: border-box; /* ?⑤뵫???ｌ뼱???붿냼 ?ш린媛 ??而ㅼ?寃?*/
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   color: #222;
 }
 
-/* ─── 헤더 ────────────────────────────────────── */
+/* ??? ?ㅻ뜑 ?????????????????????????????????????? */
 .site-header {
   text-align: center;
   padding: 40px 16px 24px;
@@ -26,16 +26,16 @@ body {
   margin-top: 8px;
 }
 
-/* ─── 검색/필터 영역 ──────────────────────────── */
+/* ??? 寃???꾪꽣 ?곸뿭 ???????????????????????????? */
 .controls {
   display: flex;
   gap: 8px;
   justify-content: center;
-  flex-wrap: wrap; /* 화면이 좁으면 줄바꿈 */
+  flex-wrap: wrap; /* ?붾㈃??醫곸쑝硫?以꾨컮轅?*/
   padding: 0 16px 16px;
 }
 
-/* [type="search"]로 한정: 안 그러면 체크박스에도 이 스타일이 적용돼 버림 */
+/* [type="search"]濡??쒖젙: ??洹몃윭硫?泥댄겕諛뺤뒪?먮룄 ???ㅽ??쇱씠 ?곸슜??踰꾨┝ */
 .controls input[type="search"],
 .controls select {
   padding: 10px 14px;
@@ -56,7 +56,7 @@ body {
   padding-bottom: 16px;
 }
 
-/* ─── 주말/지역 바로가기 칩 ───────────────────── */
+/* ??? 二쇰쭚/吏??諛붾줈媛湲?移?????????????????????? */
 .quick-links {
   display: flex;
   flex-wrap: wrap;
@@ -84,14 +84,14 @@ body {
   color: #4756c9;
 }
 
-/* 이번 주말 칩은 눈에 띄게 */
+/* ?대쾲 二쇰쭚 移⑹? ?덉뿉 ?꾧쾶 */
 .chip-hot {
   background: #fff0f0;
   border-color: #ffb3b3;
   color: #d63031;
 }
 
-/* 공연·행사 칩 — 축제와 다른 성격의 페이지라 보라색 전용 스타일 */
+/* 怨듭뿰쨌?됱궗 移???異뺤젣? ?ㅻⅨ ?깃꺽???섏씠吏??蹂대씪???꾩슜 ?ㅽ???*/
 .chip-events {
   background: #f5f0ff;
   border-color: #c9b3f5;
@@ -103,7 +103,7 @@ body {
   color: #6d3fc4;
 }
 
-/* 큐레이션 페이지의 "전체 축제 보기" 링크 */
+/* ?먮젅?댁뀡 ?섏씠吏??"?꾩껜 異뺤젣 蹂닿린" 留곹겕 */
 .home-link {
   margin-top: 10px;
 }
@@ -114,7 +114,7 @@ body {
   font-weight: 600;
 }
 
-/* ─── 사이트 공통 푸터 ────────────────────────── */
+/* ??? ?ъ씠??怨듯넻 ?명꽣 ?????????????????????????? */
 .site-footer {
   text-align: center;
   padding: 30px 16px 40px;
@@ -130,9 +130,9 @@ body {
   text-decoration: none;
 }
 
-/* ─── 공연·행사 목록 페이지 ────────────────────── */
+/* ??? 怨듭뿰쨌?됱궗 紐⑸줉 ?섏씠吏 ?????????????????????? */
 html {
-  scroll-behavior: smooth; /* 지역 점프 시 부드럽게 이동 */
+  scroll-behavior: smooth; /* 吏???먰봽 ??遺?쒕읇寃??대룞 */
 }
 
 .events-container {
@@ -141,8 +141,8 @@ html {
   padding: 0 16px 60px;
 }
 
-/* 칩이 많은 페이지(홈/목록)용: 데스크톱에서만 상단 고정
-   (모바일은 칩이 여러 줄이라 고정하면 화면을 너무 가려서 ↑ 버튼으로 대체) */
+/* 移⑹씠 留롮? ?섏씠吏(??紐⑸줉)?? ?곗뒪?ы넲?먯꽌留??곷떒 怨좎젙
+   (紐⑤컮?쇱? 移⑹씠 ?щ윭 以꾩씠??怨좎젙?섎㈃ ?붾㈃???덈Т 媛?ㅼ꽌 ??踰꾪듉?쇰줈 ?泥? */
 @media (min-width: 768px) {
   .sticky-desktop {
     position: sticky;
@@ -155,7 +155,7 @@ html {
   }
 }
 
-/* 지역 칩 줄을 스크롤해도 상단에 고정 */
+/* 吏??移?以꾩쓣 ?ㅽ겕濡ㅽ빐???곷떒??怨좎젙 */
 .sticky-nav {
   position: sticky;
   top: 0;
@@ -166,12 +166,12 @@ html {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
-/* 점프로 이동했을 때 섹션 제목이 고정된 칩 줄에 가려지지 않게 여유를 둠 */
+/* ?먰봽濡??대룞?덉쓣 ???뱀뀡 ?쒕ぉ??怨좎젙??移?以꾩뿉 媛?ㅼ?吏 ?딄쾶 ?ъ쑀瑜???*/
 .event-region {
   scroll-margin-top: 110px;
 }
 
-/* 우측 하단 맨 위로 플로팅 버튼 */
+/* ?곗륫 ?섎떒 留??꾨줈 ?뚮줈??踰꾪듉 */
 .to-top {
   position: fixed;
   right: 20px;
@@ -195,13 +195,13 @@ html {
   background: #3a46a8;
 }
 
-/* 공연 장르 아이콘 */
+/* 怨듭뿰 ?λⅤ ?꾩씠肄?*/
 .event-icon {
   font-size: 1.05rem;
   margin-right: 2px;
 }
 
-/* 공연명 링크 */
+/* 怨듭뿰紐?留곹겕 */
 .event-name-link {
   color: inherit;
   text-decoration: none;
@@ -277,7 +277,7 @@ html {
   text-decoration: underline;
 }
 
-/* 모바일에서는 날짜가 위로 가게 세로 배치 */
+/* 紐⑤컮?쇱뿉?쒕뒗 ?좎쭨媛 ?꾨줈 媛寃??몃줈 諛곗튂 */
 @media (max-width: 600px) {
   .event-row {
     flex-direction: column;
@@ -288,23 +288,23 @@ html {
   }
 }
 
-/* 상세 페이지 추천 카드가 링크일 때 기본 링크 꾸밈 제거 */
+/* ?곸꽭 ?섏씠吏 異붿쿇 移대뱶媛 留곹겕????湲곕낯 留곹겕 袁몃컝 ?쒓굅 */
 .nearby-link {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-/* 마우스를 올리면 눌러볼 수 있다는 느낌 주기 */
+/* 留덉슦?ㅻ? ?щ━硫??뚮윭蹂????덈떎???먮굦 二쇨린 */
 .nearby-link:hover .nearby-name {
   color: #4756c9;
   text-decoration: underline;
 }
 
-/* ─── 카드 그리드 ─────────────────────────────── */
+/* ??? 移대뱶 洹몃━????????????????????????????????? */
 .festival-grid {
   display: grid;
-  /* 화면 너비에 맞춰 260px 이상 카드를 자동으로 여러 열 배치 */
+  /* ?붾㈃ ?덈퉬??留욎떠 260px ?댁긽 移대뱶瑜??먮룞?쇰줈 ?щ윭 ??諛곗튂 */
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
   max-width: 1200px;
@@ -315,13 +315,13 @@ html {
 .card {
   background: #fff;
   border-radius: 12px;
-  overflow: hidden; /* 이미지 모서리가 카드 밖으로 안 나가게 */
+  overflow: hidden; /* ?대?吏 紐⑥꽌由ш? 移대뱶 諛뽰쑝濡????섍?寃?*/
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
   transition: transform 0.15s, box-shadow 0.15s;
-  position: relative; /* 하트 버튼을 카드 기준으로 배치하기 위함 */
+  position: relative; /* ?섑듃 踰꾪듉??移대뱶 湲곗??쇰줈 諛곗튂?섍린 ?꾪븿 */
 }
 
-/* 카드 오른쪽 위에 겹쳐진 하트 버튼 */
+/* 移대뱶 ?ㅻⅨ履??꾩뿉 寃뱀퀜吏??섑듃 踰꾪듉 */
 .fav-heart {
   position: absolute;
   top: 10px;
@@ -349,12 +349,12 @@ html {
 .card img {
   width: 100%;
   height: 170px;
-  object-fit: cover; /* 비율 안 깨지게 잘라서 채움 */
+  object-fit: cover; /* 鍮꾩쑉 ??源⑥?寃??섎씪??梨꾩? */
   background: #eee;
   display: block;
 }
 
-/* 이미지가 없는 축제용 대체 박스 */
+/* ?대?吏媛 ?녿뒗 異뺤젣???泥?諛뺤뒪 */
 .card .no-image {
   width: 100%;
   height: 170px;
@@ -383,14 +383,14 @@ html {
   line-height: 1.5;
 }
 
-/* 카드를 감싸는 링크 — 밑줄/파란색 같은 링크 기본 스타일 제거 */
+/* 移대뱶瑜?媛먯떥??留곹겕 ??諛묒쨪/?뚮???媛숈? 留곹겕 湲곕낯 ?ㅽ????쒓굅 */
 .card-link {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-/* ─── 상태 배지 (진행중 / D-n) ─────────────────── */
+/* ??? ?곹깭 諛곗? (吏꾪뻾以?/ D-n) ??????????????????? */
 .badge {
   display: inline-block;
   font-size: 0.75rem;
@@ -415,7 +415,7 @@ html {
   color: #777;
 }
 
-/* 상설·장기 숨기기 체크박스 */
+/* ?곸꽕쨌?κ린 ?④린湲?泥댄겕諛뺤뒪 */
 .toggle {
   display: flex;
   align-items: center;
@@ -425,20 +425,21 @@ html {
   cursor: pointer;
   padding: 10px 4px;
   user-select: none;
-  position: relative; /* 말풍선을 이 라벨 기준으로 띄우기 위함 */
+  position: relative; /* 留먰뭾?좎쓣 ???쇰꺼 湲곗??쇰줈 ?꾩슦湲??꾪븿 */
 }
 
-/* 칩에도 말풍선을 띄울 수 있게 기준점 부여 */
+/* 移⑹뿉??留먰뭾?좎쓣 ?꾩슱 ???덇쾶 湲곗???遺??*/
 .chip {
   position: relative;
 }
 
-/* 말풍선 본체: data-tip 속성의 글을 CSS가 꺼내서(attr) 보여준다 */
+/* 留먰뭾??蹂몄껜: data-tip ?띿꽦??湲??CSS媛 爰쇰궡??attr) 蹂댁뿬以??*/
+.report-btn[data-tip]::after,
 .chip[data-tip]::after,
 .toggle[data-tip]::after {
   content: attr(data-tip);
   position: absolute;
-  top: calc(100% + 8px); /* 라벨 바로 아래 8px 지점 */
+  top: calc(100% + 8px); /* ?쇰꺼 諛붾줈 ?꾨옒 8px 吏??*/
   left: 50%;
   transform: translateX(-50%);
   width: 220px;
@@ -450,14 +451,15 @@ html {
   border-radius: 8px;
   text-align: left;
   z-index: 10;
-  /* 평소엔 숨김 + 부드럽게 나타나는 효과 */
+  /* ?됱냼???④? + 遺?쒕읇寃??섑??섎뒗 ?④낵 */
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.15s;
-  pointer-events: none; /* 말풍선이 마우스 클릭을 가로채지 않게 */
+  pointer-events: none; /* 留먰뭾?좎씠 留덉슦???대┃??媛濡쒖콈吏 ?딄쾶 */
 }
 
-/* 말풍선 위쪽의 작은 삼각형 꼬리 */
+/* 留먰뭾???꾩そ???묒? ?쇨컖??瑗щ━ */
+.report-btn[data-tip]::before,
 .chip[data-tip]::before,
 .toggle[data-tip]::before {
   content: "";
@@ -474,7 +476,9 @@ html {
   pointer-events: none;
 }
 
-/* 마우스를 올리면 말풍선과 꼬리를 보여준다 */
+/* 留덉슦?ㅻ? ?щ━硫?留먰뭾?좉낵 瑗щ━瑜?蹂댁뿬以??*/
+.report-btn[data-tip]:hover::after,
+.report-btn[data-tip]:hover::before,
 .chip[data-tip]:hover::after,
 .chip[data-tip]:hover::before,
 .toggle[data-tip]:hover::after,
@@ -483,7 +487,7 @@ html {
   visibility: visible;
 }
 
-/* ─── 상세 페이지 ─────────────────────────────── */
+/* ??? ?곸꽭 ?섏씠吏 ??????????????????????????????? */
 .detail-container {
   max-width: 720px;
   margin: 0 auto;
@@ -504,10 +508,10 @@ html {
 
 .detail-container .hero {
   width: 100%;
-  max-height: 70vh; /* 최대 화면 높이의 70%까지 */
-  object-fit: contain; /* cover는 잘라내고, contain은 비율 유지하며 전체를 보여줌 */
+  max-height: 70vh; /* 理쒕? ?붾㈃ ?믪씠??70%源뚯? */
+  object-fit: contain; /* cover???섎씪?닿퀬, contain? 鍮꾩쑉 ?좎??섎ŉ ?꾩껜瑜?蹂댁뿬以?*/
   border-radius: 12px;
-  background: #e9ecf1; /* 포스터 좌우 여백 부분의 배경색 */
+  background: #e9ecf1; /* ?ъ뒪??醫뚯슦 ?щ갚 遺遺꾩쓽 諛곌꼍??*/
   display: block;
 }
 
@@ -558,12 +562,12 @@ html {
   padding: 40px 0;
 }
 
-/* ─── 상세: 사진 갤러리 ───────────────────────── */
+/* ??? ?곸꽭: ?ъ쭊 媛ㅻ윭由?????????????????????????? */
 .thumbs {
   display: flex;
   gap: 8px;
   margin-top: 10px;
-  overflow-x: auto; /* 사진이 많으면 가로 스크롤 */
+  overflow-x: auto; /* ?ъ쭊??留롮쑝硫?媛濡??ㅽ겕濡?*/
   padding-bottom: 4px;
 }
 
@@ -587,7 +591,7 @@ html {
   opacity: 1;
 }
 
-/* ─── 상세: 정보 목록 ─────────────────────────── */
+/* ??? ?곸꽭: ?뺣낫 紐⑸줉 ??????????????????????????? */
 .info-grid {
   display: flex;
   flex-direction: column;
@@ -611,7 +615,7 @@ html {
 
 .info-value {
   color: #333;
-  min-width: 0; /* 긴 URL이 카드 밖으로 안 삐져나가게 */
+  min-width: 0; /* 湲?URL??移대뱶 諛뽰쑝濡????먯졇?섍?寃?*/
   overflow-wrap: anywhere;
 }
 
@@ -619,7 +623,7 @@ html {
   color: #4756c9;
 }
 
-/* ─── 상세: 지도 + 길찾기 ─────────────────────── */
+/* ??? ?곸꽭: 吏??+ 湲몄갼湲???????????????????????? */
 .map-section {
   margin-top: 24px;
   border-top: 1px solid #eee;
@@ -634,7 +638,7 @@ html {
 #map {
   height: 320px;
   border-radius: 12px;
-  z-index: 0; /* Leaflet이 다른 요소를 가리지 않게 */
+  z-index: 0; /* Leaflet???ㅻⅨ ?붿냼瑜?媛由ъ? ?딄쾶 */
 }
 
 .dir-buttons {
@@ -664,23 +668,23 @@ html {
 }
 
 .dir-btn.hotel {
-  background: #003580; /* 부킹닷컴 파랑. 제휴 승인 후 링크만 교체하면 됨 */
+  background: #003580; /* 遺?밸떣而??뚮옉. ?쒗쑕 ?뱀씤 ??留곹겕留?援먯껜?섎㈃ ??*/
   color: #fff;
 }
 
 .dir-btn.coupang {
-  background: #e52528; /* 쿠팡 빨강 */
+  background: #e52528; /* 荑좏뙜 鍮④컯 */
   color: #fff;
 }
 
-/* 쿠팡 파트너스 의무 고지 문구 */
+/* 荑좏뙜 ?뚰듃?덉뒪 ?섎Т 怨좎? 臾멸뎄 */
 .coupang-notice {
   margin-top: 10px;
   font-size: 0.78rem;
   color: #999;
 }
 
-/* ─── 상세: 액션 버튼 (찜/캘린더/공유) ────────── */
+/* ??? ?곸꽭: ?≪뀡 踰꾪듉 (李?罹섎┛??怨듭쑀) ?????????? */
 .actions {
   display: flex;
   gap: 8px;
@@ -709,7 +713,7 @@ html {
   background: #fff0f3;
 }
 
-/* ─── 상세: 주변 관광지/맛집 ──────────────────── */
+/* ??? ?곸꽭: 二쇰? 愿愿묒?/留쏆쭛 ???????????????????? */
 .nearby-section {
   margin-top: 24px;
   border-top: 1px solid #eee;
@@ -724,12 +728,12 @@ html {
 .nearby-row {
   display: flex;
   gap: 12px;
-  overflow-x: auto; /* 가로로 넘치면 스크롤 */
+  overflow-x: auto; /* 媛濡쒕줈 ?섏튂硫??ㅽ겕濡?*/
   padding-bottom: 6px;
 }
 
 .nearby-card {
-  flex: 0 0 140px; /* 카드 폭 고정, 줄어들지 않음 */
+  flex: 0 0 140px; /* 移대뱶 ??怨좎젙, 以꾩뼱?ㅼ? ?딆쓬 */
 }
 
 .nearby-card img,
@@ -759,9 +763,9 @@ html {
   margin-top: 2px;
 }
 
-/* === CampingHub 전용 추가 스타일 === */
+/* === CampingHub ?꾩슜 異붽? ?ㅽ???=== */
 
-/* 예약 바로가기 버튼 — 가장 중요한 행동이라 초록색으로 강조 */
+/* ?덉빟 諛붾줈媛湲?踰꾪듉 ??媛??以묒슂???됰룞?대씪 珥덈줉?됱쑝濡?媛뺤“ */
 .dir-btn.reserve {
   background: #1a8b45;
   color: #fff;
@@ -772,14 +776,14 @@ html {
   background: #157038;
 }
 
-/* === 한국어 줄바꿈 개선 === */
-/* 단어(어절) 중간에서 잘리지 않고 단어 단위로만 줄바꿈되게 */
+/* === ?쒓뎅??以꾨컮轅?媛쒖꽑 === */
+/* ?⑥뼱(?댁젅) 以묎컙?먯꽌 ?섎━吏 ?딄퀬 ?⑥뼱 ?⑥쐞濡쒕쭔 以꾨컮轅덈릺寃?*/
 body {
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 
-/* 좁은 화면(모바일)에서만 나타나는 줄바꿈 — PC에서는 투명 */
+/* 醫곸? ?붾㈃(紐⑤컮???먯꽌留??섑??섎뒗 以꾨컮轅???PC?먯꽌???щ챸 */
 .mobile-br {
   display: none;
 }
@@ -790,7 +794,7 @@ body {
   }
 }
 
-/* 체크박스 묶음: 모바일에서 두 토글이 흩어지지 않고 나란히 함께 줄바꿈 */
+/* 泥댄겕諛뺤뒪 臾띠쓬: 紐⑤컮?쇱뿉?????좉????⑹뼱吏吏 ?딄퀬 ?섎????④퍡 以꾨컮轅?*/
 .toggle-group {
   display: flex;
   flex-wrap: wrap;
@@ -799,7 +803,7 @@ body {
   gap: 0 12px;
 }
 
-/* 제보하기 링크 — 푸터에서 눈에 띄게 */
+/* ?쒕낫?섍린 留곹겕 ???명꽣?먯꽌 ?덉뿉 ?꾧쾶 */
 .report-link {
   display: inline-block;
   margin-top: 4px;
@@ -814,3 +818,49 @@ body {
   background: #1a8b45;
   color: #fff !important;
 }
+
+/* ?꾪꽣 以??앹쓽 ?쒕낫 踰꾪듉 */
+.report-btn {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #1a8b45;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  position: relative; /* 留먰뭾??湲곗???*/
+}
+
+.report-btn:hover {
+  background: #157038;
+}
+
+/* 寃??寃곌낵 0嫄댁씪 ?뚯쓽 ?덈궡 諛뺤뒪 */
+.empty-result {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 48px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.empty-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.empty-desc {
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  font-size: 0.92rem;
+}
+
+.report-btn.big {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+}
+

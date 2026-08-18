@@ -104,6 +104,23 @@ function footerHtml(prefix = "") {
   </footer>`;
 }
 
+// 목록 정렬: 사진 있는 곳 먼저, 그 안에서 접두어((주)/(유) 등) 뺀 실제 이름 가나다순
+// (app.js의 정렬과 같은 규칙 — 수정 시 양쪽 다!)
+function sortName(s) {
+  return s
+    .replace(/^[\(（][^\)）]*[\)）]\s*/, "")
+    .replace(/^㈜\s*/, "")
+    .replace(/^(주식회사|유한회사|농업회사법인|영농조합법인)\s*/, "")
+    .trim();
+}
+
+function campingSort(a, b) {
+  const aImg = a.image ? 0 : 1;
+  const bImg = b.image ? 0 : 1;
+  if (aImg !== bImg) return aImg - bImg;
+  return sortName(a.name).localeCompare(sortName(b.name), "ko");
+}
+
 // 목록 카드 (app.js의 카드와 같은 모양)
 function listCard(c) {
   const img = c.image
@@ -369,7 +386,7 @@ SITE_NAV = `
 // 테마 페이지
 const themeFiles = [];
 for (const t of CAMP_THEMES) {
-  const items = campings.filter(t.test).sort((a, b) => a.name.localeCompare(b.name, "ko"));
+  const items = campings.filter(t.test).sort(campingSort);
   const filename = `theme-${t.slug}.html`;
   fs.writeFileSync(
     filename,
@@ -392,7 +409,7 @@ const regionFiles = [];
 for (const region of regionsAll) {
   const slug = REGION_SLUGS[region] || "etc";
   const filename = `region-${slug}.html`;
-  const items = campings.filter((c) => getRegion(c) === region).sort((a, b) => a.name.localeCompare(b.name, "ko"));
+  const items = campings.filter((c) => getRegion(c) === region).sort(campingSort);
   fs.writeFileSync(
     filename,
     buildListPage({

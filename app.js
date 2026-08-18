@@ -80,7 +80,21 @@ function render() {
     return matchKeyword && matchRegion && matchType && matchPet && matchFav;
   });
 
-  shown.sort((a, b) => a.name.localeCompare(b.name, "ko"));
+  // 정렬용 이름: "(주)", "(에드203)", "농업회사법인" 같은 접두어를 떼고 실제 이름 기준으로
+  const sortName = (s) =>
+    s
+      .replace(/^[\(（][^\)）]*[\)）]\s*/, "")
+      .replace(/^㈜\s*/, "")
+      .replace(/^(주식회사|유한회사|농업회사법인|영농조합법인)\s*/, "")
+      .trim();
+
+  // 사진 있는 캠핑장을 먼저 보여주고 (첫 화면 인상), 그 안에서 가나다순
+  shown.sort((a, b) => {
+    const aImg = a.image ? 0 : 1;
+    const bImg = b.image ? 0 : 1;
+    if (aImg !== bImg) return aImg - bImg;
+    return sortName(a.name).localeCompare(sortName(b.name), "ko");
+  });
   countEl.textContent = `${shown.length}개의 캠핑장`;
 
   // 결과가 하나도 없을 때: 제보 동기가 가장 높은 순간이라 제보 버튼을 크게 안내

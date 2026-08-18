@@ -178,6 +178,7 @@ function buildListPage({ filename, title, heading, subtitle, description, items 
   <main class="festival-grid">${cards || `<p style="grid-column:1/-1;text-align:center;color:#888;">해당하는 캠핑장이 없습니다.</p>`}</main>
   <a class="to-top" href="#" aria-label="맨 위로">↑</a>
   ${footerHtml("")}
+  <script src="track-clicks.js"></script>
 </body>
 </html>`;
 }
@@ -349,6 +350,7 @@ function buildPage(c, all) {
     window.CAMP = ${JSON.stringify({ contentId: c.contentId, name: c.name, lat: c.lat, lng: c.lng })};
   </script>
   <script src="../camping-page.js"></script>
+  <script src="../track-clicks.js"></script>
 </body>
 </html>`;
 }

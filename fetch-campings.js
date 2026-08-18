@@ -89,21 +89,41 @@ async function main() {
     process.exit(1);
   }
 
-  // 전체 페이지 수집
-  const first = await fetchPage(1);
-  const totalPages = Math.ceil(first.totalCount / 1000);
-  console.log(`🏕️ 전국 캠핑장 ${first.totalCount}건, ${totalPages}페이지 수집 시작`);
-  let all = [...first.items];
-  for (let p = 2; p <= totalPages; p++) {
-    const { items } = await fetchPage(p);
-    all.push(...items);
-    console.log(`   ${p}/${totalPages} 페이지 완료 (누적 ${all.length}건)`);
+  // 전체 페이지 수집 — 새벽 시간대 API가 간헐적으로 불안정해서
+  // 실패하면 1분 쉬고 최대 3번까지 다시 시도한다
+  let all = null;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const first = await fetchPage(1);
+      const totalPages = Math.ceil(first.totalCount / 1000);
+      console.log(`🏕️ 전국 캠핑장 ${first.totalCount}건, ${totalPages}페이지 수집 시작 (시도 ${attempt}/3)`);
+      all = [...first.items];
+      for (let p = 2; p <= totalPages; p++) {
+        const { items } = await fetchPage(p);
+        all.push(...items);
+        console.log(`   ${p}/${totalPages} 페이지 완료 (누적 ${all.length}건)`);
+      }
+      break; // 성공하면 재시도 루프 탈출
+    } catch (err) {
+      console.warn(`⚠️ 수집 시도 ${attempt}/3 실패: ${err.message}`);
+      all = null;
+      if (attempt < 3) await new Promise((r) => setTimeout(r, 60000)); // 1분 대기 후 재시도
+    }
   }
 
   // 필요한 필드만 추려서 이름을 알기 쉽게 정리
   // (원본 필드 설명: induty=유형, facltDivNm=운영주체, sbrsCl=부대시설,
   //  animalCmgCl=반려동물, resveUrl=예약 페이지, themaEnvrnCl=테마환경)
-  const campings = all
+  let campings;
+  if (all === null) {
+    // 3번 다 실패 → 어제 데이터로 계속 진행 (사이트가 빈손이 되는 것보다 낫다)
+    // 수동 등록분은 아래에서 다시 합쳐지므로 여기서는 제외
+    console.warn("⚠️ 고캠핑 수집 최종 실패 — 기존 campings.json 데이터로 계속 진행합니다");
+    campings = JSON.parse(fs.readFileSync("campings.json", "utf-8")).filter(
+      (c) => c.updated !== "manual"
+    );
+  } else {
+  campings = all
     .filter((c) => c.facltNm && c.mapX && c.mapY) // 이름·좌표 없는 건 제외
     .map((c) => ({
       contentId: c.contentId,
@@ -138,6 +158,7 @@ async function main() {
       caravanFacilities: c.caravInnerFclty || "",
       updated: c.modifiedtime || "",
     }));
+  }
 
   // ── 수동 등록 캠핑장 합치기 ──
   // 고캠핑 API에 등록되지 않은 캠핑장(자연휴양림 야영장 등)을 manual-campings.json에

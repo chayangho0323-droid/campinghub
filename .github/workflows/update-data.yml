@@ -6,7 +6,7 @@ name: 캠핑장 데이터 자동 갱신
 
 on:
   schedule:
-    - cron: "30 18 * * *" # UTC 18:30 = 한국시간 새벽 03:30
+    - cron: "30 20 * * *" # UTC 20:30 = 한국시간 새벽 05:30 (새벽 3~4시대 API 불안정 회피)
   workflow_dispatch: # Actions 탭에서 수동 실행 버튼
 
 jobs:

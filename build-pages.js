@@ -142,7 +142,7 @@ function listCard(c) {
           <p class="period">📍 ${getRegion(c)} ${esc(c.sigungu || "")}</p>
           ${fac ? `<p class="address">🔧 ${esc(fac)}</p>` : ""}
           <button class="review-link" data-query="${esc(`${c.sigungu || getRegion(c)} ${c.name}`)}"
-            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query),'_blank','noopener');">📝 네이버 후기 보기</button>
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
         </div>
       </article>
     </a>`;

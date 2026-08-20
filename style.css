@@ -452,6 +452,7 @@ html {
 }
 
 /* 留먰뭾??蹂몄껜: data-tip ?띿꽦??湲??CSS媛 爰쇰궡??attr) 蹂댁뿬以??*/
+.near-me[data-tip]::after,
 .report-btn[data-tip]::after,
 .chip[data-tip]::after,
 .toggle[data-tip]::after {
@@ -477,6 +478,7 @@ html {
 }
 
 /* 留먰뭾???꾩そ???묒? ?쇨컖??瑗щ━ */
+.near-me[data-tip]::before,
 .report-btn[data-tip]::before,
 .chip[data-tip]::before,
 .toggle[data-tip]::before {
@@ -495,6 +497,8 @@ html {
 }
 
 /* 留덉슦?ㅻ? ?щ━硫?留먰뭾?좉낵 瑗щ━瑜?蹂댁뿬以??*/
+.near-me[data-tip]:hover::after,
+.near-me[data-tip]:hover::before,
 .report-btn[data-tip]:hover::after,
 .report-btn[data-tip]:hover::before,
 .chip[data-tip]:hover::after,
@@ -854,6 +858,27 @@ body {
   background: #157038;
 }
 
+/* 내 주변 가까운 순 버튼 — 켜지면(.on) 파란색으로 채워짐 */
+.near-me {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+  border: 1.5px solid #2b6cb0;
+  background: #fff;
+  color: #2b6cb0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative; /* 말풍선 기준점 */
+}
+.near-me:hover {
+  background: #ebf4ff;
+}
+.near-me.on {
+  background: #2b6cb0;
+  color: #fff;
+}
+
 /* 寃??寃곌낵 0嫄댁씪 ?뚯쓽 ?덈궡 諛뺤뒪 */
 .empty-result {
   grid-column: 1 / -1;
@@ -907,6 +932,8 @@ body {
 .toggle[data-tip]::after,
 .toggle[data-tip]::before,
 .chip[data-tip]::after,
-.chip[data-tip]::before {
+.chip[data-tip]::before,
+.near-me[data-tip]::after,
+.near-me[data-tip]::before {
   z-index: 100;
 }

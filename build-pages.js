@@ -465,6 +465,9 @@ const slim = campings.map((c) => ({
   image: c.image,
   pet: c.pet,
   facilities: (c.facilities || "").split(",").filter(Boolean).slice(0, 3).join(","),
+  // "내 주변" 거리 계산용 좌표 (소수 4자리 ≈ 10m 정밀도, 파일 크기 절약)
+  lat: c.lat ? Number(Number(c.lat).toFixed(4)) : undefined,
+  lng: c.lng ? Number(Number(c.lng).toFixed(4)) : undefined,
 }));
 fs.writeFileSync("campings-list.json", JSON.stringify(slim), "utf-8");
 console.log(`✅ campings-list.json 생성 (목록용 경량본, ${Math.round(JSON.stringify(slim).length / 1024)}KB)`);

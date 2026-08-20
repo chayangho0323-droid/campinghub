@@ -7,8 +7,10 @@ const typeEl = document.getElementById("type-filter");
 const onlyPetEl = document.getElementById("only-pet");
 const onlyFavEl = document.getElementById("only-fav");
 const countEl = document.getElementById("result-count");
+const nearBtn = document.getElementById("near-me");
 
 let allCampings = [];
+let nearPos = null; // "내 주변" 켜면 {lat, lng}가 채워짐 (브라우저에만 있고 어디에도 안 보냄)
 
 // ─── 지역 정규화 (build-pages.js와 같은 표. 수정 시 양쪽 다!) ───
 // 고캠핑 데이터는 "강원도"와 "강원특별자치도"가 섞여 있어서 통일이 필요
@@ -93,13 +95,31 @@ function render() {
     return h;
   };
 
-  // 사진 있는 캠핑장을 먼저 보여주고 (첫 화면 인상), 그 안에서 매일 셔플
-  shown.sort((a, b) => {
-    const aImg = a.image ? 0 : 1;
-    const bImg = b.image ? 0 : 1;
-    if (aImg !== bImg) return aImg - bImg;
-    return shuffleRank(a.contentId) - shuffleRank(b.contentId);
-  });
+  if (nearPos) {
+    // "내 주변" 켜짐: 현재 위치에서 가까운 순 (하버사인 공식으로 km 거리 계산)
+    const rad = (deg) => (deg * Math.PI) / 180;
+    shown.forEach((c) => {
+      if (!c.lat || !c.lng) {
+        c._dist = Infinity; // 좌표 없는 곳은 맨 뒤로
+        return;
+      }
+      const dLat = rad(c.lat - nearPos.lat);
+      const dLng = rad(c.lng - nearPos.lng);
+      const h =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(rad(nearPos.lat)) * Math.cos(rad(c.lat)) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+      c._dist = 6371 * 2 * Math.asin(Math.sqrt(h)); // 지구 반지름 6371km
+    });
+    shown.sort((a, b) => a._dist - b._dist);
+  } else {
+    // 사진 있는 캠핑장을 먼저 보여주고 (첫 화면 인상), 그 안에서 매일 셔플
+    shown.sort((a, b) => {
+      const aImg = a.image ? 0 : 1;
+      const bImg = b.image ? 0 : 1;
+      if (aImg !== bImg) return aImg - bImg;
+      return shuffleRank(a.contentId) - shuffleRank(b.contentId);
+    });
+  }
   countEl.textContent = `${shown.length}개의 캠핑장`;
 
   // 결과가 하나도 없을 때: 제보 동기가 가장 높은 순간이라 제보 버튼을 크게 안내
@@ -139,7 +159,11 @@ function render() {
             <div class="card-body">
               ${badges}
               <h2>${c.name}</h2>
-              <p class="period">📍 ${getRegion(c)} ${c.sigungu || ""}</p>
+              <p class="period">📍 ${getRegion(c)} ${c.sigungu || ""}${
+                nearPos && isFinite(c._dist)
+                  ? ` · 🚗 ${c._dist < 10 ? c._dist.toFixed(1) : Math.round(c._dist)}km`
+                  : ""
+              }</p>
               ${fac ? `<p class="address">🔧 ${fac}</p>` : ""}
               <button class="review-link" data-query="${c.sigungu || getRegion(c)} ${c.name}"
                 onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
@@ -222,6 +246,39 @@ listEl.addEventListener("click", (e) => {
   e.preventDefault();
   toggleFavorite(heart.dataset.id);
   render();
+});
+
+// ─── 내 주변 가까운 순 ───
+// 브라우저 위치 기능(허용 팝업)을 써서 현재 위치를 받아온다.
+// 위치는 이 페이지 안에서 거리 계산에만 쓰고 서버로 보내지 않음.
+nearBtn.addEventListener("click", () => {
+  // 이미 켜져 있으면 → 끄고 원래 정렬로
+  if (nearPos) {
+    nearPos = null;
+    nearBtn.classList.remove("on");
+    nearBtn.textContent = "📍 내 주변 가까운 순";
+    render();
+    return;
+  }
+  if (!navigator.geolocation) {
+    alert("이 브라우저는 위치 기능을 지원하지 않아요.");
+    return;
+  }
+  nearBtn.textContent = "📍 위치 확인 중...";
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      nearPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      nearBtn.classList.add("on");
+      nearBtn.textContent = "📍 내 주변 순 (누르면 끔)";
+      render();
+      window.scrollTo({ top: 0 }); // 정렬이 바뀌었으니 목록 맨 위로
+    },
+    () => {
+      nearBtn.textContent = "📍 내 주변 가까운 순";
+      alert("위치 정보를 가져오지 못했어요.\n주소창 근처의 위치 권한을 허용으로 바꾸고 다시 눌러주세요.");
+    },
+    { maximumAge: 600000, timeout: 8000 } // 10분 내 위치는 재사용, 8초 안에 응답 없으면 포기
+  );
 });
 
 init();

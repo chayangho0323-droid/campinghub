@@ -136,6 +136,8 @@ function render() {
               <h2>${c.name}</h2>
               <p class="period">📍 ${getRegion(c)} ${c.sigungu || ""}</p>
               ${fac ? `<p class="address">🔧 ${fac}</p>` : ""}
+              <button class="review-link" data-query="${c.sigungu || getRegion(c)} ${c.name}"
+                onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query),'_blank','noopener');">📝 네이버 후기 보기</button>
             </div>
           </article>
         </a>`;

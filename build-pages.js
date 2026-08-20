@@ -32,6 +32,34 @@ const COUPANG_ITEMS = [
 
 const campings = JSON.parse(fs.readFileSync("campings.json", "utf-8"));
 
+// ── 형제 사이트(페스티벌허브) 데이터: 상세 페이지 "근처 축제" 섹션용 ──
+// 라이브 사이트의 공개 JSON을 가져온다. 실패해도 빌드는 계속 (섹션만 생략)
+const { execSync } = require("child_process");
+let crossFestivals = [];
+try {
+  const kstToday = (() => {
+    const d = new Date(Date.now() + 9 * 60 * 60 * 1000);
+    return d.getUTCFullYear() + String(d.getUTCMonth() + 1).padStart(2, "0") + String(d.getUTCDate()).padStart(2, "0");
+  })();
+  crossFestivals = JSON.parse(
+    execSync("curl -s -m 30 https://festivalhub.kr/festivals.json", { maxBuffer: 20 * 1024 * 1024 }).toString("utf8")
+  ).filter((f) => f.lat && f.lng && f.endDate >= kstToday); // 끝난 축제는 제외
+  console.log(`🎪 페스티벌허브 데이터 ${crossFestivals.length}건 로드 (근처 축제 섹션용)`);
+} catch (e) {
+  console.log("⚠️ 페스티벌허브 데이터를 가져오지 못해 이번 빌드는 근처 축제 섹션을 생략합니다");
+}
+
+// 두 지점 사이 거리(km) — 하버사인 공식
+function distKm(lat1, lng1, lat2, lng2) {
+  const rad = (d) => (d * Math.PI) / 180;
+  const dLat = rad(lat2 - lat1);
+  const dLng = rad(lng2 - lng1);
+  const h =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+  return 6371 * 2 * Math.asin(Math.sqrt(h));
+}
+
 // ─── 지역 정규화 (app.js와 같은 표. 수정 시 양쪽 다!) ───
 const REGION_PREFIXES = [
   ["전남광주", "전남·광주"],
@@ -101,6 +129,7 @@ function footerHtml(prefix = "") {
     <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
     <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a></p>
     <p><a class="report-link" href="${REPORT_FORM_URL}" target="_blank" rel="noopener">📮 여기 없는 캠핑장 제보하기</a></p>
+    <p><a class="cross-link" href="https://festivalhub.kr" target="_blank" rel="noopener">🎪 전국 축제 일정이 궁금하다면 — 페스티벌허브</a></p>
   </footer>`;
 }
 
@@ -278,6 +307,29 @@ function buildPage(c, all) {
       ? `<section class="nearby-section"><h2>${icon} ${title}</h2><div class="nearby-row">${nearbyCards(list)}</div></section>`
       : "";
 
+  // ── 형제 사이트 연결: 근처 축제 (페스티벌허브) ──
+  // "캠핑 가는 김에 근처 축제도" — 두 사이트가 방문자를 주고받는 다리
+  const nearFests = c.lat && c.lng
+    ? crossFestivals
+        .map((f) => ({ ...f, dist: distKm(Number(c.lat), Number(c.lng), Number(f.lat), Number(f.lng)) }))
+        .filter((f) => f.dist <= 40)
+        .sort((a, b) => a.dist - b.dist)
+        .slice(0, 4)
+    : [];
+  const festSection = nearFests.length
+    ? `<section class="nearby-section"><h2>🎪 근처 축제</h2><div class="nearby-row">${nearFests
+        .map(
+          (f) => `
+        <a class="nearby-card nearby-link cross-link" target="_blank" rel="noopener"
+           href="https://festivalhub.kr/festival/${f.contentid}.html" title="페스티벌허브에서 보기">
+          ${f.image ? `<img src="${esc(f.image)}" alt="${esc(f.name)}" loading="lazy" />` : `<div class="nearby-noimg">🎪</div>`}
+          <div class="nearby-name">${esc(f.name)}</div>
+          <div class="nearby-dist">📅 ${f.startDate.slice(4, 6)}.${f.startDate.slice(6, 8)}~${f.endDate.slice(4, 6)}.${f.endDate.slice(6, 8)} · ${f.dist < 10 ? f.dist.toFixed(1) : Math.round(f.dist)}km ↗</div>
+        </a>`
+        )
+        .join("")}</div></section>`
+    : "";
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Campground",
@@ -340,6 +392,7 @@ function buildPage(c, all) {
       ${relatedSection}
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}
       ${nearbySection("주변 맛집", "🍜", c.nearbyFood)}
+      ${festSection}
       <section class="nearby-section coupang-section">
         <h2>🎒 캠핑 준비물</h2>
         <div class="dir-buttons">

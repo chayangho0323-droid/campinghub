@@ -104,21 +104,24 @@ function footerHtml(prefix = "") {
   </footer>`;
 }
 
-// 목록 정렬: 사진 있는 곳 먼저, 그 안에서 접두어((주)/(유) 등) 뺀 실제 이름 가나다순
+// 목록 정렬: 사진 있는 곳 먼저, 그 안에서 매일 셔플.
+// 날짜+아이디 해시를 정렬 기준으로 써서 매일 새벽 재빌드 때마다 순서가 바뀜 —
+// 가나다순일 때 숫자/앞글자 이름만 계속 첫 화면에 노출되던 문제 해결 (3천여 곳 공평 노출)
 // (app.js의 정렬과 같은 규칙 — 수정 시 양쪽 다!)
-function sortName(s) {
-  return s
-    .replace(/^[\(（][^\)）]*[\)）]\s*/, "")
-    .replace(/^㈜\s*/, "")
-    .replace(/^(주식회사|유한회사|농업회사법인|영농조합법인)\s*/, "")
-    .trim();
+const kstForSort = new Date(Date.now() + 9 * 60 * 60 * 1000);
+const daySeed = `${kstForSort.getUTCFullYear()}${kstForSort.getUTCMonth() + 1}${kstForSort.getUTCDate()}`;
+function shuffleRank(id) {
+  let h = 5381;
+  const s = daySeed + id;
+  for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0;
+  return h;
 }
 
 function campingSort(a, b) {
   const aImg = a.image ? 0 : 1;
   const bImg = b.image ? 0 : 1;
   if (aImg !== bImg) return aImg - bImg;
-  return sortName(a.name).localeCompare(sortName(b.name), "ko");
+  return shuffleRank(a.contentId) - shuffleRank(b.contentId);
 }
 
 // 목록 카드 (app.js의 카드와 같은 모양)

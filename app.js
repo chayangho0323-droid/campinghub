@@ -80,20 +80,25 @@ function render() {
     return matchKeyword && matchRegion && matchType && matchPet && matchFav;
   });
 
-  // 정렬용 이름: "(주)", "(에드203)", "농업회사법인" 같은 접두어를 떼고 실제 이름 기준으로
-  const sortName = (s) =>
-    s
-      .replace(/^[\(（][^\)）]*[\)）]\s*/, "")
-      .replace(/^㈜\s*/, "")
-      .replace(/^(주식회사|유한회사|농업회사법인|영농조합법인)\s*/, "")
-      .trim();
+  // 매일 자동 셔플: 날짜+아이디를 해시(숫자)로 바꿔 정렬 기준으로 사용.
+  // 같은 날에는 누구에게나 같은 순서, 날이 바뀌면 새 순서 —
+  // 가나다순일 때 숫자/앞글자 이름만 계속 첫 화면에 노출되던 문제 해결 (3천여 곳 공평 노출)
+  // (build-pages.js의 campingSort와 같은 규칙 — 수정 시 양쪽 다!)
+  const kst = new Date(Date.now() + 9 * 60 * 60 * 1000); // 한국 시간 기준
+  const daySeed = `${kst.getUTCFullYear()}${kst.getUTCMonth() + 1}${kst.getUTCDate()}`;
+  const shuffleRank = (id) => {
+    let h = 5381;
+    const s = daySeed + id;
+    for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0;
+    return h;
+  };
 
-  // 사진 있는 캠핑장을 먼저 보여주고 (첫 화면 인상), 그 안에서 가나다순
+  // 사진 있는 캠핑장을 먼저 보여주고 (첫 화면 인상), 그 안에서 매일 셔플
   shown.sort((a, b) => {
     const aImg = a.image ? 0 : 1;
     const bImg = b.image ? 0 : 1;
     if (aImg !== bImg) return aImg - bImg;
-    return sortName(a.name).localeCompare(sortName(b.name), "ko");
+    return shuffleRank(a.contentId) - shuffleRank(b.contentId);
   });
   countEl.textContent = `${shown.length}개의 캠핑장`;
 

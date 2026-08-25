@@ -984,3 +984,27 @@ body {
   font-weight: 600;
   white-space: nowrap;
 }
+
+/* 오늘의 인기 상품 카드 (네이버쇼핑 데이터) */
+.product-price {
+  color: #d63031;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+.product-mall {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 2px;
+}
+.product-updated {
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 400;
+}
+.product-notice {
+  font-size: 0.78rem;
+  color: #999;
+  margin-top: 10px;
+  line-height: 1.6;
+}

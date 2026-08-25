@@ -961,6 +961,34 @@ GUIDE_PAGES.push(
   }
 );
 
+// 네이버쇼핑 인기 상품 (fetch-products.js가 만든 파일 — 없으면 섹션 생략)
+let PRODUCTS = null;
+try {
+  PRODUCTS = JSON.parse(fs.readFileSync("products.json", "utf-8"));
+} catch {}
+
+// 가이드 페이지 하단 "오늘의 인기 상품" 섹션 (매일 갱신, 출처 표기)
+function productSection(slug) {
+  const list = PRODUCTS?.categories?.[slug];
+  if (!list || !list.length) return "";
+  return `
+      <section class="overview">
+        <h2>🛍️ 오늘의 인기 상품 <span class="product-updated">${esc(PRODUCTS.updated || "")} 기준</span></h2>
+        <div class="nearby-row">${list
+          .map(
+            (p) => `
+          <a class="nearby-card shop-link" target="_blank" rel="noopener nofollow" href="${esc(p.link)}">
+            ${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" />` : `<div class="nearby-noimg">🛍️</div>`}
+            <div class="nearby-name">${esc(p.title)}</div>
+            <div class="product-price">${p.lprice ? p.lprice.toLocaleString() + "원~" : ""}</div>
+            <div class="product-mall">${esc(p.mall || "네이버쇼핑")}</div>
+          </a>`
+          )
+          .join("")}</div>
+        <p class="product-notice">네이버쇼핑 인기순 검색 결과이며 가격은 최저가 기준으로 매일 갱신됩니다. 실제 판매가는 판매처 사정에 따라 다를 수 있어요.</p>
+      </section>`;
+}
+
 const guideFiles = [];
 for (const g of GUIDE_PAGES) {
   const filename = `${g.slug}.html`;
@@ -989,6 +1017,7 @@ for (const g of GUIDE_PAGES) {
   <main class="detail-container">
     <div class="detail-body guide-body">
       ${g.body}
+      ${productSection(g.slug)}
     </div>
   </main>
   ${footerHtml("")}

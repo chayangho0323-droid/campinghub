@@ -198,6 +198,8 @@ function fillQuickLinks() {
     nav.appendChild(a);
   };
 
+  addChip("guide-beginner.html", "🔰 캠핑 입문 가이드", "chip chip-hot",
+    "첫 캠핑 준비물 체크리스트부터 예산별 장비, 안전·매너까지 초보 필수 정보 모음입니다.");
   addChip("theme-forest.html", "🌲 휴양림·국공립", "chip chip-hot",
     "자연휴양림과 국립·공립·지자체가 운영하는 믿을 수 있는 캠핑장만 모았습니다.");
   addChip("theme-glamping.html", "⛺ 글램핑", "chip chip-events",

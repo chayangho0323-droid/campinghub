@@ -937,3 +937,21 @@ body {
 .near-me[data-tip]::before {
   z-index: 100;
 }
+
+
+/* 입문 가이드 페이지 — 읽는 글이라 목록/팁 상자 스타일 보강 */
+.guide-body ul {
+  margin: 10px 0 0 20px;
+  line-height: 1.85;
+}
+.guide-body li {
+  margin-bottom: 7px;
+}
+.guide-tip {
+  background: #f0f7f4;
+  border-left: 4px solid #1a8b45;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 14px;
+  line-height: 1.8;
+}

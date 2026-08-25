@@ -1008,3 +1008,35 @@ body {
   margin-top: 10px;
   line-height: 1.6;
 }
+
+/* 게이지 바 — 비교표의 ★★☆를 대신하는 시각 표시 */
+.gauge {
+  display: inline-block;
+  width: 54px;
+  height: 9px;
+  background: #e5e7eb;
+  border-radius: 5px;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.gauge i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #34a866, #1a8b45);
+  border-radius: 5px;
+}
+
+/* 가이드 도식 그림 */
+.guide-figure {
+  background: #fff;
+  border: 1px solid #eceff3;
+  border-radius: 10px;
+  padding: 14px 10px 6px;
+  margin-top: 14px;
+  text-align: center;
+}
+.guide-figure svg {
+  max-width: 100%;
+  height: auto;
+}

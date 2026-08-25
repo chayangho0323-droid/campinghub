@@ -706,6 +706,36 @@ GUIDE_PAGES.push(
           <tr><td>터널형(거실형)</td><td>★★★ 어려움</td><td>넓음(거실+침실)</td><td>무겁고 큼</td><td>월 2회 이상, 장박파</td></tr>
           <tr><td>쉘터+이너</td><td>★★★ 어려움</td><td>매우 넓음</td><td>무거움</td><td>동계 캠핑, 확장파</td></tr>
         </table></div>
+        <div class="guide-figure">
+          <svg viewBox="0 0 660 140" role="img" aria-label="텐트 4가지 유형 실루엣 비교">
+            <g>
+              <path d="M15 95 Q80 45 145 95 Z" fill="#e8edf9" stroke="#4756c9" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M62 95 Q80 68 98 95 Z" fill="#fff" stroke="#4756c9" stroke-width="1.5"/>
+              <text x="80" y="120" text-anchor="middle" font-size="13" fill="#555">원터치·팝업</text>
+              <text x="80" y="135" text-anchor="middle" font-size="11" fill="#999">낮고 간단</text>
+            </g>
+            <g transform="translate(165,0)">
+              <path d="M15 95 Q80 18 145 95 Z" fill="#e8edf9" stroke="#4756c9" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M15 95 Q80 18 145 95" fill="none" stroke="#4756c9" stroke-width="1.5" stroke-dasharray="5 4" transform="translate(0,-6) scale(1,0.92) translate(0,8)"/>
+              <path d="M60 95 Q80 62 100 95 Z" fill="#fff" stroke="#4756c9" stroke-width="1.5"/>
+              <text x="80" y="120" text-anchor="middle" font-size="13" fill="#555">돔텐트</text>
+              <text x="80" y="135" text-anchor="middle" font-size="11" fill="#999">교차 폴 2~3개</text>
+            </g>
+            <g transform="translate(330,0)">
+              <path d="M15 95 L15 60 Q15 28 50 28 L110 28 Q145 28 145 60 L145 95 Z" fill="#e8edf9" stroke="#4756c9" stroke-width="2" stroke-linejoin="round"/>
+              <line x1="58" y1="28" x2="58" y2="95" stroke="#4756c9" stroke-width="1.2" stroke-dasharray="4 4"/>
+              <line x1="102" y1="28" x2="102" y2="95" stroke="#4756c9" stroke-width="1.2" stroke-dasharray="4 4"/>
+              <text x="80" y="120" text-anchor="middle" font-size="13" fill="#555">터널형(거실형)</text>
+              <text x="80" y="135" text-anchor="middle" font-size="11" fill="#999">거실+침실 구조</text>
+            </g>
+            <g transform="translate(495,0)">
+              <path d="M15 95 L80 12 L145 95 Z" fill="#e8edf9" stroke="#4756c9" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M63 95 L80 60 L97 95 Z" fill="#fff" stroke="#4756c9" stroke-width="1.5"/>
+              <text x="80" y="120" text-anchor="middle" font-size="13" fill="#555">쉘터</text>
+              <text x="80" y="135" text-anchor="middle" font-size="11" fill="#999">높고 큼 (이너 별도)</text>
+            </g>
+          </svg>
+        </div>
       </section>
       <section class="overview">
         <h2>유형별 핵심 정리</h2>
@@ -857,6 +887,24 @@ GUIDE_PAGES.push(
           <li><strong>텐트 안 1</strong> — 작은 LED (화기 절대 금지 구역입니다).</li>
           <li><strong>이동용 1</strong> — 헤드랜턴 또는 손전등. 밤에 화장실 갈 때 두 손이 자유로운 헤드랜턴이 진리입니다.</li>
         </ul>
+        <div class="guide-figure">
+          <svg viewBox="0 0 440 190" role="img" aria-label="캠핑 사이트 조명 3점 배치도">
+            <rect x="8" y="8" width="424" height="150" rx="12" fill="#eef4ec" stroke="#c9d6c5"/>
+            <path d="M40 110 L85 55 L130 110 Z" fill="#e8edf9" stroke="#4756c9" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="85" cy="92" r="7" fill="#ffe9a8" stroke="#e0a800"/>
+            <text x="85" y="130" text-anchor="middle" font-size="12" fill="#555">텐트 안 미니 LED</text>
+            <rect x="205" y="75" width="70" height="38" rx="6" fill="#fff" stroke="#a58a64" stroke-width="2"/>
+            <line x1="240" y1="30" x2="240" y2="58" stroke="#888" stroke-width="3"/>
+            <circle cx="240" cy="58" r="10" fill="#ffe9a8" stroke="#e0a800" stroke-width="2"/>
+            <circle cx="240" cy="58" r="18" fill="#ffe9a8" opacity="0.35"/>
+            <text x="240" y="130" text-anchor="middle" font-size="12" fill="#555">메인 랜턴 — 높이 걸기</text>
+            <circle cx="360" cy="70" r="6" fill="#ffe9a8" stroke="#e0a800"/>
+            <path d="M356 78 L364 78 L366 100 L354 100 Z" fill="#cfd6e4" stroke="#8a93a8"/>
+            <path d="M366 60 Q380 50 392 58" fill="none" stroke="#e0a800" stroke-width="1.5" stroke-dasharray="3 3"/>
+            <text x="362" y="130" text-anchor="middle" font-size="12" fill="#555">이동은 헤드랜턴</text>
+            <text x="220" y="178" text-anchor="middle" font-size="12" fill="#888">💡 랜턴은 높이 걸수록 벌레가 위로 모입니다</text>
+          </svg>
+        </div>
         <p class="guide-tip">💡 랜턴을 <strong>바닥에 두면 벌레가 모입니다</strong> — 높이 걸수록 벌레가 위로 가요.
           여름엔 메인 랜턴을 테이블에서 조금 떨어진 곳에 걸어두는 것도 요령입니다.</p>
       </section>
@@ -955,19 +1003,39 @@ GUIDE_PAGES.push(
           <li>비 올 땐 <strong>한쪽을 낮게 기울여</strong> 물길을 만들어 주세요. 평평하면 물이 고여 무너집니다.</li>
           <li>바람 강한 날은 낮게 치거나 접는 게 안전 — 타프가 돛이 되면 폴이 날아갑니다.</li>
         </ul>
+        <div class="guide-figure">
+          <svg viewBox="0 0 440 170" role="img" aria-label="비 올 때 타프를 기울여 치는 방법">
+            <line x1="10" y1="140" x2="430" y2="140" stroke="#a58a64" stroke-width="3"/>
+            <line x1="70" y1="140" x2="70" y2="35" stroke="#888" stroke-width="4"/>
+            <line x1="340" y1="140" x2="340" y2="85" stroke="#888" stroke-width="4"/>
+            <path d="M70 35 Q210 55 340 85" fill="none" stroke="#4756c9" stroke-width="4" stroke-linecap="round"/>
+            <g stroke="#7fa7d9" stroke-width="2" stroke-linecap="round">
+              <line x1="150" y1="12" x2="144" y2="32"/>
+              <line x1="210" y1="8" x2="204" y2="28"/>
+              <line x1="270" y1="14" x2="264" y2="34"/>
+            </g>
+            <path d="M348 92 Q360 110 356 132" fill="none" stroke="#7fa7d9" stroke-width="2.5" stroke-dasharray="4 3" marker-end="none"/>
+            <circle cx="356" cy="136" r="3" fill="#7fa7d9"/>
+            <text x="70" y="160" text-anchor="middle" font-size="12" fill="#555">높은 폴</text>
+            <text x="340" y="160" text-anchor="middle" font-size="12" fill="#555">낮은 폴</text>
+            <text x="392" y="120" text-anchor="middle" font-size="12" fill="#4756c9">물길 ↓</text>
+            <text x="210" y="80" text-anchor="middle" font-size="12" fill="#888">한쪽을 낮게 → 비가 고이지 않음</text>
+          </svg>
+        </div>
         <p class="guide-tip">👉 <a href="guide-compare.html">📚 장비 비교 모음</a> ·
           <a href="guide-tent.html">⛺ 텐트 비교</a> · <a href="guide-safety.html">⚠️ 안전·매너</a></p>
       </section>`,
   }
 );
 
-// 네이버쇼핑 인기 상품 (fetch-products.js가 만든 파일 — 없으면 섹션 생략)
+// 인기 상품 데이터 (products.json — 현재는 비활성. 네이버 쇼핑 API가 2026-07-31 폐지되어
+// 쿠팡 파트너스 API 승인(누적 판매 150만원) 후 수집 스크립트를 만들면 이 섹션이 다시 켜짐)
 let PRODUCTS = null;
 try {
   PRODUCTS = JSON.parse(fs.readFileSync("products.json", "utf-8"));
 } catch {}
 
-// 가이드 페이지 하단 "오늘의 인기 상품" 섹션 (매일 갱신, 출처 표기)
+// 가이드 페이지 하단 "오늘의 인기 상품" 섹션 (products.json 있을 때만 렌더링)
 function productSection(slug) {
   const list = PRODUCTS?.categories?.[slug];
   if (!list || !list.length) return "";
@@ -992,6 +1060,9 @@ function productSection(slug) {
 const guideFiles = [];
 for (const g of GUIDE_PAGES) {
   const filename = `${g.slug}.html`;
+  // ★★☆ 텍스트 별점을 컬러 게이지 바로 변환 (표가 한눈에 읽히게)
+  const gauge = (n) => `<span class="gauge"><i style="width:${Math.round((n / 3) * 100)}%"></i></span>`;
+  const bodyHtml = g.body.replace(/★★★/g, gauge(3)).replace(/★★☆/g, gauge(2)).replace(/★☆☆/g, gauge(1));
   fs.writeFileSync(
     filename,
     `<!DOCTYPE html>
@@ -1016,7 +1087,7 @@ for (const g of GUIDE_PAGES) {
   </header>
   <main class="detail-container">
     <div class="detail-body guide-body">
-      ${g.body}
+      ${bodyHtml}
       ${productSection(g.slug)}
     </div>
   </main>

@@ -29,12 +29,6 @@ jobs:
         env:
           TOUR_API_KEY: ${{ secrets.TOUR_API_KEY }}
 
-      # 네이버쇼핑 인기 상품 갱신 (키가 Secrets에 없으면 조용히 건너뜀)
-      - run: node fetch-products.js
-        env:
-          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
-          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-
       - run: node build-pages.js
 
       - run: |

@@ -954,4 +954,33 @@ body {
   border-radius: 8px;
   margin-top: 14px;
   line-height: 1.8;
-}
+}
+
+/* 장비 비교 가이드 — 비교표 (모바일에선 가로 스크롤) */
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+.guide-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.guide-table th {
+  background: #eef1f7;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.guide-table th, .guide-table td {
+  border: 1px solid #e2e5ea;
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.guide-table td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+}

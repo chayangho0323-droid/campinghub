@@ -128,7 +128,7 @@ function footerHtml(prefix = "") {
   <footer class="site-footer">
     <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
     <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a></p>
-    <p><a href="${prefix}guide-beginner.html">🔰 첫 캠핑 준비물</a> · <a href="${prefix}guide-gear.html">💰 예산별 장비</a> · <a href="${prefix}guide-safety.html">⚠️ 안전·매너</a></p>
+    <p><a href="${prefix}guide-beginner.html">🔰 첫 캠핑 준비물</a> · <a href="${prefix}guide-gear.html">💰 예산별 장비</a> · <a href="${prefix}guide-compare.html">📚 장비 비교</a> · <a href="${prefix}guide-safety.html">⚠️ 안전·매너</a></p>
     <p><a class="report-link" href="${REPORT_FORM_URL}" target="_blank" rel="noopener">📮 여기 없는 캠핑장 제보하기</a></p>
     <p><a class="cross-link" href="https://festivalhub.kr" target="_blank" rel="noopener">🎪 전국 축제 일정이 궁금하다면 — 페스티벌허브</a></p>
   </footer>`;
@@ -648,6 +648,318 @@ const GUIDE_PAGES = [
       </section>`,
   },
 ];
+
+// ─── 장비 비교 가이드 시리즈 (유형별 비교 — 특정 제품/가격 비교는 데이터 출처가 없어 안 함) ───
+GUIDE_PAGES.push(
+  {
+    slug: "guide-compare",
+    icon: "📚",
+    title: "캠핑 장비 비교 가이드 모음",
+    desc: "텐트부터 타프까지 — 캠핑 장비 8종을 유형별로 비교하고 나에게 맞는 것을 고르는 가이드 모음.",
+    body: `
+      <section class="overview">
+        <h2>장비 고민, 여기서 한 번에</h2>
+        <p>
+          캠핑 장비는 종류마다 "유형"이 나뉘고, 유형만 잘 골라도 절반은 성공입니다.
+          아래에서 고민 중인 장비를 골라보세요. 각 가이드에 <strong>한눈 비교표</strong>와
+          <strong>상황별 추천</strong>이 들어 있습니다.
+        </p>
+      </section>
+      <section class="overview">
+        <h2>🛖 잠자리 — 만족도의 80%</h2>
+        <ul>
+          <li><a href="guide-tent.html">⛺ 텐트 비교</a> — 원터치 vs 돔 vs 터널(거실형) vs 쉘터</li>
+          <li><a href="guide-mat.html">🛏️ 매트 비교</a> — 발포 vs 자충 vs 에어 vs 야전침대 (초보가 가장 많이 놓치는 장비!)</li>
+          <li><a href="guide-sleeping.html">🌙 침낭 비교</a> — 사각 vs 머미, 솜 vs 다운, 계절별 온도</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>🍳 생활 — 먹고 쉬는 시간</h2>
+        <ul>
+          <li><a href="guide-chair.html">🪑 캠핑의자 비교</a> — 경량 vs 로우 vs 릴렉스(하이백)</li>
+          <li><a href="guide-burner.html">🔥 버너·화로대 비교</a> — 이소가스 vs 부탄 vs 화로대</li>
+          <li><a href="guide-cooler.html">🧊 아이스박스 비교</a> — 하드 vs 소프트, 보냉력의 진실</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>☀️ 환경 — 날씨와의 싸움</h2>
+        <ul>
+          <li><a href="guide-tarp.html">⛱️ 타프 비교</a> — 헥사 vs 렉타 vs 타프쉘</li>
+          <li><a href="guide-lantern.html">💡 랜턴·조명 비교</a> — 충전식 LED vs 가스 vs 감성 조명</li>
+        </ul>
+        <p class="guide-tip">👉 장비를 처음 사신다면 <a href="guide-beginner.html">🔰 첫 캠핑 체크리스트</a>와
+          <a href="guide-gear.html">💰 예산별 장비 가이드</a>부터 읽어보세요. 순서가 잡힙니다.</p>
+      </section>`,
+  },
+  {
+    slug: "guide-tent",
+    icon: "⛺",
+    title: "텐트 비교 — 원터치 vs 돔 vs 터널 vs 쉘터",
+    desc: "텐트 4가지 유형을 설치 난이도·공간·무게·가격대로 비교하고, 첫 텐트로 뭘 사야 하는지 알려드립니다.",
+    body: `
+      <section class="overview">
+        <h2>한눈 비교표</h2>
+        <div class="table-wrap"><table class="guide-table">
+          <tr><th>유형</th><th>설치</th><th>공간</th><th>무게·부피</th><th>이런 분께</th></tr>
+          <tr><td>원터치·팝업</td><td>★☆☆ 매우 쉬움</td><td>좁음</td><td>가벼움</td><td>첫 캠핑, 아이 동반 나들이</td></tr>
+          <tr><td>돔텐트</td><td>★★☆ 쉬움</td><td>보통</td><td>보통</td><td>입문 정석, 2~4인 가족</td></tr>
+          <tr><td>터널형(거실형)</td><td>★★★ 어려움</td><td>넓음(거실+침실)</td><td>무겁고 큼</td><td>월 2회 이상, 장박파</td></tr>
+          <tr><td>쉘터+이너</td><td>★★★ 어려움</td><td>매우 넓음</td><td>무거움</td><td>동계 캠핑, 확장파</td></tr>
+        </table></div>
+      </section>
+      <section class="overview">
+        <h2>유형별 핵심 정리</h2>
+        <ul>
+          <li><strong>원터치·팝업</strong> — 던지면 펴집니다. 대신 접는 법을 꼭 미리 연습하세요(현장에서 당황 1순위). 비바람에 약한 편이라 한여름 폭우·동계에는 부적합.</li>
+          <li><strong>돔텐트</strong> — 폴대 2~3개를 교차하는 기본형. 설치 10~15분, 바람에 강하고 가격 대비 성능이 좋아 <strong>첫 텐트의 정석</strong>입니다.</li>
+          <li><strong>터널형(거실형)</strong> — 거실 공간이 생겨 의자·테이블을 안에 둘 수 있습니다. 대신 설치 30분+, 혼자 치기 힘들고 차 트렁크를 많이 차지합니다.</li>
+          <li><strong>쉘터+이너텐트</strong> — 큰 껍데기 안에 침실을 넣는 방식. 동계 난방에 유리하지만 초보 단계에선 아직 필요 없습니다.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>고르는 기준 3가지</h2>
+        <ul>
+          <li><strong>인원+1</strong> — 2인이면 3인용. 짐이 생각보다 많습니다.</li>
+          <li><strong>설치 시간</strong> — 도착이 늦으면 어두워서 칩니다. 초보일수록 쉬운 텐트가 정답.</li>
+          <li><strong>차 트렁크</strong> — 사기 전에 수납 크기(가로 길이)를 트렁크와 비교해 보세요.</li>
+        </ul>
+        <p class="guide-tip">💡 <strong>결론</strong>: 첫 텐트는 <strong>돔텐트</strong>(가성비·범용성) 또는
+          <strong>원터치</strong>(편함 최우선)를 추천합니다. 거실형은 캠핑이 취미로 굳은 뒤에 사도 늦지 않아요.
+          예산 배분은 <a href="guide-gear.html">💰 예산별 장비 가이드</a> 참고.</p>
+      </section>`,
+  },
+  {
+    slug: "guide-chair",
+    icon: "🪑",
+    title: "캠핑의자 비교 — 경량 vs 로우 vs 릴렉스",
+    desc: "캠핑의자 3가지 유형을 편안함·휴대성·용도로 비교합니다. 불멍용 로우체어부터 낮잠용 릴렉스체어까지.",
+    body: `
+      <section class="overview">
+        <h2>한눈 비교표</h2>
+        <div class="table-wrap"><table class="guide-table">
+          <tr><th>유형</th><th>편안함</th><th>휴대성</th><th>특징</th><th>이런 분께</th></tr>
+          <tr><td>경량(백패킹) 체어</td><td>★★☆</td><td>★★★ 1kg 안팎</td><td>조립식, 컴팩트</td><td>짐 최소화, 뚜벅이</td></tr>
+          <tr><td>로우체어</td><td>★★☆</td><td>★★☆</td><td>낮은 시야, 불멍 최적</td><td>화로대·감성 캠핑</td></tr>
+          <tr><td>릴렉스·하이백 체어</td><td>★★★ 목까지 지지</td><td>★☆☆ 크고 무거움</td><td>젖혀서 낮잠 가능</td><td>오토캠핑, 휴식 최우선</td></tr>
+        </table></div>
+      </section>
+      <section class="overview">
+        <h2>유형별 핵심 정리</h2>
+        <ul>
+          <li><strong>경량 체어</strong> — 조립식 프레임에 천을 씌우는 방식. 백팩에 들어갈 정도로 작지만, 조립이 귀찮고 장시간 앉으면 허리가 아쉽습니다.</li>
+          <li><strong>로우체어</strong> — 앉은키가 낮아 화로대·모닥불과 눈높이가 맞습니다. 테이블도 로우 테이블로 맞춰야 편해요.</li>
+          <li><strong>릴렉스(하이백) 체어</strong> — 머리까지 기대고 각도 조절이 되는 것도 있습니다. 한 번 앉으면 못 일어난다는 게 단점이자 장점.</li>
+        </ul>
+        <p class="guide-tip">💡 <strong>실전 팁</strong>: 의자는 매장에서든 친구 것이든 <strong>10분 이상 앉아보고</strong> 사는 게
+          제일 확실합니다. 캠핑에서 의자에 앉아 있는 시간이 하루 5시간이 넘어요 — 싼 의자로 대충 사면 가장 후회하는 장비 1순위입니다.</p>
+      </section>
+      ${COUPANG_ITEMS.length ? `
+      <section class="overview coupang-section">
+        <h2>🛒 쿠팡에서 둘러보기</h2>
+        <div class="dir-buttons">
+          ${COUPANG_ITEMS.filter((i) => i.name.includes("의자")).map((i) => `<a class="dir-btn coupang" target="_blank" rel="noopener sponsored" href="${esc(i.url)}">${esc(i.name)}</a>`).join("")}
+        </div>
+        <p class="coupang-notice">이 섹션은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+      </section>` : ""}
+      <section class="overview">
+        <h2>같이 보면 좋은 가이드</h2>
+        <p class="guide-tip">👉 <a href="guide-compare.html">📚 장비 비교 모음</a> ·
+          <a href="guide-tent.html">⛺ 텐트 비교</a> · <a href="guide-gear.html">💰 예산별 장비</a></p>
+      </section>`,
+  },
+  {
+    slug: "guide-mat",
+    icon: "🛏️",
+    title: "캠핑 매트 비교 — 발포 vs 자충 vs 에어 vs 야전침대",
+    desc: "캠핑의 숙면을 결정하는 매트 4종 비교. 초보가 가장 많이 놓치는 장비, 매트 고르는 법.",
+    body: `
+      <section class="overview">
+        <h2>매트가 침낭보다 중요합니다</h2>
+        <p>
+          바닥의 냉기는 <strong>아래에서</strong> 올라옵니다. 아무리 좋은 침낭도 매트가 부실하면
+          등이 시려서 잠을 못 자요. 캠핑 후기에서 "추워서 혼났다"의 절반은 사실 매트 문제입니다.
+        </p>
+      </section>
+      <section class="overview">
+        <h2>한눈 비교표</h2>
+        <div class="table-wrap"><table class="guide-table">
+          <tr><th>유형</th><th>푹신함</th><th>단열</th><th>부피</th><th>특징</th></tr>
+          <tr><td>발포 매트</td><td>★☆☆</td><td>★★☆</td><td>크지만 가벼움</td><td>싸고 튼튼, 펑크 걱정 없음</td></tr>
+          <tr><td>자충 매트</td><td>★★☆</td><td>★★★</td><td>보통</td><td>밸브 열면 스스로 부풀음, 가성비 최고</td></tr>
+          <tr><td>에어 매트</td><td>★★★</td><td>★★☆</td><td>작음</td><td>침대급 푹신함, 펌프 필요·펑크 주의</td></tr>
+          <tr><td>야전침대(코트)</td><td>★★★</td><td>★★★ 바닥과 분리</td><td>큼</td><td>지면 요철 무시, 여름 시원·겨울은 밑에 매트 추가</td></tr>
+        </table></div>
+      </section>
+      <section class="overview">
+        <h2>고르는 팁</h2>
+        <ul>
+          <li>첫 캠핑: <strong>발포 매트</strong>로 시작해도 됩니다 (깔개 겸용).</li>
+          <li>계속 다닐 것 같다: <strong>자충 매트(두께 5cm 이상)</strong>가 가성비 정답.</li>
+          <li>허리가 예민하다: 에어 매트나 야전침대로 — 대신 에어는 <strong>수리 패치</strong>를 꼭 챙기세요.</li>
+          <li>겨울엔 유형과 무관하게 <strong>바닥 단열(발포 매트 겹치기)</strong>을 추가하는 게 안전합니다.</li>
+        </ul>
+        <p class="guide-tip">👉 잠자리 3종 세트: <a href="guide-tent.html">⛺ 텐트</a> ·
+          <a href="guide-sleeping.html">🌙 침낭</a> · <a href="guide-compare.html">📚 전체 비교 모음</a></p>
+      </section>`,
+  },
+  {
+    slug: "guide-sleeping",
+    icon: "🌙",
+    title: "침낭 비교 — 사각 vs 머미, 솜 vs 다운",
+    desc: "침낭 모양과 충전재별 비교, 계절별로 어떤 침낭이 필요한지 알려드립니다.",
+    body: `
+      <section class="overview">
+        <h2>모양: 사각 vs 머미</h2>
+        <div class="table-wrap"><table class="guide-table">
+          <tr><th>모양</th><th>보온</th><th>활동성</th><th>특징</th></tr>
+          <tr><td>사각(봉투형)</td><td>★★☆</td><td>★★★ 이불처럼 넓음</td><td>지퍼 다 열면 이불로, 커플은 2개 연결 가능</td></tr>
+          <tr><td>머미(미라형)</td><td>★★★ 몸에 밀착</td><td>★☆☆ 답답할 수 있음</td><td>머리까지 감싸 동계에 유리, 부피 작음</td></tr>
+        </table></div>
+      </section>
+      <section class="overview">
+        <h2>충전재: 솜 vs 다운</h2>
+        <ul>
+          <li><strong>솜(화학솜)</strong> — 저렴하고 물에 젖어도 어느 정도 보온 유지, 세탁도 편합니다. 대신 부피가 큽니다. <strong>초보는 솜으로 충분</strong>합니다.</li>
+          <li><strong>다운(오리·거위털)</strong> — 같은 보온력에 훨씬 가볍고 작게 압축되지만 비싸고, 젖으면 보온력이 급락합니다. 동계·백패킹 단계에서 고려하세요.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>계절 기준 (내한온도 읽는 법)</h2>
+        <ul>
+          <li>침낭의 <strong>"쾌적 온도"</strong>를 보세요 — "극한 온도"는 생존 기준이라 그 온도에선 춥습니다.</li>
+          <li>여름: 얇은 사각 침낭이나 이불로 충분.</li>
+          <li>봄·가을: 쾌적 온도 <strong>5℃ 안팎</strong>의 3계절 침낭 — 가장 활용도가 높습니다.</li>
+          <li>겨울: 쾌적 온도 영하 침낭 + 전용 장비 필요. 초보는 겨울 캠핑 전에 <a href="guide-safety.html">⚠️ 안전 가이드</a>부터 꼭 읽으세요(일산화탄소).</li>
+        </ul>
+        <p class="guide-tip">💡 밤 기온은 일기예보 최저기온보다 <strong>강가·산속에서 2~3℃ 더 낮다</strong>고
+          생각하고 준비하면 실패가 없습니다. 매트가 부실하면 침낭이 소용없으니 <a href="guide-mat.html">🛏️ 매트 비교</a>도 함께 보세요.</p>
+      </section>`,
+  },
+  {
+    slug: "guide-lantern",
+    icon: "💡",
+    title: "랜턴·조명 비교 — 충전식 LED vs 가스 vs 감성 조명",
+    desc: "캠핑 조명 3종 비교와 조명 배치 요령. 메인 랜턴 하나로는 부족한 이유.",
+    body: `
+      <section class="overview">
+        <h2>한눈 비교표</h2>
+        <div class="table-wrap"><table class="guide-table">
+          <tr><th>유형</th><th>밝기</th><th>안전</th><th>유지비</th><th>특징</th></tr>
+          <tr><td>충전식 LED</td><td>★★★</td><td>★★★ 텐트 안 OK</td><td>충전만</td><td>초보 정석. 보조배터리 겸용 제품도 있음</td></tr>
+          <tr><td>가스 랜턴</td><td>★★☆</td><td>★☆☆ 화기 — 텐트 안 금지</td><td>가스 소모</td><td>따뜻한 불빛의 감성, 관리 필요</td></tr>
+          <tr><td>스트링 라이트·무드등</td><td>★☆☆</td><td>★★★</td><td>충전/건전지</td><td>사이트 분위기용 보조 조명</td></tr>
+        </table></div>
+      </section>
+      <section class="overview">
+        <h2>조명 배치의 기본 공식</h2>
+        <ul>
+          <li><strong>메인 1</strong> — 테이블 위나 타프 폴에 거는 밝은 LED 랜턴.</li>
+          <li><strong>텐트 안 1</strong> — 작은 LED (화기 절대 금지 구역입니다).</li>
+          <li><strong>이동용 1</strong> — 헤드랜턴 또는 손전등. 밤에 화장실 갈 때 두 손이 자유로운 헤드랜턴이 진리입니다.</li>
+        </ul>
+        <p class="guide-tip">💡 랜턴을 <strong>바닥에 두면 벌레가 모입니다</strong> — 높이 걸수록 벌레가 위로 가요.
+          여름엔 메인 랜턴을 테이블에서 조금 떨어진 곳에 걸어두는 것도 요령입니다.</p>
+      </section>
+      <section class="overview">
+        <h2>같이 보면 좋은 가이드</h2>
+        <p class="guide-tip">👉 <a href="guide-compare.html">📚 장비 비교 모음</a> ·
+          <a href="guide-safety.html">⚠️ 안전·매너 (화기 사용)</a></p>
+      </section>`,
+  },
+  {
+    slug: "guide-burner",
+    icon: "🔥",
+    title: "버너·화로대 비교 — 캠핑 요리와 불멍 장비",
+    desc: "이소가스 vs 부탄 버너, 그리고 화로대 고르는 법. 캠핑 요리와 불멍을 위한 화기 가이드.",
+    body: `
+      <section class="overview">
+        <h2>버너 비교</h2>
+        <div class="table-wrap"><table class="guide-table">
+          <tr><th>유형</th><th>화력</th><th>휴대성</th><th>연료</th><th>특징</th></tr>
+          <tr><td>부탄 버너(가정용 스타일)</td><td>★★★</td><td>★☆☆</td><td>부탄캔 — 싸고 어디서나 구함</td><td>익숙하고 큰 팬 사용 가능. 추우면 화력 급락</td></tr>
+          <tr><td>이소가스 버너(캠핑용)</td><td>★★☆</td><td>★★★ 손바닥 크기</td><td>이소가스 — 비싸지만 저온에 강함</td><td>미니멀·백패킹용. 바람막이 필요</td></tr>
+        </table></div>
+        <p>
+          오토캠핑 요리는 <strong>부탄 버너</strong>가 편하고, 간단한 라면·커피 위주라면
+          <strong>이소가스 버너</strong>가 짐을 확 줄여줍니다. 봄가을 아침처럼 쌀쌀할 땐
+          부탄캔 화력이 약해지니 캔을 품에 데워 쓰는 요령도 알아두세요.
+        </p>
+      </section>
+      <section class="overview">
+        <h2>화로대(불멍) 고르는 법</h2>
+        <ul>
+          <li><strong>접이식 스테인리스</strong> — 가볍고 저렴한 입문형. 바닥 재받침이 있는지 확인하세요.</li>
+          <li><strong>거치형(그릴 겸용)</strong> — 바베큐까지 하려면 석쇠 높이 조절이 되는 것으로.</li>
+          <li>화로대는 <strong>소모품</strong>입니다 — 열 변형이 생기니 첫 화로대는 비싼 걸 살 필요 없어요.</li>
+          <li>장작은 캠핑장 매점에서 사는 게 보통이고, 젖은 장작은 연기만 납니다.</li>
+        </ul>
+        <p class="guide-tip">⚠️ <strong>안전 필수</strong>: 텐트 안 화기 사용 금지, 잔불 정리, 바람 강한 날 불멍 포기 —
+          자세한 내용은 <a href="guide-safety.html">⚠️ 안전·매너 가이드</a>에 있습니다. 꼭 읽어주세요.</p>
+      </section>`,
+  },
+  {
+    slug: "guide-cooler",
+    icon: "🧊",
+    title: "아이스박스 비교 — 하드 vs 소프트, 보냉의 기술",
+    desc: "하드 쿨러와 소프트 쿨러 비교, 그리고 보냉력을 두 배로 늘리는 얼음 사용법.",
+    body: `
+      <section class="overview">
+        <h2>한눈 비교표</h2>
+        <div class="table-wrap"><table class="guide-table">
+          <tr><th>유형</th><th>보냉력</th><th>무게</th><th>수납</th><th>이런 분께</th></tr>
+          <tr><td>소프트 쿨러(가방형)</td><td>★☆☆ 반나절~1일</td><td>가벼움</td><td>접어서 보관</td><td>당일·1박, 짐 최소화</td></tr>
+          <tr><td>하드 쿨러(일반)</td><td>★★☆ 1~2일</td><td>보통</td><td>부피 큼</td><td>1박 2일 오토캠핑 표준</td></tr>
+          <tr><td>하드 쿨러(고급 로토몰드)</td><td>★★★ 2~4일</td><td>매우 무거움</td><td>부피 큼</td><td>장박·여름 연박</td></tr>
+        </table></div>
+      </section>
+      <section class="overview">
+        <h2>보냉력을 두 배로 만드는 요령 (장비보다 중요!)</h2>
+        <ul>
+          <li><strong>얼린 생수병</strong>을 얼음 대신 — 녹아도 마실 수 있고 물바다가 안 됩니다.</li>
+          <li>출발 전날 <strong>쿨러 자체를 미리 차게</strong> (얼음 넣어 예냉) 해두면 지속시간이 크게 늘어요.</li>
+          <li>음식은 <strong>얼릴 수 있는 건 다 얼려서</strong> 넣기 — 고기는 자연 해동되며 보냉제 역할.</li>
+          <li>뚜껑을 여는 횟수가 보냉의 최대 적 — 음료용과 식재료용을 <strong>분리</strong>하면 좋습니다.</li>
+          <li>쿨러는 <strong>그늘 + 바닥에서 띄워서</strong> (의자나 받침 위) 보관.</li>
+        </ul>
+        <p class="guide-tip">💡 1박 2일이라면 비싼 쿨러보다 <strong>위 요령 + 보통 하드 쿨러</strong>면 충분합니다.
+          👉 <a href="guide-compare.html">📚 장비 비교 모음</a> · <a href="guide-beginner.html">🔰 첫 캠핑 체크리스트</a></p>
+      </section>`,
+  },
+  {
+    slug: "guide-tarp",
+    icon: "⛱️",
+    title: "타프 비교 — 헥사 vs 렉타 vs 타프쉘",
+    desc: "그늘과 비를 책임지는 타프 3종 비교. 처음엔 타프 없이 시작해도 되는 이유까지.",
+    body: `
+      <section class="overview">
+        <h2>타프, 꼭 필요할까?</h2>
+        <p>
+          결론부터: <strong>첫 캠핑엔 없어도 됩니다.</strong> 나무 그늘 사이트를 고르거나
+          거실형 텐트라면 타프 역할을 대신합니다. 다만 한여름 뙤약볕과 갑작스러운 비를
+          겪어보면 왜 다들 타프를 치는지 알게 되죠.
+        </p>
+      </section>
+      <section class="overview">
+        <h2>한눈 비교표</h2>
+        <div class="table-wrap"><table class="guide-table">
+          <tr><th>유형</th><th>그늘 면적</th><th>설치</th><th>바람 저항</th><th>특징</th></tr>
+          <tr><td>헥사(육각)</td><td>★★☆</td><td>★★☆ 폴 2개</td><td>★★★ 유선형</td><td>모양 예쁘고 바람에 강한 표준형</td></tr>
+          <tr><td>렉타(사각)</td><td>★★★ 최대</td><td>★★☆ 폴 4~6개</td><td>★★☆</td><td>그늘 면적 최고, 여러 명일 때</td></tr>
+          <tr><td>타프쉘·스크린</td><td>★★★ 벽 있음</td><td>★☆☆ 어려움</td><td>★★★</td><td>모기장·바람막이 겸용, 봄가을 유리</td></tr>
+        </table></div>
+      </section>
+      <section class="overview">
+        <h2>설치 팁</h2>
+        <ul>
+          <li>타프는 <strong>해의 방향</strong>을 보고 칩니다 — 오후 해가 넘어오는 쪽을 낮게.</li>
+          <li>비 올 땐 <strong>한쪽을 낮게 기울여</strong> 물길을 만들어 주세요. 평평하면 물이 고여 무너집니다.</li>
+          <li>바람 강한 날은 낮게 치거나 접는 게 안전 — 타프가 돛이 되면 폴이 날아갑니다.</li>
+        </ul>
+        <p class="guide-tip">👉 <a href="guide-compare.html">📚 장비 비교 모음</a> ·
+          <a href="guide-tent.html">⛺ 텐트 비교</a> · <a href="guide-safety.html">⚠️ 안전·매너</a></p>
+      </section>`,
+  }
+);
 
 const guideFiles = [];
 for (const g of GUIDE_PAGES) {

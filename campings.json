@@ -1,5 +1,265 @@
 [
   {
+    "contentId": "3206",
+    "name": "팔봉산관광지 야영장",
+    "type": "일반야영장",
+    "operator": "공립",
+    "lineIntro": "팔봉산과 홍천강을 한눈에 즐기는 풍광좋은 캠핑장",
+    "intro": "팔봉산은 강원도와 경기도의 경계에 있는 산이다. 높이는 낮지만 산세가 아름답고 8개의 암릉이 줄지어 있어 등산가들이 즐겨 찾는다. 주능선이 마치 병풍을 펼친 듯한 산세로 예부터 소금강 이라 불리워진다. 게다가 주능선 좌우로 홍천강이 흐르고 있어 정상에 올라서 바라보는 전망이 더 없이 좋으며 산행 후 물놀이도 겸할 수 있는 곳이다.  야영장은 팔봉산 주차장에 바로 맞닿아 있다. 눈앞으로 팔봉산 봉우리가 올려다 보이고 아래로는 홍천강이 지척으로 지난다. 때문에 물놀이를 하기에도 아주 좋다. 야영장 옆으로 풋살경기장이 있어 단체관광객의 체육행사를 할 수 있으며, 야외공연장을 설치 공연활동도 가능하다.   -이용안내  -데크 위 캠핑만 가능   -이용시간(1박): 당일 도착~익일 13시까지 (*2박3일까지 가능)  -일반 야영장(차박, 카라반 불가)  일반요금 : 10,000원 / 홍천군민(할인) : 5,000원                    ← 평상시, 성수기, 주중, 주말 상관 없이 일반관광객은 10,000원, 홍천군민은 5,000원",
+    "address": "강원특별자치도 홍천군 서면 한치골길 1124",
+    "region": "강원특별자치도",
+    "sigungu": "홍천군",
+    "lat": "37.7030363096597",
+    "lng": "127.695138355588",
+    "tel": "033-430-4281",
+    "homepage": "https://www.hongcheon.go.kr/palbong",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/3206/thumb/thumb_720_2198t5DoqAjAcWUGjhkE7qtP.jpg",
+    "facilities": "무선인터넷,놀이터,운동시설",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "수상레저,낚시,액티비티,여름물놀이,가을단풍명소",
+    "operPeriod": "봄,여름,가을",
+    "siteCounts": {
+      "general": 33,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 2,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-08-27",
+    "nearbySpots": [
+      {
+        "name": "팔봉산관광지",
+        "dist": 132,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/45/3422445_image2_1.jpg",
+        "addr": "강원특별자치도 홍천군 서면 한치골길 1124"
+      },
+      {
+        "name": "팔봉산(홍천)",
+        "dist": 134,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/18/3042918_image2_1.jpg",
+        "addr": "강원특별자치도 홍천군 서면 한치골길 1124"
+      },
+      {
+        "name": "노동서원",
+        "dist": 1604,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/10/3338310_image2_1.jpg",
+        "addr": "강원특별자치도 홍천군 서면 팔봉산로 1198-2"
+      },
+      {
+        "name": "팔봉참살이마을",
+        "dist": 2075,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/30/3384630_image2_1.JPG",
+        "addr": "강원특별자치도 홍천군 서면 오도치길 6"
+      },
+      {
+        "name": "홍천강",
+        "dist": 2165,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3584663_image2_1.jpg",
+        "addr": "강원특별자치도 홍천군 서면 팔봉강변길"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "강가촌",
+        "dist": 48,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/70/3043070_image2_1.jpg",
+        "addr": "강원특별자치도 홍천군 서면 한치골길 1122-54"
+      },
+      {
+        "name": "약이되는밥상",
+        "dist": 1069,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/28/2892428_image2_1.jpeg",
+        "addr": "강원특별자치도 홍천군 한치골길 956"
+      },
+      {
+        "name": "홍천강한우타운",
+        "dist": 1316,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2891707_image2_1.jpg",
+        "addr": "강원특별자치도 홍천군 한치골길 912"
+      },
+      {
+        "name": "분덕스",
+        "dist": 3621,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/40/2892940_image2_1.jpg",
+        "addr": "강원특별자치도 춘천시 충효로 94"
+      },
+      {
+        "name": "군자숯불닭갈비",
+        "dist": 5810,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/65/2776965_image2_1.JPG",
+        "addr": "강원특별자치도 춘천시 동산면 종자리로 148-8"
+      }
+    ]
+  },
+  {
+    "contentId": "100531",
+    "name": "온새미로",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "",
+    "intro": "계곡을 마주하고 있는 조용한 캠핑장  법흥계곡에 위치한 펜션, 캠핑장이다. 계곡을 바라보는 위치에 캠핑사이트가 있다. 사이트가 비교적 넓고, 사이트 주변에 커다란 느티나무가 있어 한여름에도 그늘을 만들어준다. 캠핑장 바로 앞에 흐르는 계곡이 바로 법흥계곡이다. 물이 맑고 깊지 않아 아이들과 함께 다슬기를 잡거나 물놀이 하기에도 적당하다. ",
+    "address": "강원특별자치도 영월군 무릉도원면 무릉법흥로 1166",
+    "region": "강원특별자치도",
+    "sigungu": "영월군",
+    "lat": "37.3605310",
+    "lng": "128.2751704",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/100531/thumb/thumb_720_9180U8X6ReNaYmDPjiI8nQ6D.jpg",
+    "facilities": "전기,장작판매,온수",
+    "pet": "가능",
+    "brazier": "개별",
+    "theme": "낚시,여름물놀이,가을단풍명소",
+    "operPeriod": "봄,여름,가을",
+    "siteCounts": {
+      "general": 0,
+      "auto": 4,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 5,
+    "showers": 3,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-08-27",
+    "nearbySpots": [
+      {
+        "name": "법흥계곡",
+        "dist": 5150,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/77/3039977_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 수주면"
+      },
+      {
+        "name": "원당계곡",
+        "dist": 6470,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/93/3388793_image2_1.JPG",
+        "addr": "강원특별자치도 평창군 평창읍 원당리 261"
+      },
+      {
+        "name": "요선정·요선암",
+        "dist": 7079,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/46/2922046_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
+      },
+      {
+        "name": "요선암 돌개구멍 (강원고생대 국가지질공원)",
+        "dist": 7113,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/60/2990960_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
+      },
+      {
+        "name": "영월 무릉리 마애여래좌상",
+        "dist": 7113,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3375994_image2_1.JPG",
+        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "약수돌집",
+        "dist": 8675,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/76/2795976_image2_1.jpg",
+        "addr": "강원특별자치도 평창군 평창읍 평창강로 1110"
+      },
+      {
+        "name": "코지힐(COZY HILL)",
+        "dist": 9196,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/31/2790131_image2_1.JPG",
+        "addr": "강원특별자치도 평창군 방림면 들모고개길 47-1"
+      },
+      {
+        "name": "옹달샘",
+        "dist": 9322,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/87/2793587_image2_1.jpg",
+        "addr": "강원특별자치도 평창군 평창읍 평창강로 1423-3"
+      },
+      {
+        "name": "방림송어횟집",
+        "dist": 9633,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/83/2793983_image2_1.jpg",
+        "addr": "강원특별자치도 평창군 방림면 서동로 810-10"
+      },
+      {
+        "name": "청성애원",
+        "dist": 9859,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2789136_image2_1.JPG",
+        "addr": "강원특별자치도 평창군 평창읍 살구실길 53-10"
+      }
+    ]
+  },
+  {
+    "contentId": "100789",
+    "name": "구름품은 캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "운탄고도 중간에 위치한 힐링캠핑장. 마운틴 뷰가 일품",
+    "intro": "와인으로 유명한 영월 김삿갓면 예밀리에서 모운동방향으로 운탄고도를  따라가는 멋진 드라이브코스 중간에 있다. 만경사 삼거리에서 모운동 방향으로 조금만 가면 왼쪽 산자락에 위치하고 있는데, 캠핑장에서 보이는 경관이 아주 일품이다. 소나무 숲속에 거치형 데크를 놓아 운치도 있고, 개별 프라이버스도 보장되는 형태로 꾸며져 있다. ",
+    "address": "강원특별자치도 영월군 김삿갓면 솔숲길 503",
+    "region": "강원특별자치도",
+    "sigungu": "영월군",
+    "lat": "37.144851493463",
+    "lng": "128.60416950227",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/100789/thumb/thumb_720_4347EkBFHQWqFnEC1m2hS5nF.jpg",
+    "facilities": "전기,무선인터넷,장작판매,온수,물놀이장,운동시설",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "일몰명소,겨울눈꽃명소",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-08-27",
+    "nearbySpots": [
+      {
+        "name": "김삿갓 계곡",
+        "dist": 2730,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/45/3493245_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 김삿갓면 와석리"
+      },
+      {
+        "name": "강원 영월 김삿갓면 [슬로시티]",
+        "dist": 3720,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3585026_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 김삿갓면 옥동장터길 36"
+      },
+      {
+        "name": "망경대산자연휴양림",
+        "dist": 4439,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/76/3388576_image2_1.JPG",
+        "addr": "강원특별자치도 영월군 산솔면 선도우길 177"
+      },
+      {
+        "name": "덕가산",
+        "dist": 4600,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/74/3342174_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 김삿갓면 영월동로 1547"
+      },
+      {
+        "name": "고씨굴 (강원고생대 국가지질공원)",
+        "dist": 6313,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/87/3374987_image2_1.JPG",
+        "addr": "강원특별자치도 영월군 김삿갓면 영월동로 1117"
+      }
+    ],
+    "nearbyFood": []
+  },
+  {
     "contentId": "8087",
     "name": "팔공산 야영장",
     "type": "일반야영장",
@@ -71177,72 +71437,6 @@
         "addr": "강원특별자치도 양양군 양양읍 포월나들길 23"
       }
     ]
-  },
-  {
-    "contentId": "100789",
-    "name": "구름품은 캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "운탄고도 중간에 위치한 힐링캠핑장. 마운틴 뷰가 일품",
-    "intro": "와인으로 유명한 영월 김삿갓면 예밀리에서 모운동방향으로 운탄고도를  따라가는 멋진 드라이브코스 중간에 있다. 만경사 삼거리에서 모운동 방향으로 조금만 가면 왼쪽 산자락에 위치하고 있는데, 캠핑장에서 보이는 경관이 아주 일품이다. 소나무 숲속에 거치형 데크를 놓아 운치도 있고, 개별 프라이버스도 보장되는 형태로 꾸며져 있다. ",
-    "address": "강원특별자치도 영월군 김삿갓면 솔숲길 503",
-    "region": "강원특별자치도",
-    "sigungu": "영월군",
-    "lat": "37.144851493463",
-    "lng": "128.60416950227",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100789/thumb/thumb_720_4347EkBFHQWqFnEC1m2hS5nF.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,물놀이장,운동시설",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "일몰명소,겨울눈꽃명소",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 21,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-05-18",
-    "nearbySpots": [
-      {
-        "name": "김삿갓 계곡",
-        "dist": 2730,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/45/3493245_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 김삿갓면 와석리"
-      },
-      {
-        "name": "강원 영월 김삿갓면 [슬로시티]",
-        "dist": 3720,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3585026_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 김삿갓면 옥동장터길 36"
-      },
-      {
-        "name": "망경대산자연휴양림",
-        "dist": 4439,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/3388576_image2_1.JPG",
-        "addr": "강원특별자치도 영월군 산솔면 선도우길 177"
-      },
-      {
-        "name": "덕가산",
-        "dist": 4600,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/74/3342174_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 김삿갓면 영월동로 1547"
-      },
-      {
-        "name": "고씨굴 (강원고생대 국가지질공원)",
-        "dist": 6313,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/87/3374987_image2_1.JPG",
-        "addr": "강원특별자치도 영월군 김삿갓면 영월동로 1117"
-      }
-    ],
-    "nearbyFood": []
   },
   {
     "contentId": "101467",
@@ -204830,103 +205024,6 @@
     ]
   },
   {
-    "contentId": "100890",
-    "name": "템플 온더 비치",
-    "type": "일반야영장,글램핑",
-    "operator": "민간",
-    "lineIntro": "하조대 서피비치에서 가까운 놀이형 글램핑",
-    "intro": "양양 서핑 핫플 인구/죽도 해변 소재, 글램핑장/게스트하우스형 텐트/공연장/수영장/음식점/서핑샵을 갖춘 여름 휴양 시설",
-    "address": "강원 양양군 현남면 창리길 19-1",
-    "region": "강원도",
-    "sigungu": "양양군",
-    "lat": "37.9701526",
-    "lng": "128.759065",
-    "tel": "010-3149-1900",
-    "homepage": "https://map.naver.com/v5/entry/place/1618006580?lng=128.7581214&lat=37.9699547&placePath=%2Fhome&c=15,0,0,0,dh",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100890/thumb/thumb_720_5666tk0uHqlWvR8QC2iP1gMI.jpg",
-    "facilities": "전기,온수,물놀이장",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "여름물놀이",
-    "operPeriod": "여름",
-    "siteCounts": {
-      "general": 5,
-      "auto": 0,
-      "glamp": 15,
-      "caravan": 0
-    },
-    "toilets": 8,
-    "showers": 20,
-    "glampFacilities": "침대,에어컨,냉장고,유무선인터넷,난방기구",
-    "caravanFacilities": "",
-    "updated": "2024-12-05",
-    "nearbySpots": [
-      {
-        "name": "김택준가옥",
-        "dist": 193,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/84/3387584_image2_1.JPG",
-        "addr": "강원특별자치도 양양군 현남면 창리길 4"
-      },
-      {
-        "name": "죽도해수욕장",
-        "dist": 248,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2738607_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 인구중앙길"
-      },
-      {
-        "name": "죽도정·죽도 전망대",
-        "dist": 432,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/12/2746912_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 인구리 1-1"
-      },
-      {
-        "name": "동산항",
-        "dist": 1080,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/62/3393962_image2_1.JPG",
-        "addr": "강원특별자치도 양양군 현남면 동산리"
-      },
-      {
-        "name": "휴휴암(강원)",
-        "dist": 1238,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/38/3490638_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 광진2길 3-16"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "플리즈웨잇",
-        "dist": 301,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/39/3041839_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 인구길 28-23"
-      },
-      {
-        "name": "웨이브웍스",
-        "dist": 498,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/54/3428154_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 인구중앙길 110"
-      },
-      {
-        "name": "입암메밀타운",
-        "dist": 5302,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/18/3071518_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 화상천로 155"
-      },
-      {
-        "name": "달래촌",
-        "dist": 5756,
-        "image": "",
-        "addr": "강원특별자치도 양양군 현남면 화상천로 634"
-      },
-      {
-        "name": "하조대반점",
-        "dist": 6237,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2892471_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 하조대1길 46"
-      }
-    ]
-  },
-  {
     "contentId": "100933",
     "name": "원대리751 글램핑",
     "type": "글램핑",
@@ -221165,103 +221262,6 @@
     ]
   },
   {
-    "contentId": "3206",
-    "name": "팔봉산관광지 야영장",
-    "type": "일반야영장",
-    "operator": "지자체",
-    "lineIntro": "팔봉산과 홍천강을 한눈에 즐기는 풍광좋은 캠핑장",
-    "intro": "팔봉산은 강원도와 경기도의 경계에 있는 산이다. 높이는 낮지만 산세가 아름답고 8개의 암릉이 줄지어 있어 등산가들이 즐겨 찾는다. 주능선이 마치 병풍을 펼친 듯한 산세로 예부터 소금강 이라 불리워진다. 게다가 주능선 좌우로 홍천강이 흐르고 있어 정상에 올라서 바라보는 전망이 더 없이 좋으며 산행 후 물놀이도 겸할 수 있는 곳이다.  야영장은 팔봉산 주차장에 바로 맞닿아 있다. 눈앞으로 팔봉산 봉우리가 올려다 보이고 아래로는 홍천강이 지척으로 지난다. 때문에 물놀이를 하기에도 아주 좋다. 야영장 옆으로 풋살경기장이 있어 단체관광객의 체육행사를 할 수 있으며, 야외공연장을 설치 공연활동도 가능하다.",
-    "address": "강원도 홍천군 서면 한치골길 1122-48 ",
-    "region": "강원도",
-    "sigungu": "홍천군",
-    "lat": "37.7018759",
-    "lng": "127.6953124",
-    "tel": "033-430-4281",
-    "homepage": "https://www.hongcheon.go.kr/palbong",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/3206/thumb/thumb_720_2198t5DoqAjAcWUGjhkE7qtP.jpg",
-    "facilities": "무선인터넷,놀이터,운동시설",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "수상레저,낚시,액티비티,여름물놀이,가을단풍명소",
-    "operPeriod": "봄,여름,가을",
-    "siteCounts": {
-      "general": 42,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 2,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2024-09-27",
-    "nearbySpots": [
-      {
-        "name": "팔봉산관광지",
-        "dist": 132,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/45/3422445_image2_1.jpg",
-        "addr": "강원특별자치도 홍천군 서면 한치골길 1124"
-      },
-      {
-        "name": "팔봉산(홍천)",
-        "dist": 134,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/18/3042918_image2_1.jpg",
-        "addr": "강원특별자치도 홍천군 서면 한치골길 1124"
-      },
-      {
-        "name": "노동서원",
-        "dist": 1604,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/10/3338310_image2_1.jpg",
-        "addr": "강원특별자치도 홍천군 서면 팔봉산로 1198-2"
-      },
-      {
-        "name": "팔봉참살이마을",
-        "dist": 2075,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/30/3384630_image2_1.JPG",
-        "addr": "강원특별자치도 홍천군 서면 오도치길 6"
-      },
-      {
-        "name": "홍천강",
-        "dist": 2165,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3584663_image2_1.jpg",
-        "addr": "강원특별자치도 홍천군 서면 팔봉강변길"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "강가촌",
-        "dist": 48,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/70/3043070_image2_1.jpg",
-        "addr": "강원특별자치도 홍천군 서면 한치골길 1122-54"
-      },
-      {
-        "name": "약이되는밥상",
-        "dist": 1069,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/28/2892428_image2_1.jpeg",
-        "addr": "강원특별자치도 홍천군 한치골길 956"
-      },
-      {
-        "name": "홍천강한우타운",
-        "dist": 1316,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2891707_image2_1.jpg",
-        "addr": "강원특별자치도 홍천군 한치골길 912"
-      },
-      {
-        "name": "분덕스",
-        "dist": 3621,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/40/2892940_image2_1.jpg",
-        "addr": "강원특별자치도 춘천시 충효로 94"
-      },
-      {
-        "name": "군자숯불닭갈비",
-        "dist": 5810,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/65/2776965_image2_1.JPG",
-        "addr": "강원특별자치도 춘천시 동산면 종자리로 148-8"
-      }
-    ]
-  },
-  {
     "contentId": "1418",
     "name": "북한산 캠핑장",
     "type": "일반야영장,글램핑",
@@ -221714,54 +221714,6 @@
         "addr": "경상남도 창녕군 도천면 개울길 29-8"
       }
     ]
-  },
-  {
-    "contentId": "3586",
-    "name": "횡성 온새미로 캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원도 횡성군 청일면 봉명로593번길 76-11",
-    "region": "강원도",
-    "sigungu": "횡성군",
-    "lat": "37.6699973",
-    "lng": "128.1256866",
-    "tel": "010-3479-6688",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/3586/thumb/thumb_720_7863ca4ZnBCyb3Q8UqcpiMEA.jpg",
-    "facilities": "",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을",
-    "siteCounts": {
-      "general": 21,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2024-09-23",
-    "nearbySpots": [
-      {
-        "name": "고라데이마을",
-        "dist": 2655,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/41/3331541_image2_1.jpg",
-        "addr": "강원특별자치도 횡성군 청일면 봉명로 375-1"
-      },
-      {
-        "name": "서봉사계곡 마을관리휴양지",
-        "dist": 9036,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/25/3043125_image2_1.jpg",
-        "addr": "강원특별자치도 홍천군 서석면 구룡령로 2838"
-      }
-    ],
-    "nearbyFood": []
   },
   {
     "contentId": "100036",
@@ -247239,91 +247191,6 @@
     ]
   },
   {
-    "contentId": "100418",
-    "name": "그로브(grove)캠핑",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "계곡에 자리한 감성적인 캠핑장  그로브(grove)캠핑(그로브캠핑,펜션)은 경북 청도군 운문면에 자리 잡았다. 지중해 감성의 펜션과 함께 캠핑장을 운영 중이다. 계곡에 위치한 덕분에 한여름 무더위를 날리며 캠핑을 만끽하기 좋다. 캠핑장에는 파쇄석으로 이뤄진 오토캠핑 사이트 8면이 마련돼 있다. 크기는 6x7이며, 이 가운데 3면은 그늘막이 설치돼 있다. 노래방, 수영장 등 알찬 부대시설도 눈에 띈다. 주변에 운문산자연휴양림이 있어 캠핑과 연계해 방문하기 좋다.",
-    "address": "경북 청도군 운문면 신원3길 2-4",
-    "region": "경상북도",
-    "sigungu": "청도군",
-    "lat": "35.6723432",
-    "lng": "129.0017429",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "https://camfit.co.kr/camp/6507e537d8be10001e792235",
-    "image": "https://gocamping.or.kr/upload/camp/100418/thumb/thumb_720_2997NJRHXf3K1MIbOG4rdlMj.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,물놀이장,놀이터,산책로,운동장,운동시설,마트.편의점",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "봄꽃여행,여름물놀이,가을단풍명소,걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 8,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 2,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2024-04-19",
-    "nearbySpots": [
-      {
-        "name": "사리암",
-        "dist": 2905,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/97/3578597_image2_1.jpg",
-        "addr": "경상북도 청도군 운문면 운문사길 529"
-      },
-      {
-        "name": "대비사(청도)",
-        "dist": 6078,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/14/3573014_image2_1.JPG",
-        "addr": "경상북도 청도군 금천면 박곡길 590"
-      },
-      {
-        "name": "청도신화랑풍류마을",
-        "dist": 8698,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/30/3332930_image2_1.jpg",
-        "addr": "경상북도 청도군 운문면 신화랑길 1"
-      },
-      {
-        "name": "운문댐·운문호",
-        "dist": 9150,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/52/3572752_image2_1.JPG",
-        "addr": "경상북도 청도군 운문면"
-      },
-      {
-        "name": "국민힐링파크",
-        "dist": 9293,
-        "image": "",
-        "addr": "경상북도 경주시 문복로 1280-8"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "문복산가든",
-        "dist": 4734,
-        "image": "",
-        "addr": "경상북도 경주시 산내면 문복로 333-101"
-      },
-      {
-        "name": "더 스톤",
-        "dist": 8532,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/78/2848678_image2_1.jpg",
-        "addr": "울산광역시 울주군 상북면 소야정길 115"
-      },
-      {
-        "name": "아미꼬뜨",
-        "dist": 9609,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/05/2832805_image2_1.jpg",
-        "addr": "경상북도 청도군 오남길 305"
-      }
-    ]
-  },
-  {
     "contentId": "100421",
     "name": "스탈릿캠핑펜션",
     "type": "자동차야영장",
@@ -250443,103 +250310,6 @@
         "dist": 9185,
         "image": "",
         "addr": "강원특별자치도 원주시 흥업면 대안로 511-42"
-      }
-    ]
-  },
-  {
-    "contentId": "100531",
-    "name": "온새미로",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "계곡을 마주하고 있는 조용한 캠핑장  법흥계곡에 위치한 펜션, 캠핑장이다. 계곡을 바라보는 위치에 캠핑사이트가 있다. 사이트가 비교적 넓고, 사이트 주변에 커다란 느티나무가 있어 한여름에도 그늘을 만들어준다. 캠핑장 바로 앞에 흐르는 계곡이 바로 법흥계곡이다. 물이 맑고 깊지 않아 아이들과 함께 다슬기를 잡거나 물놀이 하기에도 적당하다. ",
-    "address": "강원 영월군 무릉도원면 무릉법흥로 1166",
-    "region": "강원도",
-    "sigungu": "영월군",
-    "lat": "37.3605310",
-    "lng": "128.2751704",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100531/thumb/thumb_720_9180U8X6ReNaYmDPjiI8nQ6D.jpg",
-    "facilities": "전기,장작판매,온수",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "여름물놀이,가을단풍명소",
-    "operPeriod": "봄,여름,가을",
-    "siteCounts": {
-      "general": 0,
-      "auto": 13,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 1,
-    "showers": 1,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2024-04-19",
-    "nearbySpots": [
-      {
-        "name": "법흥계곡",
-        "dist": 5150,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/77/3039977_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 수주면"
-      },
-      {
-        "name": "원당계곡",
-        "dist": 6470,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/93/3388793_image2_1.JPG",
-        "addr": "강원특별자치도 평창군 평창읍 원당리 261"
-      },
-      {
-        "name": "요선정·요선암",
-        "dist": 7079,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/46/2922046_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
-      },
-      {
-        "name": "요선암 돌개구멍 (강원고생대 국가지질공원)",
-        "dist": 7113,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/60/2990960_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
-      },
-      {
-        "name": "영월 무릉리 마애여래좌상",
-        "dist": 7113,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3375994_image2_1.JPG",
-        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "약수돌집",
-        "dist": 8675,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/2795976_image2_1.jpg",
-        "addr": "강원특별자치도 평창군 평창읍 평창강로 1110"
-      },
-      {
-        "name": "코지힐(COZY HILL)",
-        "dist": 9196,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/31/2790131_image2_1.JPG",
-        "addr": "강원특별자치도 평창군 방림면 들모고개길 47-1"
-      },
-      {
-        "name": "옹달샘",
-        "dist": 9322,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/87/2793587_image2_1.jpg",
-        "addr": "강원특별자치도 평창군 평창읍 평창강로 1423-3"
-      },
-      {
-        "name": "방림송어횟집",
-        "dist": 9633,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/83/2793983_image2_1.jpg",
-        "addr": "강원특별자치도 평창군 방림면 서동로 810-10"
-      },
-      {
-        "name": "청성애원",
-        "dist": 9859,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2789136_image2_1.JPG",
-        "addr": "강원특별자치도 평창군 평창읍 살구실길 53-10"
       }
     ]
   },

@@ -1,5 +1,199 @@
 [
   {
+    "contentId": "7961",
+    "name": "베르테라 캠핑",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "",
+    "intro": "",
+    "address": "경기도 파주시 광탄면 기산로 367",
+    "region": "경기도",
+    "sigungu": "파주시",
+    "lat": "37.7745163",
+    "lng": "126.9325290",
+    "tel": "010-7291-3565",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/7961/thumb/thumb_720_5132RqxNOyoCdvB3KTd5v2me.jpg",
+    "facilities": "전기,무선인터넷,온수,물놀이장,놀이터",
+    "pet": "불가능",
+    "brazier": "불가",
+    "theme": "일몰명소,봄꽃여행,여름물놀이,가을단풍명소",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 7,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 2,
+    "showers": 2,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-08-28",
+    "nearbySpots": [
+      {
+        "name": "마장호수",
+        "dist": 230,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/76/3332576_image2_1.jpg",
+        "addr": "경기도 파주시 광탄면 기산리"
+      },
+      {
+        "name": "국립아세안자연휴양림",
+        "dist": 862,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/53/3409253_image2_1.jpg",
+        "addr": "경기도 양주시 백석읍 기산로 472"
+      },
+      {
+        "name": "토담참숯가마",
+        "dist": 2492,
+        "image": "",
+        "addr": "경기도 양주시 백석읍 권율로847번길 7-11"
+      },
+      {
+        "name": "장흥자연휴양림",
+        "dist": 3678,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/46/3409546_image2_1.jpg",
+        "addr": "경기도 양주시 장흥면 권율로 594"
+      },
+      {
+        "name": "장흥 참숯가마",
+        "dist": 4084,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/66/3546966_image2_1.jpg",
+        "addr": "경기도 양주시 권율로 400"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "산하",
+        "dist": 344,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/13/3564013_image2_1.jpg",
+        "addr": "경기도 양주시 백석읍 기산로 410"
+      },
+      {
+        "name": "레드브릿지",
+        "dist": 388,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/53/2829953_image2_1.jpg",
+        "addr": "경기도 파주시 광탄면 기산로 329"
+      },
+      {
+        "name": "오랑주리",
+        "dist": 519,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/42/2877542_image2_1.jpg",
+        "addr": "경기도 양주시 기산로 423-19"
+      },
+      {
+        "name": "박터졌네",
+        "dist": 667,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/42/2795742_image2_1.jpg",
+        "addr": "경기도 양주시 백석읍 기산로 450"
+      },
+      {
+        "name": "대궐산장",
+        "dist": 839,
+        "image": "",
+        "addr": "경기도 양주시 백석읍 기산로440번길 177"
+      }
+    ]
+  },
+  {
+    "contentId": "102342",
+    "name": "도심",
+    "type": "일반야영장",
+    "operator": "",
+    "lineIntro": "",
+    "intro": "",
+    "address": "대전광역시 서구 갑천서쪽자전거길 73 (도안동)",
+    "region": "대전광역시",
+    "sigungu": "서구",
+    "lat": "36.3121953450123",
+    "lng": "127.353697577121",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-08-28",
+    "nearbySpots": [
+      {
+        "name": "내원사(대전)",
+        "dist": 1291,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/79/3034979_image2_1.JPG",
+        "addr": "대전광역시 서구 배재로197번길 200"
+      },
+      {
+        "name": "용화사(대전)",
+        "dist": 1396,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3077505_image2_1.JPG",
+        "addr": "대전광역시 서구 가수원로 71-12"
+      },
+      {
+        "name": "마치광장",
+        "dist": 2156,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/16/3542516_image2_1.jpg",
+        "addr": "대전광역시 서구 구봉로131번길 27"
+      },
+      {
+        "name": "대전 신흥사",
+        "dist": 2548,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/35/2767235_image2_1.jpg",
+        "addr": "대전광역시 유성구 동서대로735번길 24-9"
+      },
+      {
+        "name": "창계숭절사",
+        "dist": 3496,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/00/3059500_image2_1.JPG",
+        "addr": "대전광역시 중구 대둔산로137번길 67"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "델빠네",
+        "dist": 1639,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2865836_image2_1.jpg",
+        "addr": "대전광역시 서구 원도안로207번길 16-61 (도안동)"
+      },
+      {
+        "name": "몽뜨",
+        "dist": 1713,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/35/2899535_image2_1.jpg",
+        "addr": "대전광역시 서구 원도안로257번길 48 (도안동)"
+      },
+      {
+        "name": "설짬뽕",
+        "dist": 1891,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/13/2899513_image2_1.jpg",
+        "addr": "대전광역시 서구 도안대로 37 (관저동)"
+      },
+      {
+        "name": "대성콩국수",
+        "dist": 2338,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/69/2899569_image2_1.jpg",
+        "addr": "대전광역시 서구 도산로 141"
+      },
+      {
+        "name": "옥수숯불구이",
+        "dist": 2629,
+        "image": "",
+        "addr": "대전광역시 서구 변동중로 49"
+      }
+    ]
+  },
+  {
     "contentId": "3206",
     "name": "팔봉산관광지 야영장",
     "type": "일반야영장",
@@ -77472,103 +77666,6 @@
       }
     ],
     "nearbyFood": []
-  },
-  {
-    "contentId": "102185",
-    "name": "타임밸리",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경기도 파주시 파평면 청송로402번길 118-41",
-    "region": "경기도",
-    "sigungu": "파주시",
-    "lat": "37.924366360344",
-    "lng": "126.85537759536",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-04-22",
-    "nearbySpots": [
-      {
-        "name": "파평용연",
-        "dist": 930,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/19/3540819_image2_1.jpg",
-        "addr": "경기도 파주시 파평면 눌노리"
-      },
-      {
-        "name": "파산서원",
-        "dist": 955,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/56/3536656_image2_1.jpg",
-        "addr": "경기도 파주시 파평면 파산서원길 24-40"
-      },
-      {
-        "name": "율곡수목원",
-        "dist": 4084,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/48/3547148_image2_1.jpg",
-        "addr": "경기도 파주시 파평면 장승배기로 392"
-      },
-      {
-        "name": "쇠꼴마을",
-        "dist": 4847,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/60/1591160_image2_1.jpg",
-        "addr": "경기도 파주시 법원읍 술이홀로1333번길 164"
-      },
-      {
-        "name": "파주 율곡습지공원",
-        "dist": 5362,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/3383136_image2_1.JPG",
-        "addr": "경기도 파주시 파평면 율곡리"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "두포리매운탕",
-        "dist": 3375,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/37/2842137_image2_1.jpg",
-        "addr": "경기도 파주시 파평면 율곡로 833"
-      },
-      {
-        "name": "두포나루터",
-        "dist": 3428,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2855571_image2_1.jpg",
-        "addr": "경기도 파주시 율곡로 829 두포나루터"
-      },
-      {
-        "name": "장단가든",
-        "dist": 6893,
-        "image": "",
-        "addr": "경기도 파주시 문산읍 임진나루길 133-12"
-      },
-      {
-        "name": "고랑포이야기",
-        "dist": 7148,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/09/2784909_image2_1.jpg",
-        "addr": "경기도 연천군 장남면 장남로 205"
-      },
-      {
-        "name": "공간811",
-        "dist": 8161,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/37/2836037_image2_1.jpg",
-        "addr": "경기도 파주시 선유울1길 210"
-      }
-    ]
   },
   {
     "contentId": "102187",
@@ -215952,103 +216049,6 @@
         "dist": 1783,
         "image": "http://tong.visitkorea.or.kr/cms/resource/11/2893011_image2_1.jpg",
         "addr": "경기도 고양시 덕양구 북한산로 639 (지축동)"
-      }
-    ]
-  },
-  {
-    "contentId": "7961",
-    "name": "어반캠핑 마장호수",
-    "type": "자동차야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경기 파주시 광탄면 기산로 367",
-    "region": "경기도",
-    "sigungu": "파주시",
-    "lat": "37.7745163",
-    "lng": "126.9325290",
-    "tel": "010-7291-3565",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/7961/thumb/thumb_720_5132RqxNOyoCdvB3KTd5v2me.jpg",
-    "facilities": "전기,무선인터넷,온수,물놀이장,놀이터",
-    "pet": "불가능",
-    "brazier": "불가",
-    "theme": "일몰명소,봄꽃여행,여름물놀이,가을단풍명소",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 7,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 2,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2024-11-07",
-    "nearbySpots": [
-      {
-        "name": "마장호수",
-        "dist": 230,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/3332576_image2_1.jpg",
-        "addr": "경기도 파주시 광탄면 기산리"
-      },
-      {
-        "name": "국립아세안자연휴양림",
-        "dist": 862,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/53/3409253_image2_1.jpg",
-        "addr": "경기도 양주시 백석읍 기산로 472"
-      },
-      {
-        "name": "토담참숯가마",
-        "dist": 2492,
-        "image": "",
-        "addr": "경기도 양주시 백석읍 권율로847번길 7-11"
-      },
-      {
-        "name": "장흥자연휴양림",
-        "dist": 3678,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/46/3409546_image2_1.jpg",
-        "addr": "경기도 양주시 장흥면 권율로 594"
-      },
-      {
-        "name": "장흥 참숯가마",
-        "dist": 4084,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/66/3546966_image2_1.jpg",
-        "addr": "경기도 양주시 권율로 400"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "산하",
-        "dist": 344,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/13/3564013_image2_1.jpg",
-        "addr": "경기도 양주시 백석읍 기산로 410"
-      },
-      {
-        "name": "레드브릿지",
-        "dist": 388,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/53/2829953_image2_1.jpg",
-        "addr": "경기도 파주시 광탄면 기산로 329"
-      },
-      {
-        "name": "오랑주리",
-        "dist": 519,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/42/2877542_image2_1.jpg",
-        "addr": "경기도 양주시 기산로 423-19"
-      },
-      {
-        "name": "박터졌네",
-        "dist": 667,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/42/2795742_image2_1.jpg",
-        "addr": "경기도 양주시 백석읍 기산로 450"
-      },
-      {
-        "name": "대궐산장",
-        "dist": 839,
-        "image": "",
-        "addr": "경기도 양주시 백석읍 기산로440번길 177"
       }
     ]
   },

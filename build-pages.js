@@ -27,7 +27,8 @@ const GA_SNIPPET = `
 const COUPANG_ITEMS = [
   { name: "🪑 캠핑의자", url: "https://link.coupang.com/a/f7LuGkEJMq" },
   { name: "🧺 돗자리", url: "https://link.coupang.com/a/f7MlAxqn7s" },
-  { name: "🌀 휴대용 선풍기", url: "https://link.coupang.com/a/f7Mn8WrdpA" },
+  { name: "🧣 캠핑 담요", url: "https://link.coupang.com/a/gP8GvQyG2S" },
+  { name: "🔥 핫팩", url: "https://link.coupang.com/a/gP8J1IrVsW" },
 ];
 
 const campings = JSON.parse(fs.readFileSync("campings.json", "utf-8"));

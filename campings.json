@@ -1,5 +1,1721 @@
 [
   {
+    "contentId": "100352",
+    "name": "곡성달빛 야영장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "깨끗한 공기와 깊은 산속, 혼자여도 둘이어도 좋은 오지 캠핑장, 곡성달빛\t",
+    "intro": "깊은 산속, 맑은 공기와 숲의 고요함 속에서 일상과 잠시 거리를 두고 온전히 나에게 집중할 수 있는 캠핑장, 곡성달빛입니다. 혼자 또는 둘이 머물며 자연을 가까이 느끼고, 불을 피우고 별을 바라보며 천천히 쉬어갈 수 있도록 1~2인 전용으로 운영합니다. 복잡한 일상에서 벗어나 자연 속에서 새로운 생각과 좋은 영감을 얻고, 몸과 마음을 편안하게 쉬어가는 특별한 캠핑으로 초대합니다.",
+    "address": "전남광주통합특별시 곡성군 죽곡면 남양마을1길 239-5",
+    "region": "전남광주통합특별시",
+    "sigungu": "곡성군",
+    "lat": "35.1875396",
+    "lng": "127.3412483",
+    "tel": "061-362-5879",
+    "homepage": "https://www.instagram.com/moonlight_in_gokseong/",
+    "reserveUrl": "https://naver.me/GHvwQ3HX",
+    "image": "https://gocamping.or.kr/upload/camp/100352/thumb/thumb_720_5155OQphehLooxsPA8Q8fO2R.jpg",
+    "facilities": "전기,장작판매,온수,산책로,마트.편의점",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "봄꽃여행,가을단풍명소,걷기길",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 16,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 1,
+    "showers": 1,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-09",
+    "nearbySpots": [
+      {
+        "name": "압록유원지",
+        "dist": 3263,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/37/3530137_image2_1.jpg",
+        "addr": "전남광주통합특별시 곡성군 죽곡면 섬진강로 1012"
+      },
+      {
+        "name": "봉조농촌체험학교",
+        "dist": 3420,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/02/3345002_image2_1.JPG",
+        "addr": "전남광주통합특별시 곡성군 오곡면 봉조길 114"
+      },
+      {
+        "name": "대황강출렁다리",
+        "dist": 4702,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/96/3532296_image2_1.jpg",
+        "addr": "전남광주통합특별시 곡성군 죽곡면 대황강로 802"
+      },
+      {
+        "name": "섬진강변 유원지",
+        "dist": 5123,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/60/3530060_image2_1.jpg",
+        "addr": "전남광주통합특별시 곡성군 고달면 두가리"
+      },
+      {
+        "name": "곡성 하늘나리마을",
+        "dist": 5896,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/81/3533581_image2_1.jpg",
+        "addr": "전남광주통합특별시 곡성군 죽곡면 상한길 264"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "사계절횟집",
+        "dist": 2691,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/05/2789605_image2_1.jpg",
+        "addr": "전남광주통합특별시 곡성군 오곡면 대황강로 1589"
+      },
+      {
+        "name": "두가헌 두바퀴쉼터",
+        "dist": 6354,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/84/2800384_image2_1.jpg",
+        "addr": "전남광주통합특별시 곡성군 고달면 두계길 35"
+      }
+    ]
+  },
+  {
+    "contentId": "101836",
+    "name": "가야산뷰관광농원캠핑장",
+    "type": "자동차야영장",
+    "operator": "민간",
+    "lineIntro": "",
+    "intro": "",
+    "address": "경상남도 합천군 가야면 매화산로 424-20",
+    "region": "경상남도",
+    "sigungu": "합천군",
+    "lat": "35.7589027346787",
+    "lng": "128.123035374822",
+    "tel": "010-6507-5451",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/101836/thumb/thumb_720_9505zWbx11ouTUqa3J01amun.jpg",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 65,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-09",
+    "nearbySpots": [
+      {
+        "name": "각사산촌생태마을",
+        "dist": 2159,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/23/3570123_image2_1.jpg",
+        "addr": "경상남도 합천군 가야면 야천로 101"
+      },
+      {
+        "name": "홍류동계곡",
+        "dist": 2996,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/80/3565880_image2_1.jpg",
+        "addr": "경상남도 합천군 가야면 구원리"
+      },
+      {
+        "name": "농산정",
+        "dist": 3161,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/21/3377521_image2_1.JPG",
+        "addr": "경상남도 합천군 가야면 구원리 산-1"
+      },
+      {
+        "name": "합천 반야사지 원경왕사비",
+        "dist": 5214,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3041294_image2_1.jpg",
+        "addr": "경상남도 합천군 가야면 해인사길 122"
+      },
+      {
+        "name": "합천향교",
+        "dist": 7085,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/43/3041343_image2_1.jpg",
+        "addr": "경상남도 합천군 야로면 향교길 17-3"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "합천명품토종흑돼지전문점",
+        "dist": 1556,
+        "image": "",
+        "addr": "경상남도 합천군 가야면 가야시장로 106"
+      },
+      {
+        "name": "전나무식당",
+        "dist": 3849,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/11/2899211_image2_1.jpg",
+        "addr": "경상북도 성주군 성주가야산로 116"
+      },
+      {
+        "name": "팔도강산",
+        "dist": 4503,
+        "image": "",
+        "addr": "경상남도 합천군 야로면 가야산로 664"
+      },
+      {
+        "name": "향원식당",
+        "dist": 4759,
+        "image": "",
+        "addr": "경상남도 합천군 가야면 치인1길 9-1"
+      },
+      {
+        "name": "부산식당",
+        "dist": 4769,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/36/3587836_image2_1.jpg",
+        "addr": "경상남도 합천군 가야면 치인1길 8"
+      }
+    ]
+  },
+  {
+    "contentId": "102356",
+    "name": "추억만들기",
+    "type": "일반야영장",
+    "operator": "",
+    "lineIntro": "",
+    "intro": "",
+    "address": "제주특별자치도 제주시 한경면 판포4길 17",
+    "region": "제주특별자치도",
+    "sigungu": "제주시",
+    "lat": "33.3636361316446",
+    "lng": "126.20172840355",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-09",
+    "nearbySpots": [
+      {
+        "name": "판포포구",
+        "dist": 274,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/61/3352661_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한경면 판포리 2877-3"
+      },
+      {
+        "name": "월령 선인장군락지",
+        "dist": 2024,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/84/3399984_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한림읍 월령리"
+      },
+      {
+        "name": "월령포구",
+        "dist": 2103,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/79/3553679_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한림읍 월령리 317-1"
+      },
+      {
+        "name": "비체올린",
+        "dist": 2152,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3554826_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한경면 판조로 253-6"
+      },
+      {
+        "name": "금능석물원",
+        "dist": 3291,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/73/3053373_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한림읍 한림로 176"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "판포미인",
+        "dist": 356,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/79/2849979_image2_1.JPG",
+        "addr": "제주특별자치도 제주시 판포1길 11"
+      },
+      {
+        "name": "바다를본돼지",
+        "dist": 406,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/06/2764006_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한경면 판포1길 16"
+      },
+      {
+        "name": "마루나키친",
+        "dist": 558,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/25/2784625_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한경면 금등4길 11"
+      },
+      {
+        "name": "두모리이수사",
+        "dist": 1935,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/45/2840845_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한경면 두신로 112"
+      },
+      {
+        "name": "혼저",
+        "dist": 3203,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/59/3059359_image2_1.jpg",
+        "addr": "제주특별자치도 제주시 한림읍 한림로 158"
+      }
+    ]
+  },
+  {
+    "contentId": "2758",
+    "name": "주문진글램핑 오토캠핑장",
+    "type": "자동차야영장",
+    "operator": "민간",
+    "lineIntro": "계곡을 배경으로 펼쳐진 캠핑장",
+    "intro": "주문진 글램핑 오토캠핑장은 강원도 강릉시 주문진읍에 자리 잡고 있다. 동해고속도로 북강릉IC에서 북강릉, 주문진 방면으로 달리면 도착한다. 도착까지 걸리는 시간은 30분 안팎이다. 이곳은 계곡과 인접해 있으며, 오토캠핑 6면, 캠핑 트레일러 1대, 글램핑 15면을 갖추고 있다. 오토캠핑장은 전기와 화로 사용이 가능하다. 캠핑 트레일러는 복층 구조로 이뤄졌으며, 내부는 침대, 캠핑 용품 일체를 구비했다. 글램핑은 세 가지 종류다. 화장실과 샤워실을 외부에 둔 커플형을 비롯해 화장실 등이 내부에 있는 커플형과 패밀리형이다. 내부에는 기본적으로 침대, 냉난방기, 냉장고, TV, 취사도구, 식기류를 마련했다. 관리소에서는 선풍기, 토치, 타프, 이불, 전기장판을 빌려준다.    주변 관광지는 주문진해변, 강릉 복사꽃마을, 백운사가 있다. 40년 넘게 운영 중인 입암메밀타운,  활어를 맛볼 수 있는 유리횟집 등 음식점도 즐비하다.",
+    "address": "강원특별자치도 강릉시 주문진읍 신리천로 951-9",
+    "region": "강원특별자치도",
+    "sigungu": "강릉시",
+    "lat": "37.8800594",
+    "lng": "128.7344964",
+    "tel": "033-642-4241",
+    "homepage": "http://www.jumunjincamping.com/default/",
+    "reserveUrl": "http://www.jumunjincamping.com/default/app/app_online.php?topmenu=3&submenu=2",
+    "image": "https://gocamping.or.kr/upload/camp/2758/thumb/thumb_720_5123mTe4GUqfU00ggiJG7EX7.jpg",
+    "facilities": "전기,무선인터넷,장작판매,온수,운동시설",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "봄꽃여행,여름물놀이",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 10,
+      "glamp": 16,
+      "caravan": 0
+    },
+    "toilets": 8,
+    "showers": 1,
+    "glampFacilities": "침대,TV,에어컨,냉장고,난방기구,취사도구,내부화장실,내부샤워실",
+    "caravanFacilities": "침대,TV,에어컨,냉장고,난방기구,취사도구",
+    "updated": "2026-09-08",
+    "nearbySpots": [
+      {
+        "name": "강릉 복사꽃마을",
+        "dist": 3812,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/42/3383742_image2_1.JPG",
+        "addr": "강원특별자치도 강릉시 신리천로 527-3 복사꽃정보마을센타"
+      },
+      {
+        "name": "소금강",
+        "dist": 7425,
+        "image": "",
+        "addr": "강원특별자치도 강릉시 연곡면 소금강길 449"
+      },
+      {
+        "name": "지경리해변",
+        "dist": 7579,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/11/2922111_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 현남면 동해대로 62"
+      },
+      {
+        "name": "남애1리해수욕장",
+        "dist": 7723,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/96/2915996_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 현남면 화상해안길 245"
+      },
+      {
+        "name": "포매리 백로와 왜가리 번식지",
+        "dist": 7741,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/47/2793447_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 현남면 개매길 215-33"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "타래",
+        "dist": 3159,
+        "image": "",
+        "addr": "강원특별자치도 강릉시 주문진읍 신리천로 620"
+      },
+      {
+        "name": "달래촌",
+        "dist": 4959,
+        "image": "",
+        "addr": "강원특별자치도 양양군 현남면 화상천로 634"
+      },
+      {
+        "name": "입암메밀타운",
+        "dist": 6240,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/18/3071518_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 현남면 화상천로 155"
+      },
+      {
+        "name": "송이랑능이랑",
+        "dist": 7591,
+        "image": "",
+        "addr": "강원특별자치도 강릉시 연곡면 소금강길 469"
+      },
+      {
+        "name": "칠공주불고기",
+        "dist": 7665,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/49/2874049_image2_1.jpg",
+        "addr": "강원특별자치도 강릉시 참샘길 12"
+      }
+    ]
+  },
+  {
+    "contentId": "7606",
+    "name": "소풍 스테이",
+    "type": "자동차야영장",
+    "operator": "민간",
+    "lineIntro": "카페 팔롬비니와 함께 있는 동진강변 카라반 야영장",
+    "intro": "전주에서 순창쪽으로 가면 정읍 내장산 산외마을고 가는 길이 있다. 이 도로를 따라 가다보면 산외한우마을 건너편에 팔롬비니 카페라는 유럽식 건물이 웅장하게 보인다. 섬진강캠핑장은 이곳 팔롬비니 카페와 함께 있다. 카페에서 함께 운영하는 카라반 전용 캠핑장으로 카페 왼쪽에 위치하고 있다. 캠핑장 바로 앞으로 섬진강의 지류인 동진강이 흐르고, 카페 옆에는 멋진 잔디마당도 조성되어 있다. ",
+    "address": "전북특별자치도 정읍시 산외면 산외로 445-30",
+    "region": "전북특별자치도",
+    "sigungu": "정읍시",
+    "lat": "35.6233979251293",
+    "lng": "127.039706846478",
+    "tel": "063-537-8688",
+    "homepage": "http://sjrcamp.co.kr",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/7606/thumb/thumb_720_7706grziF0Kvba6egf76QO5B.jpg",
+    "facilities": "전기,무선인터넷,온수",
+    "pet": "가능",
+    "brazier": "개별",
+    "theme": "",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 10
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실",
+    "updated": "2026-09-08",
+    "nearbySpots": [
+      {
+        "name": "산외한우마을",
+        "dist": 192,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/97/3061497_image2_1.jpg",
+        "addr": "전북특별자치도 정읍시 산외면 산외로 450"
+      },
+      {
+        "name": "고택문화체험관",
+        "dist": 1891,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3365685_image2_1.JPG",
+        "addr": "전북특별자치도 정읍시 산외면 공동길 58"
+      },
+      {
+        "name": "정읍 김명관 고택",
+        "dist": 1928,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/79/1606479_image2_1.jpg",
+        "addr": "전북특별자치도 정읍시 산외면 공동길 72-10"
+      },
+      {
+        "name": "용계서원",
+        "dist": 5148,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/17/3365817_image2_1.JPG",
+        "addr": "전북특별자치도 정읍시 칠보면 동편길 41-3"
+      },
+      {
+        "name": "칠보물테마유원지",
+        "dist": 5199,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/70/3060470_image2_1.jpg",
+        "addr": "전북특별자치도 정읍시 칠보면 칠보산로 1555"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "옥쭹가든",
+        "dist": 5848,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/54/2837954_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 국사봉로 10 목정가든"
+      },
+      {
+        "name": "옥정호산장",
+        "dist": 6627,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/04/2780004_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 운암면 운정길 7"
+      },
+      {
+        "name": "강나루횟집",
+        "dist": 6774,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2837907_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 종운로 802-5 강나루횟집"
+      },
+      {
+        "name": "상록수",
+        "dist": 6851,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/27/2837927_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 운정길 29 상록수"
+      },
+      {
+        "name": "하루",
+        "dist": 6885,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/95/2837995_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 강운로 1175-17"
+      }
+    ]
+  },
+  {
+    "contentId": "100290",
+    "name": "큰돌 캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "",
+    "intro": "",
+    "address": "경기도 포천시 관인면 뗏마루길 128-26",
+    "region": "경기도",
+    "sigungu": "포천시",
+    "lat": "38.1206960795284",
+    "lng": "127.252351906759",
+    "tel": "",
+    "homepage": "https://www.instagram.com/withdogs11/",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "덤프스테이션",
+    "pet": "가능",
+    "brazier": "개별",
+    "theme": "",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-08",
+    "nearbySpots": [
+      {
+        "name": "교동 장독대마을",
+        "dist": 3588,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/99/3440899_image2_1.JPG",
+        "addr": "경기도 포천시 관인면 신교동로 148-11"
+      },
+      {
+        "name": "고남산 자철석 광산 (한탄강 유네스코 세계지질공원)",
+        "dist": 4239,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/68/2616468_image2_1.bmp",
+        "addr": "경기도 포천시 관인면 교동길 46"
+      },
+      {
+        "name": "심원사(철원)",
+        "dist": 4712,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/45/3042545_image2_1.jpg",
+        "addr": "강원특별자치도 철원군 동송읍 상노1길 58"
+      },
+      {
+        "name": "지장산 응회암 (한탄강 유네스코 세계지질공원)",
+        "dist": 5571,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/73/2616473_image2_1.bmp",
+        "addr": "경기도 포천시 관인면 지장산길 124"
+      },
+      {
+        "name": "지장계곡",
+        "dist": 5571,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/56/3003856_image2_1.jpg",
+        "addr": "경기도 포천시 관인면 중리"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "벚골도토리막국수",
+        "dist": 1192,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/65/2854565_image2_1.jpg",
+        "addr": "경기도 포천시 관인면 숯골길 325"
+      },
+      {
+        "name": "지장산막국수 본점",
+        "dist": 5296,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/31/2856131_image2_1.jpeg",
+        "addr": "경기도 포천시 관인면 창동로 895"
+      },
+      {
+        "name": "제주여행",
+        "dist": 7224,
+        "image": "",
+        "addr": "경기도 포천시 영북면 산정호수로 289"
+      },
+      {
+        "name": "민통선한우촌",
+        "dist": 7431,
+        "image": "",
+        "addr": "강원특별자치도 철원군 갈말읍 호국로 4987"
+      },
+      {
+        "name": "옛날전통된장집",
+        "dist": 7976,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2855936_image2_1.jpg",
+        "addr": "경기도 포천시 영북면 산정호수로 374"
+      }
+    ]
+  },
+  {
+    "contentId": "102353",
+    "name": "영지 캠프",
+    "type": "일반야영장",
+    "operator": "",
+    "lineIntro": "프라이빗 캠핑장",
+    "intro": "",
+    "address": "경상북도 경주시 외동읍 영지안길 53",
+    "region": "경상북도",
+    "sigungu": "경주시",
+    "lat": "35.7639882751227",
+    "lng": "129.304874105924",
+    "tel": "010-9370-6902",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/102353/thumb/thumb_720_39832lyHXfH9AxCnu9240PjW.jpg",
+    "facilities": "전기,무선인터넷,산책로",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 3,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 2,
+    "showers": 2,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-08",
+    "nearbySpots": [
+      {
+        "name": "영지석불좌상",
+        "dist": 221,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/57/3412457_image2_1.jpg",
+        "addr": "경상북도 경주시 외동읍 괘릉리"
+      },
+      {
+        "name": "성호리조트",
+        "dist": 361,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/72/2771272_image2_1.jpg",
+        "addr": "경상북도 경주시 외동읍 영지로 636"
+      },
+      {
+        "name": "경주 원성왕릉",
+        "dist": 1407,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/03/3542503_image2_1.jpg",
+        "addr": "경상북도 경주시 외동읍 신계입실길 139"
+      },
+      {
+        "name": "경주 구정동 방형분",
+        "dist": 1769,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3542426_image2_1.jpg",
+        "addr": "경상북도 경주시 불국로 15-5 (구정동)"
+      },
+      {
+        "name": "연지암(경주)",
+        "dist": 2336,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/69/3412469_image2_1.jpg",
+        "addr": "경상북도 경주시 외동읍 활성길 120-5"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "석거돈",
+        "dist": 758,
+        "image": "",
+        "addr": "경상북도 경주시 외동읍 산업로 2838"
+      },
+      {
+        "name": "카페괘릉",
+        "dist": 842,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/33/2840733_image2_1.jpg",
+        "addr": "경상북도 경주시 괘릉길 12"
+      },
+      {
+        "name": "송정원순두부",
+        "dist": 858,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/65/2876565_image2_1.jpg",
+        "addr": "경상북도 경주시 구매1길 23"
+      },
+      {
+        "name": "경주밀면 본점",
+        "dist": 1043,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/63/2838763_image2_1.jpg",
+        "addr": "경상북도 경주시 시래둑길 7 한림원"
+      },
+      {
+        "name": "불국사밀면",
+        "dist": 1431,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/86/2736886_image2_1.jpg",
+        "addr": "경상북도 경주시 불국장터길 29 (구정동)"
+      }
+    ]
+  },
+  {
+    "contentId": "179",
+    "name": "정선 삼시세끼 스쿨 캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "",
+    "intro": "",
+    "address": "강원특별자치도 정선군 남면 광락로 354 ",
+    "region": "강원특별자치도",
+    "sigungu": "정선군",
+    "lat": "37.3191264",
+    "lng": "128.6927604",
+    "tel": "010-9591-1641",
+    "homepage": "http://ant.invil.org/village/",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/179/thumb/thumb_720_3348SEg27TcptyIXuZNztmxG.jpg",
+    "facilities": "전기,장작판매,온수",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "개미들마을",
+        "dist": 12,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/95/2731295_image2_1.jpg",
+        "addr": "강원특별자치도 정선군 남면 광락로 354"
+      },
+      {
+        "name": "서운재(瑞雲齋)",
+        "dist": 1970,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/33/3410133_image2_1.jpg",
+        "addr": "강원특별자치도 정선군 남면 남창길 22"
+      },
+      {
+        "name": "기우산(정선)",
+        "dist": 4499,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/95/3342495_image2_1.jpg",
+        "addr": "강원특별자치도 정선군 정선읍 신월리"
+      },
+      {
+        "name": "덕우리체험마을",
+        "dist": 4892,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/54/3353354_image2_1.jpg",
+        "addr": "강원특별자치도 정선군 정선읍 백오담길 27"
+      },
+      {
+        "name": "덕우리대촌마을",
+        "dist": 4922,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/25/3036225_image2_1.jpg",
+        "addr": "강원특별자치도 정선군 정선읍 대촌길 3"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "할머니횟집",
+        "dist": 4267,
+        "image": "",
+        "addr": "강원특별자치도 정선군 화암면 소금강로 80-23"
+      },
+      {
+        "name": "대박집",
+        "dist": 7296,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/2363526_image2_1.jpg",
+        "addr": "강원특별자치도 정선군 정선읍 5일장길 37-5"
+      },
+      {
+        "name": "회동집",
+        "dist": 7308,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/91/2776891_image2_1.JPG",
+        "addr": "강원특별자치도 정선군 정선읍 5일장길 37-10"
+      }
+    ]
+  },
+  {
+    "contentId": "387",
+    "name": "국립남해편백자연휴양림",
+    "type": "일반야영장",
+    "operator": "국립",
+    "lineIntro": "편백나무 숲에서 피톤치드 맡으며 건강하게 캠핑을 하는 곳.",
+    "intro": "남해 편백자연휴양림은 명칭 그대로 남해 바다 인근 한려해상국립공원 북쪽 해발 681m의 금산 동쪽 자락에 위치하고 있으며, 산림욕과 함께 남해바다의 절경을 즐길 수 있는 자연휴양림이다. 편백나무에서는 심폐기능 강화와 항균, 이뇨, 거담효과가 뛰어난 피톤치드가 많이 나오므로 삼림욕에 매우 좋은 휴양림이다. 1998년 개장한 남해 편백자연휴양림의 면적은 227만㎡ 이며, 1일 수용인원은 305명이다.    휴양림에는 다양한 종류의 숙박 시설이 운영되고 있다. 야영 데크에서 직접 캠핑을 하거나 캠핑카로 야영을 할 수 있으며, 캐빈을 비롯한 다양한 숙박 시설이 함께 있어, 원하는 형식의 숙박이 가능한데 인기가 높아 성수기 및 주말에는 추첨식으로 예약이 가능하다. 숲속의 집, 야영장, 숲탐방로, 물놀이장, 어린이놀이터, 숲속 강의실, 일출전망대, 산책로, 등산로, 잔디마당, 체력단련시설 등이 있다.     등산로를 따라 산을 오르면 보리암이 있고, 정상의 전망대에서는 한려해상 국립공원의 크고 작은 섬들과 금산 38경의 장관을 내려다볼 수 있다. 휴양림 바로 밑에 낚시가 가능한 내산저수지가 있고, 인근 바다에서도 낚시를 즐길 수 있다. ",
+    "address": "경상남도 남해군 삼동면 금암로 658 ",
+    "region": "경상남도",
+    "sigungu": "남해군",
+    "lat": "34.7521440529408",
+    "lng": "128.020135238357",
+    "tel": "055-867-7881",
+    "homepage": "https://www.foresttrip.go.kr/",
+    "reserveUrl": "http://www.huyang.go.kr/main.action",
+    "image": "https://gocamping.or.kr/upload/camp/387/thumb/thumb_720_45112axlrEzzciiRowpzRACp.jpg",
+    "facilities": "놀이터",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "일출명소,일몰명소,가을단풍명소,겨울눈꽃명소,걷기길",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 10,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "남해 항도어촌체험마을",
+        "dist": 2534,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/90/2484890_image2_1.jpg",
+        "addr": "경상남도 남해군 미조면 동부대로310번길 32-8"
+      },
+      {
+        "name": "송정한솔체험마을",
+        "dist": 2975,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3374351_image2_1.JPG",
+        "addr": "경상남도 남해군 미조면 미송로486번길 30"
+      },
+      {
+        "name": "송정솔바람해변",
+        "dist": 3434,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/42/3556542_image2_1.jpg",
+        "addr": "경상남도 남해군 미조면 송정리"
+      },
+      {
+        "name": "금산(남해)",
+        "dist": 3814,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/71/3556371_image2_1.jpg",
+        "addr": "경상남도 남해군 상주면 상주리"
+      },
+      {
+        "name": "남해양떼목장 양마르뜨언덕",
+        "dist": 4287,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3399463_image2_1.jpg",
+        "addr": "경상남도 남해군 삼동면 금암로 179-45​"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "대중식당",
+        "dist": 4326,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/218426_image2_1.jpg",
+        "addr": "경상남도 남해군 상주면 남해대로 694"
+      },
+      {
+        "name": "해사랑전복마을",
+        "dist": 5174,
+        "image": "",
+        "addr": "경상남도 남해군 미조면 미송로 193"
+      },
+      {
+        "name": "램스하우스",
+        "dist": 5328,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2877871_image2_1.jpg",
+        "addr": "경상남도 남해군 삼동면 동부대로 1078"
+      },
+      {
+        "name": "당케슈니첼",
+        "dist": 5406,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/50/2877850_image2_1.jpg",
+        "addr": "경상남도 남해군 독일로 27"
+      },
+      {
+        "name": "부어스트라덴",
+        "dist": 5440,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/76/2877876_image2_1.jpg",
+        "addr": "경상남도 남해군 독일로 33"
+      }
+    ]
+  },
+  {
+    "contentId": "908",
+    "name": "두모마을야영장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "푸른 바다와 함께하는 조용한 쉼, 두모마을캠핑장. 오토캠핑과 데크 캠핑을 모두 즐길 수 있는 편안한 힐링 공간입니다.",
+    "intro": "두모마을 야영장은 녹색농촌체험 마을로 지정될 정도로 마을 한가운데로 1급수의 하천물이 흐르며 참게, 민물장어 등이 서식하고 있는 깨끗한 마을의 캠핑장이다. 마을 뒤를 감싸고 있는 2만여 평의 다랭이 밭에서는 봄이면 유채꽃이 지천으로 피어나고, 가을이면 메밀이 온 동네를 뒤 덮는다.    두모마을 캠핑장은 아담하고 조용하며 소나무가 우거져 있어 경치가 좋은 곳이다.  총 3구역으로 나누어진 캠핑장은 1구역(1~11번 바닷가 앞 데크), 2구역(12~17번 차량캠핑구역), 3구역(18~22번 차량주차+데크)으로 되어 있다. 캠핑장 바로 앞에서 갯벌 바다체험을 할 수 있고 바로 옆은 1급수 넷가가 있어 가족단위 위주의 캠퍼들이 많이 찾는 곳이다.     갯벌 바다체험을 위한 바구니와 호미는 5000원이면 빌릴 수 있다. 이 밖에도 낚시장비를 대여 부둣가에서 낚시도 즐길 수 있다.",
+    "address": "경상남도 남해군 상주면 양아로525번길 20",
+    "region": "경상남도",
+    "sigungu": "남해군",
+    "lat": "34.7329531431463",
+    "lng": "127.955253504588",
+    "tel": "",
+    "homepage": "https://cafe.naver.com/f-e/cafes/31756168/menus/0?viewType=L",
+    "reserveUrl": "https://cafe.naver.com/f-e/cafes/31756168/menus/0?viewType=L",
+    "image": "https://gocamping.or.kr/upload/camp/908/thumb/thumb_720_1760bb0Wa7ePPcsosisPkup5.jpg",
+    "facilities": "전기,놀이터",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "일출명소,일몰명소,수상레저,낚시,액티비티,봄꽃여행,여름물놀이,가을단풍명소,겨울눈꽃명소,걷기길",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 16,
+      "auto": 6,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 1,
+    "showers": 1,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "노도",
+        "dist": 1437,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/64/3556464_image2_1.jpg",
+        "addr": "경상남도 남해군 상주면 노도길 76-16"
+      },
+      {
+        "name": "금산(남해)",
+        "dist": 3247,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/71/3556371_image2_1.jpg",
+        "addr": "경상남도 남해군 상주면 상주리"
+      },
+      {
+        "name": "원천항",
+        "dist": 3407,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3373926_image2_1.JPG",
+        "addr": "경상남도 남해군 이동면 신전리 1138-10"
+      },
+      {
+        "name": "홍현마을",
+        "dist": 4497,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3554005_image2_1.jpg",
+        "addr": "경상남도 남해군 남면 남면로353번길 47"
+      },
+      {
+        "name": "남해 금산 봉수대",
+        "dist": 4914,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/19/1293619_image2_1.jpg",
+        "addr": "경상남도 남해군 상주면 보리암로 691"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "대중식당",
+        "dist": 3031,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/218426_image2_1.jpg",
+        "addr": "경상남도 남해군 상주면 남해대로 694"
+      },
+      {
+        "name": "시골할매 막걸리",
+        "dist": 5434,
+        "image": "",
+        "addr": "경상남도 남해군 남면 남면로679번길 17-37"
+      },
+      {
+        "name": "다랭이맛집",
+        "dist": 5520,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/42/2877842_image2_1.jpg",
+        "addr": "경상남도 남해군 남면로679번길 31-10"
+      },
+      {
+        "name": "남해라운지32",
+        "dist": 5686,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/16/2877816_image2_1.jpg",
+        "addr": "경상남도 남해군 남면 남서대로 539"
+      },
+      {
+        "name": "해사랑전복마을",
+        "dist": 7790,
+        "image": "",
+        "addr": "경상남도 남해군 미조면 미송로 193"
+      }
+    ]
+  },
+  {
+    "contentId": "2110",
+    "name": "양양캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "어성전계곡사계절캠핑장",
+    "intro": " 양양 어성전계곡 초입에 위치하고 있는 마을 캠핑장. 깊은 계곡이면서도 물살이 세고 바닥이 험하거나 바위가 많은 형태가 아니라 물흐름이 잔잔하고 편안한 풍경을 보여주는 곳이다. 캠핑장 바로 계곡에 붙어 있다. 계곡물을 막아 자연 풀장으로 사용하고 있을 정도다. 특히 수량이 풍부해 가뭄에도 물이 잘 마르지 않는다는 게 특징. 또한 이곳은 오염되지 않은 1급수로 산처어와 피라미,결겨니 등이 잡히기도 한다. 캠핑장 규모는 작은편.",
+    "address": "강원특별자치도 양양군 현북면 어성전길 182-18",
+    "region": "강원특별자치도",
+    "sigungu": "양양군",
+    "lat": "37.9471385",
+    "lng": "128.6633315",
+    "tel": "010-2975-0102",
+    "homepage": "http://me2.do/FhpNyW3i",
+    "reserveUrl": "https://booking.naver.com/booking/6/bizes/270910/items/3195007?area=pll",
+    "image": "https://gocamping.or.kr/upload/camp/2110/thumb/thumb_720_4829OgM9bzJombghYAeuZQgD.jpg",
+    "facilities": "전기,장작판매,운동장",
+    "pet": "가능",
+    "brazier": "개별",
+    "theme": "가을단풍명소",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 21,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 2,
+    "showers": 2,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "어성전계곡",
+        "dist": 839,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/21/3076821_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 현북면 어성전길 93-98"
+      },
+      {
+        "name": "명주사(양양)",
+        "dist": 1547,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/36/3581936_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 현북면 어성전길 93-229"
+      },
+      {
+        "name": "명주사부도군",
+        "dist": 1548,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/36/3500536_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 현북면 어성전길 93-229"
+      },
+      {
+        "name": "탁장사고을",
+        "dist": 2671,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/82/3393982_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 현북면 어성전길 258"
+      },
+      {
+        "name": "금풀애마을",
+        "dist": 3488,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/09/3378609_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 현북면 남대천로 1532"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "달래촌",
+        "dist": 6310,
+        "image": "",
+        "addr": "강원특별자치도 양양군 현남면 화상천로 634"
+      },
+      {
+        "name": "웨이브웍스",
+        "dist": 9072,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/54/3428154_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 현남면 인구중앙길 110"
+      },
+      {
+        "name": "플리즈웨잇",
+        "dist": 9085,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/39/3041839_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 현남면 인구길 28-23"
+      },
+      {
+        "name": "하조대반점",
+        "dist": 9652,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2892471_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 하조대1길 46"
+      },
+      {
+        "name": "하조맛식당",
+        "dist": 9731,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/89/2892489_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 하륜길 8"
+      }
+    ]
+  },
+  {
+    "contentId": "8007",
+    "name": "양주 리온 캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "",
+    "intro": "7월8일부터 7월31일까지 이용하시는 캠퍼들에게 장작1망서비스와 리뷰또는 후기작성 블로그 작성시 다음 캠핑예약시 30%할인쿠폰드립니다  이용가능 4인기준이며(세 자녀이상은 인정합니다.)(예어른4명에 아이한명은 안됩니다.)추가인원시 인당 5,000원 추가요금부과  지인초대불가합니다. 매너타임 22:30~09:00 입니다.",
+    "address": "경기도 양주시 마전로212번길 79-72 (마전동)",
+    "region": "경기도",
+    "sigungu": "양주시",
+    "lat": "37.779479109742",
+    "lng": "127.058685966981",
+    "tel": "031-821-6661",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/8007/thumb/thumb_720_8754tjc9IYKH062urE6dH074.jpg",
+    "facilities": "전기,장작판매,온수,트렘폴린,물놀이장,놀이터,산책로,마트.편의점",
+    "pet": "가능",
+    "brazier": "개별",
+    "theme": "걷기길",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 37,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 2,
+    "showers": 2,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "나리농원",
+        "dist": 2383,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3559494_image2_1.jpg",
+        "addr": "경기도 양주시 광사동"
+      },
+      {
+        "name": "양주향교",
+        "dist": 2449,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/28/3559428_image2_1.jpg",
+        "addr": "경기도 양주시 부흥로1423번길 50"
+      },
+      {
+        "name": "양주 관아지",
+        "dist": 2667,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/91/3541591_image2_1.jpg",
+        "addr": "경기도 양주시 부흥로1399번길 15 (유양동)"
+      },
+      {
+        "name": "고덕생활체육공원",
+        "dist": 2813,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/46/3338846_image2_1.jpg",
+        "addr": "경기도 양주시 고덕로 187-55"
+      },
+      {
+        "name": "백화암(양주)",
+        "dist": 3305,
+        "image": "",
+        "addr": "경기도 양주시 백화암길 191 (유양동)"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "내마음의숲",
+        "dist": 670,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/12/2877412_image2_1.jpg",
+        "addr": "경기도 양주시 원학로147번길 123-24 (광사동)"
+      },
+      {
+        "name": "이너프유",
+        "dist": 1631,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/64/2832264_image2_1.jpg",
+        "addr": "경기도 양주시 부흥로1422번길 220 (남방동)"
+      },
+      {
+        "name": "예향재",
+        "dist": 2176,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2830371_image2_1.jpg",
+        "addr": "경기도 의정부시 동일로 860-22 (녹양동)"
+      },
+      {
+        "name": "로슈아커피",
+        "dist": 2337,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/2829426_image2_1.jpg",
+        "addr": "경기도 양주시 광사로 145 (만송동)"
+      },
+      {
+        "name": "밀곳",
+        "dist": 2388,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/96/2877496_image2_1.jpg",
+        "addr": "경기도 양주시 광사로 148 (만송동)"
+      }
+    ]
+  },
+  {
+    "contentId": "8157",
+    "name": "태안노을숲캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "마검포 바다 앞에 위치한 노을 보기 좋은 바다뷰 캠핑장",
+    "intro": "태안 마검포해수욕장 안쪽에 있다. 해변과 바로 붙어 있어 시원 바닷바람과 해넘이를 만끽할 수 있다. 또한 사이트에서 곧바로 갯벌까지 걸어서 이용할 수 있다. 사이트는 해변쪽 데크와 숲속 데크, 노지 캠핑등 다양하게 마련되어 있다.",
+    "address": "충청남도 태안군 남면 마검포길 311-42",
+    "region": "충청남도",
+    "sigungu": "태안군",
+    "lat": "36.6070675",
+    "lng": "126.2911585",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/8157/thumb/thumb_720_0113X4JvWuL5TMOHE2HaFUGF.jpg",
+    "facilities": "전기,장작판매,온수,물놀이장,마트.편의점",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "일몰명소,낚시,여름물놀이,걷기길",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 4,
+    "showers": 7,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "마검포해수욕장",
+        "dist": 177,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/88/3340788_image2_1.jpg",
+        "addr": "충청남도 태안군 남면 신온리"
+      },
+      {
+        "name": "네이처월드",
+        "dist": 1360,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/46/3422246_image2_1.jpg",
+        "addr": "충청남도 태안군 남면 마검포길 200"
+      },
+      {
+        "name": "마검포항",
+        "dist": 1777,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/22/3553422_image2_1.jpg",
+        "addr": "충청남도 태안군 남면 신온리"
+      },
+      {
+        "name": "드르니항",
+        "dist": 2880,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3495127_image2_1.jpg",
+        "addr": "충청남도 태안군 남면 신온리"
+      },
+      {
+        "name": "별주부마을",
+        "dist": 3058,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/91/3336391_image2_1.jpg",
+        "addr": "충청남도 태안군 남면 별주부길 102"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "파파스테이크",
+        "dist": 1160,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/01/2850901_image2_1.jpg",
+        "addr": "충청남도 태안군 마검포길 232-10"
+      },
+      {
+        "name": "대한횟집 만세튀김",
+        "dist": 3290,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/54/2851354_image2_1.jpg",
+        "addr": "충청남도 태안군 백사장1길 119"
+      },
+      {
+        "name": "털보선장횟집",
+        "dist": 3357,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/14/2786414_image2_1.jpg",
+        "addr": "충청남도 태안군 안면읍 백사장1길 95"
+      },
+      {
+        "name": "다원",
+        "dist": 3665,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/79/2926779_image2_1.jpg",
+        "addr": "충청남도 태안군 천수만로 134-4"
+      },
+      {
+        "name": "안면식당",
+        "dist": 3936,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/98/2786398_image2_1.jpg",
+        "addr": "충청남도 태안군 안면읍 백사장1길 24"
+      }
+    ]
+  },
+  {
+    "contentId": "100773",
+    "name": "밴프 야영장",
+    "type": "자동차야영장",
+    "operator": "민간",
+    "lineIntro": "구룡령초입 공수전계곡 아래쪽  강변 캠핑장",
+    "intro": "양양에서 구룡령 가는길. 초입에 위치하고 있다. 정다운 마을 아래쪽, 밴프리조트내 캠핑시설이다.  리조트앞 강변쪽으로 사이트와 캠핑시설이 조성되어 있다. 때문에 강변에서 물놀이를 할 수 있고, 주변 쉼터도 잘 갖춰져 있다.",
+    "address": "강원특별자치도 양양군 서면 구룡령로 3080-70",
+    "region": "강원특별자치도",
+    "sigungu": "양양군",
+    "lat": "38.0533806",
+    "lng": "128.5706554",
+    "tel": "033-671-0710",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/100773/thumb/thumb_720_5096AevUr3J64XLoehHpGjd3.jpg",
+    "facilities": "전기,무선인터넷",
+    "pet": "가능",
+    "brazier": "개별",
+    "theme": "",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 13,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "공수전계곡",
+        "dist": 2311,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3045905_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 서면 공수전리"
+      },
+      {
+        "name": "이두형가옥",
+        "dist": 3832,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/75/3467075_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 서면 들돌길 284-1"
+      },
+      {
+        "name": "양양향교",
+        "dist": 4194,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/80/3076880_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 양양읍 거마천로 52-20"
+      },
+      {
+        "name": "양양 에너지팜",
+        "dist": 4759,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3387363_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 서면 산얏골길 23-51"
+      },
+      {
+        "name": "양양송이조각공원",
+        "dist": 6367,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/90/2915990_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 양양읍 동해대로 2708"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "천선식당",
+        "dist": 5045,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3567927_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 양양읍 남대천로 13"
+      },
+      {
+        "name": "공가네감자옹심이",
+        "dist": 5275,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/19/2837919_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 남문5길 5-17"
+      },
+      {
+        "name": "동일식당",
+        "dist": 5369,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/29/2785929_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 양양읍 남문3길 11-9"
+      },
+      {
+        "name": "해촌",
+        "dist": 6521,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/98/2838098_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 동명로 81"
+      },
+      {
+        "name": "영광정메밀국수",
+        "dist": 7687,
+        "image": "",
+        "addr": "강원특별자치도 양양군 강현면 진미로 446"
+      }
+    ]
+  },
+  {
+    "contentId": "101058",
+    "name": "양양한스오토캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "설악해변 도로 건너편 소재. 수영장,헬스장,놀이시설,사우나 등을 갖춘 대단지 규모",
+    "intro": "",
+    "address": "강원특별자치도 양양군 강현면 용호길 11",
+    "region": "강원특별자치도",
+    "sigungu": "양양군",
+    "lat": "38.1294784",
+    "lng": "128.6201176",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/101058/thumb/thumb_720_2813lDqm9X5X9SuKvyg7suod.jpg",
+    "facilities": "전기,무선인터넷,장작판매,온수,물놀이장",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 27,
+      "glamp": 15,
+      "caravan": 1
+    },
+    "toilets": 8,
+    "showers": 10,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "설악해수욕장",
+        "dist": 246,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/22/2745222_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 강현면 용호리 4-5"
+      },
+      {
+        "name": "후진항",
+        "dist": 450,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/88/3100088_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 강현면 용호리"
+      },
+      {
+        "name": "홍련암",
+        "dist": 915,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/80/3506380_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 낙산사로 98-19 홍련암"
+      },
+      {
+        "name": "낙산사 의상대",
+        "dist": 1049,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/15/2739115_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 강현면 낙산사로 100"
+      },
+      {
+        "name": "정암해수욕장",
+        "dist": 1130,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/18/2745218_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 강현면 정암리"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "바다뷰제빵소",
+        "dist": 473,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/65/2839865_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 동해대로 3296"
+      },
+      {
+        "name": "정인회식당",
+        "dist": 1360,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/98/3045798_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 강현면 낙산사로 32"
+      },
+      {
+        "name": "흥부네밥상",
+        "dist": 2170,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/44/2892544_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 동해대로 3019"
+      },
+      {
+        "name": "메밀꽃향기",
+        "dist": 2650,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/72/2892372_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 진미로 218 메밀꽃향기"
+      },
+      {
+        "name": "등불가든",
+        "dist": 3006,
+        "image": "",
+        "addr": "강원특별자치도 양양군 양양읍 포월나들길 23"
+      }
+    ]
+  },
+  {
+    "contentId": "101127",
+    "name": "진천명품휴미락캠핑장",
+    "type": "자동차야영장",
+    "operator": "민간",
+    "lineIntro": "부대시설이 눈에 띄는 숲속 캠핑장 ",
+    "intro": "부대시설이 눈에 띄는 숲속 캠핑장  진천명품 휴미락캠핑장은 충북 진천군 백곡면에 자리 잡고 있다. 계곡을 끼고 있고, 숲으로 둘러싸인 덕분에 자연친화적인 캠핑을 만끽할 수 있다. 캠핑장에는 오토캠핑 사이트 43면이 마련되어 있다. 바닥은 파쇄석 41면, 데크 2면으로 이루어졌다. 크기는 가로 7m × 세로 8m, 가로 9m × 세로 8m 등 다양하다. 화장실, 샤워실, 개수대의 수가 많고, 특히 샤워실은 프라이빗하게 꾸며졌다. 실내 놀이터를 비롯해 집라인, 카페, 민박 등 부대시설도 알차게 갖추어져 있다. 주변에 진천농다리와 한반도지형전망공원이 있어 연계 여행에 나서기 수월하다.",
+    "address": "충청북도 진천군 백곡면 용암2길 108-36",
+    "region": "충청북도",
+    "sigungu": "진천군",
+    "lat": "36.8744595",
+    "lng": "127.3667318",
+    "tel": "010-2117-1690",
+    "homepage": "",
+    "reserveUrl": "https://www.camfit.co.kr/camp/650d5fda4e302e001e104dbf",
+    "image": "https://gocamping.or.kr/upload/camp/101127/thumb/thumb_720_3220hmLRGuxwZtPoOTbx3Juz.jpg",
+    "facilities": "전기,무선인터넷,장작판매,온수,트렘폴린,물놀이장,놀이터,운동시설,마트.편의점",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "여름물놀이",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 43,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 2,
+    "showers": 2,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "물안뜰체험관",
+        "dist": 1468,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/76/3561976_image2_1.jpg",
+        "addr": "충청북도 진천군 백곡면 백곡로 964"
+      },
+      {
+        "name": "연곡저수지",
+        "dist": 3365,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/86/3341286_image2_1.JPG",
+        "addr": "충청북도 진천군 진천읍 연곡리"
+      },
+      {
+        "name": "보련마을",
+        "dist": 3415,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/35/3336235_image2_1.JPG",
+        "addr": "충청북도 진천군 진천읍 보련골길 40-4"
+      },
+      {
+        "name": "생거진천 화랑촌",
+        "dist": 3423,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3560205_image2_1.jpg",
+        "addr": "충청북도 진천군 진천읍 보련골길 40-4"
+      },
+      {
+        "name": "연곡계곡",
+        "dist": 3649,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/69/3336069_image2_1.JPG",
+        "addr": "충청북도 진천군 진천읍 연곡리"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "엽돈재가든",
+        "dist": 6084,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/31/2856831_image2_1.jpg",
+        "addr": "충청북도 진천군 백곡로 184 숯판매전시장"
+      },
+      {
+        "name": "할머니집",
+        "dist": 8393,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/95/2767195_image2_1.jpg",
+        "addr": "충청북도 진천군 이월면 화산동길 18"
+      },
+      {
+        "name": "청룡원조매운탕",
+        "dist": 8538,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/33/2767433_image2_1.jpg",
+        "addr": "충청남도 천안시 서북구 입장면 성진로 1406"
+      },
+      {
+        "name": "청산가든",
+        "dist": 8928,
+        "image": "",
+        "addr": "충청북도 진천군 이월면 진안로 354"
+      },
+      {
+        "name": "이월서가",
+        "dist": 9538,
+        "image": "",
+        "addr": "충청북도 진천군 진안로 583-6"
+      }
+    ]
+  },
+  {
+    "contentId": "102354",
+    "name": "소풍 캠핑장",
+    "type": "일반야영장",
+    "operator": "",
+    "lineIntro": "",
+    "intro": "",
+    "address": "인천광역시 강화군 길상면 동검길 159-24",
+    "region": "인천광역시",
+    "sigungu": "강화군",
+    "lat": "37.5865023822377",
+    "lng": "126.510040211795",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "초지대교",
+        "dist": 5076,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/18/3350618_image2_1.JPG",
+        "addr": "인천광역시 강화군 길상면 초지로 141"
+      },
+      {
+        "name": "강화 삼랑성",
+        "dist": 5678,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/43/3532443_image2_1.jpg",
+        "addr": "인천광역시 강화군 길상면 온수리"
+      },
+      {
+        "name": "정족산",
+        "dist": 5741,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/39/3559339_image2_1.jpg",
+        "addr": "인천광역시 강화군 길상면 온수리"
+      },
+      {
+        "name": "강화 사기리 탱자나무",
+        "dist": 5793,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/33/3383833_image2_1.JPG",
+        "addr": "인천광역시 강화군 화도면 해안남로1114번길 6"
+      },
+      {
+        "name": "예단포선착장",
+        "dist": 6150,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/91/3395991_image2_1.JPG",
+        "addr": "인천광역시 영종구 예단포1로 2-10"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "한나네",
+        "dist": 2024,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/18/2876018_image2_1.jpg",
+        "addr": "인천광역시 강화군 길상면 해안남로 628"
+      },
+      {
+        "name": "꼬막한상",
+        "dist": 2484,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/24/2836824_image2_1.jpg",
+        "addr": "인천광역시 강화군 길상면 해안남로 334"
+      },
+      {
+        "name": "정원식탁",
+        "dist": 2586,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/39/2872339_image2_1.jpg",
+        "addr": "인천광역시 강화군 길상면 해안남로 309"
+      },
+      {
+        "name": "숲길따라카페",
+        "dist": 2601,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/40/2872440_image2_1.jpg",
+        "addr": "인천광역시 강화군 길상면 해안남로 309-12"
+      },
+      {
+        "name": "핀오크",
+        "dist": 3477,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/58/2877958_image2_1.jpg",
+        "addr": "인천광역시 강화군 길상면 장흥로 185-9"
+      }
+    ]
+  },
+  {
+    "contentId": "102355",
+    "name": "헤이븐캠프",
+    "type": "일반야영장",
+    "operator": "",
+    "lineIntro": "",
+    "intro": "",
+    "address": "경기도 가평군 상면 임초밤안골로18번길 33",
+    "region": "경기도",
+    "sigungu": "가평군",
+    "lat": "37.7648855721467",
+    "lng": "127.371296998525",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-07",
+    "nearbySpots": [
+      {
+        "name": "가평 영양잣마을",
+        "dist": 1192,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3386227_image2_1.JPG",
+        "addr": "경기도 가평군 상면 축령로 70"
+      },
+      {
+        "name": "아침고요가족동물원",
+        "dist": 2132,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/97/2602797_image2_1.bmp",
+        "addr": "경기도 가평군 상면 임초밤안골로 301"
+      },
+      {
+        "name": "켄싱턴리조트 가평",
+        "dist": 2162,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/45/2771545_image2_1.png",
+        "addr": "경기도 가평군 상면 청군로 430"
+      },
+      {
+        "name": "녹수계곡",
+        "dist": 2782,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3563394_image2_1.jpg",
+        "addr": "경기도 가평군 상면 덕현리"
+      },
+      {
+        "name": "잣향기푸른숲",
+        "dist": 3156,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/23/3037123_image2_1.jpg",
+        "addr": "경기도 가평군 상면 축령로 289-146"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "칠오닭갈비 본점",
+        "dist": 509,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/78/2852578_image2_1.jpg",
+        "addr": "경기도 가평군 수목원로 68"
+      },
+      {
+        "name": "옛골75",
+        "dist": 511,
+        "image": "",
+        "addr": "경기도 가평군 상면 수목원로 66"
+      },
+      {
+        "name": "송원",
+        "dist": 513,
+        "image": "",
+        "addr": "경기도 가평군 수목원로 72"
+      },
+      {
+        "name": "가평달맞이빵",
+        "dist": 635,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/18/2774118_image2_1.jpeg",
+        "addr": "경기도 가평군 상면 수목원로 123"
+      },
+      {
+        "name": "101닭갈비",
+        "dist": 694,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/64/2852764_image2_1.jpg",
+        "addr": "경기도 가평군 수목원로 98"
+      }
+    ]
+  },
+  {
     "contentId": "483",
     "name": "금원산자연휴양림 야영장",
     "type": "일반야영장",
@@ -548,103 +2264,6 @@
         "dist": 7684,
         "image": "http://tong.visitkorea.or.kr/cms/resource/06/579606_image2_1.jpg",
         "addr": "충청남도 태안군 이원면 원이로 1539"
-      }
-    ]
-  },
-  {
-    "contentId": "102353",
-    "name": "영지 캠프",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "프라이빗 캠핑장",
-    "intro": "",
-    "address": "경상북도 경주시 외동읍 영지안길 53",
-    "region": "경상북도",
-    "sigungu": "경주시",
-    "lat": "35.7639882751227",
-    "lng": "129.304874105924",
-    "tel": "010-9370-6902",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "전기,무선인터넷,산책로",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 3,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 2,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-09-04",
-    "nearbySpots": [
-      {
-        "name": "영지석불좌상",
-        "dist": 221,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/57/3412457_image2_1.jpg",
-        "addr": "경상북도 경주시 외동읍 괘릉리"
-      },
-      {
-        "name": "성호리조트",
-        "dist": 361,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/72/2771272_image2_1.jpg",
-        "addr": "경상북도 경주시 외동읍 영지로 636"
-      },
-      {
-        "name": "경주 원성왕릉",
-        "dist": 1407,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/03/3542503_image2_1.jpg",
-        "addr": "경상북도 경주시 외동읍 신계입실길 139"
-      },
-      {
-        "name": "경주 구정동 방형분",
-        "dist": 1769,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3542426_image2_1.jpg",
-        "addr": "경상북도 경주시 불국로 15-5 (구정동)"
-      },
-      {
-        "name": "연지암(경주)",
-        "dist": 2336,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/69/3412469_image2_1.jpg",
-        "addr": "경상북도 경주시 외동읍 활성길 120-5"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "석거돈",
-        "dist": 758,
-        "image": "",
-        "addr": "경상북도 경주시 외동읍 산업로 2838"
-      },
-      {
-        "name": "카페괘릉",
-        "dist": 842,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/33/2840733_image2_1.jpg",
-        "addr": "경상북도 경주시 괘릉길 12"
-      },
-      {
-        "name": "송정원순두부",
-        "dist": 858,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/65/2876565_image2_1.jpg",
-        "addr": "경상북도 경주시 구매1길 23"
-      },
-      {
-        "name": "경주밀면 본점",
-        "dist": 1043,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/63/2838763_image2_1.jpg",
-        "addr": "경상북도 경주시 시래둑길 7 한림원"
-      },
-      {
-        "name": "불국사밀면",
-        "dist": 1431,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/86/2736886_image2_1.jpg",
-        "addr": "경상북도 경주시 불국장터길 29 (구정동)"
       }
     ]
   },
@@ -5530,103 +7149,6 @@
         "dist": 6523,
         "image": "http://tong.visitkorea.or.kr/cms/resource/76/2850876_image2_1.jpg",
         "addr": "충청남도 태안군 모항항길 94"
-      }
-    ]
-  },
-  {
-    "contentId": "2110",
-    "name": "양양캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "어성전계곡사계절캠핑장",
-    "intro": " 양양 어성전계곡 초입에 위치하고 있는 마을 캠핑장. 깊은 계곡이면서도 물살이 세고 바닥이 험하거나 바위가 많은 형태가 아니라 물흐름이 잔잔하고 편안한 풍경을 보여주는 곳이다. 캠핑장 바로 계곡에 붙어 있다. 계곡물을 막아 자연 풀장으로 사용하고 있을 정도다. 특히 수량이 풍부해 가뭄에도 물이 잘 마르지 않는다는 게 특징. 또한 이곳은 오염되지 않은 1급수로 산처어와 피라미,결겨니 등이 잡히기도 한다. 캠핑장 규모는 작은편.",
-    "address": "강원특별자치도 양양군 현북면 어성전길 182-18",
-    "region": "강원특별자치도",
-    "sigungu": "양양군",
-    "lat": "37.9471385",
-    "lng": "128.6633315",
-    "tel": "010-2975-0102",
-    "homepage": "http://me2.do/FhpNyW3i",
-    "reserveUrl": "https://booking.naver.com/booking/6/bizes/270910/items/3195007?area=pll",
-    "image": "https://gocamping.or.kr/upload/camp/2110/thumb/thumb_720_4829OgM9bzJombghYAeuZQgD.jpg",
-    "facilities": "전기,장작판매,운동장",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "가을단풍명소",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 11,
-      "auto": 20,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 2,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-08-21",
-    "nearbySpots": [
-      {
-        "name": "어성전계곡",
-        "dist": 839,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/21/3076821_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현북면 어성전길 93-98"
-      },
-      {
-        "name": "명주사(양양)",
-        "dist": 1547,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/3581936_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현북면 어성전길 93-229"
-      },
-      {
-        "name": "명주사부도군",
-        "dist": 1548,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/3500536_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현북면 어성전길 93-229"
-      },
-      {
-        "name": "탁장사고을",
-        "dist": 2671,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/82/3393982_image2_1.JPG",
-        "addr": "강원특별자치도 양양군 현북면 어성전길 258"
-      },
-      {
-        "name": "금풀애마을",
-        "dist": 3488,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/09/3378609_image2_1.JPG",
-        "addr": "강원특별자치도 양양군 현북면 남대천로 1532"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "달래촌",
-        "dist": 6310,
-        "image": "",
-        "addr": "강원특별자치도 양양군 현남면 화상천로 634"
-      },
-      {
-        "name": "웨이브웍스",
-        "dist": 9072,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/54/3428154_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 인구중앙길 110"
-      },
-      {
-        "name": "플리즈웨잇",
-        "dist": 9085,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/39/3041839_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 인구길 28-23"
-      },
-      {
-        "name": "하조대반점",
-        "dist": 9652,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2892471_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 하조대1길 46"
-      },
-      {
-        "name": "하조맛식당",
-        "dist": 9731,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/89/2892489_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 하륜길 8"
       }
     ]
   },
@@ -19033,103 +20555,6 @@
     ]
   },
   {
-    "contentId": "2865",
-    "name": "천사봉 오토 캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경기도 양평군 단월면 고북길 111-10",
-    "region": "경기도",
-    "sigungu": "양평군",
-    "lat": "37.5949799950581",
-    "lng": "127.596617524819",
-    "tel": "",
-    "homepage": "http://cafe.naver.com/camping1004bong",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/2865/thumb/thumb_720_1531V0tD2NypDr8HE6Mw4Wwj.jpg",
-    "facilities": "전기,장작판매,온수",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을",
-    "siteCounts": {
-      "general": 22,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 1,
-    "showers": 1,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-30",
-    "nearbySpots": [
-      {
-        "name": "국립 산음자연휴양림",
-        "dist": 1910,
-        "image": "",
-        "addr": "경기도 양평군 단월면 고북길 347"
-      },
-      {
-        "name": "중원산",
-        "dist": 3962,
-        "image": "",
-        "addr": "경기도 양평군 용문면 중원리"
-      },
-      {
-        "name": "석산계곡",
-        "dist": 4966,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/38/3590338_image2_1.jpg",
-        "addr": "경기도 양평군 단월면 석산리"
-      },
-      {
-        "name": "소리산마을",
-        "dist": 5208,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/99/2794699_image2_1.jpg",
-        "addr": "경기도 양평군 단월면 물레골길 6"
-      },
-      {
-        "name": "친환경농업박물관",
-        "dist": 5427,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/30/3078430_image2_1.jpg",
-        "addr": "경기도 양평군 용문면 용문산로 670"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "용문산보리밥",
-        "dist": 5100,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/19/2853519_image2_1.jpg",
-        "addr": "경기도 양평군 용문면 조계골길 79-1"
-      },
-      {
-        "name": "용문산중앙식당",
-        "dist": 5597,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/74/3474574_image2_1.jpg",
-        "addr": "경기도 양평군 용문면 용문산로 644"
-      },
-      {
-        "name": "용문산 은행나무식당",
-        "dist": 5618,
-        "image": "",
-        "addr": "경기도 양평군 용문면 용문산로 638"
-      },
-      {
-        "name": "한마당식당",
-        "dist": 5642,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/80/3474580_image2_1.jpg",
-        "addr": "경기도 양평군 용문면 용문산로628번길 2"
-      },
-      {
-        "name": "들꽃가든",
-        "dist": 6867,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/08/2892308_image2_1.jpg",
-        "addr": "강원특별자치도 홍천군 서면 한서로 2045"
-      }
-    ]
-  },
-  {
     "contentId": "3330",
     "name": "피플앤독 힐링캠핑장 ",
     "type": "일반야영장",
@@ -19611,103 +21036,6 @@
         "dist": 1396,
         "image": "http://tong.visitkorea.or.kr/cms/resource/18/2833518_image2_1.JPG",
         "addr": "경기도 안산시 단원구 대선로 275 (대부북동)"
-      }
-    ]
-  },
-  {
-    "contentId": "387",
-    "name": "국립남해편백자연휴양림",
-    "type": "일반야영장",
-    "operator": "공립",
-    "lineIntro": "편백나무 숲에서 피톤치드 맡으며 건강하게 캠핑을 하는 곳.",
-    "intro": "남해 편백자연휴양림은 명칭 그대로 남해 바다 인근 한려해상국립공원 북쪽 해발 681m의 금산 동쪽 자락에 위치하고 있으며, 산림욕과 함께 남해바다의 절경을 즐길 수 있는 자연휴양림이다. 편백나무에서는 심폐기능 강화와 항균, 이뇨, 거담효과가 뛰어난 피톤치드가 많이 나오므로 삼림욕에 매우 좋은 휴양림이다. 1998년 개장한 남해 편백자연휴양림의 면적은 227만㎡ 이며, 1일 수용인원은 305명이다.    휴양림에는 다양한 종류의 숙박 시설이 운영되고 있다. 야영 데크에서 직접 캠핑을 하거나 캠핑카로 야영을 할 수 있으며, 캐빈을 비롯한 다양한 숙박 시설이 함께 있어, 원하는 형식의 숙박이 가능한데 인기가 높아 성수기 및 주말에는 추첨식으로 예약이 가능하다. 숲속의 집, 야영장, 숲탐방로, 물놀이장, 어린이놀이터, 숲속 강의실, 일출전망대, 산책로, 등산로, 잔디마당, 체력단련시설 등이 있다.     등산로를 따라 산을 오르면 보리암이 있고, 정상의 전망대에서는 한려해상 국립공원의 크고 작은 섬들과 금산 38경의 장관을 내려다볼 수 있다. 휴양림 바로 밑에 낚시가 가능한 내산저수지가 있고, 인근 바다에서도 낚시를 즐길 수 있다. ",
-    "address": "경상남도 남해군 삼동면 금암로 658 ",
-    "region": "경상남도",
-    "sigungu": "남해군",
-    "lat": "34.7521440529408",
-    "lng": "128.020135238357",
-    "tel": "055-867-7881",
-    "homepage": "http://www.huyang.go.kr/main.action",
-    "reserveUrl": "http://www.huyang.go.kr/main.action",
-    "image": "https://gocamping.or.kr/upload/camp/387/thumb/thumb_720_45112axlrEzzciiRowpzRACp.jpg",
-    "facilities": "놀이터",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "일출명소,일몰명소,가을단풍명소,겨울눈꽃명소,걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 20,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-29",
-    "nearbySpots": [
-      {
-        "name": "남해 항도어촌체험마을",
-        "dist": 2534,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/90/2484890_image2_1.jpg",
-        "addr": "경상남도 남해군 미조면 동부대로310번길 32-8"
-      },
-      {
-        "name": "송정한솔체험마을",
-        "dist": 2975,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3374351_image2_1.JPG",
-        "addr": "경상남도 남해군 미조면 미송로486번길 30"
-      },
-      {
-        "name": "송정솔바람해변",
-        "dist": 3434,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/42/3556542_image2_1.jpg",
-        "addr": "경상남도 남해군 미조면 송정리"
-      },
-      {
-        "name": "금산(남해)",
-        "dist": 3814,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/3556371_image2_1.jpg",
-        "addr": "경상남도 남해군 상주면 상주리"
-      },
-      {
-        "name": "남해양떼목장 양마르뜨언덕",
-        "dist": 4287,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3399463_image2_1.jpg",
-        "addr": "경상남도 남해군 삼동면 금암로 179-45​"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "대중식당",
-        "dist": 4326,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/26/218426_image2_1.jpg",
-        "addr": "경상남도 남해군 상주면 남해대로 694"
-      },
-      {
-        "name": "해사랑전복마을",
-        "dist": 5174,
-        "image": "",
-        "addr": "경상남도 남해군 미조면 미송로 193"
-      },
-      {
-        "name": "램스하우스",
-        "dist": 5328,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2877871_image2_1.jpg",
-        "addr": "경상남도 남해군 삼동면 동부대로 1078"
-      },
-      {
-        "name": "당케슈니첼",
-        "dist": 5406,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/50/2877850_image2_1.jpg",
-        "addr": "경상남도 남해군 독일로 27"
-      },
-      {
-        "name": "부어스트라덴",
-        "dist": 5440,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/2877876_image2_1.jpg",
-        "addr": "경상남도 남해군 독일로 33"
       }
     ]
   },
@@ -25182,103 +26510,6 @@
         "dist": 4509,
         "image": "",
         "addr": "충청남도 서천군 판교면 종판로 882-2"
-      }
-    ]
-  },
-  {
-    "contentId": "908",
-    "name": "두모마을야영장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "푸른 바다와 함께하는 조용한 쉼, 두모마을캠핑장. 오토캠핑과 데크 캠핑을 모두 즐길 수 있는 편안한 힐링 공간입니다.",
-    "intro": "두모마을 야영장은 녹색농촌체험 마을로 지정될 정도로 마을 한가운데로 1급수의 하천물이 흐르며 참게, 민물장어 등이 서식하고 있는 깨끗한 마을의 캠핑장이다. 마을 뒤를 감싸고 있는 2만여 평의 다랭이 밭에서는 봄이면 유채꽃이 지천으로 피어나고, 가을이면 메밀이 온 동네를 뒤 덮는다.    두모마을 캠핑장은 아담하고 조용하며 소나무가 우거져 있어 경치가 좋은 곳이다.  총 3구역으로 나누어진 캠핑장은 1구역(1~11번 바닷가 앞 데크), 2구역(12~17번 차량캠핑구역), 3구역(18~22번 차량주차+데크)으로 되어 있다. 캠핑장 바로 앞에서 갯벌 바다체험을 할 수 있고 바로 옆은 1급수 넷가가 있어 가족단위 위주의 캠퍼들이 많이 찾는 곳이다.     갯벌 바다체험을 위한 바구니와 호미는 5000원이면 빌릴 수 있다. 이 밖에도 낚시장비를 대여 부둣가에서 낚시도 즐길 수 있다.",
-    "address": "경상남도 남해군 상주면 양아로525번길 20",
-    "region": "경상남도",
-    "sigungu": "남해군",
-    "lat": "34.7329531431463",
-    "lng": "127.955253504588",
-    "tel": "",
-    "homepage": "https://cafe.naver.com/f-e/cafes/31756168/menus/0?viewType=L",
-    "reserveUrl": "https://cafe.naver.com/f-e/cafes/31756168/menus/0?viewType=L",
-    "image": "https://gocamping.or.kr/upload/camp/908/thumb/thumb_720_1760bb0Wa7ePPcsosisPkup5.jpg",
-    "facilities": "전기,놀이터",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "일출명소,일몰명소,수상레저,낚시,액티비티,봄꽃여행,여름물놀이,가을단풍명소,겨울눈꽃명소,걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 16,
-      "auto": 6,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 1,
-    "showers": 1,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-20",
-    "nearbySpots": [
-      {
-        "name": "노도",
-        "dist": 1437,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/64/3556464_image2_1.jpg",
-        "addr": "경상남도 남해군 상주면 노도길 76-16"
-      },
-      {
-        "name": "금산(남해)",
-        "dist": 3247,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/3556371_image2_1.jpg",
-        "addr": "경상남도 남해군 상주면 상주리"
-      },
-      {
-        "name": "원천항",
-        "dist": 3407,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3373926_image2_1.JPG",
-        "addr": "경상남도 남해군 이동면 신전리 1138-10"
-      },
-      {
-        "name": "홍현마을",
-        "dist": 4497,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3554005_image2_1.jpg",
-        "addr": "경상남도 남해군 남면 남면로353번길 47"
-      },
-      {
-        "name": "남해 금산 봉수대",
-        "dist": 4914,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/19/1293619_image2_1.jpg",
-        "addr": "경상남도 남해군 상주면 보리암로 691"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "대중식당",
-        "dist": 3031,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/26/218426_image2_1.jpg",
-        "addr": "경상남도 남해군 상주면 남해대로 694"
-      },
-      {
-        "name": "시골할매 막걸리",
-        "dist": 5434,
-        "image": "",
-        "addr": "경상남도 남해군 남면 남면로679번길 17-37"
-      },
-      {
-        "name": "다랭이맛집",
-        "dist": 5520,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/42/2877842_image2_1.jpg",
-        "addr": "경상남도 남해군 남면로679번길 31-10"
-      },
-      {
-        "name": "남해라운지32",
-        "dist": 5686,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/16/2877816_image2_1.jpg",
-        "addr": "경상남도 남해군 남면 남서대로 539"
-      },
-      {
-        "name": "해사랑전복마을",
-        "dist": 7790,
-        "image": "",
-        "addr": "경상남도 남해군 미조면 미송로 193"
       }
     ]
   },
@@ -31572,103 +32803,6 @@
     ]
   },
   {
-    "contentId": "2758",
-    "name": "주문진글램핑 오토캠핑장",
-    "type": "자동차야영장",
-    "operator": "민간",
-    "lineIntro": "계곡을 배경으로 펼쳐진 캠핑장",
-    "intro": "주문진 글램핑 오토캠핑장은 강원도 강릉시 주문진읍에 자리 잡고 있다. 동해고속도로 북강릉IC에서 북강릉, 주문진 방면으로 달리면 도착한다. 도착까지 걸리는 시간은 30분 안팎이다. 이곳은 계곡과 인접해 있으며, 오토캠핑 6면, 캠핑 트레일러 1대, 글램핑 15면을 갖추고 있다. 오토캠핑장은 전기와 화로 사용이 가능하다. 캠핑 트레일러는 복층 구조로 이뤄졌으며, 내부는 침대, 캠핑 용품 일체를 구비했다. 글램핑은 세 가지 종류다. 화장실과 샤워실을 외부에 둔 커플형을 비롯해 화장실 등이 내부에 있는 커플형과 패밀리형이다. 내부에는 기본적으로 침대, 냉난방기, 냉장고, TV, 취사도구, 식기류를 마련했다. 관리소에서는 선풍기, 토치, 타프, 이불, 전기장판을 빌려준다.    주변 관광지는 주문진해변, 강릉 복사꽃마을, 백운사가 있다. 40년 넘게 운영 중인 입암메밀타운,  활어를 맛볼 수 있는 유리횟집 등 음식점도 즐비하다.",
-    "address": "강원특별자치도 강릉시 주문진읍 신리천로 951-9",
-    "region": "강원특별자치도",
-    "sigungu": "강릉시",
-    "lat": "37.8800594",
-    "lng": "128.7344964",
-    "tel": "033-642-4241",
-    "homepage": "http://www.jumunjincamping.com/default/",
-    "reserveUrl": "http://www.jumunjincamping.com/default/app/app_online.php?topmenu=3&submenu=2",
-    "image": "https://gocamping.or.kr/upload/camp/2758/thumb/thumb_720_5123mTe4GUqfU00ggiJG7EX7.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,운동시설",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "봄꽃여행,여름물놀이",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 10,
-      "glamp": 16,
-      "caravan": 0
-    },
-    "toilets": 8,
-    "showers": 1,
-    "glampFacilities": "침대,TV,에어컨,냉장고,난방기구,취사도구,내부화장실,내부샤워실",
-    "caravanFacilities": "침대,TV,에어컨,냉장고,난방기구,취사도구",
-    "updated": "2026-07-13",
-    "nearbySpots": [
-      {
-        "name": "강릉 복사꽃마을",
-        "dist": 3812,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/42/3383742_image2_1.JPG",
-        "addr": "강원특별자치도 강릉시 신리천로 527-3 복사꽃정보마을센타"
-      },
-      {
-        "name": "소금강",
-        "dist": 7425,
-        "image": "",
-        "addr": "강원특별자치도 강릉시 연곡면 소금강길 449"
-      },
-      {
-        "name": "지경리해변",
-        "dist": 7579,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/11/2922111_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 동해대로 62"
-      },
-      {
-        "name": "남애1리해수욕장",
-        "dist": 7723,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/96/2915996_image2_1.JPG",
-        "addr": "강원특별자치도 양양군 현남면 화상해안길 245"
-      },
-      {
-        "name": "포매리 백로와 왜가리 번식지",
-        "dist": 7741,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/47/2793447_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 개매길 215-33"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "타래",
-        "dist": 3159,
-        "image": "",
-        "addr": "강원특별자치도 강릉시 주문진읍 신리천로 620"
-      },
-      {
-        "name": "달래촌",
-        "dist": 4959,
-        "image": "",
-        "addr": "강원특별자치도 양양군 현남면 화상천로 634"
-      },
-      {
-        "name": "입암메밀타운",
-        "dist": 6240,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/18/3071518_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 현남면 화상천로 155"
-      },
-      {
-        "name": "송이랑능이랑",
-        "dist": 7591,
-        "image": "",
-        "addr": "강원특별자치도 강릉시 연곡면 소금강길 469"
-      },
-      {
-        "name": "칠공주불고기",
-        "dist": 7665,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/49/2874049_image2_1.jpg",
-        "addr": "강원특별자치도 강릉시 참샘길 12"
-      }
-    ]
-  },
-  {
     "contentId": "3483",
     "name": "행복한나드리캠핑장",
     "type": "일반야영장",
@@ -35903,103 +37037,6 @@
         "dist": 5131,
         "image": "http://tong.visitkorea.or.kr/cms/resource/57/2840957_image2_1.jpg",
         "addr": "경상북도 경주시 감포읍 동해안로 2560"
-      }
-    ]
-  },
-  {
-    "contentId": "8007",
-    "name": "양주 리온 캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "7월8일부터 7월31일까지 이용하시는 캠퍼들에게 장작1망서비스와 리뷰또는 후기작성 블로그 작성시 다음 캠핑예약시 30%할인쿠폰드립니다  이용가능 4인기준이며(세 자녀이상은 인정합니다.)(예어른4명에 아이한명은 안됩니다.)추가인원시 인당 5,000원 추가요금부과  지인초대불가합니다. 매너타임 22:30~09:00 입니다.",
-    "address": "경기도 양주시 마전로212번길 79-72 (마전동)",
-    "region": "경기도",
-    "sigungu": "양주시",
-    "lat": "37.779479109742",
-    "lng": "127.058685966981",
-    "tel": "031-821-6661",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/8007/thumb/thumb_720_8754tjc9IYKH062urE6dH074.jpg",
-    "facilities": "전기,장작판매,온수,트렘폴린,물놀이장,놀이터,산책로,마트.편의점",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 37,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 2,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-08",
-    "nearbySpots": [
-      {
-        "name": "나리농원",
-        "dist": 2383,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3559494_image2_1.jpg",
-        "addr": "경기도 양주시 광사동"
-      },
-      {
-        "name": "양주향교",
-        "dist": 2449,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/28/3559428_image2_1.jpg",
-        "addr": "경기도 양주시 부흥로1423번길 50"
-      },
-      {
-        "name": "양주 관아지",
-        "dist": 2667,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/91/3541591_image2_1.jpg",
-        "addr": "경기도 양주시 부흥로1399번길 15 (유양동)"
-      },
-      {
-        "name": "고덕생활체육공원",
-        "dist": 2813,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/46/3338846_image2_1.jpg",
-        "addr": "경기도 양주시 고덕로 187-55"
-      },
-      {
-        "name": "백화암(양주)",
-        "dist": 3305,
-        "image": "",
-        "addr": "경기도 양주시 백화암길 191 (유양동)"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "내마음의숲",
-        "dist": 670,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/12/2877412_image2_1.jpg",
-        "addr": "경기도 양주시 원학로147번길 123-24 (광사동)"
-      },
-      {
-        "name": "이너프유",
-        "dist": 1631,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/64/2832264_image2_1.jpg",
-        "addr": "경기도 양주시 부흥로1422번길 220 (남방동)"
-      },
-      {
-        "name": "예향재",
-        "dist": 2176,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2830371_image2_1.jpg",
-        "addr": "경기도 의정부시 동일로 860-22 (녹양동)"
-      },
-      {
-        "name": "로슈아커피",
-        "dist": 2337,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/26/2829426_image2_1.jpg",
-        "addr": "경기도 양주시 광사로 145 (만송동)"
-      },
-      {
-        "name": "밀곳",
-        "dist": 2388,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/96/2877496_image2_1.jpg",
-        "addr": "경기도 양주시 광사로 148 (만송동)"
       }
     ]
   },
@@ -53558,85 +54595,6 @@
     ]
   },
   {
-    "contentId": "100352",
-    "name": "곡성달빛 야영장",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": " 산속에 위치한 자연 친화적 캠핑장\t\t",
-    "intro": "자연친화적 캠핑장으로 계곡물이 캠핑장옆으로 흐르고,  친환경으로 죽순과 대나무도 판매하는 와룡관광농원을 함께 운영하며,캠핑장내에 무인카페도있습니다. 또한 매주 화.수.목은 휴장이며,100% 사전 예약제로 운영됩니다.\t\t\t\t\t\t\t ",
-    "address": "전남광주통합특별시 곡성군 죽곡면 남양마을1길 239-5",
-    "region": "전남광주통합특별시",
-    "sigungu": "곡성군",
-    "lat": "35.1875396",
-    "lng": "127.3412483",
-    "tel": "061-362-5879",
-    "homepage": "http://www.xn--zb0b8a28vlqj8mr2ya.com/",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100352/thumb/thumb_720_5155OQphehLooxsPA8Q8fO2R.jpg",
-    "facilities": "전기,장작판매,온수,산책로,마트.편의점",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "봄꽃여행,가을단풍명소,걷기길",
-    "operPeriod": "봄,여름,가을",
-    "siteCounts": {
-      "general": 16,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 1,
-    "showers": 1,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-06-30",
-    "nearbySpots": [
-      {
-        "name": "압록유원지",
-        "dist": 3263,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/37/3530137_image2_1.jpg",
-        "addr": "전남광주통합특별시 곡성군 죽곡면 섬진강로 1012"
-      },
-      {
-        "name": "봉조농촌체험학교",
-        "dist": 3420,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/02/3345002_image2_1.JPG",
-        "addr": "전남광주통합특별시 곡성군 오곡면 봉조길 114"
-      },
-      {
-        "name": "대황강출렁다리",
-        "dist": 4702,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/96/3532296_image2_1.jpg",
-        "addr": "전남광주통합특별시 곡성군 죽곡면 대황강로 802"
-      },
-      {
-        "name": "섬진강변 유원지",
-        "dist": 5123,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/60/3530060_image2_1.jpg",
-        "addr": "전남광주통합특별시 곡성군 고달면 두가리"
-      },
-      {
-        "name": "곡성 하늘나리마을",
-        "dist": 5896,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/81/3533581_image2_1.jpg",
-        "addr": "전남광주통합특별시 곡성군 죽곡면 상한길 264"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "사계절횟집",
-        "dist": 2691,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/05/2789605_image2_1.jpg",
-        "addr": "전남광주통합특별시 곡성군 오곡면 대황강로 1589"
-      },
-      {
-        "name": "두가헌 두바퀴쉼터",
-        "dist": 6354,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/84/2800384_image2_1.jpg",
-        "addr": "전남광주통합특별시 곡성군 고달면 두계길 35"
-      }
-    ]
-  },
-  {
     "contentId": "100392",
     "name": "벅스글램핑",
     "type": "일반야영장",
@@ -69665,103 +70623,6 @@
         "dist": 4424,
         "image": "",
         "addr": "강원특별자치도 고성군 자작도선사1길 18-1"
-      }
-    ]
-  },
-  {
-    "contentId": "100290",
-    "name": "큰돌 캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경기도 포천시 관인면 뗏마루길 128-26",
-    "region": "경기도",
-    "sigungu": "포천시",
-    "lat": "38.1206960795284",
-    "lng": "127.252351906759",
-    "tel": "",
-    "homepage": "https://www.instagram.com/withdogs11/",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100290/thumb/thumb_720_3186VZGs9KYx0jGepFODwQuX.jpg",
-    "facilities": "덤프스테이션",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-06-09",
-    "nearbySpots": [
-      {
-        "name": "교동 장독대마을",
-        "dist": 3588,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/99/3440899_image2_1.JPG",
-        "addr": "경기도 포천시 관인면 신교동로 148-11"
-      },
-      {
-        "name": "고남산 자철석 광산 (한탄강 유네스코 세계지질공원)",
-        "dist": 4239,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/68/2616468_image2_1.bmp",
-        "addr": "경기도 포천시 관인면 교동길 46"
-      },
-      {
-        "name": "심원사(철원)",
-        "dist": 4712,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/45/3042545_image2_1.jpg",
-        "addr": "강원특별자치도 철원군 동송읍 상노1길 58"
-      },
-      {
-        "name": "지장산 응회암 (한탄강 유네스코 세계지질공원)",
-        "dist": 5571,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/73/2616473_image2_1.bmp",
-        "addr": "경기도 포천시 관인면 지장산길 124"
-      },
-      {
-        "name": "지장계곡",
-        "dist": 5571,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/56/3003856_image2_1.jpg",
-        "addr": "경기도 포천시 관인면 중리"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "벚골도토리막국수",
-        "dist": 1192,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/65/2854565_image2_1.jpg",
-        "addr": "경기도 포천시 관인면 숯골길 325"
-      },
-      {
-        "name": "지장산막국수 본점",
-        "dist": 5296,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/31/2856131_image2_1.jpeg",
-        "addr": "경기도 포천시 관인면 창동로 895"
-      },
-      {
-        "name": "제주여행",
-        "dist": 7224,
-        "image": "",
-        "addr": "경기도 포천시 영북면 산정호수로 289"
-      },
-      {
-        "name": "민통선한우촌",
-        "dist": 7431,
-        "image": "",
-        "addr": "강원특별자치도 철원군 갈말읍 호국로 4987"
-      },
-      {
-        "name": "옛날전통된장집",
-        "dist": 7976,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2855936_image2_1.jpg",
-        "addr": "경기도 포천시 영북면 산정호수로 374"
       }
     ]
   },
@@ -162883,103 +163744,6 @@
     "nearbyFood": []
   },
   {
-    "contentId": "7606",
-    "name": "소풍 스테이",
-    "type": "자동차야영장,카라반",
-    "operator": "민간",
-    "lineIntro": "카페 팔롬비니와 함께 있는 동진강변 카라반 야영장",
-    "intro": "전주에서 순창쪽으로 가면 정읍 내장산 산외마을고 가는 길이 있다. 이 도로를 따라 가다보면 산외한우마을 건너편에 팔롬비니 카페라는 유럽식 건물이 웅장하게 보인다. 섬진강캠핑장은 이곳 팔롬비니 카페와 함께 있다. 카페에서 함께 운영하는 카라반 전용 캠핑장으로 카페 왼쪽에 위치하고 있다. 캠핑장 바로 앞으로 섬진강의 지류인 동진강이 흐르고, 카페 옆에는 멋진 잔디마당도 조성되어 있다. ",
-    "address": "전북 정읍시 산외면 산외로 445-30",
-    "region": "전라북도",
-    "sigungu": "정읍시",
-    "lat": "35.6233979251293",
-    "lng": "127.039706846478",
-    "tel": "063-537-8688",
-    "homepage": "http://sjrcamp.co.kr",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/7606/thumb/thumb_720_7706grziF0Kvba6egf76QO5B.jpg",
-    "facilities": "전기,무선인터넷,온수",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 10
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실",
-    "updated": "2025-07-22",
-    "nearbySpots": [
-      {
-        "name": "산외한우마을",
-        "dist": 192,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/97/3061497_image2_1.jpg",
-        "addr": "전북특별자치도 정읍시 산외면 산외로 450"
-      },
-      {
-        "name": "고택문화체험관",
-        "dist": 1891,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3365685_image2_1.JPG",
-        "addr": "전북특별자치도 정읍시 산외면 공동길 58"
-      },
-      {
-        "name": "정읍 김명관 고택",
-        "dist": 1928,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/79/1606479_image2_1.jpg",
-        "addr": "전북특별자치도 정읍시 산외면 공동길 72-10"
-      },
-      {
-        "name": "용계서원",
-        "dist": 5148,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/17/3365817_image2_1.JPG",
-        "addr": "전북특별자치도 정읍시 칠보면 동편길 41-3"
-      },
-      {
-        "name": "칠보물테마유원지",
-        "dist": 5199,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/70/3060470_image2_1.jpg",
-        "addr": "전북특별자치도 정읍시 칠보면 칠보산로 1555"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "옥쭹가든",
-        "dist": 5848,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/54/2837954_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 국사봉로 10 목정가든"
-      },
-      {
-        "name": "옥정호산장",
-        "dist": 6627,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/04/2780004_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 운암면 운정길 7"
-      },
-      {
-        "name": "강나루횟집",
-        "dist": 6774,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2837907_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 종운로 802-5 강나루횟집"
-      },
-      {
-        "name": "상록수",
-        "dist": 6851,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/27/2837927_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 운정길 29 상록수"
-      },
-      {
-        "name": "하루",
-        "dist": 6885,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/95/2837995_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 강운로 1175-17"
-      }
-    ]
-  },
-  {
     "contentId": "7767",
     "name": "대천용두야영장",
     "type": "일반야영장",
@@ -165279,103 +166043,6 @@
         "dist": 8511,
         "image": "http://tong.visitkorea.or.kr/cms/resource/46/2842346_image2_1.png",
         "addr": "경상북도 청도군 금천면 신지리 442-17"
-      }
-    ]
-  },
-  {
-    "contentId": "101836",
-    "name": "가야산뷰관광농원캠핑장",
-    "type": "자동차야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경남 합천군 가야면 매화산로 424-20",
-    "region": "경상남도",
-    "sigungu": "합천군",
-    "lat": "35.7589027346787",
-    "lng": "128.123035374822",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2025-07-21",
-    "nearbySpots": [
-      {
-        "name": "각사산촌생태마을",
-        "dist": 2159,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/23/3570123_image2_1.jpg",
-        "addr": "경상남도 합천군 가야면 야천로 101"
-      },
-      {
-        "name": "홍류동계곡",
-        "dist": 2996,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/80/3565880_image2_1.jpg",
-        "addr": "경상남도 합천군 가야면 구원리"
-      },
-      {
-        "name": "농산정",
-        "dist": 3161,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/21/3377521_image2_1.JPG",
-        "addr": "경상남도 합천군 가야면 구원리 산-1"
-      },
-      {
-        "name": "합천 반야사지 원경왕사비",
-        "dist": 5214,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3041294_image2_1.jpg",
-        "addr": "경상남도 합천군 가야면 해인사길 122"
-      },
-      {
-        "name": "합천향교",
-        "dist": 7085,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/43/3041343_image2_1.jpg",
-        "addr": "경상남도 합천군 야로면 향교길 17-3"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "합천명품토종흑돼지전문점",
-        "dist": 1556,
-        "image": "",
-        "addr": "경상남도 합천군 가야면 가야시장로 106"
-      },
-      {
-        "name": "전나무식당",
-        "dist": 3849,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/11/2899211_image2_1.jpg",
-        "addr": "경상북도 성주군 성주가야산로 116"
-      },
-      {
-        "name": "팔도강산",
-        "dist": 4503,
-        "image": "",
-        "addr": "경상남도 합천군 야로면 가야산로 664"
-      },
-      {
-        "name": "향원식당",
-        "dist": 4759,
-        "image": "",
-        "addr": "경상남도 합천군 가야면 치인1길 9-1"
-      },
-      {
-        "name": "부산식당",
-        "dist": 4769,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/3587836_image2_1.jpg",
-        "addr": "경상남도 합천군 가야면 치인1길 8"
       }
     ]
   },
@@ -184220,103 +184887,6 @@
         "dist": 7055,
         "image": "http://tong.visitkorea.or.kr/cms/resource/15/2837515_image2_1.jpg",
         "addr": "경기도 연천군 청산면 청창로141번길 92"
-      }
-    ]
-  },
-  {
-    "contentId": "8157",
-    "name": "태안노을숲캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "마검포 바다 앞에 위치한 노을 보기 좋은 바다뷰 캠핑장",
-    "intro": "태안 마검포해수욕장 안쪽에 있다. 해변과 바로 붙어 있어 시원 바닷바람과 해넘이를 만끽할 수 있다. 또한 사이트에서 곧바로 갯벌까지 걸어서 이용할 수 있다. 사이트는 해변쪽 데크와 숲속 데크, 노지 캠핑등 다양하게 마련되어 있다.",
-    "address": "충남 태안군 남면 마검포길 311-42",
-    "region": "충청남도",
-    "sigungu": "태안군",
-    "lat": "36.6070675",
-    "lng": "126.2911585",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/8157/thumb/thumb_720_0113X4JvWuL5TMOHE2HaFUGF.jpg",
-    "facilities": "전기,장작판매,온수,물놀이장,마트.편의점",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "일몰명소,낚시,여름물놀이,걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 4,
-    "showers": 7,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2025-02-06",
-    "nearbySpots": [
-      {
-        "name": "마검포해수욕장",
-        "dist": 177,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/88/3340788_image2_1.jpg",
-        "addr": "충청남도 태안군 남면 신온리"
-      },
-      {
-        "name": "네이처월드",
-        "dist": 1360,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/46/3422246_image2_1.jpg",
-        "addr": "충청남도 태안군 남면 마검포길 200"
-      },
-      {
-        "name": "마검포항",
-        "dist": 1777,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/22/3553422_image2_1.jpg",
-        "addr": "충청남도 태안군 남면 신온리"
-      },
-      {
-        "name": "드르니항",
-        "dist": 2880,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3495127_image2_1.jpg",
-        "addr": "충청남도 태안군 남면 신온리"
-      },
-      {
-        "name": "별주부마을",
-        "dist": 3058,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/91/3336391_image2_1.jpg",
-        "addr": "충청남도 태안군 남면 별주부길 102"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "파파스테이크",
-        "dist": 1160,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/01/2850901_image2_1.jpg",
-        "addr": "충청남도 태안군 마검포길 232-10"
-      },
-      {
-        "name": "대한횟집 만세튀김",
-        "dist": 3290,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/54/2851354_image2_1.jpg",
-        "addr": "충청남도 태안군 백사장1길 119"
-      },
-      {
-        "name": "털보선장횟집",
-        "dist": 3357,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/14/2786414_image2_1.jpg",
-        "addr": "충청남도 태안군 안면읍 백사장1길 95"
-      },
-      {
-        "name": "다원",
-        "dist": 3665,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/79/2926779_image2_1.jpg",
-        "addr": "충청남도 태안군 천수만로 134-4"
-      },
-      {
-        "name": "안면식당",
-        "dist": 3936,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/98/2786398_image2_1.jpg",
-        "addr": "충청남도 태안군 안면읍 백사장1길 24"
       }
     ]
   },
@@ -207917,103 +208487,6 @@
     ]
   },
   {
-    "contentId": "100773",
-    "name": "밴프 야영장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "구룡령초입 공수전계곡 아래쪽  강변 캠핑장",
-    "intro": "양양에서 구룡령 가는길. 초입에 위치하고 있다. 정다운 마을 아래쪽, 밴프리조트내 캠핑시설이다.  리조트앞 강변쪽으로 사이트와 캠핑시설이 조성되어 있다. 때문에 강변에서 물놀이를 할 수 있고, 주변 쉼터도 잘 갖춰져 있다.",
-    "address": "강원 양양군 서면 구룡령로 3080-70",
-    "region": "강원도",
-    "sigungu": "양양군",
-    "lat": "38.0533806",
-    "lng": "128.5706554",
-    "tel": "033-671-0710",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100773/thumb/thumb_720_5096AevUr3J64XLoehHpGjd3.jpg",
-    "facilities": "전기,무선인터넷",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 15,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2024-12-02",
-    "nearbySpots": [
-      {
-        "name": "공수전계곡",
-        "dist": 2311,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3045905_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 서면 공수전리"
-      },
-      {
-        "name": "이두형가옥",
-        "dist": 3832,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/75/3467075_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 서면 들돌길 284-1"
-      },
-      {
-        "name": "양양향교",
-        "dist": 4194,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/80/3076880_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 양양읍 거마천로 52-20"
-      },
-      {
-        "name": "양양 에너지팜",
-        "dist": 4759,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3387363_image2_1.JPG",
-        "addr": "강원특별자치도 양양군 서면 산얏골길 23-51"
-      },
-      {
-        "name": "양양송이조각공원",
-        "dist": 6367,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/90/2915990_image2_1.JPG",
-        "addr": "강원특별자치도 양양군 양양읍 동해대로 2708"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "천선식당",
-        "dist": 5045,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3567927_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 양양읍 남대천로 13"
-      },
-      {
-        "name": "공가네감자옹심이",
-        "dist": 5275,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/19/2837919_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 남문5길 5-17"
-      },
-      {
-        "name": "동일식당",
-        "dist": 5369,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/29/2785929_image2_1.jpg",
-        "addr": "강원특별자치도 양양군 양양읍 남문3길 11-9"
-      },
-      {
-        "name": "해촌",
-        "dist": 6521,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/98/2838098_image2_1.JPG",
-        "addr": "강원특별자치도 양양군 동명로 81"
-      },
-      {
-        "name": "영광정메밀국수",
-        "dist": 7687,
-        "image": "",
-        "addr": "강원특별자치도 양양군 강현면 진미로 446"
-      }
-    ]
-  },
-  {
     "contentId": "100784",
     "name": "동호 국민여가캠핑장",
     "type": "자동차야영장",
@@ -213534,103 +214007,6 @@
         "dist": 5500,
         "image": "http://tong.visitkorea.or.kr/cms/resource/26/2013726_image2_1.JPG",
         "addr": "충청북도 제천시 수산면 월악로 2970"
-      }
-    ]
-  },
-  {
-    "contentId": "101127",
-    "name": "진천명품휴미락캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "부대시설이 눈에 띄는 숲속 캠핑장 ",
-    "intro": "부대시설이 눈에 띄는 숲속 캠핑장  진천명품 휴미락캠핑장은 충북 진천군 백곡면에 자리 잡고 있다. 계곡을 끼고 있고, 숲으로 둘러싸인 덕분에 자연친화적인 캠핑을 만끽할 수 있다. 캠핑장에는 오토캠핑 사이트 43면이 마련되어 있다. 바닥은 파쇄석 41면, 데크 2면으로 이루어졌다. 크기는 가로 7m × 세로 8m, 가로 9m × 세로 8m 등 다양하다. 화장실, 샤워실, 개수대의 수가 많고, 특히 샤워실은 프라이빗하게 꾸며졌다. 실내 놀이터를 비롯해 집라인, 카페, 민박 등 부대시설도 알차게 갖추어져 있다. 주변에 진천농다리와 한반도지형전망공원이 있어 연계 여행에 나서기 수월하다.",
-    "address": "충북 진천군 백곡면 용암2길 108-36",
-    "region": "충청북도",
-    "sigungu": "진천군",
-    "lat": "36.8744595",
-    "lng": "127.3667318",
-    "tel": "0507-1446-2221",
-    "homepage": "",
-    "reserveUrl": "https://www.camfit.co.kr/camp/650d5fda4e302e001e104dbf",
-    "image": "https://gocamping.or.kr/upload/camp/101127/thumb/thumb_720_3220hmLRGuxwZtPoOTbx3Juz.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,트렘폴린,물놀이장,놀이터,운동시설,마트.편의점",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "여름물놀이",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 43,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 2,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2024-12-02",
-    "nearbySpots": [
-      {
-        "name": "물안뜰체험관",
-        "dist": 1468,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/3561976_image2_1.jpg",
-        "addr": "충청북도 진천군 백곡면 백곡로 964"
-      },
-      {
-        "name": "연곡저수지",
-        "dist": 3365,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/86/3341286_image2_1.JPG",
-        "addr": "충청북도 진천군 진천읍 연곡리"
-      },
-      {
-        "name": "보련마을",
-        "dist": 3415,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/35/3336235_image2_1.JPG",
-        "addr": "충청북도 진천군 진천읍 보련골길 40-4"
-      },
-      {
-        "name": "생거진천 화랑촌",
-        "dist": 3423,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3560205_image2_1.jpg",
-        "addr": "충청북도 진천군 진천읍 보련골길 40-4"
-      },
-      {
-        "name": "연곡계곡",
-        "dist": 3649,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/69/3336069_image2_1.JPG",
-        "addr": "충청북도 진천군 진천읍 연곡리"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "엽돈재가든",
-        "dist": 6084,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/31/2856831_image2_1.jpg",
-        "addr": "충청북도 진천군 백곡로 184 숯판매전시장"
-      },
-      {
-        "name": "할머니집",
-        "dist": 8393,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/95/2767195_image2_1.jpg",
-        "addr": "충청북도 진천군 이월면 화산동길 18"
-      },
-      {
-        "name": "청룡원조매운탕",
-        "dist": 8538,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/33/2767433_image2_1.jpg",
-        "addr": "충청남도 천안시 서북구 입장면 성진로 1406"
-      },
-      {
-        "name": "청산가든",
-        "dist": 8928,
-        "image": "",
-        "addr": "충청북도 진천군 이월면 진안로 354"
-      },
-      {
-        "name": "이월서가",
-        "dist": 9538,
-        "image": "",
-        "addr": "충청북도 진천군 진안로 583-6"
       }
     ]
   },
@@ -224829,103 +225205,6 @@
         "dist": 5205,
         "image": "http://tong.visitkorea.or.kr/cms/resource/83/2866583_image2_1.jpg",
         "addr": "대구광역시 달서구 달구벌대로 1511 (용산동)"
-      }
-    ]
-  },
-  {
-    "contentId": "101542",
-    "name": "달너머 캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원특별자치도 강릉시 연곡면 진고개로 1687",
-    "region": "강원도",
-    "sigungu": "강릉시",
-    "lat": "37.8493532666684",
-    "lng": "128.72470617876",
-    "tel": "0507-1331-8762",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2024-09-03",
-    "nearbySpots": [
-      {
-        "name": "소금강",
-        "dist": 3922,
-        "image": "",
-        "addr": "강원특별자치도 강릉시 연곡면 소금강길 449"
-      },
-      {
-        "name": "금강사(강릉)",
-        "dist": 5643,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/25/3069925_image2_1.jpg",
-        "addr": "강원특별자치도 강릉시 연곡면 소금강길 670"
-      },
-      {
-        "name": "강릉 복사꽃마을",
-        "dist": 5796,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/42/3383742_image2_1.JPG",
-        "addr": "강원특별자치도 강릉시 신리천로 527-3 복사꽃정보마을센타"
-      },
-      {
-        "name": "오대산 소금강계곡",
-        "dist": 6314,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/13/3577813_image2_1.jpg",
-        "addr": "강원특별자치도 강릉시 연곡면 삼산리"
-      },
-      {
-        "name": "구룡폭포(소금강)",
-        "dist": 6343,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/42/3029842_image2_1.jpg",
-        "addr": "강원특별자치도 강릉시 연곡면 소금강길 500"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "송이랑능이랑",
-        "dist": 4095,
-        "image": "",
-        "addr": "강원특별자치도 강릉시 연곡면 소금강길 469"
-      },
-      {
-        "name": "타래",
-        "dist": 5446,
-        "image": "",
-        "addr": "강원특별자치도 강릉시 주문진읍 신리천로 620"
-      },
-      {
-        "name": "송천휴게소식당",
-        "dist": 8075,
-        "image": "",
-        "addr": "강원특별자치도 강릉시 연곡면 진고개로 781-1"
-      },
-      {
-        "name": "달래촌",
-        "dist": 8345,
-        "image": "",
-        "addr": "강원특별자치도 양양군 현남면 화상천로 634"
-      },
-      {
-        "name": "남북면옥",
-        "dist": 9360,
-        "image": "",
-        "addr": "강원특별자치도 강릉시 주문진읍 신리천로 90"
       }
     ]
   },

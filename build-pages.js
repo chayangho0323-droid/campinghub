@@ -21,7 +21,9 @@ const GA_SNIPPET = `
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-8273JMD6NN');
-  </script>`;
+  </script>
+  <!-- Google AdSense (사이트 소유 확인 + 광고 게재) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5951913667078413" crossorigin="anonymous"></script>`;
 
 // 쿠팡 파트너스 — 캠핑용품이라 이 사이트와 궁합이 더 좋다 (FestivalHub과 같은 링크)
 const COUPANG_ITEMS = [

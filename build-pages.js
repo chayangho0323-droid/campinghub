@@ -25,10 +25,11 @@ const GA_SNIPPET = `
 
 // 쿠팡 파트너스 — 캠핑용품이라 이 사이트와 궁합이 더 좋다 (FestivalHub과 같은 링크)
 const COUPANG_ITEMS = [
-  { name: "🪑 캠핑의자", url: "https://link.coupang.com/a/f7LuGkEJMq" },
-  { name: "🧺 돗자리", url: "https://link.coupang.com/a/f7MlAxqn7s" },
-  { name: "🧣 캠핑 담요", url: "https://link.coupang.com/a/gP8GvQyG2S" },
-  { name: "🔥 핫팩", url: "https://link.coupang.com/a/gP8J1IrVsW" },
+  // ⚠️ 애드센스 심사를 위해 임시로 비움 (2026-09-14) — 승인되면 아래 주석을 다시 살릴 것!
+  // { name: "🪑 캠핑의자", url: "https://link.coupang.com/a/f7LuGkEJMq" },
+  // { name: "🧺 돗자리", url: "https://link.coupang.com/a/f7MlAxqn7s" },
+  // { name: "🧣 캠핑 담요", url: "https://link.coupang.com/a/gP8GvQyG2S" },
+  // { name: "🔥 핫팩", url: "https://link.coupang.com/a/gP8J1IrVsW" },
 ];
 
 const campings = JSON.parse(fs.readFileSync("campings.json", "utf-8"));
@@ -128,7 +129,7 @@ function footerHtml(prefix = "") {
   return `
   <footer class="site-footer">
     <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
-    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a></p>
+    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}privacy.html">개인정보처리방침</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a></p>
     <p><a href="${prefix}guide-beginner.html">🔰 첫 캠핑 준비물</a> · <a href="${prefix}guide-gear.html">💰 예산별 장비</a> · <a href="${prefix}guide-compare.html">📚 장비 비교</a> · <a href="${prefix}guide-safety.html">⚠️ 안전·매너</a></p>
     <p><a class="report-link" href="${REPORT_FORM_URL}" target="_blank" rel="noopener">📮 여기 없는 캠핑장 제보하기</a></p>
     <p><a class="cross-link" href="https://festivalhub.kr" target="_blank" rel="noopener">🎪 전국 축제 일정이 궁금하다면 — 페스티벌허브</a></p>
@@ -395,13 +396,13 @@ function buildPage(c, all) {
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}
       ${nearbySection("주변 맛집", "🍜", c.nearbyFood)}
       ${festSection}
-      <section class="nearby-section coupang-section">
+      ${COUPANG_ITEMS.length ? `<section class="nearby-section coupang-section">
         <h2>🎒 캠핑 준비물</h2>
         <div class="dir-buttons">
           ${COUPANG_ITEMS.map((i) => `<a class="dir-btn coupang" target="_blank" rel="noopener sponsored" href="${esc(i.url)}">${esc(i.name)}</a>`).join("")}
         </div>
         <p class="coupang-notice">이 섹션은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
-      </section>
+      </section>` : ""}
     </div>
   </main>
   ${footerHtml("../")}
@@ -1107,6 +1108,7 @@ const today = new Date().toISOString().slice(0, 10);
 const urls = [
   `${SITE_URL}/`,
   `${SITE_URL}/about.html`,
+  `${SITE_URL}/privacy.html`,
   ...guideFiles.map((f) => `${SITE_URL}/${f}`),
   ...themeFiles.map((f) => `${SITE_URL}/${f}`),
   ...regionFiles.map((f) => `${SITE_URL}/${f}`),

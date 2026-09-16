@@ -1,5 +1,181 @@
 [
   {
+    "contentId": "8127",
+    "name": "덕동 히든밸리 캠프펜션",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "여름철 물놀이하기 좋은 캠핑장",
+    "intro": "베트남의 히든밸리와 닮았지만 더 아름다운 자연의 계곡을 느끼실 수 있는 덕동히든밸리캠프펜션입니다. 깨끗한 자연환경에 떠나실 때까지 힐링을 느끼실 수 있고, 아이들도 재미있게 즐길거리들이 있어서 가족에게 적합한 캠핑%펜션 입니다. 또한 마트 부럽지 않은 매점의 물품 구색은 필요 물품 구입을 위해 외부로 나가시지 않아도 될 만큼 충분히 갖추기 위해 노력하고 있습니다. 오실 때마다 더 나아진 모습들을 보실 수 있는 재미가 있는 덕동히든밸리캠프펜션! 많이 찾아주세요~^^",
+    "address": "충청북도 제천시 백운면 덕동로 207-3",
+    "region": "충청북도",
+    "sigungu": "제천시",
+    "lat": "37.2021034",
+    "lng": "127.9779039",
+    "tel": "010-2693-6516",
+    "homepage": "",
+    "reserveUrl": "https://map.naver.com/v5/entry/place/32548388?c=14254529.5915240,4458701.3264397,11,0,0,0,dh",
+    "image": "",
+    "facilities": "전기,무선인터넷,마트.편의점",
+    "pet": "가능",
+    "brazier": "개별",
+    "theme": "",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 5,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 1,
+    "showers": 2,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-16",
+    "nearbySpots": [
+      {
+        "name": "덕동생태숲",
+        "dist": 2655,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/47/3569847_image2_1.jpg",
+        "addr": "충청북도 제천시 백운면 덕동로 545"
+      },
+      {
+        "name": "덕동계곡",
+        "dist": 3442,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/31/3062631_image2_1.JPG",
+        "addr": "충청북도 제천시 백운면 화당로2길 19"
+      },
+      {
+        "name": "원주 삼태미마을",
+        "dist": 7285,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2495036_image2_1.jpg",
+        "addr": "강원특별자치도 원주시 귀래면 운계다둔길 111"
+      },
+      {
+        "name": "천은사계곡(원주)",
+        "dist": 7416,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/24/3046024_image2_1.jpg",
+        "addr": "강원특별자치도 원주시 귀래면 귀래리"
+      },
+      {
+        "name": "금대계곡",
+        "dist": 8520,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3045285_image2_1.jpg",
+        "addr": "강원특별자치도 원주시 판부면 치악로 546-22"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "마묵라운지",
+        "dist": 7858,
+        "image": "",
+        "addr": "충청북도 제천시 백운면 금봉로 365"
+      },
+      {
+        "name": "산아래석갈비",
+        "dist": 8439,
+        "image": "",
+        "addr": "충청북도 제천시 백운면 금봉로 182"
+      },
+      {
+        "name": "큰곰",
+        "dist": 8800,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/94/2891594_image2_1.png",
+        "addr": "강원특별자치도 원주시 영원산성길 46"
+      }
+    ]
+  },
+  {
+    "contentId": "102275",
+    "name": "술박물관 오토캠핑장",
+    "type": "자동차야영장",
+    "operator": "",
+    "lineIntro": "",
+    "intro": "",
+    "address": "전북특별자치도 완주군 운주면 대둔산로 2298-140, 운주면 산북리 1075-4",
+    "region": "전북특별자치도",
+    "sigungu": "완주군",
+    "lat": "36.1214195175714",
+    "lng": "127.337726673263",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-16",
+    "nearbySpots": [
+      {
+        "name": "대둔산도립공원(금산)",
+        "dist": 1814,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/14/3345314_image2_1.jpg",
+        "addr": "충청남도 금산군 진산면 대둔산로 2"
+      },
+      {
+        "name": "안심사(완주)",
+        "dist": 3355,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/19/3558319_image2_1.jpg",
+        "addr": "전북특별자치도 완주군 운주면 안심길 372"
+      },
+      {
+        "name": "옥계천",
+        "dist": 4567,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/47/3557447_image2_1.jpg",
+        "addr": "전북특별자치도 완주군 운주면 산북리"
+      },
+      {
+        "name": "운주계곡",
+        "dist": 6863,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/45/3562545_image2_1.jpg",
+        "addr": "전북특별자치도 완주군 운주면 장선리"
+      },
+      {
+        "name": "느티골산림욕장",
+        "dist": 6914,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/34/3338634_image2_1.jpg",
+        "addr": "충청남도 금산군 남이면 느티골길 228-17"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "대둔산골",
+        "dist": 418,
+        "image": "",
+        "addr": "전북특별자치도 완주군 운주면 대둔산로 2268"
+      },
+      {
+        "name": "황토집사람들",
+        "dist": 4304,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/80/2834480_image2_1.jpg",
+        "addr": "충청남도 금산군 태고사로 444 황토집사람들"
+      },
+      {
+        "name": "카페 로벨리아",
+        "dist": 4481,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/72/2834472_image2_1.jpg",
+        "addr": "충청남도 금산군 태고사로 422"
+      },
+      {
+        "name": "애월담",
+        "dist": 9181,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/50/2834450_image2_1.jpg",
+        "addr": "충청남도 금산군 실학로 529"
+      }
+    ]
+  },
+  {
     "contentId": "7253",
     "name": "베스트필드",
     "type": "일반야영장",
@@ -35710,97 +35886,6 @@
         "dist": 3928,
         "image": "http://tong.visitkorea.or.kr/cms/resource/98/2773898_image2_1.jpeg",
         "addr": "경기도 가평군 가평읍 북한강변로 326-124"
-      }
-    ]
-  },
-  {
-    "contentId": "102275",
-    "name": "스프링빌리지",
-    "type": "자동차야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "전북특별자치도 완주군 운주면 대둔산로 2298-140, 운주면 산북리 1075-4",
-    "region": "전북특별자치도",
-    "sigungu": "완주군",
-    "lat": "36.1214195175714",
-    "lng": "127.337726673263",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-13",
-    "nearbySpots": [
-      {
-        "name": "대둔산도립공원(금산)",
-        "dist": 1814,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/14/3345314_image2_1.jpg",
-        "addr": "충청남도 금산군 진산면 대둔산로 2"
-      },
-      {
-        "name": "안심사(완주)",
-        "dist": 3355,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/19/3558319_image2_1.jpg",
-        "addr": "전북특별자치도 완주군 운주면 안심길 372"
-      },
-      {
-        "name": "옥계천",
-        "dist": 4567,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/47/3557447_image2_1.jpg",
-        "addr": "전북특별자치도 완주군 운주면 산북리"
-      },
-      {
-        "name": "운주계곡",
-        "dist": 6863,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/45/3562545_image2_1.jpg",
-        "addr": "전북특별자치도 완주군 운주면 장선리"
-      },
-      {
-        "name": "느티골산림욕장",
-        "dist": 6914,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/34/3338634_image2_1.jpg",
-        "addr": "충청남도 금산군 남이면 느티골길 228-17"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "대둔산골",
-        "dist": 418,
-        "image": "",
-        "addr": "전북특별자치도 완주군 운주면 대둔산로 2268"
-      },
-      {
-        "name": "황토집사람들",
-        "dist": 4304,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/80/2834480_image2_1.jpg",
-        "addr": "충청남도 금산군 태고사로 444 황토집사람들"
-      },
-      {
-        "name": "카페 로벨리아",
-        "dist": 4481,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/72/2834472_image2_1.jpg",
-        "addr": "충청남도 금산군 태고사로 422"
-      },
-      {
-        "name": "애월담",
-        "dist": 9181,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/50/2834450_image2_1.jpg",
-        "addr": "충청남도 금산군 실학로 529"
       }
     ]
   },
@@ -75377,91 +75462,6 @@
         "dist": 4292,
         "image": "http://tong.visitkorea.or.kr/cms/resource/31/2852431_image2_1.jpg",
         "addr": "경기도 가평군 북한강변로 1045"
-      }
-    ]
-  },
-  {
-    "contentId": "8127",
-    "name": "덕동 히든밸리 캠프펜션",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "여름철 물놀이하기 좋은 캠핑장",
-    "intro": "베트남의 히든밸리와 닮았지만 더 아름다운 자연의 계곡을 느끼실 수 있는 덕동히든밸리캠프펜션입니다. 깨끗한 자연환경에 떠나실 때까지 힐링을 느끼실 수 있고, 아이들도 재미있게 즐길거리들이 있어서 가족에게 적합한 캠핑%펜션 입니다. 또한 마트 부럽지 않은 매점의 물품 구색은 필요 물품 구입을 위해 외부로 나가시지 않아도 될 만큼 충분히 갖추기 위해 노력하고 있습니다. 오실 때마다 더 나아진 모습들을 보실 수 있는 재미가 있는 덕동히든밸리캠프펜션! 많이 찾아주세요~^^",
-    "address": "충청북도 제천시 백운면 덕동로 207-3",
-    "region": "충청북도",
-    "sigungu": "제천시",
-    "lat": "37.2021034",
-    "lng": "127.9779039",
-    "tel": "010-2693-6516",
-    "homepage": "",
-    "reserveUrl": "https://map.naver.com/v5/entry/place/32548388?c=14254529.5915240,4458701.3264397,11,0,0,0,dh",
-    "image": "",
-    "facilities": "전기,무선인터넷,마트.편의점",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 5,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 1,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-05-20",
-    "nearbySpots": [
-      {
-        "name": "덕동생태숲",
-        "dist": 2655,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/47/3569847_image2_1.jpg",
-        "addr": "충청북도 제천시 백운면 덕동로 545"
-      },
-      {
-        "name": "덕동계곡",
-        "dist": 3442,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/31/3062631_image2_1.JPG",
-        "addr": "충청북도 제천시 백운면 화당로2길 19"
-      },
-      {
-        "name": "원주 삼태미마을",
-        "dist": 7285,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2495036_image2_1.jpg",
-        "addr": "강원특별자치도 원주시 귀래면 운계다둔길 111"
-      },
-      {
-        "name": "천은사계곡(원주)",
-        "dist": 7416,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/24/3046024_image2_1.jpg",
-        "addr": "강원특별자치도 원주시 귀래면 귀래리"
-      },
-      {
-        "name": "금대계곡",
-        "dist": 8520,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3045285_image2_1.jpg",
-        "addr": "강원특별자치도 원주시 판부면 치악로 546-22"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "마묵라운지",
-        "dist": 7858,
-        "image": "",
-        "addr": "충청북도 제천시 백운면 금봉로 365"
-      },
-      {
-        "name": "산아래석갈비",
-        "dist": 8439,
-        "image": "",
-        "addr": "충청북도 제천시 백운면 금봉로 182"
-      },
-      {
-        "name": "큰곰",
-        "dist": 8800,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/94/2891594_image2_1.png",
-        "addr": "강원특별자치도 원주시 영원산성길 46"
       }
     ]
   },

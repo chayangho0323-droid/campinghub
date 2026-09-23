@@ -1,5 +1,199 @@
 [
   {
+    "contentId": "102238",
+    "name": "아르비토 호텔 글램핑",
+    "type": "일반야영장",
+    "operator": "",
+    "lineIntro": "",
+    "intro": "",
+    "address": "경상남도 사천시 서포면 토끼로 245-60",
+    "region": "경상남도",
+    "sigungu": "사천시",
+    "lat": "34.986789476863",
+    "lng": "127.966690241711",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-23",
+    "nearbySpots": [
+      {
+        "name": "비토섬 신우리조트",
+        "dist": 259,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/42/3583242_image2_1.jpg",
+        "addr": "경상남도 사천시 서포면 토끼로 245-5"
+      },
+      {
+        "name": "다맥어촌체험마을",
+        "dist": 2244,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/19/3537819_image2_1.jpg",
+        "addr": "경상남도 사천시 서포면 다평로 2"
+      },
+      {
+        "name": "술상 전어마을",
+        "dist": 3984,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/11/3530911_image2_1.jpg",
+        "addr": "경상남도 하동군 진교면 술상길 186-1"
+      },
+      {
+        "name": "솔섬",
+        "dist": 4572,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/24/3052124_image2_1.JPG",
+        "addr": "경상남도 하동군 금남면 중평해안길 202"
+      },
+      {
+        "name": "경충사(정기룡장군유허지)",
+        "dist": 6343,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/91/3050491_image2_1.jpg",
+        "addr": "경상남도 하동군 금남면 경충로 503-14"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "송포1357",
+        "dist": 7115,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/49/2870549_image2_1.jpg",
+        "addr": "경상남도 사천시 해안관광로 363"
+      },
+      {
+        "name": "나인뷰커피",
+        "dist": 7177,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2894007_image2_1.jpg",
+        "addr": "경상남도 사천시 남양광포1길 16"
+      },
+      {
+        "name": "씨맨스",
+        "dist": 7180,
+        "image": "",
+        "addr": "경상남도 사천시 해안관광로 381-5 씨맨스"
+      },
+      {
+        "name": "제주전복물회",
+        "dist": 7920,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/15/2910415_image2_1.jpg",
+        "addr": "경상남도 사천시 사천대로 762 제주해녀의집"
+      },
+      {
+        "name": "냇가집잔치국수",
+        "dist": 8209,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/86/2795486_image2_1.jpg",
+        "addr": "경상남도 남해군 설천면 설천로775번길 38"
+      }
+    ]
+  },
+  {
+    "contentId": "102340",
+    "name": "캠핑 마루",
+    "type": "일반야영장",
+    "operator": "",
+    "lineIntro": "",
+    "intro": "준호텔급개별샤워실,화장실19실운영,\t\t\t\t\t\t\t ",
+    "address": "경기도 포천시 이동면 포화로 45",
+    "region": "경기도",
+    "sigungu": "포천시",
+    "lat": "38.0669330731745",
+    "lng": "127.392097517077",
+    "tel": "010-5661-1840",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "전기,무선인터넷,장작판매,온수,마트.편의점",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "여름물놀이,가을단풍명소,겨울눈꽃명소",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 20,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 21,
+    "showers": 27,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-23",
+    "nearbySpots": [
+      {
+        "name": "백운산(포천)",
+        "dist": 1701,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3024485_image2_1.jpg",
+        "addr": "경기도 포천시 이동면 포화로 236-73"
+      },
+      {
+        "name": "흥룡사",
+        "dist": 1701,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/40/3024440_image2_1.jpg",
+        "addr": "경기도 포천시 이동면 포화로 236-73"
+      },
+      {
+        "name": "가리산(포천)",
+        "dist": 2811,
+        "image": "",
+        "addr": "경기도 포천시 이동면 도평리"
+      },
+      {
+        "name": "국망봉자연휴양림",
+        "dist": 4230,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/09/3580909_image2_1.jpg",
+        "addr": "경기도 포천시 이동면 늠바위길 207-28"
+      },
+      {
+        "name": "명성산억새밭",
+        "dist": 4778,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/00/3011200_image2_1.jpg",
+        "addr": "경기도 포천시 영북면 산정리"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "이동폭포갈비",
+        "dist": 2040,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3588251_image2_1.jpg",
+        "addr": "경기도 포천시 이동면 여우고개로 698"
+      },
+      {
+        "name": "청운쉼터",
+        "dist": 2573,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/58/2856158_image2_1.jpg",
+        "addr": "경기도 포천시 이동면 포화로 328"
+      },
+      {
+        "name": "수중궁갈비",
+        "dist": 4121,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/93/1789593_image2_1.jpg",
+        "addr": "경기도 포천시 이동면 늠바위길 143"
+      },
+      {
+        "name": "송영선할머니갈비집",
+        "dist": 4212,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/35/2858735_image2_1.jpg",
+        "addr": "경기도 포천시 이동면 화동로 2097"
+      },
+      {
+        "name": "이동느티나무갈비",
+        "dist": 4283,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/40/3564840_image2_1.jpg",
+        "addr": "경기도 포천시 이동면 화동로 2089"
+      }
+    ]
+  },
+  {
     "contentId": "7271",
     "name": "천안시 국민여가캠핑장",
     "type": "자동차야영장",
@@ -11331,103 +11525,6 @@
     ]
   },
   {
-    "contentId": "102340",
-    "name": "캠핑 마루",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경기도 포천시 이동면 포화로 45",
-    "region": "경기도",
-    "sigungu": "포천시",
-    "lat": "38.0669330731745",
-    "lng": "127.392097517077",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-08-24",
-    "nearbySpots": [
-      {
-        "name": "백운산(포천)",
-        "dist": 1701,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3024485_image2_1.jpg",
-        "addr": "경기도 포천시 이동면 포화로 236-73"
-      },
-      {
-        "name": "흥룡사",
-        "dist": 1701,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/40/3024440_image2_1.jpg",
-        "addr": "경기도 포천시 이동면 포화로 236-73"
-      },
-      {
-        "name": "가리산(포천)",
-        "dist": 2811,
-        "image": "",
-        "addr": "경기도 포천시 이동면 도평리"
-      },
-      {
-        "name": "국망봉자연휴양림",
-        "dist": 4230,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/09/3580909_image2_1.jpg",
-        "addr": "경기도 포천시 이동면 늠바위길 207-28"
-      },
-      {
-        "name": "명성산억새밭",
-        "dist": 4778,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/00/3011200_image2_1.jpg",
-        "addr": "경기도 포천시 영북면 산정리"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "이동폭포갈비",
-        "dist": 2040,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3588251_image2_1.jpg",
-        "addr": "경기도 포천시 이동면 여우고개로 698"
-      },
-      {
-        "name": "청운쉼터",
-        "dist": 2573,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/58/2856158_image2_1.jpg",
-        "addr": "경기도 포천시 이동면 포화로 328"
-      },
-      {
-        "name": "수중궁갈비",
-        "dist": 4121,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/93/1789593_image2_1.jpg",
-        "addr": "경기도 포천시 이동면 늠바위길 143"
-      },
-      {
-        "name": "송영선할머니갈비집",
-        "dist": 4212,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/35/2858735_image2_1.jpg",
-        "addr": "경기도 포천시 이동면 화동로 2097"
-      },
-      {
-        "name": "이동느티나무갈비",
-        "dist": 4283,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/40/3564840_image2_1.jpg",
-        "addr": "경기도 포천시 이동면 화동로 2089"
-      }
-    ]
-  },
-  {
     "contentId": "356",
     "name": "구름포해수욕장카라반",
     "type": "일반야영장",
@@ -17255,103 +17352,6 @@
         "dist": 7878,
         "image": "",
         "addr": "충청북도 제천시 봉양읍 제원로10길 55"
-      }
-    ]
-  },
-  {
-    "contentId": "102238",
-    "name": "아르비토 호텔 글램핑",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경상남도 사천시 서포면 토끼로 245-60",
-    "region": "경상남도",
-    "sigungu": "사천시",
-    "lat": "34.986789476863",
-    "lng": "127.966690241711",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-08-07",
-    "nearbySpots": [
-      {
-        "name": "비토섬 신우리조트",
-        "dist": 259,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/42/3583242_image2_1.jpg",
-        "addr": "경상남도 사천시 서포면 토끼로 245-5"
-      },
-      {
-        "name": "다맥어촌체험마을",
-        "dist": 2244,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/19/3537819_image2_1.jpg",
-        "addr": "경상남도 사천시 서포면 다평로 2"
-      },
-      {
-        "name": "술상 전어마을",
-        "dist": 3984,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/11/3530911_image2_1.jpg",
-        "addr": "경상남도 하동군 진교면 술상길 186-1"
-      },
-      {
-        "name": "솔섬",
-        "dist": 4572,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/24/3052124_image2_1.JPG",
-        "addr": "경상남도 하동군 금남면 중평해안길 202"
-      },
-      {
-        "name": "경충사(정기룡장군유허지)",
-        "dist": 6343,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/91/3050491_image2_1.jpg",
-        "addr": "경상남도 하동군 금남면 경충로 503-14"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "송포1357",
-        "dist": 7115,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/49/2870549_image2_1.jpg",
-        "addr": "경상남도 사천시 해안관광로 363"
-      },
-      {
-        "name": "나인뷰커피",
-        "dist": 7177,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2894007_image2_1.jpg",
-        "addr": "경상남도 사천시 남양광포1길 16"
-      },
-      {
-        "name": "씨맨스",
-        "dist": 7180,
-        "image": "",
-        "addr": "경상남도 사천시 해안관광로 381-5 씨맨스"
-      },
-      {
-        "name": "제주전복물회",
-        "dist": 7920,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/15/2910415_image2_1.jpg",
-        "addr": "경상남도 사천시 사천대로 762 제주해녀의집"
-      },
-      {
-        "name": "냇가집잔치국수",
-        "dist": 8209,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/86/2795486_image2_1.jpg",
-        "addr": "경상남도 남해군 설천면 설천로775번길 38"
       }
     ]
   },
@@ -37182,266 +37182,6 @@
     ]
   },
   {
-    "contentId": "102276",
-    "name": "진부리 마을관리휴양지 야영장",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원특별자치도 고성군 간성읍 진부령로 1076",
-    "region": "강원특별자치도",
-    "sigungu": "고성군",
-    "lat": "38.2932787115581",
-    "lng": "128.363947634643",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-13",
-    "nearbySpots": [
-      {
-        "name": "진부리 마을관리휴양지",
-        "dist": 14,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/40/3374340_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 간성읍 진부리 133"
-      },
-      {
-        "name": "진부령 흘리마을",
-        "dist": 3281,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/66/3016266_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 간성읍 흘리길 185"
-      },
-      {
-        "name": "소똥령마을",
-        "dist": 4498,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/28/3378428_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 간성읍 소똥령마을길 82"
-      },
-      {
-        "name": "진부령",
-        "dist": 6002,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/00/3569600_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 간성읍 진부리"
-      },
-      {
-        "name": "국립 용대자연휴양림",
-        "dist": 6842,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/53/3042453_image2_1.jpg",
-        "addr": "강원특별자치도 인제군 북면 연화동길 7"
-      }
-    ],
-    "nearbyFood": []
-  },
-  {
-    "contentId": "102277",
-    "name": "도원리 마을관리휴양지 야영장",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원특별자치도 고성군 토성면 도원리 495-42",
-    "region": "강원특별자치도",
-    "sigungu": "고성군",
-    "lat": "38.268975352975",
-    "lng": "128.463993777806",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-13",
-    "nearbySpots": [
-      {
-        "name": "도원리계곡",
-        "dist": 897,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3557127_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 토성면 도원리"
-      },
-      {
-        "name": "고성 제3기 현무암 (강원평화지역 국가지질공원)",
-        "dist": 4039,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/03/2616503_image2_1.bmp",
-        "addr": "강원특별자치도 고성군 토성면 뒷골길 60"
-      },
-      {
-        "name": "미시령옛길 울산바위 은하수",
-        "dist": 6312,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/53/2792353_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 토성면 원암리"
-      },
-      {
-        "name": "미시령계곡",
-        "dist": 7468,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/29/3042029_image2_1.jpg",
-        "addr": "강원특별자치도 인제군 북면 용대리"
-      },
-      {
-        "name": "교암해변",
-        "dist": 7764,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/81/3070081_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 토성면 천학정길 37"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "동루골막국수",
-        "dist": 4336,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/17/2839417_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 성대로 188"
-      },
-      {
-        "name": "금화정막국수",
-        "dist": 7362,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/58/2874258_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 화원길 42-21 금화정막국수"
-      },
-      {
-        "name": "백촌막국수",
-        "dist": 7430,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/23/2786523_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 토성면 백촌1길 10"
-      },
-      {
-        "name": "교암막국수",
-        "dist": 7580,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/39/2874239_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 교암1길 42"
-      },
-      {
-        "name": "수제비집",
-        "dist": 7681,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/32/2837832_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 교암길 47 솔잎식당"
-      }
-    ]
-  },
-  {
-    "contentId": "102278",
-    "name": "반암 해변 야영장",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원특별자치도 고성군 거진읍 반암리 1 공유수면",
-    "region": "강원특별자치도",
-    "sigungu": "고성군",
-    "lat": "38.4231954175883",
-    "lng": "128.462583478083",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-13",
-    "nearbySpots": [
-      {
-        "name": "반암항",
-        "dist": 172,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3383926_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 거진읍 자산천로 102-15"
-      },
-      {
-        "name": "반암해변",
-        "dist": 189,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/92/3070092_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 거진읍"
-      },
-      {
-        "name": "거진1리해변",
-        "dist": 2080,
-        "image": "",
-        "addr": "강원특별자치도 고성군 거진읍 거진1리"
-      },
-      {
-        "name": "백섬해상전망대",
-        "dist": 2973,
-        "image": "",
-        "addr": "강원특별자치도 고성군 거진읍 거진리"
-      },
-      {
-        "name": "화진포소나무숲산림욕장",
-        "dist": 4812,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/21/2786621_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 거진읍 화진포길 258-115"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "해오름거진항생선찜",
-        "dist": 87,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/32/3016332_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 거진읍 반암길 38"
-      },
-      {
-        "name": "성진회관",
-        "dist": 2461,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3474994_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 거진읍 거탄진로 99"
-      },
-      {
-        "name": "제비호식당",
-        "dist": 2726,
-        "image": "",
-        "addr": "강원특별자치도 고성군 거진읍 거진항길 29"
-      },
-      {
-        "name": "장미경양식 고성본점",
-        "dist": 2779,
-        "image": "",
-        "addr": "강원특별자치도 고성군 거진읍 거진길 37-1"
-      },
-      {
-        "name": "에이프레임",
-        "dist": 6484,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2689471_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 죽왕면 가향길 20-1"
-      }
-    ]
-  },
-  {
     "contentId": "102279",
     "name": "아산별곡캠핑장",
     "type": "일반야영장",
@@ -41662,103 +41402,6 @@
     ]
   },
   {
-    "contentId": "102261",
-    "name": "천진 여름해변 야영장",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원특별자치도 고성군 토성면 천진리 111-18 공유수면",
-    "region": "강원특별자치도",
-    "sigungu": "고성군",
-    "lat": "38.2599855032486",
-    "lng": "128.559811830176",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-07-06",
-    "nearbySpots": [
-      {
-        "name": "봉포항",
-        "dist": 1151,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3378485_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 토성면 토성로 44-10"
-      },
-      {
-        "name": "아야진항",
-        "dist": 1533,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/04/3378504_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 토성면 아야진해변길 106-16"
-      },
-      {
-        "name": "켄싱턴해변",
-        "dist": 2199,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/22/3383922_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 토성면 동해대로 4800"
-      },
-      {
-        "name": "켄싱턴리조트 설악비치",
-        "dist": 2205,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/52/3330552_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 토성면 동해대로 4800"
-      },
-      {
-        "name": "교암항",
-        "dist": 3508,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/03/3394003_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 토성면 교암리 151-10"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "글라스하우스",
-        "dist": 77,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/71/2793071_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 토성면 천진해변길 43"
-      },
-      {
-        "name": "태시트 TACIT",
-        "dist": 730,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/77/2839777_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 청간정길 25-2"
-      },
-      {
-        "name": "커피고",
-        "dist": 756,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/69/2839769_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 토성로 84 해맞이하우스"
-      },
-      {
-        "name": "선영이네물회",
-        "dist": 841,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/37/2874337_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 토성로 75 봉포선영이네물회전문점"
-      },
-      {
-        "name": "40년전통오미냉면",
-        "dist": 1386,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2841436_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 아야진해변길 73 오미냉면"
-      }
-    ]
-  },
-  {
     "contentId": "102263",
     "name": "송전해수욕장 야영장",
     "type": "일반야영장",
@@ -45641,91 +45284,6 @@
         "dist": 8874,
         "image": "",
         "addr": "전남광주통합특별시 광양시 광양읍 매일시장길 12-15"
-      }
-    ]
-  },
-  {
-    "contentId": "1282",
-    "name": "백운산수련관 야영장 / (사)제철복지회",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "전남광주통합특별시 광양시 옥룡면 약수제단길 154",
-    "region": "전남광주통합특별시",
-    "sigungu": "광양시",
-    "lat": "35.0692000869117",
-    "lng": "127.629173542209",
-    "tel": "061-790-4929",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "불가능",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-06-30",
-    "nearbySpots": [
-      {
-        "name": "백운산 동곡계곡",
-        "dist": 284,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/10/3027110_image2_1.jpg",
-        "addr": "전남광주통합특별시 광양시 옥룡면 약수제단길 154"
-      },
-      {
-        "name": "광양 옥룡사 동백나무 숲",
-        "dist": 3116,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/62/2833462_image2_1.jpg",
-        "addr": "전남광주통합특별시 광양시 옥룡면 운암길 83"
-      },
-      {
-        "name": "운암사(광양)",
-        "dist": 3137,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/03/3533603_image2_1.jpg",
-        "addr": "전남광주통합특별시 광양시 옥룡면 운암길 83"
-      },
-      {
-        "name": "도선국사마을",
-        "dist": 4205,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/22/3533622_image2_1.jpg",
-        "addr": "전남광주통합특별시 광양시 옥룡면 상산길 48"
-      },
-      {
-        "name": "중흥사(광양)",
-        "dist": 5292,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/55/3027055_image2_1.jpg",
-        "addr": "전남광주통합특별시 광양시 옥룡면 중흥로 263-100"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "병암산장",
-        "dist": 3851,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/65/2891265_image2_1.JPG",
-        "addr": "전남광주통합특별시 광양시 신재로 1678-67  "
-      },
-      {
-        "name": "차도리가든",
-        "dist": 8363,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/95/2891295_image2_1.JPG",
-        "addr": "전남광주통합특별시 광양시 옥룡면 신재로 337"
-      },
-      {
-        "name": "만지횟집",
-        "dist": 8443,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/29/2790929_image2_1.jpg",
-        "addr": "경상남도 하동군 하동읍 섬진강대로 2485"
       }
     ]
   },
@@ -69199,103 +68757,6 @@
     ]
   },
   {
-    "contentId": "102251",
-    "name": "화진포(거진) 해변 야영장",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원특별자치도 고성군 거진읍 화포리 516-1",
-    "region": "강원특별자치도",
-    "sigungu": "고성군",
-    "lat": "38.4780025594695",
-    "lng": "128.437862890528",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-06-29",
-    "nearbySpots": [
-      {
-        "name": "화진포해수욕장",
-        "dist": 496,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/08/3558708_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 현내면 화진포길 386"
-      },
-      {
-        "name": "초도마을",
-        "dist": 786,
-        "image": "",
-        "addr": "강원특별자치도 고성군 현내면 초도항길 60"
-      },
-      {
-        "name": "초도항",
-        "dist": 947,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/97/3378497_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 현내면 초도리"
-      },
-      {
-        "name": "초도해변",
-        "dist": 1417,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/68/3589668_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 현내면 초도항길"
-      },
-      {
-        "name": "응봉",
-        "dist": 1532,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/87/3577887_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 거진읍 화진포길 204-25"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "동해반점",
-        "dist": 1882,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/86/2874286_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 현내면 한나루로 52"
-      },
-      {
-        "name": "장미경양식 고성본점",
-        "dist": 3711,
-        "image": "",
-        "addr": "강원특별자치도 고성군 거진읍 거진길 37-1"
-      },
-      {
-        "name": "제비호식당",
-        "dist": 3791,
-        "image": "",
-        "addr": "강원특별자치도 고성군 거진읍 거진항길 29"
-      },
-      {
-        "name": "성진회관",
-        "dist": 4008,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3474994_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 거진읍 거탄진로 99"
-      },
-      {
-        "name": "해오름거진항생선찜",
-        "dist": 6549,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/32/3016332_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 거진읍 반암길 38"
-      }
-    ]
-  },
-  {
     "contentId": "102253",
     "name": "신두리모래안",
     "type": "자동차야영장",
@@ -79707,169 +79168,6 @@
         "dist": 9260,
         "image": "http://tong.visitkorea.or.kr/cms/resource/23/2832623_image2_1.png",
         "addr": "전남광주통합특별시 담양군 금성산성길 271  "
-      }
-    ]
-  },
-  {
-    "contentId": "102198",
-    "name": "장신리 마을관리휴양지",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원특별자치도 고성군 간성읍 소똥령마을길 82",
-    "region": "강원특별자치도",
-    "sigungu": "고성군",
-    "lat": "38.3317863593059",
-    "lng": "128.380302859965",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-05-08",
-    "nearbySpots": [
-      {
-        "name": "소똥령마을",
-        "dist": 17,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/28/3378428_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 간성읍 소똥령마을길 82"
-      },
-      {
-        "name": "진부리 마을관리휴양지",
-        "dist": 4501,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/40/3374340_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 간성읍 진부리 133"
-      },
-      {
-        "name": "진부령",
-        "dist": 5663,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/00/3569600_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 간성읍 진부리"
-      },
-      {
-        "name": "진부령 흘리마을",
-        "dist": 7448,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/66/3016266_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 간성읍 흘리길 185"
-      },
-      {
-        "name": "극락암(강원)",
-        "dist": 7565,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/89/3393989_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 교동2길 26 대한불교조계종극락암"
-      }
-    ],
-    "nearbyFood": []
-  },
-  {
-    "contentId": "102199",
-    "name": "봉수대 원더비치 캠프",
-    "type": "일반야영장",
-    "operator": "",
-    "lineIntro": "",
-    "intro": "",
-    "address": "강원특별자치도 고성군 죽왕면 봉수대길 10-22, 관리사무실",
-    "region": "강원특별자치도",
-    "sigungu": "고성군",
-    "lat": "38.3236554203286",
-    "lng": "128.526564805009",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2026-05-08",
-    "nearbySpots": [
-      {
-        "name": "오호어촌체험마을",
-        "dist": 443,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/96/3393996_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 심층수길 40-20"
-      },
-      {
-        "name": "송지호 해수욕장",
-        "dist": 795,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/14/3516814_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 죽왕면 오호리"
-      },
-      {
-        "name": "송지호관망타워",
-        "dist": 1595,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/3338876_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 죽왕면 동해대로 6021"
-      },
-      {
-        "name": "김하인 아트홀 국화꽃향기",
-        "dist": 2241,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/38/3378438_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 죽왕면 자작도선사길 120-4"
-      },
-      {
-        "name": "고성 문암리 유적",
-        "dist": 2631,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/16/3016316_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 죽왕면 문암진리"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "만성횟집",
-        "dist": 428,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/74/2895174_image2_1.png",
-        "addr": "강원특별자치도 고성군 심층수길 33 만성횟집"
-      },
-      {
-        "name": "앤트리카페",
-        "dist": 2001,
-        "image": "",
-        "addr": "강원특별자치도 고성군 자작도선사1길 18-1"
-      },
-      {
-        "name": "온더버튼",
-        "dist": 3574,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/47/2839747_image2_1.JPG",
-        "addr": "강원특별자치도 고성군 괘진길 53-7"
-      },
-      {
-        "name": "백촌막국수",
-        "dist": 3663,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/23/2786523_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 토성면 백촌1길 10"
-      },
-      {
-        "name": "고식당",
-        "dist": 3861,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/99/2874199_image2_1.jpg",
-        "addr": "강원특별자치도 고성군 교암길 80 사랑만들기"
       }
     ]
   },

@@ -1,5 +1,199 @@
 [
   {
+    "contentId": "1803",
+    "name": "송천마을 협동조합 야영장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "",
+    "intro": "",
+    "address": "강원특별자치도 양양군 서면 송천리 203-2",
+    "region": "강원특별자치도",
+    "sigungu": "양양군",
+    "lat": "38.0501362",
+    "lng": "128.5543581",
+    "tel": "033-671-8977",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/1803/thumb/thumb_720_1043UfqfL3UkbuvcYMWCY1p5.jpg",
+    "facilities": "전기,온수,놀이터",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "가을단풍명소",
+    "operPeriod": "봄,여름,가을",
+    "siteCounts": {
+      "general": 23,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 3,
+    "showers": 1,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-29",
+    "nearbySpots": [
+      {
+        "name": "공수전계곡",
+        "dist": 1887,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3045905_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 서면 공수전리"
+      },
+      {
+        "name": "양양 에너지팜",
+        "dist": 3671,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3387363_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 서면 산얏골길 23-51"
+      },
+      {
+        "name": "이두형가옥",
+        "dist": 4352,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/75/3467075_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 서면 들돌길 284-1"
+      },
+      {
+        "name": "양양향교",
+        "dist": 5561,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/80/3076880_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 양양읍 거마천로 52-20"
+      },
+      {
+        "name": "둔전계곡",
+        "dist": 7776,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/55/3077255_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 강현면 둔전리"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "천선식당",
+        "dist": 6532,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3567927_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 양양읍 남대천로 13"
+      },
+      {
+        "name": "공가네감자옹심이",
+        "dist": 6735,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/19/2837919_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 남문5길 5-17"
+      },
+      {
+        "name": "동일식당",
+        "dist": 6829,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/29/2785929_image2_1.jpg",
+        "addr": "강원특별자치도 양양군 양양읍 남문3길 11-9"
+      },
+      {
+        "name": "해촌",
+        "dist": 7994,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/98/2838098_image2_1.JPG",
+        "addr": "강원특별자치도 양양군 동명로 81"
+      },
+      {
+        "name": "영광정메밀국수",
+        "dist": 8261,
+        "image": "",
+        "addr": "강원특별자치도 양양군 강현면 진미로 446"
+      }
+    ]
+  },
+  {
+    "contentId": "101934",
+    "name": "소나무 캠핑장",
+    "type": "자동차야영장",
+    "operator": "민간",
+    "lineIntro": "캠핑장",
+    "intro": "자동차 야영장",
+    "address": "전북특별자치도 익산시 망성면 여강로 522-12",
+    "region": "전북특별자치도",
+    "sigungu": "익산시",
+    "lat": "36.0940882824808",
+    "lng": "127.053896294814",
+    "tel": "010-3674-5760",
+    "homepage": "https://pinetreecamp.co.kr/",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 23,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "updated": "2026-09-29",
+    "nearbySpots": [
+      {
+        "name": "두여 정보화마을",
+        "dist": 2328,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3369851_image2_1.JPG",
+        "addr": "전북특별자치도 익산시 여산면 용기길 66"
+      },
+      {
+        "name": "봉곡서원",
+        "dist": 3540,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/56/3334756_image2_1.jpg",
+        "addr": "충청남도 논산시 연무읍 황화로 290"
+      },
+      {
+        "name": "금곡서원",
+        "dist": 3802,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3356026_image2_1.jpg",
+        "addr": "충청남도 논산시 연무읍 왕릉로 170-35"
+      },
+      {
+        "name": "전견훤묘(견훤왕릉)",
+        "dist": 3850,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/29/3339329_image2_1.jpg",
+        "addr": "충청남도 논산시 연무읍 금곡리"
+      },
+      {
+        "name": "여산 숲정이 순교성지",
+        "dist": 4366,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/32/3564032_image2_1.jpg",
+        "addr": "전북특별자치도 익산시 여산면 여산리"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "유진짬뽕앤돈까스",
+        "dist": 5844,
+        "image": "",
+        "addr": "충청남도 논산시 안심로140번길 49"
+      },
+      {
+        "name": "[백년가게] 보은집",
+        "dist": 7400,
+        "image": "",
+        "addr": "충청남도 논산시 연무읍 감바위로30번길 6"
+      },
+      {
+        "name": "강경해물칼국수",
+        "dist": 7827,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/82/2747882_image2_1.jpg",
+        "addr": "충청남도 논산시 강경읍 계백로147번길 7"
+      },
+      {
+        "name": "황산옥",
+        "dist": 7979,
+        "image": "",
+        "addr": "충청남도 논산시 강경읍 금백로 34"
+      },
+      {
+        "name": "사탕수수 족욕카페",
+        "dist": 8299,
+        "image": "",
+        "addr": "충청남도 논산시 은진면 방축길 16-10"
+      }
+    ]
+  },
+  {
     "contentId": "7763",
     "name": "이천농업테마공원 국민여가캠핑장",
     "type": "일반야영장",
@@ -146061,103 +146255,6 @@
         "dist": 3361,
         "image": "http://tong.visitkorea.or.kr/cms/resource/73/2758973_image2_1.png",
         "addr": "경기도 안성시 죽산면 장계길 17"
-      }
-    ]
-  },
-  {
-    "contentId": "101934",
-    "name": "소나무 캠핑장",
-    "type": "자동차야영장",
-    "operator": "민간",
-    "lineIntro": "캠핑장",
-    "intro": "자동차 야영장",
-    "address": "전북특별자치도 익산시 망성면 여강로 522-12",
-    "region": "전라북도",
-    "sigungu": "익산시",
-    "lat": "36.0940882824808",
-    "lng": "127.053896294814",
-    "tel": "010-3674-5760",
-    "homepage": "https://pinetreecamp.co.kr/",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 22,
-      "auto": 1,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "updated": "2025-09-10",
-    "nearbySpots": [
-      {
-        "name": "두여 정보화마을",
-        "dist": 2328,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3369851_image2_1.JPG",
-        "addr": "전북특별자치도 익산시 여산면 용기길 66"
-      },
-      {
-        "name": "봉곡서원",
-        "dist": 3540,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/56/3334756_image2_1.jpg",
-        "addr": "충청남도 논산시 연무읍 황화로 290"
-      },
-      {
-        "name": "금곡서원",
-        "dist": 3802,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/26/3356026_image2_1.jpg",
-        "addr": "충청남도 논산시 연무읍 왕릉로 170-35"
-      },
-      {
-        "name": "전견훤묘(견훤왕릉)",
-        "dist": 3850,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/29/3339329_image2_1.jpg",
-        "addr": "충청남도 논산시 연무읍 금곡리"
-      },
-      {
-        "name": "여산 숲정이 순교성지",
-        "dist": 4366,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/32/3564032_image2_1.jpg",
-        "addr": "전북특별자치도 익산시 여산면 여산리"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "유진짬뽕앤돈까스",
-        "dist": 5844,
-        "image": "",
-        "addr": "충청남도 논산시 안심로140번길 49"
-      },
-      {
-        "name": "[백년가게] 보은집",
-        "dist": 7400,
-        "image": "",
-        "addr": "충청남도 논산시 연무읍 감바위로30번길 6"
-      },
-      {
-        "name": "강경해물칼국수",
-        "dist": 7827,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/82/2747882_image2_1.jpg",
-        "addr": "충청남도 논산시 강경읍 계백로147번길 7"
-      },
-      {
-        "name": "황산옥",
-        "dist": 7979,
-        "image": "",
-        "addr": "충청남도 논산시 강경읍 금백로 34"
-      },
-      {
-        "name": "사탕수수 족욕카페",
-        "dist": 8299,
-        "image": "",
-        "addr": "충청남도 논산시 은진면 방축길 16-10"
       }
     ]
   },

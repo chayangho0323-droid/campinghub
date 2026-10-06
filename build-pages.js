@@ -26,15 +26,60 @@ const GA_SNIPPET = `
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5951913667078413" crossorigin="anonymous"></script>`;
 
 // 쿠팡 파트너스 — 캠핑용품이라 이 사이트와 궁합이 더 좋다 (FestivalHub과 같은 링크)
+// 카카오 애드핏 (2026-10-06 매체 "캠핑허브" 등록, 애드센스 재심사와 병행) — 캠핑장 상세 소개글 아래 1개
+// 광고단위 "캠핑-본문" 300x250. 스크립트는 광고 위치마다 한 번씩 넣어도 됨(async 로더). 축제 사이트와 같은 구조.
+const ADFIT_UNIT_BODY = "DAN-s9yT8c8jCkfMQKCt";
+const adfitBlock = (unit, w, h) => `
+      <div class="adfit" aria-label="광고">
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="${unit}" data-ad-width="${w}" data-ad-height="${h}"></ins>
+        <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+      </div>`;
+const ADFIT_BODY = adfitBlock(ADFIT_UNIT_BODY, 300, 250);
+
 const COUPANG_ITEMS = [
-  // ⚠️ 애드센스 심사를 위해 임시로 비움 (2026-09-14) — 승인되면 아래 주석을 다시 살릴 것!
-  // { name: "🪑 캠핑의자", url: "https://link.coupang.com/a/f7LuGkEJMq" },
-  // { name: "🧺 돗자리", url: "https://link.coupang.com/a/f7MlAxqn7s" },
-  // { name: "🧣 캠핑 담요", url: "https://link.coupang.com/a/gP8GvQyG2S" },
-  // { name: "🔥 핫팩", url: "https://link.coupang.com/a/gP8J1IrVsW" },
+  // 2026-10-06 애드센스 1차 거절 후 복구 (축제와 동일). 재신청 직전에만 다시 비움.
+  { name: "🪑 캠핑의자", url: "https://link.coupang.com/a/f7LuGkEJMq" },
+  { name: "🧺 돗자리", url: "https://link.coupang.com/a/f7MlAxqn7s" },
+  { name: "🧣 캠핑 담요", url: "https://link.coupang.com/a/gP8GvQyG2S" },
+  { name: "🔥 핫팩", url: "https://link.coupang.com/a/gP8J1IrVsW" },
 ];
 
 const campings = JSON.parse(fs.readFileSync("campings.json", "utf-8"));
+
+// 정적 파일 캐시 무력화 (GitHub Pages 캐시 10분) — report.css/js에 빌드 날짜가 붙음
+const BUILD_VER = (() => { const d = new Date(Date.now() + 9 * 3600 * 1000); return `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, "0")}${String(d.getUTCDate()).padStart(2, "0")}`; })();
+// 제보 안내 제목용 둥근 글씨체 (구글 폰트 Jua) + 제보 UI 스타일 — 모든 생성 페이지 head에
+const reportHead = (prefix = "") => `
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" />
+  <link rel="stylesheet" href="${prefix}report.css?v=${BUILD_VER}" />`;
+
+// ─── 방문자 사진 제보 (공통 모듈 visitor-photos.js — 축제·펫트립과 동일) ───
+// 받은 사진: photos/ 폴더 + photos.json({ "<contentId>": [{image|video, credit, caption, review, date}] })
+// → 상세 "📸 방문자 사진" 갤러리. 공식 사진이 없는 캠핑장은 첫 제보 사진이 대표 사진.
+// 신규 캠핑장은 고캠핑에 사진·소개가 없어서(검색 유입 1위가 이런 곳) 방문자 사진이 유일한 콘텐츠가 된다.
+const VP = require("./visitor-photos");
+const REPORT_EMAIL = "chayangho0323@gmail.com";
+const visitorPhotos = VP.loadVisitorPhotos(SITE_URL);
+for (const c of campings) {
+  const list = visitorPhotos[String(c.contentId)];
+  if (list && !c.image && VP.firstImage(list)) { c.image = VP.firstImage(list); c.photoCredit = (list.find((x) => x.image && !x.video) || list[0]).credit; }
+}
+function reportMailto(c) {
+  return VP.reportMailto(c
+    ? { email: REPORT_EMAIL, siteName: "CampingHub", name: c.name, where: `${getRegion(c)} ${c.sigungu || ""}`.trim(), pageUrl: `${SITE_URL}/camping/${c.contentId}.html` }
+    : { email: REPORT_EMAIL, siteName: "CampingHub" });
+}
+// 제보 안내 띠 — 사진 제보(이메일 안내창)와 캠핑장 제보(구글폼)를 한곳에
+function photoCallHtml(c) {
+  const text = c
+    ? (c.image
+      ? "이 캠핑장에 다녀오셨나요? 우리 가족 캠핑 사진·사이트 뷰·풍경 사진을 보내주세요 — <strong>닉네임과 후기</strong>와 함께 이 페이지에 올려드려요."
+      : "아직 이 캠핑장 사진이 없어요. 다녀오셨다면 사이트 뷰·풍경·가족 사진을 보내주세요 — <strong>닉네임과 후기</strong>와 함께 이 페이지에 올려드려요.")
+    : `우리 가족 캠핑 사진, 사이트 뷰, 풍경 사진을 보내주세요! <strong>닉네임과 후기</strong>와 함께 캠핑장 페이지에 올려드려요. 여기 없는 캠핑장은 <a class="report-link" href="${REPORT_FORM_URL}" target="_blank" rel="noopener">📮 캠핑장 제보</a>로 알려주세요.`;
+  return VP.photoCallHtml({ title: "캠핑 사진 자랑해 주세요!", text, href: reportMailto(c) });
+}
 
 // ── 형제 사이트(페스티벌허브) 데이터: 상세 페이지 "근처 축제" 섹션용 ──
 // 라이브 사이트의 공개 JSON을 가져온다. 실패해도 빌드는 계속 (섹션만 생략)
@@ -203,7 +248,7 @@ function buildListPage({ filename, title, heading, subtitle, description, items 
   <meta property="og:title" content="${esc(title)}" />
   <meta property="og:description" content="${esc(description)}" />
   <meta property="og:url" content="${SITE_URL}/${filename}" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />${reportHead("")}
   ${GA_SNIPPET}
 </head>
 <body>
@@ -213,11 +258,13 @@ function buildListPage({ filename, title, heading, subtitle, description, items 
     <p class="home-link"><a href="index.html">← 전체 캠핑장 보기</a></p>
   </header>
   ${SITE_NAV}
+  ${photoCallHtml(null)}
   <p class="result-count">${items.length}개의 캠핑장</p>
   <main class="festival-grid">${cards || `<p style="grid-column:1/-1;text-align:center;color:#888;">해당하는 캠핑장이 없습니다.</p>`}</main>
   <a class="to-top" href="#" aria-label="맨 위로">↑</a>
   ${footerHtml("")}
   <script src="track-clicks.js"></script>
+  <script src="report.js?v=${BUILD_VER}"></script>
 </body>
 </html>`;
 }
@@ -228,7 +275,10 @@ function buildPage(c, all) {
   const description = (stripHtml(c.lineIntro || c.intro) ||
     `${c.name} — ${region} ${c.sigungu} 캠핑장 정보, 시설, 위치, 예약 안내`).slice(0, 150);
 
-  const img = c.image ? `<img class="hero" src="${esc(c.image)}" alt="${esc(c.name)}" />` : "";
+  const vph = visitorPhotos[String(c.contentId)];
+  const img = c.image
+    ? `<img class="hero" src="${esc(c.image)}" alt="${esc(c.name)}" />${c.photoCredit ? `<p class="photo-credit">📷 사진 제보: ${esc(c.photoCredit)} 님</p>` : ""}`
+    : `<div class="ph-hero"><span class="ph-icon">🏕️</span><span class="ph-label">아직 사진이 없는 캠핑장</span><a class="ph-report report-link" href="${esc(reportMailto(c))}">📷 이곳 사진 제보하기</a></div>`;
 
   const badges = [
     isForest(c) ? `<span class="badge ongoing">🌲 국공립·휴양림</span>` : "",
@@ -360,7 +410,7 @@ function buildPage(c, all) {
   <meta property="og:description" content="${esc(description)}" />
   ${c.image ? `<meta property="og:image" content="${esc(c.image)}" />` : ""}
   <meta property="og:url" content="${SITE_URL}/camping/${c.contentId}.html" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style.css" />${reportHead("../")}
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
@@ -393,6 +443,9 @@ function buildPage(c, all) {
       ${c.glampFacilities ? `<section class="overview"><h2>글램핑 내부시설</h2><p>${esc(c.glampFacilities)}</p></section>` : ""}
       ${c.caravanFacilities ? `<section class="overview"><h2>카라반 내부시설</h2><p>${esc(c.caravanFacilities)}</p></section>` : ""}
       ${intro}
+      ${VP.galleryHtml(vph, { name: c.name, href: reportMailto(c) })}
+      ${photoCallHtml(c)}
+      ${ADFIT_BODY}
       <section class="map-section"><h2>오시는 길</h2><div id="map"></div>${directions}</section>
       ${relatedSection}
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}
@@ -414,6 +467,7 @@ function buildPage(c, all) {
   </script>
   <script src="../camping-page.js"></script>
   <script src="../track-clicks.js"></script>
+  <script src="../report.js?v=${BUILD_VER}"></script>
 </body>
 </html>`;
 }
@@ -1081,7 +1135,7 @@ for (const g of GUIDE_PAGES) {
   <meta property="og:title" content="${esc(g.title)} — CampingHub" />
   <meta property="og:description" content="${esc(g.desc)}" />
   <meta property="og:url" content="${SITE_URL}/${filename}" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />${reportHead("")}
   ${GA_SNIPPET}
 </head>
 <body>

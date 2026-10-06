@@ -1040,3 +1040,19 @@ body {
   max-width: 100%;
   height: auto;
 }
+/* Kakao AdFit slot (campsite detail, below intro) */
+.adfit { display: flex; justify-content: center; margin: 22px 0 6px; min-height: 0; }
+.adfit ins { max-width: 100%; }
+
+/* Detail hero placeholder for campsites without a photo (green camping tile + report button) */
+.ph-hero {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+  height: 190px; border-radius: 12px; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.18);
+  background: linear-gradient(135deg, #7fd39a, #2f9a5f);
+}
+.ph-hero::after { content: "\26FA"; position: absolute; right: 10px; bottom: -22px; font-size: 6rem; opacity: .18; transform: rotate(-15deg); pointer-events: none; }
+.ph-hero .ph-icon { font-size: 3.2rem; line-height: 1; filter: drop-shadow(0 2px 3px rgba(0,0,0,.15)); }
+.ph-hero .ph-label { font-size: .95rem; font-weight: 700; padding: 3px 12px; border-radius: 12px; background: rgba(0,0,0,.28); text-shadow: none; }
+.ph-report { margin-top: 8px; padding: 7px 14px; background: rgba(255,255,255,.92); color: #333 !important; border-radius: 18px; font-size: .85rem; font-weight: 700; text-decoration: none; text-shadow: none; z-index: 1; }
+.ph-report:hover { background: #fff; }

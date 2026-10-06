@@ -6,6 +6,10 @@
   <url><loc>https://campinghub.kr/guide-beginner.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/guide-gear.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/guide-safety.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/guide-reserve.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/guide-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/guide-fire.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/guide-holiday.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/guide-compare.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/guide-tent.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/guide-chair.html</loc><lastmod>2026-10-06</lastmod></url>
@@ -19,22 +23,92 @@
   <url><loc>https://campinghub.kr/theme-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/theme-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/theme-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/theme-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-gangwon.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gangwon-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gangwon-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gangwon-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gangwon-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gangwon-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-gyeonggi.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeonggi-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeonggi-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeonggi-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeonggi-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeonggi-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-gyeongnam.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongnam-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongnam-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongnam-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongnam-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongnam-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-gyeongbuk.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongbuk-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongbuk-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongbuk-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongbuk-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-gyeongbuk-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-daegu.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daegu-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daegu-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daegu-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daegu-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daegu-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-daejeon.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daejeon-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daejeon-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daejeon-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-daejeon-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-busan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-busan-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-busan-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-seoul.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-seoul-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-seoul-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-seoul-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-sejong.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-sejong-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-ulsan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-ulsan-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-ulsan-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-ulsan-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-ulsan-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-ulsan-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-incheon.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-incheon-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-incheon-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-incheon-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-incheon-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-incheon-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-jeonnam-gwangju.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonnam-gwangju-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonnam-gwangju-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonnam-gwangju-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonnam-gwangju-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonnam-gwangju-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-jeonbuk.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonbuk-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonbuk-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonbuk-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonbuk-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeonbuk-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-jeju.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeju-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeju-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeju-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-jeju-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-chungnam.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungnam-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungnam-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungnam-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungnam-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungnam-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/region-chungbuk.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungbuk-forest.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungbuk-glamping.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungbuk-caravan.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungbuk-pet.html</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://campinghub.kr/region-chungbuk-carcamping.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/camping/146.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/camping/2329.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://campinghub.kr/camping/2931.html</loc><lastmod>2026-10-06</lastmod></url>

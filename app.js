@@ -210,6 +210,8 @@ function fillQuickLinks() {
     "카라반 시설이 있는 캠핑장 모음입니다.");
   addChip("theme-pet.html", "🐕 반려동물", "chip",
     "반려동물 동반이 가능한 캠핑장만 모았습니다.");
+  addChip("theme-carcamping.html", "🚗 차박", "chip",
+    "차 옆에 바로 자리 잡는 자동차야영장 — 차박·오토캠핑이 가능한 곳만 모았습니다.");
 
   const regions = [...new Set(allCampings.map(getRegion))]
     .filter((r) => REGION_SLUGS[r])
@@ -218,6 +220,27 @@ function fillQuickLinks() {
     addChip(`region-${REGION_SLUGS[r]}.html`, r);
   }
 }
+
+// ─── 다음 연휴 D-day 배너 (성수기 예약은 빨간날 기준으로 먼저 찬다) ───
+// 날짜는 2026~2027 공휴일 고정 목록. 음력 명절은 해마다 달라서 확인 후 갱신할 것.
+const HOLIDAYS = [
+  ["2026-10-09", "한글날", "금"], ["2026-12-25", "크리스마스", "금"],
+  ["2027-01-01", "신정", "금"], ["2027-02-07", "설날 연휴", "일"], ["2027-03-01", "삼일절", "월"],
+  ["2027-05-05", "어린이날", "수"], ["2027-05-13", "부처님오신날", "목"], ["2027-06-06", "현충일", "일"],
+  ["2027-08-15", "광복절", "일"], ["2027-09-15", "추석 연휴", "수"], ["2027-10-03", "개천절", "일"],
+  ["2027-10-09", "한글날", "토"], ["2027-12-25", "크리스마스", "토"],
+];
+function renderHolidayBanner() {
+  const el = document.getElementById("holiday-banner");
+  if (!el) return;
+  const now = new Date(); now.setHours(0, 0, 0, 0);
+  const next = HOLIDAYS.map(([d, n, w]) => ({ date: new Date(d + "T00:00:00"), n, w })).find((h) => h.date >= now);
+  if (!next) { el.remove(); return; }
+  const dday = Math.round((next.date - now) / 86400000);
+  const md = `${next.date.getMonth() + 1}/${next.date.getDate()}(${next.w})`;
+  el.innerHTML = `🗓️ 다음 빨간날 <strong>${next.n} ${md}</strong> · <strong class="dday">${dday === 0 ? "오늘" : "D-" + dday}</strong> — 연휴 캠핑 예약은 미리미리! <a href="guide-holiday.html">예약 타이밍 가이드 →</a>`;
+}
+renderHolidayBanner();
 
 // ─── 시작 ───
 async function init() {

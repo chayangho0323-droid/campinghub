@@ -156,6 +156,27 @@ async function main() {
       showers: Number(c.swrmCo || 0),
       glampFacilities: c.glampInnerFclty || "", // 글램핑 내부시설
       caravanFacilities: c.caravInnerFclty || "",
+      // ── 2026-10-06 추가: 상세 "가기 전 확인" 블록용 (고캠핑에 있지만 안 쓰던 항목들) ──
+      siteBottom: [["잔디", c.siteBottomCl1], ["파쇄석", c.siteBottomCl2], ["테크", c.siteBottomCl3], ["자갈", c.siteBottomCl4], ["맨흙", c.siteBottomCl5]]
+        .filter(([, n]) => Number(n) > 0).map(([k]) => k).join(","), // 바닥 형태
+      location: c.lctCl || "",            // 입지: 산,숲,계곡,해변,호수,강,도심,섬
+      insurance: c.insrncAt === "Y",      // 영업배상책임보험 가입
+      program: c.exprnProgrmAt === "Y" ? (c.exprnProgrm || "") : "", // 체험 프로그램
+      rental: c.eqpmnLendCl || "",        // 장비 대여
+      nearbyFac: c.posblFcltyCl || "",    // 주변 이용 가능 시설 (계곡 물놀이, 낚시…)
+      feature: c.featureNm || "",         // 특징 한 줄
+      tooltip: c.tooltip || "",
+      siteDistance: Number(c.sitedStnc || 0), // 사이트 간 거리(m)
+      siteSize: Number(c.siteMg1Width) > 0 && Number(c.siteMg1Vrticl) > 0 ? `${c.siteMg1Width}×${c.siteMg1Vrticl}m` : "",
+      trailerOk: c.trlerAcmpnyAt === "Y",  // 개인 트레일러 입장
+      caravanOk: c.caravAcmpnyAt === "Y",  // 개인 카라반 입장
+      safety: { extinguisher: Number(c.extshrCo || 0), water: Number(c.frprvtWrppCo || 0), sand: Number(c.frprvtSandCo || 0), sensor: Number(c.fireSensorCo || 0) },
+      reserveType: c.resveCl || "",       // 온라인실시간예약 / 전화 / 현장
+      operDays: c.operDeCl || "",         // 평일+주말 / 주말만
+      event: c.clturEventAt === "Y" ? (c.clturEvent || "") : "",
+      status: c.manageSttus || "",        // 운영 / 휴장
+      offSeason: c.hvofBgnde && c.hvofEnddle ? `${c.hvofBgnde}~${c.hvofEnddle}` : "",
+      direction: c.direction || "",       // 오시는 길 안내문
       updated: c.modifiedtime || "",
     }));
   }
@@ -195,6 +216,10 @@ async function main() {
         showers: m.showers || 0,
         glampFacilities: "",
         caravanFacilities: "",
+        siteBottom: m.siteBottom || "", location: m.location || "", insurance: !!m.insurance, program: m.program || "",
+        rental: "", nearbyFac: m.nearbyFac || "", feature: m.feature || "", tooltip: "", siteDistance: 0, siteSize: "",
+        trailerOk: false, caravanOk: false, safety: { extinguisher: 0, water: 0, sand: 0, sensor: 0 },
+        reserveType: m.reserveType || "", operDays: "", event: "", status: "운영", offSeason: "", direction: m.direction || "",
         updated: "manual",
       });
       added++;

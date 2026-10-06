@@ -1056,3 +1056,30 @@ body {
 .ph-hero .ph-label { font-size: .95rem; font-weight: 700; padding: 3px 12px; border-radius: 12px; background: rgba(0,0,0,.28); text-shadow: none; }
 .ph-report { margin-top: 8px; padding: 7px 14px; background: rgba(255,255,255,.92); color: #333 !important; border-radius: 18px; font-size: .85rem; font-weight: 700; text-decoration: none; text-shadow: none; z-index: 1; }
 .ph-report:hover { background: #fff; }
+
+/* Reservation block (big buttons under info grid) */
+.reserve-block { margin: 14px 0 6px; }
+.reserve-block .dir-buttons { margin-top: 0; }
+.dir-btn.big-btn { font-size: 1rem; padding: 12px 18px; font-weight: 700; }
+.dir-btn.homepage { background: #1e88e5; color: #fff; }
+.dir-btn.reserve-search { background: #03c75a; color: #fff; }
+.dir-btn.tel { background: #fff; color: #333; border: 1px solid #ccc; }
+
+/* Check-before block + auto intro */
+.check-before .info-grid { margin-top: 6px; }
+.auto-intro p { line-height: 1.8; }
+
+/* Landing holiday D-day banner */
+.holiday-banner {
+  max-width: 900px; margin: 0 auto 12px; padding: 10px 16px; border-radius: 12px;
+  background: #eef3ff; border: 1px solid #c9d6ff; color: #2c3e8f; font-size: .9rem; text-align: center; line-height: 1.6;
+}
+.holiday-banner:empty { display: none; }
+.holiday-banner .dday { color: #d63031; }
+.holiday-banner a { color: #4756c9; font-weight: 700; text-decoration: none; }
+@media (max-width: 640px) { .holiday-banner { margin: 0 16px 12px; } }
+
+/* Active chip on region/theme list pages */
+.chip-active { background: #4756c9; border-color: #4756c9; color: #fff; font-weight: 700; }
+.chip-active:hover { color: #fff; }
+.quick-links-regions { padding-top: 0; }

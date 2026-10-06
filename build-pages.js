@@ -154,6 +154,9 @@ const CAMP_THEMES = [
     desc: "카라반 시설 보유", test: (c) => c.siteCounts.caravan > 0 || (c.type || "").includes("카라반") },
   { slug: "pet", name: "반려동물 동반 캠핑장", icon: "🐕",
     desc: "반려동물 동반 가능", test: (c) => (c.pet || "").startsWith("가능") },
+  // 차박 = 자동차야영장(차 옆에 바로 텐트·차박). "차박" 검색량이 커서 테마로 따로 (2026-10-06)
+  { slug: "carcamping", name: "차박·오토캠핑장", icon: "🚗",
+    desc: "차 옆에 바로 자리 잡는 자동차야영장 — 차박·오토캠핑", test: (c) => (c.siteCounts && c.siteCounts.auto > 0) || (c.type || "").includes("자동차야영장") },
 ];
 
 // ─── 도우미 ───
@@ -176,8 +179,9 @@ function footerHtml(prefix = "") {
   return `
   <footer class="site-footer">
     <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
-    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}privacy.html">개인정보처리방침</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a></p>
+    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}privacy.html">개인정보처리방침</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a> · <a href="${prefix}theme-carcamping.html">🚗 차박</a> · <a href="${prefix}theme-pet.html">🐕 반려동물</a></p>
     <p><a href="${prefix}guide-beginner.html">🔰 첫 캠핑 준비물</a> · <a href="${prefix}guide-gear.html">💰 예산별 장비</a> · <a href="${prefix}guide-compare.html">📚 장비 비교</a> · <a href="${prefix}guide-safety.html">⚠️ 안전·매너</a></p>
+    <p><a href="${prefix}guide-reserve.html">📅 예약·취소 가이드</a> · <a href="${prefix}guide-carcamping.html">🚗 차박 되는 곳</a> · <a href="${prefix}guide-fire.html">🔥 화로대·불멍 규정</a> · <a href="${prefix}guide-holiday.html">🗓️ 연휴 예약 타이밍</a></p>
     <p><a class="report-link" href="${REPORT_FORM_URL}" target="_blank" rel="noopener">📮 여기 없는 캠핑장 제보하기</a></p>
     <p><a class="cross-link" href="https://festivalhub.kr" target="_blank" rel="noopener">🎪 전국 축제 일정이 궁금하다면 — 페스티벌허브</a></p>
   </footer>`;
@@ -201,6 +205,67 @@ function campingSort(a, b) {
   const bImg = b.image ? 0 : 1;
   if (aImg !== bImg) return aImg - bImg;
   return shuffleRank(a.contentId) - shuffleRank(b.contentId);
+}
+
+// ⛺ "가기 전 확인하세요" — 고캠핑에 있지만 화면에 안 보여주던 항목(바닥·입지·보험·화로대·사이트 간격·안전장비·예약 방식)
+function checkBeforeHtml(c) {
+  const rows = [];
+  if (c.siteBottom) rows.push(["🟫", "바닥 형태", c.siteBottom.split(",").join(" · ")]);
+  if (c.location) rows.push(["🏞️", "입지", c.location.split(",").join(" · ")]);
+  if (c.brazier) rows.push(["🔥", "화로대", c.brazier]);
+  if (c.siteDistance) rows.push(["↔️", "사이트 간 거리", `약 ${c.siteDistance}m`]);
+  if (c.siteSize) rows.push(["📐", "사이트 크기", c.siteSize]);
+  if (c.reserveType) rows.push(["📅", "예약 방식", c.reserveType]);
+  if (c.operDays) rows.push(["🗓️", "운영일", c.operDays]);
+  if (c.offSeason) rows.push(["⛔", "휴장 기간", c.offSeason]);
+  const sf = c.safety || {};
+  const safety = [sf.extinguisher ? `소화기 ${sf.extinguisher}` : "", sf.water ? `방화수 ${sf.water}` : "", sf.sand ? `방화사 ${sf.sand}` : "", sf.sensor ? `화재감지기 ${sf.sensor}` : ""].filter(Boolean).join(" · ");
+  if (safety) rows.push(["🧯", "안전 장비", safety]);
+  if (c.insurance) rows.push(["🛡️", "영업배상책임보험", "가입"]);
+  if (c.trailerOk || c.caravanOk) rows.push(["🚐", "개인 장비 입장", [c.trailerOk ? "트레일러 가능" : "", c.caravanOk ? "카라반 가능" : ""].filter(Boolean).join(" · ")]);
+  if (c.rental) rows.push(["🎒", "장비 대여", c.rental.split(",").join(" · ")]);
+  if (c.nearbyFac) rows.push(["🏖️", "주변 이용 시설", c.nearbyFac.split(",").join(" · ")]);
+  if (c.program) rows.push(["🎨", "체험 프로그램", c.program]);
+  if (c.event) rows.push(["🎉", "행사", c.event]);
+  if (!rows.length) return "";
+  return `<section class="overview check-before"><h2>⛺ 가기 전 확인하세요</h2><div class="info-grid">${rows.map(([i, l, v]) => infoRow(i, l, esc(v))).join("")}</div>
+    <p class="coupang-notice">※ 이용료·구획별 조건은 고캠핑 공공데이터에 없어요. 예약처에서 확인하세요.</p></section>`;
+}
+
+// 소개글이 없는 캠핑장(절반 가까이)에 데이터로 만든 "한눈에 보기" 문단 — 빈 페이지를 없애고 검색 설명문으로도 쓴다
+function autoIntroText(c) {
+  const region = getRegion(c);
+  const where = [region, c.sigungu].filter(Boolean).join(" ");
+  const types = (c.type || "").split(",").map((t) => t.trim()).filter(Boolean);
+  const kind = types.length ? types.join("·") : "캠핑장";
+  const s = [];
+  s.push(`${c.name}${/[가-힣]$/.test(c.name) && (c.name.charCodeAt(c.name.length - 1) - 0xac00) % 28 ? "은" : "는"} ${where}에 있는 ${kind}${c.operator ? `으로, ${c.operator}${/[가-힣]$/.test(c.operator) ? "이" : "가"} 운영합니다` : "입니다"}.`);
+  if (c.location) s.push(`${c.location.split(",").join("·")} 입지의 캠핑장이에요.`);
+  const sc = c.siteCounts || {};
+  const sites = [sc.general ? `일반 ${sc.general}면` : "", sc.auto ? `오토캠핑 ${sc.auto}면` : "", sc.glamp ? `글램핑 ${sc.glamp}동` : "", sc.caravan ? `카라반 ${sc.caravan}대` : ""].filter(Boolean);
+  if (sites.length) s.push(`사이트는 ${sites.join(", ")}으로 구성돼 있습니다.`);
+  const fac = (c.facilities || "").split(",").filter(Boolean).slice(0, 4);
+  if (fac.length) s.push(`${fac.join(", ")} 등 부대시설을 갖추고 있어요.`);
+  if ((c.pet || "").startsWith("가능")) s.push(`반려동물 동반이 ${c.pet === "가능" ? "가능합니다" : c.pet + "합니다"}.`);
+  else if (c.pet === "불가능") s.push("반려동물은 동반할 수 없습니다.");
+  if (c.brazier) s.push(`화로대는 ${c.brazier}입니다.`);
+  if (c.operPeriod) s.push(`운영 계절은 ${c.operPeriod.split(",").join("·")}${c.operDays ? `, 운영일은 ${c.operDays}` : ""}입니다.`);
+  if (c.reserveType) s.push(`예약은 ${c.reserveType}${c.reserveType.includes("예약") ? "" : " 예약"}으로 받아요.`);
+  const spots = (c.nearbySpots || []).map((x) => x.name).filter(Boolean).slice(0, 2);
+  if (spots.length) s.push(`주변에는 ${spots.join(", ")} 같은 관광지가 있어 함께 둘러보기 좋습니다.`);
+  return s.join(" ");
+}
+
+// 📅 예약·홈페이지 큰 버튼 — 방문자 17%가 누르는 1등 기능 (2026-09-21 GA). 둘 다 없으면 네이버에서 예약처 찾기
+function reserveBlock(c) {
+  const q = encodeURIComponent(`${c.name} 예약`);
+  const btns = [];
+  if (c.reserveUrl) btns.push(`<a class="dir-btn reserve big-btn" target="_blank" rel="noopener" href="${esc(c.reserveUrl)}">📅 예약 바로가기</a>`);
+  if (c.homepage && c.homepage !== c.reserveUrl) btns.push(`<a class="dir-btn homepage big-btn" target="_blank" rel="noopener" href="${esc(c.homepage)}">🌐 공식 홈페이지</a>`);
+  if (!btns.length) btns.push(`<a class="dir-btn reserve-search big-btn" target="_blank" rel="noopener" href="https://search.naver.com/search.naver?query=${q}">🔎 네이버에서 예약처 찾기</a>`);
+  if (c.tel) btns.push(`<a class="dir-btn tel" href="tel:${esc(c.tel.replace(/[^0-9+]/g, ""))}">📞 ${esc(c.tel)}</a>`);
+  const note = c.reserveUrl || c.homepage ? "" : `<p class="coupang-notice">고캠핑 공공데이터에 이 캠핑장의 예약 페이지가 등록돼 있지 않아요. 네이버 검색이나 전화로 확인해 주세요.</p>`;
+  return `<div class="reserve-block"><div class="dir-buttons">${btns.join("")}</div>${note}</div>`;
 }
 
 // 목록 카드 (app.js의 카드와 같은 모양)
@@ -232,10 +297,21 @@ function listCard(c) {
 
 // 목록 페이지들 공통 칩 내비게이션 (실행부에서 채움)
 let SITE_NAV = "";
+let REGION_LIST = [];
 
 // 목록형 페이지 한 장
-function buildListPage({ filename, title, heading, subtitle, description, items }) {
+function buildListPage({ filename, title, heading, subtitle, description, items, region = "", theme = "", noindex = false }) {
   const cards = items.map(listCard).join("");
+  // 지역 페이지 안에서 테마 칩을 누르면 "그 지역의 테마"로, 테마 페이지 안에서 지역 칩을 누르면 "그 테마의 지역"으로
+  const rs = REGION_SLUGS[region];
+  let nav = SITE_NAV;
+  if (region || theme) {
+    const themeChips = [`<a class="chip${!theme ? " chip-active" : ""}" href="${rs ? `region-${rs}.html` : "index.html"}">전체 유형</a>`,
+      ...CAMP_THEMES.map((t) => `<a class="chip${theme === t.slug ? " chip-active" : ""}" href="${rs ? `region-${rs}-${t.slug}.html` : `theme-${t.slug}.html`}">${t.icon} ${esc(t.name.replace(/ 캠핑장$/, ""))}</a>`)].join("");
+    const regionChips = [`<a class="chip${!region ? " chip-active" : ""}" href="${theme ? `theme-${theme}.html` : "index.html"}">전체 지역</a>`,
+      ...REGION_LIST.map((r) => `<a class="chip${region === r ? " chip-active" : ""}" href="${theme ? `region-${REGION_SLUGS[r]}-${theme}.html` : `region-${REGION_SLUGS[r]}.html`}">${esc(r)}</a>`)].join("");
+    nav = `<nav class="quick-links">${themeChips}</nav><nav class="quick-links quick-links-regions">${regionChips}</nav>`;
+  }
   return `<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -243,7 +319,7 @@ function buildListPage({ filename, title, heading, subtitle, description, items 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}" />
-  <link rel="canonical" href="${SITE_URL}/${filename}" />
+  <link rel="canonical" href="${SITE_URL}/${filename}" />${noindex ? `\n  <meta name="robots" content="noindex, follow" />` : ""}
   <meta property="og:type" content="website" />
   <meta property="og:title" content="${esc(title)}" />
   <meta property="og:description" content="${esc(description)}" />
@@ -257,7 +333,7 @@ function buildListPage({ filename, title, heading, subtitle, description, items 
     <p class="subtitle">${esc(subtitle)}</p>
     <p class="home-link"><a href="index.html">← 전체 캠핑장 보기</a></p>
   </header>
-  ${SITE_NAV}
+  ${nav}
   ${photoCallHtml(null)}
   <p class="result-count">${items.length}개의 캠핑장</p>
   <main class="festival-grid">${cards || `<p style="grid-column:1/-1;text-align:center;color:#888;">해당하는 캠핑장이 없습니다.</p>`}</main>
@@ -272,8 +348,8 @@ function buildListPage({ filename, title, heading, subtitle, description, items 
 // ─── 캠핑장 한 곳 → 상세 페이지 ───
 function buildPage(c, all) {
   const region = getRegion(c);
-  const description = (stripHtml(c.lineIntro || c.intro) ||
-    `${c.name} — ${region} ${c.sigungu} 캠핑장 정보, 시설, 위치, 예약 안내`).slice(0, 150);
+  const auto = autoIntroText(c);
+  const description = (stripHtml(c.lineIntro || c.intro) || auto).slice(0, 150);
 
   const vph = visitorPhotos[String(c.contentId)];
   const img = c.image
@@ -284,6 +360,7 @@ function buildPage(c, all) {
     isForest(c) ? `<span class="badge ongoing">🌲 국공립·휴양림</span>` : "",
     ...(c.type ? c.type.split(",").map((t) => `<span class="badge upcoming">${esc(t.trim())}</span>`) : []),
     (c.pet || "").startsWith("가능") ? `<span class="badge long">🐕 반려동물 ${esc(c.pet)}</span>` : "",
+    c.status && c.status !== "운영" ? `<span class="badge long">⛔ ${esc(c.status)}</span>` : "",
   ].join(" ");
 
   // 사이트 구성 요약 (0이 아닌 것만)
@@ -308,14 +385,9 @@ function buildPage(c, all) {
     ? `<a href="${esc(c.homepage)}" target="_blank" rel="noopener">${esc(c.homepage)}</a>`
     : "";
 
-  // ⭐ 예약 버튼 (있을 때만 크게)
-  const reserveBtn = c.reserveUrl
-    ? `<a class="dir-btn reserve" target="_blank" rel="noopener" href="${esc(c.reserveUrl)}">🏕️ 예약 바로가기</a>`
-    : "";
-
+  // 예약·홈페이지 버튼은 정보표 아래 reserveBlock()으로 올렸다 (길찾기 줄에서는 뺌)
   const directions = `
     <div class="dir-buttons">
-      ${reserveBtn}
       <a class="dir-btn kakao" target="_blank" rel="noopener" href="https://map.kakao.com/link/to/${encodeURIComponent(c.name)},${c.lat},${c.lng}">🚗 카카오맵 길찾기</a>
       <a class="dir-btn naver" target="_blank" rel="noopener" href="https://map.naver.com/p/search/${encodeURIComponent(c.address || c.name)}">🧭 네이버지도에서 보기</a>
     </div>`;
@@ -324,7 +396,7 @@ function buildPage(c, all) {
     ? `<section class="overview"><h2>소개</h2><p>${c.intro}</p></section>`
     : c.lineIntro
       ? `<section class="overview"><h2>소개</h2><p>${esc(c.lineIntro)}</p></section>`
-      : "";
+      : `<section class="overview auto-intro"><h2>한눈에 보기</h2><p>${esc(auto)}</p>${c.direction ? `<p>🚗 오시는 길: ${esc(c.direction)}</p>` : ""}</section>`;
 
   // 같은 지역 다른 캠핑장 추천 4곳 (사진 있는 곳 우선)
   const sameRegion = all
@@ -402,7 +474,7 @@ function buildPage(c, all) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${esc(c.name)} — ${region} 캠핑장 정보·예약 | CampingHub</title>
+  <title>${esc(c.name)} — ${region} ${esc(c.sigungu || "")} 캠핑장 예약·시설·반려동물 정보 | CampingHub</title>
   <meta name="description" content="${esc(description)}" />
   <link rel="canonical" href="${SITE_URL}/camping/${c.contentId}.html" />
   <meta property="og:type" content="website" />
@@ -439,6 +511,8 @@ function buildPage(c, all) {
         ${infoRow("📞", "문의", esc(c.tel))}
         ${infoRow("🔗", "홈페이지", homepage)}
       </div>
+      ${reserveBlock(c)}
+      ${checkBeforeHtml(c)}
       ${facChips ? `<section class="overview"><h2>부대시설</h2><p>${facChips}</p></section>` : ""}
       ${c.glampFacilities ? `<section class="overview"><h2>글램핑 내부시설</h2><p>${esc(c.glampFacilities)}</p></section>` : ""}
       ${c.caravanFacilities ? `<section class="overview"><h2>카라반 내부시설</h2><p>${esc(c.caravanFacilities)}</p></section>` : ""}
@@ -486,19 +560,21 @@ console.log(`✅ camping/*.html ${campings.length}개 생성`);
 
 // 예전 빌드의 테마/지역 파일 정리
 for (const old of fs.readdirSync(__dirname)) {
-  if (/^(theme-[a-z]+|region-[a-z-]+)\.html$/.test(old)) fs.unlinkSync(path.join(__dirname, old));
+  if (/^(theme-[a-z]+|region-[a-z-]+(-[a-z]+)?)\.html$/.test(old)) fs.unlinkSync(path.join(__dirname, old));
 }
 
 // 공통 칩 내비게이션
 const regionsAll = [...new Set(campings.map(getRegion))]
   .filter((r) => r !== "기타")
   .sort((a, b) => a.localeCompare(b, "ko"));
+REGION_LIST = regionsAll;
 SITE_NAV = `
   <nav class="quick-links sticky-desktop">
     <a class="chip chip-hot" href="theme-forest.html">🌲 휴양림·국공립</a>
     <a class="chip chip-events" href="theme-glamping.html">⛺ 글램핑</a>
     <a class="chip" href="theme-caravan.html">🚐 카라반</a>
     <a class="chip" href="theme-pet.html">🐕 반려동물</a>
+    <a class="chip" href="theme-carcamping.html">🚗 차박</a>
     ${regionsAll.map((r) => `<a class="chip" href="region-${REGION_SLUGS[r] || "etc"}.html">${esc(r)}</a>`).join("")}
   </nav>`;
 
@@ -516,6 +592,7 @@ for (const t of CAMP_THEMES) {
       subtitle: `${t.desc} ${items.length}곳 모음`,
       description: `전국 ${t.name} ${items.length}곳. ${items.slice(0, 5).map((c) => c.name).join(", ")} 등 시설·위치·예약 정보를 한눈에.`,
       items,
+      theme: t.slug,
     }),
     "utf-8"
   );
@@ -538,10 +615,27 @@ for (const region of regionsAll) {
       subtitle: `${region}의 캠핑장·휴양림 ${items.length}곳`,
       description: `${region} 캠핑장 모음. ${items.slice(0, 5).map((c) => c.name).join(", ")} 등 ${items.length}곳의 시설·위치·예약 정보.`,
       items,
+      region,
     }),
     "utf-8"
   );
   regionFiles.push(filename);
+
+  // 지역 × 테마 (예: region-jeju-pet.html = 제주 반려동물 캠핑장). "국공립 애견동반 캠핑장" 같은 조합 검색이 CTR 50%였음
+  for (const t of CAMP_THEMES) {
+    const sub = items.filter(t.test);
+    const subFile = `region-${slug}-${t.slug}.html`;
+    const thin = sub.length < 3; // 너무 적으면 검색 색인 제외(링크는 살려 둠)
+    fs.writeFileSync(subFile, buildListPage({
+      filename: subFile,
+      title: `${region} ${t.name} ${sub.length}곳 — 예약·시설 정보 | CampingHub`,
+      heading: `${t.icon} ${region} ${t.name}`,
+      subtitle: `${region}의 ${t.desc} ${sub.length}곳`,
+      description: `${region} ${t.name} ${sub.length}곳. ${sub.slice(0, 5).map((c) => c.name).join(", ")} 등 시설·위치·예약 정보.`,
+      items: sub, region, theme: t.slug, noindex: thin,
+    }), "utf-8");
+    if (!thin) regionFiles.push(subFile);
+  }
 }
 console.log(`✅ 지역별 페이지 ${regionFiles.length}개 생성 (${regionsAll.join(", ")})`);
 
@@ -706,6 +800,187 @@ const GUIDE_PAGES = [
       </section>`,
   },
 ];
+
+// ─── 실용 가이드 4편 (2026-10-06, 애드센스 "가치 낮은 콘텐츠" 보완 — 예약·차박·화로대·연휴) ───
+// 원칙: 해마다 바뀌는 요금·날짜·정확하지 않은 수치는 쓰지 않고, 방법·판단 기준·체크리스트 위주로.
+GUIDE_PAGES.push(
+  {
+    slug: "guide-reserve",
+    icon: "📅",
+    title: "캠핑장 예약 방법 총정리 — 국립공원·휴양림·지자체·민간, 취소까지",
+    desc: "캠핑장은 운영 주체마다 예약하는 곳이 다릅니다. 국립공원·자연휴양림·지자체·민간 캠핑장별 예약 경로와 취소·환불에서 꼭 확인할 것을 정리했습니다.",
+    body: `
+      <section class="overview">
+        <h2>예약은 "누가 운영하느냐"에 따라 창구가 달라요</h2>
+        <p>
+          같은 캠핑장이라도 국립공원이 운영하는 곳, 산림청·지자체 자연휴양림, 시·군이 직접 운영하는 공영 캠핑장,
+          개인이 운영하는 민간 캠핑장은 <strong>예약하는 사이트가 전부 다릅니다.</strong>
+          캠핑허브 상세 페이지의 <strong>운영주체</strong>와 <strong>예약 방식</strong> 항목을 먼저 보면 어디서 예약해야 하는지 감이 잡혀요.
+        </p>
+      </section>
+      <section class="overview">
+        <h2>🏞️ 국립공원 야영장</h2>
+        <ul>
+          <li><strong>국립공원공단 예약 시스템</strong>에서 예약합니다. 캠핑장 홈페이지가 따로 없고 전화 예약도 받지 않는 곳이 대부분이에요.</li>
+          <li>인기 야영장은 성수기에 <strong>추첨제</strong>로 운영되기도 합니다. 추첨 신청 기간을 놓치면 선착순 잔여 자리만 노려야 하니, 가려는 야영장의 공지를 미리 확인하세요.</li>
+          <li>국립공원은 <strong>지정된 야영장 밖에서의 야영·취사가 금지</strong>돼 있어요. 반드시 야영장 안에서만.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>🌲 자연휴양림 야영장</h2>
+        <ul>
+          <li>국립 자연휴양림은 산림청의 <strong>숲나들e</strong>에서 예약합니다. 숙박동(숲속의집)과 야영장이 같은 시스템에 있어요.</li>
+          <li>도·군이 운영하는 지방 휴양림은 각 지자체 예약 시스템을 쓰는 곳이 많습니다. 상세 페이지의 예약 버튼이 안내하는 곳으로 가세요.</li>
+          <li>휴양림은 보통 <strong>매달 정해진 날에 다음 달 예약이 열리고</strong>, 성수기 주말은 열리자마자 마감됩니다. 오픈 날짜·시간을 휴양림 공지에서 확인해 두세요.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>🏛️ 지자체 공영 캠핑장</h2>
+        <ul>
+          <li>시·군 공공 예약 포털이나 캠핑장 전용 홈페이지에서 예약합니다. 요금이 저렴하고 시설이 깔끔한 편이라 경쟁이 치열해요.</li>
+          <li>일부는 <strong>지역 주민 우선 예약</strong>이나 할인 제도가 있습니다. 거주지에 따라 유리할 수 있어요.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>⛺ 민간 캠핑장</h2>
+        <ul>
+          <li>캠핑장 자체 홈페이지, 네이버 예약, 캠핑 예약 플랫폼 중 하나를 씁니다. 상세 페이지에 예약 링크가 없으면 <strong>"네이버에서 예약처 찾기"</strong> 버튼으로 찾아보세요.</li>
+          <li>전화 예약만 받는 곳도 아직 많습니다. 상세 페이지의 전화번호로 문의하면 가장 정확해요.</li>
+          <li>예약 전 <strong>후기</strong>를 꼭 보세요. 캠핑허브 카드의 "네이버 후기 보기"가 바로 연결됩니다.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>❌ 취소·환불, 이것만은 확인하세요</h2>
+        <ul>
+          <li><strong>취소 수수료는 캠핑장마다, 시기마다 다릅니다.</strong> 보통 성수기·주말일수록, 이용일에 가까울수록 환불이 줄어들어요. 예약 확정 전에 취소 규정을 캡쳐해 두세요.</li>
+          <li>공공 캠핑장은 대체로 소비자분쟁해결기준에 맞춘 환불 규정을 공지하고 있습니다. 민간은 자체 규정이 우선이에요.</li>
+          <li><strong>우천 취소</strong>는 캠핑장마다 정책이 갈립니다. 기상특보(호우·태풍 등)가 나왔을 때 환불해 주는지 미리 물어보세요.</li>
+          <li>국립공원·휴양림은 <strong>취소하면 그 자리가 바로 다시 열리기</strong> 때문에, 연휴 직전 취소표를 노리는 것도 방법입니다.</li>
+        </ul>
+        <p class="guide-tip">👉 연휴 예약 공략은 <a href="guide-holiday.html">🗓️ 연휴 캠핑 예약 타이밍</a>, 준비물은 <a href="guide-beginner.html">🔰 첫 캠핑 체크리스트</a>를 참고하세요.</p>
+      </section>`,
+  },
+  {
+    slug: "guide-carcamping",
+    icon: "🚗",
+    title: "차박 되는 곳·안 되는 곳 — 자동차야영장과 차박 금지 구역 구분법",
+    desc: "차박은 어디서나 해도 되는 게 아닙니다. 합법적으로 차박할 수 있는 자동차야영장과 금지된 장소를 구분하는 기준, 차박 매너를 정리했습니다.",
+    body: `
+      <section class="overview">
+        <h2>차박은 "주차"가 아니라 "야영"입니다</h2>
+        <p>
+          차 안에서 자는 것 자체는 주차지만, 차 옆에 의자·테이블을 펴고 취사를 하는 순간 <strong>야영</strong>이 됩니다.
+          그래서 "주차는 되는데 차박은 안 되는" 장소가 많아요. 차박이 되는지 판단하는 기준은 하나입니다 —
+          <strong>그 장소가 야영을 허용하는 곳인가.</strong>
+        </p>
+      </section>
+      <section class="overview">
+        <h2>✅ 마음 편히 차박할 수 있는 곳</h2>
+        <ul>
+          <li><strong>자동차야영장</strong> — 차를 사이트 옆에 바로 대고 텐트를 치거나 차 안에서 잘 수 있도록 만든 곳. 캠핑허브 <a href="theme-carcamping.html">🚗 차박·오토캠핑장</a>에 전국 자동차야영장을 모았습니다. 전기·화장실·개수대가 있어 초보에게 가장 안전해요.</li>
+          <li><strong>카라반·트레일러 입장 가능 캠핑장</strong> — 상세 페이지 "가기 전 확인하세요"의 <em>개인 장비 입장</em> 항목을 보세요. 개인 카라반이 들어가는 곳은 차박도 자연스럽게 받아주는 편입니다.</li>
+          <li><strong>차박 허용을 명시한 지자체 차박지</strong> — 일부 시·군이 공영주차장이나 해안 일부 구간을 차박지로 지정해 운영합니다. "OO군 차박지"로 검색하면 공식 안내가 나옵니다.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>🚫 하면 안 되는 곳 (과태료 대상이 될 수 있어요)</h2>
+        <ul>
+          <li><strong>국립공원 안</strong> — 지정 야영장 밖 야영·취사는 금지입니다. 주차장에서 차박하다 적발되면 과태료 대상이에요.</li>
+          <li><strong>해수욕장·하천변·공원</strong> — 많은 지자체가 조례로 야영·취사를 금지합니다. 특히 여름 해수욕장은 단속이 잦아요.</li>
+          <li><strong>고속도로 휴게소·졸음쉼터</strong> — 잠깐 쉬는 곳이지 숙박 장소가 아닙니다. 취사는 당연히 안 되고, 장시간 점유도 제지받을 수 있어요.</li>
+          <li><strong>사유지·농로·마을 앞</strong> — 주민에게 피해를 주는 차박이 늘면서 민원이 많아졌습니다. 양해 없이 세우지 마세요.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>🤝 차박 매너 5가지</h2>
+        <ul>
+          <li>엔진 공회전으로 냉난방하지 않기 — 소음·매연 민원의 1순위이고, 밀폐된 차 안 공회전은 위험합니다.</li>
+          <li>쓰레기는 전부 되가져가기. 분리수거함이 없는 곳이 대부분이에요.</li>
+          <li>취사는 허용된 곳에서만, 화기는 차에서 떨어진 바닥에서.</li>
+          <li>아침 일찍 출발하는 사람을 위해 밤 10시 이후엔 조용히.</li>
+          <li>경치 좋은 자리라고 하루 종일 점유하지 않기 — 다음 사람도 보고 싶은 풍경입니다.</li>
+        </ul>
+        <p class="guide-tip">👉 차박 장비가 고민이면 <a href="guide-mat.html">🛏️ 매트 비교</a>와 <a href="guide-sleeping.html">🛌 침낭 가이드</a>, 안전은 <a href="guide-safety.html">⚠️ 캠핑 안전·매너</a>를 참고하세요.</p>
+      </section>`,
+  },
+  {
+    slug: "guide-fire",
+    icon: "🔥",
+    title: "캠핑 화로대·불멍 규정 — 되는 캠핑장 고르는 법과 안전 수칙",
+    desc: "불멍은 캠핑의 낭만이지만 아무 데서나 할 수 없습니다. 화로대 사용 가능 캠핑장을 찾는 법, 산불조심기간 규정, 꼭 지켜야 할 안전 수칙을 정리했습니다.",
+    body: `
+      <section class="overview">
+        <h2>먼저, 그 캠핑장이 화로대를 허용하는지 확인</h2>
+        <p>
+          캠핑장마다 <strong>개별 화로대 사용 가능 / 공용 화로대만 / 전면 금지</strong>로 규정이 다릅니다.
+          캠핑허브 상세 페이지의 <strong>화로대</strong> 항목이 바로 고캠핑 공공데이터의 공식 등록 정보예요.
+          "개별 화로대 가능"이어도 바람이 강한 날이나 산불조심기간에는 현장에서 금지될 수 있으니 당일 안내를 따르세요.
+        </p>
+      </section>
+      <section class="overview">
+        <h2>🍂 산불조심기간에는 규정이 바뀝니다</h2>
+        <ul>
+          <li>산림청은 해마다 <strong>봄(2월~5월 중순)과 가을(11월~12월 중순)</strong>을 산불조심기간으로 정합니다. 이 기간엔 산림 인접 캠핑장이 화로대를 금지하거나 제한하는 경우가 많아요.</li>
+          <li>산림 안이나 근처에서 허가 없이 불을 피우면 <strong>산림보호법 위반</strong>으로 과태료 대상이고, 산불로 번지면 형사 처벌까지 갈 수 있습니다.</li>
+          <li>건조주의보·강풍주의보가 내리면 허용 캠핑장도 그날은 금지하는 게 보통입니다.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>✅ 불멍 안전 수칙</h2>
+        <ul>
+          <li><strong>화로대는 반드시 다리가 있는 제품</strong>으로, 바닥에 직접 불을 피우지 마세요. 잔디·데크 사이트는 바닥 보호용 내열 매트가 필수입니다.</li>
+          <li>텐트·타프에서 충분히 떨어뜨리고, 바람 방향을 확인하세요. 불티가 타프에 구멍을 내는 건 흔한 일입니다.</li>
+          <li><strong>물 한 통과 소화기(또는 모래)</strong>를 옆에 두고 시작하세요. 상세 페이지의 "안전 장비" 항목에서 캠핑장 소화기 비치 여부를 볼 수 있어요.</li>
+          <li>장작은 캠핑장에서 파는 것을 쓰세요. 주변 나뭇가지를 꺾거나 주워 태우는 건 금지인 곳이 많습니다.</li>
+          <li>잠들기 전엔 <strong>완전히 꺼서 재까지 식히기.</strong> 다음 날 아침 재는 지정된 재 버리는 곳에.</li>
+          <li><strong>텐트 안에서는 절대 화기 금지.</strong> 난로·숯·가스는 일산화탄소 중독의 직접 원인입니다. 일산화탄소 경보기를 챙기세요.</li>
+        </ul>
+        <p class="guide-tip">👉 동계 난방 안전은 <a href="guide-safety.html">⚠️ 캠핑 안전·매너</a>, 버너 선택은 <a href="guide-burner.html">🔥 버너 비교</a>를 참고하세요.</p>
+      </section>`,
+  },
+  {
+    slug: "guide-holiday",
+    icon: "🗓️",
+    title: "연휴 캠핑 예약 타이밍 — 빨간날 캠핑장 잡는 현실적인 방법",
+    desc: "연휴 캠핑장은 예약이 열리는 순간 마감됩니다. 예약 오픈 시점을 잡는 법, 취소표 노리는 타이밍, 그래도 안 되면 쓰는 대안까지 정리했습니다.",
+    body: `
+      <section class="overview">
+        <h2>연휴 자리는 "오픈 당일"에 결정됩니다</h2>
+        <p>
+          휴양림·국립공원·인기 공영 캠핑장은 연휴 주말 사이트가 <strong>예약이 열리는 날 몇 분 안에</strong> 마감됩니다.
+          그래서 연휴 캠핑의 핵심은 장비도 장소도 아니라 <strong>예약 오픈 날짜를 아는 것</strong>이에요.
+          캠핑허브 메인 상단의 "다음 빨간날 D-day"를 보고, 그 연휴가 포함된 달의 예약 오픈일을 역산해 두세요.
+        </p>
+      </section>
+      <section class="overview">
+        <h2>1️⃣ 오픈 날짜를 미리 적어 두기</h2>
+        <ul>
+          <li>휴양림·공영 캠핑장은 대개 <strong>매달 같은 날, 같은 시각</strong>에 다음 달(또는 다다음 달) 예약을 엽니다. 가려는 캠핑장 공지에서 오픈 규칙을 확인하고 달력에 알림을 걸어 두세요.</li>
+          <li>국립공원 야영장은 성수기에 추첨제를 쓰는 곳이 있습니다. 추첨 신청 기간을 놓치면 끝이에요.</li>
+          <li>회원가입·결제수단 등록은 <strong>오픈 전날까지</strong> 끝내 두세요. 오픈 시각에 가입하다 놓치는 경우가 정말 많습니다.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>2️⃣ 놓쳤다면 취소표를 노리기</h2>
+        <ul>
+          <li>취소표는 <strong>연휴 1~2주 전</strong>(계획 변경)과 <strong>2~3일 전</strong>(취소 수수료가 커지기 직전)에 많이 나옵니다.</li>
+          <li>예약 시스템을 하루 두세 번 새로고침하는 것만으로도 잡히는 경우가 있어요. 아침 출근 전, 점심, 밤 10시 전후가 취소가 몰리는 시간대입니다.</li>
+          <li>일부 플랫폼은 빈자리 알림 기능이 있습니다. 있다면 꼭 켜 두세요.</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>3️⃣ 그래도 안 되면 — 현실적인 대안</h2>
+        <ul>
+          <li><strong>연휴 첫날 대신 마지막 날 1박</strong> — 돌아가는 날 밤은 비는 곳이 많습니다.</li>
+          <li><strong>덜 알려진 지역</strong> — 수도권 1시간 거리는 전쟁터지만, 2시간 넘어가면 여유가 생깁니다. 캠핑허브 지역 페이지에서 사진 있는 곳 위주로 골라 보세요.</li>
+          <li><strong>민간 캠핑장·글램핑</strong> — 공영보다 비싸지만 자리는 남아 있는 편입니다. <a href="theme-glamping.html">⛺ 글램핑</a>은 장비 없이도 가능해 연휴 급조 캠핑에 좋아요.</li>
+          <li><strong>자동차야영장·차박</strong> — 텐트 사이트보다 경쟁이 덜한 곳이 있습니다. <a href="theme-carcamping.html">🚗 차박·오토캠핑장</a>을 확인해 보세요.</li>
+        </ul>
+        <p class="guide-tip">👉 예약 창구별 방법과 취소 규정은 <a href="guide-reserve.html">📅 캠핑장 예약 방법 총정리</a>에 정리했습니다.</p>
+      </section>`,
+  }
+);
+
 
 // ─── 장비 비교 가이드 시리즈 (유형별 비교 — 특정 제품/가격 비교는 데이터 출처가 없어 안 함) ───
 GUIDE_PAGES.push(

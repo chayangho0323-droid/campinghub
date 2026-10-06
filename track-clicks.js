@@ -23,6 +23,9 @@
     if (el.closest(".dir-btn.coupang")) return "click_coupang";
     if (el.closest(".dir-btn.hotel")) return "click_hotel";
     if (el.closest(".dir-btn.reserve")) return "click_reserve"; // 캠핑 예약 바로가기
+    if (el.closest(".dir-btn.reserve-search")) return "click_reserve_search"; // 예약처 없음 → 네이버 검색
+    if (el.closest(".dir-btn.homepage")) return "click_homepage"; // 공식 홈페이지 큰 버튼
+    if (el.closest(".dir-btn.tel")) return "click_tel";
     if (el.closest(".dir-btn.kakao, .dir-btn.naver")) return "click_map";
     if (el.closest(".review-link")) return "click_review"; // 네이버 후기 보기 (캠핑 카드)
     if (el.closest("#near-me")) return "click_nearme"; // 내 주변 가까운 순 (캠핑)

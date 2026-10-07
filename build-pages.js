@@ -1505,3 +1505,34 @@ const slim = campings.map((c) => ({
 }));
 fs.writeFileSync("campings-list.json", JSON.stringify(slim), "utf-8");
 console.log(`✅ campings-list.json 생성 (목록용 경량본, ${Math.round(JSON.stringify(slim).length / 1024)}KB)`);
+
+// ─── 메인 페이지용 주말 날씨 요약 (weather-summary.json, 약 10KB) ───
+// app.js가 읽어서 상단 "이번 주말 캠핑 날씨" 띠(시도별)와 카드 배지(시군구별)를 그린다. 상세 페이지의 weatherHtml과 같은 기준.
+{
+  const gradeOf = (d) => (d.pty || d.pop >= 60 ? "rain" : d.pop >= 30 ? "soso" : "good");
+  const summary = { updated: WEATHER.updated || "", weekend: [], areas: {}, sido: {} };
+  const sidoAcc = {};
+  for (const [key, area] of Object.entries(WEATHER.areas || {})) {
+    const wk = (area.days || []).filter((d) => d.dow === "토" || d.dow === "일").slice(0, 2);
+    if (!wk.length) continue;
+    if (!summary.weekend.length) summary.weekend = wk.map((d) => ({ date: d.date, dow: d.dow }));
+    // [토 비확률, 토 등급, 일 비확률, 일 등급, 토 최저, 토 최고]
+    const sat = wk.find((d) => d.dow === "토"), sun = wk.find((d) => d.dow === "일");
+    summary.areas[key] = [sat ? sat.pop : null, sat ? gradeOf(sat) : "", sun ? sun.pop : null, sun ? gradeOf(sun) : "", sat && sat.tmn != null ? Math.round(sat.tmn) : null, sat && sat.tmx != null ? Math.round(sat.tmx) : null];
+    const sido = key.split(" ")[0];
+    const acc = (sidoAcc[sido] ||= { pop: 0, n: 0, rain: 0, soso: 0, tmn: [], tmx: [] });
+    const rep = sat || sun; // 주말 대표: 토요일(캠핑하는 밤)
+    acc.pop += rep.pop || 0; acc.n++;
+    const g = wk.some((d) => gradeOf(d) === "rain") ? "rain" : wk.some((d) => gradeOf(d) === "soso") ? "soso" : "good";
+    if (g === "rain") acc.rain++; else if (g === "soso") acc.soso++;
+    if (rep.tmn != null) acc.tmn.push(rep.tmn); if (rep.tmx != null) acc.tmx.push(rep.tmx);
+  }
+  for (const [sido, a] of Object.entries(sidoAcc)) {
+    const avg = (arr) => (arr.length ? Math.round(arr.reduce((s, v) => s + v, 0) / arr.length) : null);
+    // 시도 등급: 시군구 과반이 비 예보면 비, 과반이 보통 이상이면 보통, 아니면 좋음
+    const grade = a.rain / a.n >= 0.5 ? "rain" : (a.rain + a.soso) / a.n >= 0.5 ? "soso" : "good";
+    summary.sido[sido] = { pop: Math.round(a.pop / a.n), grade, tmn: avg(a.tmn), tmx: avg(a.tmx), n: a.n };
+  }
+  fs.writeFileSync("weather-summary.json", JSON.stringify(summary), "utf-8");
+  console.log(`✅ weather-summary.json 생성 (시도 ${Object.keys(summary.sido).length}·시군구 ${Object.keys(summary.areas).length}, ${Math.round(JSON.stringify(summary).length / 1024)}KB)`);
+}

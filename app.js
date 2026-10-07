@@ -141,8 +141,9 @@ function render() {
         ? `<img src="${c.image}" alt="${c.name}" loading="lazy" />`
         : `<div class="no-image">🏕️</div>`;
 
-      // 배지: 휴양림/유형/반려동물
+      // 배지: 주말 날씨/휴양림/유형/반려동물
       const badges = [
+        weekendBadge(c),
         isForest(c) ? `<span class="badge ongoing">🌲 국공립·휴양림</span>` : "",
         c.type ? `<span class="badge upcoming">${c.type.split(",")[0]}</span>` : "",
         (c.pet || "").startsWith("가능") ? `<span class="badge long">🐕</span>` : "",
@@ -220,6 +221,45 @@ function fillQuickLinks() {
     addChip(`region-${REGION_SLUGS[r]}.html`, r);
   }
 }
+
+// ─── 이번 주말 캠핑 날씨 (build-pages.js가 만든 weather-summary.json: 시도별 요약 + 시군구별 등급) ───
+// 상단 띠에 시도별 주말 날씨 칩, 카드에 "☀️ 주말 좋음" 배지. 상세 페이지 weatherHtml과 같은 기준(비 60%↑=비 예보, 30%↑=보통)
+let WX = null;
+const WX_ICON = { good: "☀️", soso: "⛅", rain: "🌧️" };
+const WX_LABEL = { good: "좋음", soso: "보통", rain: "비 예보" };
+const SIDO_SHORT = { 서울특별시: "서울", 부산광역시: "부산", 대구광역시: "대구", 인천광역시: "인천", 광주광역시: "광주", 대전광역시: "대전", 울산광역시: "울산", 세종특별자치시: "세종", 경기도: "경기", 강원특별자치도: "강원", 충청북도: "충북", 충청남도: "충남", 전북특별자치도: "전북", 전남광주통합특별시: "전남·광주", 전라남도: "전남·광주", 경상북도: "경북", 경상남도: "경남", 제주특별자치도: "제주" };
+const normSidoW = (s) => String(s || "").replace(/^강원도$/, "강원특별자치도").replace(/^전라북도$/, "전북특별자치도");
+function weekendBadge(c) {
+  if (!WX || !c.sigungu) return "";
+  const a = WX.areas[`${normSidoW(c.region)} ${c.sigungu}`];
+  if (!a) return "";
+  // 토·일 중 나쁜 쪽 기준 (하루라도 비 예보면 비)
+  const rank = { rain: 2, soso: 1, good: 0 };
+  const g = [a[1], a[3]].filter(Boolean).sort((x, y) => rank[y] - rank[x])[0];
+  if (!g) return "";
+  const pop = Math.max(a[0] ?? 0, a[2] ?? 0);
+  return `<span class="badge wx wx-${g}" title="이번 주말 비 확률 ${pop}%">${WX_ICON[g]} 주말 ${WX_LABEL[g]}</span>`;
+}
+function renderWeatherBanner() {
+  const el = document.getElementById("weather-banner");
+  if (!el || !WX || !WX.weekend.length) return;
+  const md = (d) => `${Number(d.date.slice(4, 6))}/${Number(d.date.slice(6))}(${d.dow})`;
+  const order = ["서울특별시", "경기도", "인천광역시", "강원특별자치도", "충청북도", "충청남도", "대전광역시", "세종특별자치시", "전북특별자치도", "전남광주통합특별시", "경상북도", "대구광역시", "경상남도", "부산광역시", "울산광역시", "제주특별자치도"];
+  const chips = order.filter((s) => WX.sido[s]).map((s) => {
+    const w = WX.sido[s], short = SIDO_SHORT[s] || s, slug = REGION_SLUGS[short];
+    const temp = w.tmn != null && w.tmx != null ? ` ${w.tmn}°/${w.tmx}°` : "";
+    return `<a class="wx-chip wx-${w.grade}" href="${slug ? `region-${slug}.html` : "#"}" title="${short} 토요일 비 확률 ${w.pop}% · 캠핑장 ${w.n}개 시군구 기준">${WX_ICON[w.grade]} ${short} ${w.pop}%${temp}</a>`;
+  }).join("");
+  const good = Object.values(WX.sido).filter((w) => w.grade === "good").length, total = Object.keys(WX.sido).length;
+  el.innerHTML = `<span class="wx-title">⛅ 이번 주말 <strong>${WX.weekend.map(md).join("·")}</strong> 캠핑 날씨</span> <span class="wx-sub">${good === total ? "전국 맑음 — 어디든 좋아요!" : good ? `${total}개 지역 중 ${good}곳 좋음` : "비 소식 있어요 — 우천 대비"}</span><span class="wx-chips">${chips}</span><span class="wx-foot">카드의 <b>☀️ 주말</b> 배지는 그 캠핑장 시군구 기준 · 상세 페이지에 7일 예보 · 기상청 ${WX.updated} 발표</span>`;
+}
+async function loadWeather() {
+  try {
+    const res = await fetch("weather-summary.json");
+    if (res.ok) { WX = await res.json(); renderWeatherBanner(); if (allCampings.length) render(); }
+  } catch (e) {}
+}
+loadWeather();
 
 // ─── 다음 연휴 D-day 배너 (성수기 예약은 빨간날 기준으로 먼저 찬다) ───
 // 날짜는 2026~2027 공휴일 고정 목록. 음력 명절은 해마다 달라서 확인 후 갱신할 것.

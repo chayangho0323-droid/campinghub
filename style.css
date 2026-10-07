@@ -1126,3 +1126,27 @@ body {
 .camp-note h3 { font-size: 1rem; margin: 16px 0 8px; }
 .camp-note ul { padding-left: 20px; line-height: 1.8; }
 .camp-note li { margin-bottom: 4px; }
+
+
+/* 캠핑장 사진이 없어 주변 풍경 사진을 쓴 카드 (축제허브와 같은 스타일) — 카드 이미지 위 작은 안내 표시 (사진 높이 170px 기준) */
+.card .venue-tag {
+  position: absolute;
+  top: 146px;
+  left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  pointer-events: none;
+}
+/* 상세 페이지 대표 사진 아래 안내문 */
+.venue-photo-note {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.venue-photo-note a { color: #2b6cb0; font-weight: 600; }

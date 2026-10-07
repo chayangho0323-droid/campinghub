@@ -347,9 +347,13 @@ function reserveBlock(c) {
 
 // 목록 카드 (app.js의 카드와 같은 모양)
 function listCard(c) {
+  // 사진 없는 곳은 주변 풍경(fetch-photos.js venuePhoto)을 "📍 주변 풍경" 표시와 함께
+  const venueImg = !c.image && c.venuePhoto && c.venuePhoto.image;
   const img = c.image
     ? `<img src="${esc(c.image)}" alt="${esc(c.name)}" loading="lazy" />`
-    : `<div class="no-image">🏕️</div>`;
+    : venueImg
+      ? `<img src="${esc(venueImg)}" alt="${esc(c.name)} 주변 ${esc(c.venuePhoto.name)}" loading="lazy" /><span class="venue-tag">📍 주변 풍경</span>`
+      : `<div class="no-image">🏕️</div>`;
   const badges = [
     weekendBadgeStatic(c),
     isForest(c) ? `<span class="badge ongoing">🌲 국공립·휴양림</span>` : "",
@@ -433,9 +437,12 @@ function buildPage(c, all) {
   const description = (stripHtml(c.lineIntro || c.intro) || (campNote && campNote.intro[0]) || auto).slice(0, 150);
 
   const vph = visitorPhotos[String(c.contentId)];
+  // 대표 사진 우선순위: 공식/제보 사진 > 주변 풍경(fetch-photos.js venuePhoto, "주변 풍경" 안내문 포함) > 초록 타일+제보 버튼
   const img = c.image
-    ? `<img class="hero" src="${esc(c.image)}" alt="${esc(c.name)}" />${c.photoCredit ? `<p class="photo-credit">📷 사진 제보: ${esc(c.photoCredit)} 님</p>` : ""}`
-    : `<div class="ph-hero"><span class="ph-icon">🏕️</span><span class="ph-label">아직 사진이 없는 캠핑장</span><a class="ph-report report-link" href="${esc(reportMailto(c))}">📷 이곳 사진 제보하기</a></div>`;
+    ? `<img class="hero" src="${esc(c.image)}" alt="${esc(c.name)}" />${c.photoCredit ? `<p class="photo-credit">📷 사진 제보: ${esc(c.photoCredit)} 님</p>` : c.photoSource ? `<p class="venue-photo-note">📷 사진: ${esc(c.photoSource)} (공공누리 1유형)</p>` : ""}`
+    : c.venuePhoto && c.venuePhoto.image
+      ? `<img class="hero" src="${esc(c.venuePhoto.image)}" alt="${esc(c.name)} 주변 ${esc(c.venuePhoto.name)}" /><p class="venue-photo-note">📍 캠핑장 사진이 아직 없어 주변 ${c.venuePhoto.dist != null ? `관광지 <strong>${esc(c.venuePhoto.name)}</strong>(${c.venuePhoto.dist}m)` : `<strong>${esc(c.venuePhoto.name)}</strong>`}의 모습을 보여드려요 · 사진: ${esc(c.venuePhoto.credit || "한국관광공사")} · <a class="report-link" href="${esc(reportMailto(c))}">📷 이곳 사진 제보하기</a></p>`
+      : `<div class="ph-hero"><span class="ph-icon">🏕️</span><span class="ph-label">아직 사진이 없는 캠핑장</span><a class="ph-report report-link" href="${esc(reportMailto(c))}">📷 이곳 사진 제보하기</a></div>`;
 
   const badges = [
     isForest(c) ? `<span class="badge ongoing">🌲 국공립·휴양림</span>` : "",
@@ -561,7 +568,7 @@ function buildPage(c, all) {
   <meta property="og:type" content="website" />
   <meta property="og:title" content="${esc(c.name)} — ${region} 캠핑장" />
   <meta property="og:description" content="${esc(description)}" />
-  ${c.image ? `<meta property="og:image" content="${esc(c.image)}" />` : ""}
+  ${c.image || (c.venuePhoto && c.venuePhoto.image) ? `<meta property="og:image" content="${esc(c.image || c.venuePhoto.image)}" />` : ""}
   <meta property="og:url" content="${SITE_URL}/camping/${c.contentId}.html" />
   <link rel="stylesheet" href="../style.css" />${reportHead("../")}
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -1549,6 +1556,8 @@ const slim = campings.map((c) => ({
   sigungu: c.sigungu,
   address: (c.address || "").split(" ").slice(0, 2).join(" "),
   image: c.image,
+  // 사진 없는 곳의 주변 풍경 (app.js 카드 "📍 주변 풍경" 표시용, 이름만 같이)
+  venuePhoto: !c.image && c.venuePhoto && c.venuePhoto.image ? { image: c.venuePhoto.image, name: c.venuePhoto.name } : undefined,
   pet: c.pet,
   facilities: (c.facilities || "").split(",").filter(Boolean).slice(0, 3).join(","),
   // "내 주변" 거리 계산용 좌표 (소수 4자리 ≈ 10m 정밀도, 파일 크기 절약)

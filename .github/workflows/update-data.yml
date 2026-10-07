@@ -29,6 +29,13 @@ jobs:
         env:
           TOUR_API_KEY: ${{ secrets.TOUR_API_KEY }}
 
+      # 사진 없는 캠핑장에 한국관광공사 포토코리아 사진/주변 풍경 붙이기 (같은 키, 하루 350회 — 축제허브 600회와 한도 1,000회를 나눠 씀, 캐시 photo-cache.json)
+      - run: node fetch-photos.js
+        env:
+          TOUR_API_KEY: ${{ secrets.TOUR_API_KEY }}
+          PHOTO_BUDGET: "350"
+        continue-on-error: true
+
       # 기상청 단기·중기예보 → 시군구별 7일 날씨 weather.json (같은 공공데이터포털 키, 하루 약 220회 호출)
       # 실패하면 전날 weather.json을 그대로 써서 빌드는 계속된다
       - run: node fetch-weather.js

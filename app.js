@@ -137,9 +137,13 @@ function render() {
   listEl.innerHTML = shown
     .map((c) => {
       const faved = favorites.includes(c.contentId);
+      // 사진 없는 곳은 주변 풍경(campings-list.json venuePhoto)을 "📍 주변 풍경" 표시와 함께
+      const venueImg = !c.image && c.venuePhoto && c.venuePhoto.image;
       const img = c.image
         ? `<img src="${c.image}" alt="${c.name}" loading="lazy" />`
-        : `<div class="no-image">🏕️</div>`;
+        : venueImg
+          ? `<img src="${venueImg}" alt="${c.name} 주변 ${c.venuePhoto.name}" loading="lazy" /><span class="venue-tag">📍 주변 풍경</span>`
+          : `<div class="no-image">🏕️</div>`;
 
       // 배지: 주말 날씨/휴양림/유형/반려동물
       const badges = [

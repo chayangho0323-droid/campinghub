@@ -1605,6 +1605,22 @@ console.log(`✅ campings-list.json 생성 (목록용 경량본, ${Math.round(JS
     const grade = a.rain / a.n >= 0.5 ? "rain" : (a.rain + a.soso) / a.n >= 0.5 ? "soso" : "good";
     summary.sido[sido] = { pop: Math.round(a.pop / a.n), grade, tmn: avg(a.tmn), tmx: avg(a.tmx), n: a.n };
   }
+  // 🌌 별 보기 요약 (메인 띠용): 토요일 밤 달 상태 + 시도별 "☆☆☆ 최적" 시군구 수 (astro.js starScore, 상세 페이지와 같은 기준)
+  if (summary.weekend.length) {
+    const satDate = (summary.weekend.find((d) => d.dow === "토") || summary.weekend[0]).date;
+    const moon = ASTRO.moonPhase(satDate);
+    const best = {};
+    for (const [key, area] of Object.entries(WEATHER.areas || {})) {
+      const d = (area.days || []).find((x) => x.date === satDate);
+      const s = d ? ASTRO.starScore(d, moon, null) : null;
+      if (!s) continue;
+      const sido = key.split(" ")[0];
+      const b = (best[sido] ||= { n: 0, top: 0, topNames: [] });
+      b.n++;
+      if (s.score === 3) { b.top++; if (b.topNames.length < 4) b.topNames.push(area.sigungu); }
+    }
+    summary.star = { date: satDate, moon: { icon: moon.icon, name: moon.name, illum: moon.illum }, sido: best };
+  }
   fs.writeFileSync("weather-summary.json", JSON.stringify(summary), "utf-8");
   console.log(`✅ weather-summary.json 생성 (시도 ${Object.keys(summary.sido).length}·시군구 ${Object.keys(summary.areas).length}, ${Math.round(JSON.stringify(summary).length / 1024)}KB)`);
 }

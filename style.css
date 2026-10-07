@@ -1160,3 +1160,8 @@ body {
 .weather-box .wx-star.s1 { background: #fff4d6; color: #8a5a00; }
 .weather-box .wx-star.s0 { background: #f0f0f0; color: #777; }
 .weather-box .wx-star-why { font-size: 0.82rem; color: #667; }
+
+/* 메인 날씨 띠의 별 보기 줄 */
+.weather-banner .wx-star-row { display: block; margin: 4px 0 6px; padding: 6px 10px; border-radius: 10px; background: #efeaff; color: #3b2a7a; font-size: .88rem; line-height: 1.8; }
+.weather-banner .wx-star-chip { display: inline-block; padding: 0 8px; border-radius: 999px; background: #fff; border: 1px solid #cfc3f5; color: #4a2fa8; font-weight: 600; text-decoration: none; font-size: .84rem; }
+.weather-banner .wx-star-note { display: block; font-size: .78rem; color: #6b5f99; }

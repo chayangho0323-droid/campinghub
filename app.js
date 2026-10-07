@@ -255,7 +255,16 @@ function renderWeatherBanner() {
     return `<a class="wx-chip wx-${w.grade}" href="${slug ? `region-${slug}.html` : "#"}" title="${short} 토요일 비 확률 ${w.pop}% · 캠핑장 ${w.n}개 시군구 기준">${WX_ICON[w.grade]} ${short} ${w.pop}%${temp}</a>`;
   }).join("");
   const good = Object.values(WX.sido).filter((w) => w.grade === "good").length, total = Object.keys(WX.sido).length;
-  el.innerHTML = `<span class="wx-title">⛅ 이번 주말 <strong>${WX.weekend.map(md).join("·")}</strong> 캠핑 날씨</span> <span class="wx-sub">${good === total ? "전국 맑음 — 어디든 좋아요!" : good ? `${total}개 지역 중 ${good}곳 좋음` : "비 소식 있어요 — 우천 대비"}</span><span class="wx-chips">${chips}</span><span class="wx-foot">카드의 <b>☀️ 주말</b> 배지는 그 캠핑장 시군구 기준 · 상세 페이지에 7일 예보 · 기상청 ${WX.updated} 발표</span>`;
+  // 🌌 별 보기 한 줄: 토요일 달 상태 + "☆☆☆ 최적" 시군구가 많은 지역 (build-pages.js summary.star, 상세 페이지 별 점수와 같은 기준)
+  let starLine = "";
+  if (WX.star && WX.star.moon) {
+    const m = WX.star.moon;
+    const moonTxt = m.illum <= 35 ? `${m.icon} ${m.name} ${m.illum}% — 달빛이 적어 별 보기 좋은 주말` : m.illum >= 70 ? `${m.icon} ${m.name} ${m.illum}% — 달이 밝아 별은 적게 보여요` : `${m.icon} ${m.name} ${m.illum}%`;
+    const tops = Object.entries(WX.star.sido || {}).filter(([, b]) => b.top > 0).sort((a, b) => b[1].top - a[1].top).slice(0, 5)
+      .map(([s, b]) => { const short = SIDO_SHORT[s] || s, slug = REGION_SLUGS[short]; return `<a class="wx-star-chip" href="${slug ? `region-${slug}.html` : "#"}" title="${b.topNames.join("·")} 등 ${b.top}개 시군구가 맑음+달빛 적음">${short} ${b.top}곳</a>`; }).join(" ");
+    starLine = `<span class="wx-star-row">🌌 <b>이번 주말 별 보기</b> — ${moonTxt}${tops ? ` · <b>☆☆☆ 최적 지역:</b> ${tops}` : " · 토요일 밤 맑은 지역이 없어요"} <span class="wx-star-note">캠핑장 페이지에서 별 점수와 일몰·일출 시각을 볼 수 있어요</span></span>`;
+  }
+  el.innerHTML = `<span class="wx-title">⛅ 이번 주말 <strong>${WX.weekend.map(md).join("·")}</strong> 캠핑 날씨</span> <span class="wx-sub">${good === total ? "전국 맑음 — 어디든 좋아요!" : good ? `${total}개 지역 중 ${good}곳 좋음` : "비 소식 있어요 — 우천 대비"}</span><span class="wx-chips">${chips}</span>${starLine}<span class="wx-foot">카드의 <b>☀️ 주말</b> 배지는 그 캠핑장 시군구 기준 · 상세 페이지에 7일 예보 · 기상청 ${WX.updated} 발표</span>`;
 }
 async function loadWeather() {
   try {

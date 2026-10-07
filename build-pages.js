@@ -238,6 +238,35 @@ function weatherHtml(c) {
       </section>`;
 }
 
+// ─── 지역 목록 페이지용: 시군구별 주말 날씨 칩 + 카드 배지 (weather.json 기반, 메인 app.js와 같은 기준) ───
+const wxGradeOf = (d) => (d.pty || d.pop >= 60 ? "rain" : d.pop >= 30 ? "soso" : "good");
+const WX_ICON = { good: "☀️", soso: "⛅", rain: "🌧️" };
+const WX_LABEL = { good: "좋음", soso: "보통", rain: "비 예보" };
+const WX_RANK = { rain: 2, soso: 1, good: 0 };
+function weekendOf(key) {
+  const area = WEATHER.areas[key];
+  if (!area) return null;
+  const wk = (area.days || []).filter((d) => d.dow === "토" || d.dow === "일").slice(0, 2);
+  if (!wk.length) return null;
+  const grade = wk.map(wxGradeOf).sort((a, b) => WX_RANK[b] - WX_RANK[a])[0]; // 토·일 중 나쁜 쪽
+  const sat = wk.find((d) => d.dow === "토") || wk[0];
+  return { grade, pop: Math.max(...wk.map((d) => d.pop ?? 0)), tmn: sat.tmn, tmx: sat.tmx, days: wk, sigungu: area.sigungu };
+}
+function weekendBadgeStatic(c) {
+  const w = c.sigungu ? weekendOf(`${normSidoW(c.region)} ${c.sigungu}`) : null;
+  return w ? `<span class="badge wx wx-${w.grade}" title="이번 주말 비 확률 ${w.pop}%">${WX_ICON[w.grade]} 주말 ${WX_LABEL[w.grade]}</span>` : "";
+}
+function regionWeatherHtml(items, label) {
+  const keys = [...new Set(items.filter((c) => c.sigungu).map((c) => `${normSidoW(c.region)} ${c.sigungu}`))];
+  const rows = keys.map((k) => weekendOf(k)).filter(Boolean).sort((a, b) => a.sigungu.localeCompare(b.sigungu, "ko"));
+  if (!rows.length) return "";
+  const md = (d) => `${Number(d.date.slice(4, 6))}/${Number(d.date.slice(6))}(${d.dow})`;
+  const good = rows.filter((w) => w.grade === "good").length;
+  const chips = rows.map((w) => `<span class="wx-chip wx-${w.grade}" title="${esc(w.sigungu)} 주말 비 확률 ${w.pop}%">${WX_ICON[w.grade]} ${esc(w.sigungu)} ${w.pop}%${w.tmn != null && w.tmx != null ? ` ${Math.round(w.tmn)}°/${Math.round(w.tmx)}°` : ""}</span>`).join("");
+  return `
+  <div class="weather-banner"><span class="wx-title">⛅ 이번 주말 <strong>${rows[0].days.map(md).join("·")}</strong> ${esc(label)} 캠핑 날씨</span> <span class="wx-sub">${good === rows.length ? "전 지역 좋음!" : good ? `${rows.length}개 시군구 중 ${good}곳 좋음` : "비 소식 있어요 — 우천 대비"}</span><span class="wx-chips">${chips}</span><span class="wx-foot">시군구별 토·일 중 나쁜 쪽 기준 · 카드의 ☀️ 주말 배지도 같은 기준 · 상세 페이지에 7일 예보 · 기상청 ${esc(WEATHER.updated)} 발표</span></div>`;
+}
+
 // ─── 캠핑장 이야기 (camping-notes.json — 운영자가 공공데이터·지리 정보로 직접 정리한 글. 축제의 festival-notes와 같은 구조) ───
 // 검색 유입은 많은데 소개·사진이 없는 신규 캠핑장과, 인기 휴양림부터 채운다 (애드센스 "가치 낮은 콘텐츠" 보완)
 let CAMP_NOTES = [];
@@ -322,6 +351,7 @@ function listCard(c) {
     ? `<img src="${esc(c.image)}" alt="${esc(c.name)}" loading="lazy" />`
     : `<div class="no-image">🏕️</div>`;
   const badges = [
+    weekendBadgeStatic(c),
     isForest(c) ? `<span class="badge ongoing">🌲 국공립·휴양림</span>` : "",
     c.type ? `<span class="badge upcoming">${esc(c.type.split(",")[0])}</span>` : "",
     (c.pet || "").startsWith("가능") ? `<span class="badge long">🐕</span>` : "",
@@ -382,6 +412,7 @@ function buildListPage({ filename, title, heading, subtitle, description, items,
     <p class="home-link"><a href="index.html">← 전체 캠핑장 보기</a></p>
   </header>
   ${nav}
+  ${region ? regionWeatherHtml(items, region) : ""}
   ${photoCallHtml(null)}
   <p class="result-count">${items.length}개의 캠핑장</p>
   <main class="festival-grid">${cards || `<p style="grid-column:1/-1;text-align:center;color:#888;">해당하는 캠핑장이 없습니다.</p>`}</main>

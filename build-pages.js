@@ -238,6 +238,24 @@ function weatherHtml(c) {
       </section>`;
 }
 
+// ─── 캠핑장 이야기 (camping-notes.json — 운영자가 공공데이터·지리 정보로 직접 정리한 글. 축제의 festival-notes와 같은 구조) ───
+// 검색 유입은 많은데 소개·사진이 없는 신규 캠핑장과, 인기 휴양림부터 채운다 (애드센스 "가치 낮은 콘텐츠" 보완)
+let CAMP_NOTES = [];
+try { CAMP_NOTES = JSON.parse(fs.readFileSync("camping-notes.json", "utf-8")); } catch {}
+const findCampNote = (c) => CAMP_NOTES.find((n) => String(n.id) === String(c.contentId)) || null;
+function campNoteHtml(c) {
+  const note = findCampNote(c);
+  if (!note) return "";
+  return `
+      <section class="overview camp-note">
+        <h2>📖 캠핑장 이야기</h2>
+        ${note.intro.map((p) => `<p>${esc(p)}</p>`).join("\n        ")}
+        ${note.highlights && note.highlights.length ? `<h3>✨ 이런 점이 좋아요</h3><ul>${note.highlights.map((h) => `<li>${esc(h)}</li>`).join("")}</ul>` : ""}
+        ${note.tips && note.tips.length ? `<h3>🎒 가기 전에 알아두면 좋은 팁</h3><ul>${note.tips.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
+        <p class="coupang-notice">※ 캠핑허브 운영자가 고캠핑 공공데이터와 주변 지리·관광 정보를 바탕으로 정리한 글입니다. 직접 방문 후기가 아니며, 시설·요금·운영 여부는 예약처에서 확인해 주세요. 잘못된 내용은 제보해 주시면 바로 고칩니다.</p>
+      </section>`;
+}
+
 function checkBeforeHtml(c) {
   const rows = [];
   if (c.siteBottom) rows.push(["🟫", "바닥 형태", c.siteBottom.split(",").join(" · ")]);
@@ -379,7 +397,9 @@ function buildListPage({ filename, title, heading, subtitle, description, items,
 function buildPage(c, all) {
   const region = getRegion(c);
   const auto = autoIntroText(c);
-  const description = (stripHtml(c.lineIntro || c.intro) || auto).slice(0, 150);
+  // 메타 설명 우선순위: 공공 소개글 > 캠핑장 이야기 첫 문단 > 데이터로 만든 한눈에 보기
+  const campNote = findCampNote(c);
+  const description = (stripHtml(c.lineIntro || c.intro) || (campNote && campNote.intro[0]) || auto).slice(0, 150);
 
   const vph = visitorPhotos[String(c.contentId)];
   const img = c.image
@@ -543,6 +563,7 @@ function buildPage(c, all) {
       </div>
       ${reserveBlock(c)}
       ${weatherHtml(c)}
+      ${campNoteHtml(c)}
       ${checkBeforeHtml(c)}
       ${facChips ? `<section class="overview"><h2>부대시설</h2><p>${facChips}</p></section>` : ""}
       ${c.glampFacilities ? `<section class="overview"><h2>글램핑 내부시설</h2><p>${esc(c.glampFacilities)}</p></section>` : ""}

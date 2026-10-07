@@ -1120,3 +1120,9 @@ body {
 .badge.wx-good { background: #e3f6e8; color: #1e7a3a; }
 .badge.wx-soso { background: #fff4d6; color: #8a5a00; }
 .badge.wx-rain { background: #e6eefc; color: #2b4ea8; }
+
+/* 캠핑장 이야기 (campNoteHtml) */
+.camp-note p { line-height: 1.85; margin-bottom: 10px; }
+.camp-note h3 { font-size: 1rem; margin: 16px 0 8px; }
+.camp-note ul { padding-left: 20px; line-height: 1.8; }
+.camp-note li { margin-bottom: 4px; }

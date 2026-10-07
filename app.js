@@ -252,7 +252,7 @@ function renderWeatherBanner() {
   const chips = order.filter((s) => WX.sido[s]).map((s) => {
     const w = WX.sido[s], short = SIDO_SHORT[s] || s, slug = REGION_SLUGS[short];
     const temp = w.tmn != null && w.tmx != null ? ` ${w.tmn}°/${w.tmx}°` : "";
-    const pm = w.pm ? ` <i class="wx-pm-mini ${/매우/.test(w.pm) ? "pm3" : /나쁨/.test(w.pm) ? "pm2" : /보통/.test(w.pm) ? "pm1" : "pm0"}">😷${w.pm}</i>` : "";
+    const pm = w.pm ? ` <i class="wx-pm-mini ${/매우/.test(w.pm) ? "pm3" : /나쁨/.test(w.pm) ? "pm2" : /보통/.test(w.pm) ? "pm1" : "pm0"}">😷 먼지 ${w.pm}</i>` : "";
     return `<a class="wx-chip wx-${w.grade}" href="${slug ? `region-${slug}.html` : "#"}" title="${short} 토요일 비 확률 ${w.pop}%${w.pm ? ` · 주말 미세먼지 ${w.pm}` : ""} · 캠핑장 ${w.n}개 시군구 기준">${WX_ICON[w.grade]} ${short} ${w.pop}%${temp}${pm}</a>`;
   }).join("");
   const good = Object.values(WX.sido).filter((w) => w.grade === "good").length, total = Object.keys(WX.sido).length;
@@ -265,7 +265,7 @@ function renderWeatherBanner() {
       .map(([s, b]) => { const short = SIDO_SHORT[s] || s, slug = REGION_SLUGS[short]; return `<a class="wx-star-chip" href="${slug ? `region-${slug}.html` : "#"}" title="${b.topNames.join("·")} 등 ${b.top}개 시군구가 맑음+달빛 적음">${short} ${b.top}곳</a>`; }).join(" ");
     starLine = `<span class="wx-star-row">🌌 <b>이번 주말 별 보기</b> — ${moonTxt}${tops ? ` · <b>☆☆☆ 최적 지역:</b> ${tops}` : " · 토요일 밤 맑은 지역이 없어요"} <span class="wx-star-note">캠핑장 페이지에서 별 점수와 일몰·일출 시각을 볼 수 있어요</span></span>`;
   }
-  el.innerHTML = `<span class="wx-title">⛅ 이번 주말 <strong>${WX.weekend.map(md).join("·")}</strong> 캠핑 날씨</span> <span class="wx-sub">${good === total ? "전국 맑음 — 어디든 좋아요!" : good ? `${total}개 지역 중 ${good}곳 좋음` : "비 소식 있어요 — 우천 대비"}</span><span class="wx-chips">${chips}</span>${starLine}<span class="wx-foot">카드의 <b>☀️ 주말</b> 배지는 그 캠핑장 시군구 기준 · 상세 페이지에 7일 예보 · 기상청 ${WX.updated} 발표</span>`;
+  el.innerHTML = `<span class="wx-title">⛅ 이번 주말 <strong>${WX.weekend.map(md).join("·")}</strong> 캠핑 날씨</span> <span class="wx-sub">${good === total ? "전국 맑음 — 어디든 좋아요!" : good ? `${total}개 지역 중 ${good}곳 좋음` : "비 소식 있어요 — 우천 대비"}</span><span class="wx-chips">${chips}</span>${starLine}<span class="wx-foot"><b>칩 읽는 법</b> 날씨 · 토요일 비 확률 · 최저/최고 기온 · 😷 주말 미세먼지 &nbsp;|&nbsp; 카드의 <b>☀️ 주말</b> 배지는 그 캠핑장 시군구 기준 · 상세 페이지에 7일 예보 · 기상청 ${WX.updated} 발표</span>`;
 }
 async function loadWeather() {
   try {

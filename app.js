@@ -252,7 +252,8 @@ function renderWeatherBanner() {
   const chips = order.filter((s) => WX.sido[s]).map((s) => {
     const w = WX.sido[s], short = SIDO_SHORT[s] || s, slug = REGION_SLUGS[short];
     const temp = w.tmn != null && w.tmx != null ? ` ${w.tmn}°/${w.tmx}°` : "";
-    return `<a class="wx-chip wx-${w.grade}" href="${slug ? `region-${slug}.html` : "#"}" title="${short} 토요일 비 확률 ${w.pop}% · 캠핑장 ${w.n}개 시군구 기준">${WX_ICON[w.grade]} ${short} ${w.pop}%${temp}</a>`;
+    const pm = w.pm ? ` <i class="wx-pm-mini ${/매우/.test(w.pm) ? "pm3" : /나쁨/.test(w.pm) ? "pm2" : /보통/.test(w.pm) ? "pm1" : "pm0"}">😷${w.pm}</i>` : "";
+    return `<a class="wx-chip wx-${w.grade}" href="${slug ? `region-${slug}.html` : "#"}" title="${short} 토요일 비 확률 ${w.pop}%${w.pm ? ` · 주말 미세먼지 ${w.pm}` : ""} · 캠핑장 ${w.n}개 시군구 기준">${WX_ICON[w.grade]} ${short} ${w.pop}%${temp}${pm}</a>`;
   }).join("");
   const good = Object.values(WX.sido).filter((w) => w.grade === "good").length, total = Object.keys(WX.sido).length;
   // 🌌 별 보기 한 줄: 토요일 달 상태 + "☆☆☆ 최적" 시군구가 많은 지역 (build-pages.js summary.star, 상세 페이지 별 점수와 같은 기준)

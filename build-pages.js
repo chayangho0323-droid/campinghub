@@ -1607,6 +1607,20 @@ console.log(`✅ campings-list.json 생성 (목록용 경량본, ${Math.round(JS
     const grade = a.rain / a.n >= 0.5 ? "rain" : (a.rain + a.soso) / a.n >= 0.5 ? "soso" : "good";
     summary.sido[sido] = { pop: Math.round(a.pop / a.n), grade, tmn: avg(a.tmn), tmx: avg(a.tmx), n: a.n };
   }
+  // 😷 시도별 주말 미세먼지 (토·일 중 나쁜 쪽, 시군구 중 가장 흔한 등급) — 메인 칩에 표시
+  if (summary.weekend.length && AIR.areas) {
+    const RANK = { 좋음: 0, 보통: 1, 나쁨: 2, 매우나쁨: 3 };
+    const cnt = {};
+    for (const [key, byDate] of Object.entries(AIR.areas)) {
+      const grades = summary.weekend.map((d) => byDate[d.date]).filter(Boolean);
+      if (!grades.length) continue;
+      const worst = grades.sort((a, b) => RANK[b] - RANK[a])[0];
+      const sido = key.split(" ")[0];
+      (cnt[sido] ||= {})[worst] = (cnt[sido][worst] || 0) + 1;
+    }
+    for (const [sido, c] of Object.entries(cnt)) if (summary.sido[sido]) summary.sido[sido].pm = Object.entries(c).sort((a, b) => b[1] - a[1])[0][0];
+    summary.airUpdated = AIR.updated || "";
+  }
   // 🌌 별 보기 요약 (메인 띠용): 토요일 밤 달 상태 + 시도별 "☆☆☆ 최적" 시군구 수 (astro.js starScore, 상세 페이지와 같은 기준)
   if (summary.weekend.length) {
     const satDate = (summary.weekend.find((d) => d.dow === "토") || summary.weekend[0]).date;

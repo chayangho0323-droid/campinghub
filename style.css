@@ -1150,3 +1150,13 @@ body {
 }
 
 .venue-photo-note a { color: #2b6cb0; font-weight: 600; }
+
+/* 별 보기 좋은 밤 (weatherHtml starHtml) + 날짜 칸의 달 위상 */
+.weather-box .wx-moon { font-size: 0.72rem; color: #667; margin-top: 2px; }
+.weather-box .wx-star-line { margin: 6px 0 4px; line-height: 1.9; }
+.weather-box .wx-star { display: inline-block; padding: 1px 8px; border-radius: 999px; font-weight: 600; font-size: 0.88rem; background: #eef0f5; color: #445; }
+.weather-box .wx-star.s3 { background: #e6e0ff; color: #4a2fa8; }
+.weather-box .wx-star.s2 { background: #e3f6e8; color: #1e7a3a; }
+.weather-box .wx-star.s1 { background: #fff4d6; color: #8a5a00; }
+.weather-box .wx-star.s0 { background: #f0f0f0; color: #777; }
+.weather-box .wx-star-why { font-size: 0.82rem; color: #667; }

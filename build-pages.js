@@ -211,6 +211,9 @@ function campingSort(a, b) {
 // ─── 지역 날씨 (fetch-weather.js → weather.json, 시군구별 7일) ───
 let WEATHER = { updated: "", areas: {} };
 try { WEATHER = JSON.parse(fs.readFileSync("weather.json", "utf-8")); } catch {}
+const ASTRO = require("./astro"); // 일출·일몰·달 위상 계산 (API 없음) → "별 보기 좋은 밤"
+let AIR = { updated: "", regions: {} }; // 에어코리아 미세먼지 예보 (fetch-air.js, 키 승인 뒤 연동 예정 — 없으면 미세먼지 항목 생략)
+try { AIR = JSON.parse(fs.readFileSync("air.json", "utf-8")); } catch {}
 const normSidoW = (s) => String(s || "").replace(/^강원도$/, "강원특별자치도").replace(/^전라북도$/, "전북특별자치도");
 function weatherHtml(c) {
   const area = WEATHER.areas[`${normSidoW(c.region)} ${c.sigungu}`];
@@ -220,11 +223,19 @@ function weatherHtml(c) {
   const grade = (d) => (d.pty || d.pop >= 60 ? ["rain", "🌧️ 비 예보"] : d.pop >= 30 ? ["soso", "⛅ 보통"] : ["good", "☀️ 좋음"]);
   const md = (d) => `${Number(d.date.slice(4, 6))}/${Number(d.date.slice(6))}`;
   const temp = (d) => (d.tmn != null && d.tmx != null ? `${Math.round(d.tmn)}°/${Math.round(d.tmx)}°` : d.tmx != null ? `최고 ${Math.round(d.tmx)}°` : "");
-  const cells = area.days.map((d) => `<div class="wx-day${d.dow === "토" || d.dow === "일" ? " wx-weekend" : ""}"><span class="wx-dow">${md(d)} ${d.dow}</span><span class="wx-icon">${icon(d)}</span><span class="wx-pop">💧${d.pop != null ? d.pop + "%" : "-"}</span><span class="wx-temp">${temp(d)}</span></div>`).join("");
+  const cells = area.days.map((d) => { const mp = ASTRO.moonPhase(d.date); return `<div class="wx-day${d.dow === "토" || d.dow === "일" ? " wx-weekend" : ""}"><span class="wx-dow">${md(d)} ${d.dow}</span><span class="wx-icon">${icon(d)}</span><span class="wx-pop">💧${d.pop != null ? d.pop + "%" : "-"}</span><span class="wx-temp">${temp(d)}</span><span class="wx-moon" title="${mp.name} · 밝기 ${mp.illum}%">${mp.icon} ${mp.illum}%</span></div>`; }).join("");
   // 이번 주말(가장 가까운 토·일) 요약
   const weekend = area.days.filter((d) => d.dow === "토" || d.dow === "일").slice(0, 2);
   const wkHtml = weekend.length
     ? `<p class="wx-weekend-line">⛺ <strong>이번 주말 캠핑 적합도</strong> — ${weekend.map((d) => { const [cls, label] = grade(d); return `<span class="wx-grade ${cls}">${md(d)}(${d.dow}) ${label}</span> 비 ${d.pop ?? "-"}%${temp(d) ? " · " + temp(d) : ""}`; }).join(" / ")}</p>`
+    : "";
+  // 🌌 별 보기 좋은 밤: 주말 두 밤(없으면 앞 3일)의 하늘·비·달 밝기(·미세먼지)로 점수. 일몰·일출은 이 캠핑장 좌표로 계산
+  const nights = (weekend.length ? weekend : area.days.slice(0, 3));
+  const pmOf = (d) => (AIR.regions && AIR.regions[`${normSidoW(c.region)}`] ? AIR.regions[`${normSidoW(c.region)}`][d.date] || null : null);
+  const stars = nights.map((d) => ({ d, moon: ASTRO.moonPhase(d.date), s: ASTRO.starScore(d, ASTRO.moonPhase(d.date), pmOf(d)) })).filter((x) => x.s);
+  const sun = c.lat && c.lng && nights[0] ? ASTRO.sunTimes(nights[0].date, Number(c.lat), Number(c.lng)) : null;
+  const starHtml = stars.length
+    ? `<p class="wx-star-line">🌌 <strong>별 보기 좋은 밤?</strong> — ${stars.map(({ d, moon, s }) => `<span class="wx-star s${s.score}" title="${esc(s.reasons.join(" · "))}">${md(d)}(${d.dow}) ${moon.icon} ${s.label}</span> <span class="wx-star-why">${esc(s.reasons.join(" · "))}</span>`).join(" / ")}${sun && sun.sunset ? `<br>🌅 ${md(nights[0])}(${nights[0].dow}) 일몰 <strong>${sun.sunset}</strong> · 다음 날 일출 <strong>${(ASTRO.sunTimes(nights[1] ? nights[1].date : nights[0].date, Number(c.lat), Number(c.lng)).sunrise) || sun.sunrise}</strong> <span class="wx-star-why">(이 캠핑장 좌표 기준)</span>` : ""}</p>`
     : "";
   const minT = Math.min(...area.days.map((d) => (d.tmn != null ? d.tmn : 99)));
   const coldTip = minT <= 3 ? `<p class="wx-tip">🥶 밤 최저 ${Math.round(minT)}°까지 떨어져요. 동계 침낭·전기장판(전기 사이트)·핫팩을 챙기세요.</p>` : minT <= 10 ? `<p class="wx-tip">🌙 밤에는 ${Math.round(minT)}° 안팎으로 쌀쌀해요. 두꺼운 침낭과 난방용품을 준비하세요.</p>` : "";
@@ -233,8 +244,8 @@ function weatherHtml(c) {
       <section class="overview weather-box">
         <h2>⛅ ${esc(area.sigungu)} 이번 주 날씨</h2>
         <div class="wx-strip">${cells}</div>
-        ${wkHtml}${coldTip}
-        <p class="coupang-notice">기상청 단기·중기예보 (${esc(WEATHER.updated)} 발표) · ${esc(area.sigungu)} 기준이라 산속·계곡 캠핑장은 더 춥거나 비가 더 올 수 있어요${mid ? " · 4일 뒤부터는 권역 예보라 대략적인 값입니다" : ""}. 매일 새벽 갱신.</p>
+        ${wkHtml}${starHtml}${coldTip}
+        <p class="coupang-notice">기상청 단기·중기예보 (${esc(WEATHER.updated)} 발표) · ${esc(area.sigungu)} 기준이라 산속·계곡 캠핑장은 더 춥거나 비가 더 올 수 있어요${mid ? " · 4일 뒤부터는 권역 예보라 대략적인 값입니다" : ""}. 달 위상·일출몰은 천문 공식으로 계산한 값(±2분). 매일 새벽 갱신.</p>
       </section>`;
 }
 

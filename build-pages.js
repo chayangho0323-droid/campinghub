@@ -208,6 +208,36 @@ function campingSort(a, b) {
 }
 
 // ⛺ "가기 전 확인하세요" — 고캠핑에 있지만 화면에 안 보여주던 항목(바닥·입지·보험·화로대·사이트 간격·안전장비·예약 방식)
+// ─── 지역 날씨 (fetch-weather.js → weather.json, 시군구별 7일) ───
+let WEATHER = { updated: "", areas: {} };
+try { WEATHER = JSON.parse(fs.readFileSync("weather.json", "utf-8")); } catch {}
+const normSidoW = (s) => String(s || "").replace(/^강원도$/, "강원특별자치도").replace(/^전라북도$/, "전북특별자치도");
+function weatherHtml(c) {
+  const area = WEATHER.areas[`${normSidoW(c.region)} ${c.sigungu}`];
+  if (!area || !area.days || !area.days.length) return "";
+  const icon = (d) => (d.pty ? (/눈/.test(d.sky) ? "🌨️" : "🌧️") : d.pop >= 60 ? "🌧️" : d.sky === "맑음" ? "☀️" : d.sky === "흐림" ? "☁️" : "⛅");
+  // 캠핑 적합도: 비 확률 60%↑ 또는 강수 예보 = 비 예보 / 30%↑ = 보통 / 그 외 좋음
+  const grade = (d) => (d.pty || d.pop >= 60 ? ["rain", "🌧️ 비 예보"] : d.pop >= 30 ? ["soso", "⛅ 보통"] : ["good", "☀️ 좋음"]);
+  const md = (d) => `${Number(d.date.slice(4, 6))}/${Number(d.date.slice(6))}`;
+  const temp = (d) => (d.tmn != null && d.tmx != null ? `${Math.round(d.tmn)}°/${Math.round(d.tmx)}°` : d.tmx != null ? `최고 ${Math.round(d.tmx)}°` : "");
+  const cells = area.days.map((d) => `<div class="wx-day${d.dow === "토" || d.dow === "일" ? " wx-weekend" : ""}"><span class="wx-dow">${md(d)} ${d.dow}</span><span class="wx-icon">${icon(d)}</span><span class="wx-pop">💧${d.pop != null ? d.pop + "%" : "-"}</span><span class="wx-temp">${temp(d)}</span></div>`).join("");
+  // 이번 주말(가장 가까운 토·일) 요약
+  const weekend = area.days.filter((d) => d.dow === "토" || d.dow === "일").slice(0, 2);
+  const wkHtml = weekend.length
+    ? `<p class="wx-weekend-line">⛺ <strong>이번 주말 캠핑 적합도</strong> — ${weekend.map((d) => { const [cls, label] = grade(d); return `<span class="wx-grade ${cls}">${md(d)}(${d.dow}) ${label}</span> 비 ${d.pop ?? "-"}%${temp(d) ? " · " + temp(d) : ""}`; }).join(" / ")}</p>`
+    : "";
+  const minT = Math.min(...area.days.map((d) => (d.tmn != null ? d.tmn : 99)));
+  const coldTip = minT <= 3 ? `<p class="wx-tip">🥶 밤 최저 ${Math.round(minT)}°까지 떨어져요. 동계 침낭·전기장판(전기 사이트)·핫팩을 챙기세요.</p>` : minT <= 10 ? `<p class="wx-tip">🌙 밤에는 ${Math.round(minT)}° 안팎으로 쌀쌀해요. 두꺼운 침낭과 난방용품을 준비하세요.</p>` : "";
+  const mid = area.days.some((d) => d.src === "mid");
+  return `
+      <section class="overview weather-box">
+        <h2>⛅ ${esc(area.sigungu)} 이번 주 날씨</h2>
+        <div class="wx-strip">${cells}</div>
+        ${wkHtml}${coldTip}
+        <p class="coupang-notice">기상청 단기·중기예보 (${esc(WEATHER.updated)} 발표) · ${esc(area.sigungu)} 기준이라 산속·계곡 캠핑장은 더 춥거나 비가 더 올 수 있어요${mid ? " · 4일 뒤부터는 권역 예보라 대략적인 값입니다" : ""}. 매일 새벽 갱신.</p>
+      </section>`;
+}
+
 function checkBeforeHtml(c) {
   const rows = [];
   if (c.siteBottom) rows.push(["🟫", "바닥 형태", c.siteBottom.split(",").join(" · ")]);
@@ -512,6 +542,7 @@ function buildPage(c, all) {
         ${infoRow("🔗", "홈페이지", homepage)}
       </div>
       ${reserveBlock(c)}
+      ${weatherHtml(c)}
       ${checkBeforeHtml(c)}
       ${facChips ? `<section class="overview"><h2>부대시설</h2><p>${facChips}</p></section>` : ""}
       ${c.glampFacilities ? `<section class="overview"><h2>글램핑 내부시설</h2><p>${esc(c.glampFacilities)}</p></section>` : ""}

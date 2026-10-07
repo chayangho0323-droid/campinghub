@@ -1165,3 +1165,10 @@ body {
 .weather-banner .wx-star-row { display: block; margin: 4px 0 6px; padding: 6px 10px; border-radius: 10px; background: #efeaff; color: #3b2a7a; font-size: .88rem; line-height: 1.8; }
 .weather-banner .wx-star-chip { display: inline-block; padding: 0 8px; border-radius: 999px; background: #fff; border: 1px solid #cfc3f5; color: #4a2fa8; font-weight: 600; text-decoration: none; font-size: .84rem; }
 .weather-banner .wx-star-note { display: block; font-size: .78rem; color: #6b5f99; }
+
+/* 날짜 칸의 미세먼지 예보 (에어코리아) */
+.weather-box .wx-pm { font-size: 0.72rem; margin-top: 1px; padding: 0 6px; border-radius: 999px; }
+.weather-box .wx-pm.pm0 { background: #e3f6e8; color: #1e7a3a; }
+.weather-box .wx-pm.pm1 { background: #fff4d6; color: #8a5a00; }
+.weather-box .wx-pm.pm2 { background: #ffe3e3; color: #a52222; }
+.weather-box .wx-pm.pm3 { background: #e8d7ff; color: #5a1e9e; }

@@ -212,7 +212,7 @@ function campingSort(a, b) {
 let WEATHER = { updated: "", areas: {} };
 try { WEATHER = JSON.parse(fs.readFileSync("weather.json", "utf-8")); } catch {}
 const ASTRO = require("./astro"); // 일출·일몰·달 위상 계산 (API 없음) → "별 보기 좋은 밤"
-let AIR = { updated: "", regions: {} }; // 에어코리아 미세먼지 예보 (fetch-air.js, 키 승인 뒤 연동 예정 — 없으면 미세먼지 항목 생략)
+let AIR = { updated: "", areas: {} }; // 에어코리아 미세먼지 예보 (fetch-air.js → air.json: 시군구별 {날짜: 좋음|보통|나쁨|매우나쁨}, 없으면 미세먼지 항목 생략)
 try { AIR = JSON.parse(fs.readFileSync("air.json", "utf-8")); } catch {}
 const normSidoW = (s) => String(s || "").replace(/^강원도$/, "강원특별자치도").replace(/^전라북도$/, "전북특별자치도");
 function weatherHtml(c) {
@@ -223,7 +223,9 @@ function weatherHtml(c) {
   const grade = (d) => (d.pty || d.pop >= 60 ? ["rain", "🌧️ 비 예보"] : d.pop >= 30 ? ["soso", "⛅ 보통"] : ["good", "☀️ 좋음"]);
   const md = (d) => `${Number(d.date.slice(4, 6))}/${Number(d.date.slice(6))}`;
   const temp = (d) => (d.tmn != null && d.tmx != null ? `${Math.round(d.tmn)}°/${Math.round(d.tmx)}°` : d.tmx != null ? `최고 ${Math.round(d.tmx)}°` : "");
-  const cells = area.days.map((d) => { const mp = ASTRO.moonPhase(d.date); return `<div class="wx-day${d.dow === "토" || d.dow === "일" ? " wx-weekend" : ""}"><span class="wx-dow">${md(d)} ${d.dow}</span><span class="wx-icon">${icon(d)}</span><span class="wx-pop">💧${d.pop != null ? d.pop + "%" : "-"}</span><span class="wx-temp">${temp(d)}</span><span class="wx-moon" title="${mp.name} · 밝기 ${mp.illum}%">${mp.icon} ${mp.illum}%</span></div>`; }).join("");
+  const pmAll = AIR.areas && AIR.areas[`${normSidoW(c.region)} ${c.sigungu}`] ? AIR.areas[`${normSidoW(c.region)} ${c.sigungu}`] : {};
+  const pmCls = (g) => (/매우/.test(g) ? "pm3" : /나쁨/.test(g) ? "pm2" : /보통/.test(g) ? "pm1" : "pm0");
+  const cells = area.days.map((d) => { const mp = ASTRO.moonPhase(d.date); const pm = pmAll[d.date]; return `<div class="wx-day${d.dow === "토" || d.dow === "일" ? " wx-weekend" : ""}"><span class="wx-dow">${md(d)} ${d.dow}</span><span class="wx-icon">${icon(d)}</span><span class="wx-pop">💧${d.pop != null ? d.pop + "%" : "-"}</span><span class="wx-temp">${temp(d)}</span><span class="wx-moon" title="${mp.name} · 밝기 ${mp.illum}%">${mp.icon} ${mp.illum}%</span>${pm ? `<span class="wx-pm ${pmCls(pm)}" title="미세먼지 예보 (에어코리아)">😷 ${pm}</span>` : ""}</div>`; }).join("");
   // 이번 주말(가장 가까운 토·일) 요약
   const weekend = area.days.filter((d) => d.dow === "토" || d.dow === "일").slice(0, 2);
   const wkHtml = weekend.length
@@ -231,7 +233,7 @@ function weatherHtml(c) {
     : "";
   // 🌌 별 보기 좋은 밤: 주말 두 밤(없으면 앞 3일)의 하늘·비·달 밝기(·미세먼지)로 점수. 일몰·일출은 이 캠핑장 좌표로 계산
   const nights = (weekend.length ? weekend : area.days.slice(0, 3));
-  const pmOf = (d) => (AIR.regions && AIR.regions[`${normSidoW(c.region)}`] ? AIR.regions[`${normSidoW(c.region)}`][d.date] || null : null);
+  const pmOf = (d) => (AIR.areas && AIR.areas[`${normSidoW(c.region)} ${c.sigungu}`] ? AIR.areas[`${normSidoW(c.region)} ${c.sigungu}`][d.date] || null : null);
   const stars = nights.map((d) => ({ d, moon: ASTRO.moonPhase(d.date), s: ASTRO.starScore(d, ASTRO.moonPhase(d.date), pmOf(d)) })).filter((x) => x.s);
   const sun = c.lat && c.lng && nights[0] ? ASTRO.sunTimes(nights[0].date, Number(c.lat), Number(c.lng)) : null;
   const starHtml = stars.length
@@ -1612,7 +1614,8 @@ console.log(`✅ campings-list.json 생성 (목록용 경량본, ${Math.round(JS
     const best = {};
     for (const [key, area] of Object.entries(WEATHER.areas || {})) {
       const d = (area.days || []).find((x) => x.date === satDate);
-      const s = d ? ASTRO.starScore(d, moon, null) : null;
+      const pm = AIR.areas && AIR.areas[key] ? AIR.areas[key][satDate] || null : null;
+      const s = d ? ASTRO.starScore(d, moon, pm) : null;
       if (!s) continue;
       const sido = key.split(" ")[0];
       const b = (best[sido] ||= { n: 0, top: 0, topNames: [] });

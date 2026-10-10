@@ -166756,7 +166756,7 @@
     "tel": "032-467-2123",
     "homepage": "",
     "reserveUrl": "",
-    "image": "",
+    "image": "https://tong.visitkorea.or.kr/cms2/website/83/2647683.jpg",
     "facilities": "",
     "pet": "불가능",
     "brazier": "개별",
@@ -166861,11 +166861,7 @@
         "addr": "경기도 시흥시 수인로3488번길 13-10 (신천동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/51/3590851_image2_1.jpg",
-      "name": "인천대공원 반려동물 놀이터",
-      "dist": 297
-    }
+    "photoSource": "한국관광공사 포토코리아 · 촬영 두드림"
   },
   {
     "contentId": "7488",
@@ -167757,7 +167753,13 @@
         "image": "http://tong.visitkorea.or.kr/cms/resource/26/2013726_image2_1.JPG",
         "addr": "충청북도 제천시 수산면 월악로 2970"
       }
-    ]
+    ],
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/71/3098471.jpg",
+      "name": "월악산국립공원",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 임태진"
+    }
   },
   {
     "contentId": "102041",
@@ -167880,9 +167882,10 @@
       }
     ],
     "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/24/3530324_image2_1.JPG",
-      "name": "은평한옥마을",
-      "dist": 820
+      "image": "https://tong.visitkorea.or.kr/cms2/website/07/3550607.jpg",
+      "name": "북한산",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한건우"
     }
   },
   {
@@ -171784,7 +171787,7 @@
     "tel": "",
     "homepage": "",
     "reserveUrl": "",
-    "image": "",
+    "image": "https://tong.visitkorea.or.kr/cms2/website/07/1979007.jpg",
     "facilities": "",
     "pet": "",
     "brazier": "",
@@ -171889,11 +171892,7 @@
         "addr": "경상북도 경주시 숲머리길 168"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3575810_image2_1.jpg",
-      "name": "경주 헌덕왕릉",
-      "dist": 623
-    }
+    "photoSource": "한국관광공사 포토코리아 · 촬영 한국관광공사, 엠엠피 김진규"
   },
   {
     "contentId": "101898",
@@ -176321,7 +176320,13 @@
         "image": "http://tong.visitkorea.or.kr/cms/resource/66/2851866_image2_1.jpg",
         "addr": "제주특별자치도 제주시 애월읍 중산간서로 5642"
       }
-    ]
+    ],
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/05/2761905.jpg",
+      "name": "핑크뮬리와 나홀로나무",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 김대형"
+    }
   },
   {
     "contentId": "8202",
@@ -191227,7 +191232,7 @@
     "tel": "",
     "homepage": "",
     "reserveUrl": "",
-    "image": "",
+    "image": "https://tong.visitkorea.or.kr/cms2/website/70/3311570.jpg",
     "facilities": "",
     "pet": "불가능",
     "brazier": "개별",
@@ -191331,7 +191336,8 @@
         "image": "http://tong.visitkorea.or.kr/cms/resource/83/2833183_image2_1.png",
         "addr": "전남광주통합특별시 담양군 금성산성길 282-19  "
       }
-    ]
+    ],
+    "photoSource": "한국관광공사 포토코리아 · 촬영 한국관광공사 김지호"
   },
   {
     "contentId": "2032",
@@ -214811,7 +214817,13 @@
         "image": "http://tong.visitkorea.or.kr/cms/resource/98/2875298_image2_1.jpg",
         "addr": "경기도 파주시 적성면 감악산로 1473"
       }
-    ]
+    ],
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/86/4062086.jpg",
+      "name": "임진강 댑싸리정원",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 정규진"
+    }
   },
   {
     "contentId": "101880",
@@ -219733,7 +219745,13 @@
         "addr": "전북특별자치도 임실군 덕치면 천담1길 49"
       }
     ],
-    "nearbyFood": []
+    "nearbyFood": [],
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/85/3311785.jpg",
+      "name": "용궐산 하늘길",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 김지호"
+    }
   },
   {
     "contentId": "101863",

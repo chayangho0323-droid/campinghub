@@ -287380,7 +287380,7 @@
     "tel": "0507-1469-9052",
     "homepage": "",
     "reserveUrl": "",
-    "image": "",
+    "image": "https://tong.visitkorea.or.kr/cms2/website/56/3023756.jpg",
     "facilities": "",
     "pet": "불가능",
     "brazier": "개별",
@@ -287484,7 +287484,8 @@
         "image": "",
         "addr": "강원특별자치도 강릉시 강동면 헌화로 993"
       }
-    ]
+    ],
+    "photoSource": "한국관광공사 포토코리아 · 촬영 전지민"
   },
   {
     "contentId": "101535",
@@ -287726,7 +287727,13 @@
         "image": "http://tong.visitkorea.or.kr/cms/resource/40/3564840_image2_1.jpg",
         "addr": "경기도 포천시 이동면 화동로 2089"
       }
-    ]
+    ],
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/29/2565529.jpg",
+      "name": "산정호수",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 이범수"
+    }
   },
   {
     "contentId": "101537",
@@ -340725,7 +340732,13 @@
         "image": "http://tong.visitkorea.or.kr/cms/resource/34/2766934_image2_1.jpg",
         "addr": "경상북도 경주시 불국로 168-3"
       }
-    ]
+    ],
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/83/3097783.jpg",
+      "name": "불국사",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 오경택"
+    }
   },
   {
     "contentId": "100445",
@@ -355790,7 +355803,13 @@
         "image": "http://tong.visitkorea.or.kr/cms/resource/87/2859987_image2_1.JPG",
         "addr": "경기도 파주시 새꽃로 125 (금촌동)"
       }
-    ]
+    ],
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/09/3001509.jpg",
+      "name": "파주 프로방스마을",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 송재근"
+    }
   },
   {
     "contentId": "100571",

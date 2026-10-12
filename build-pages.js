@@ -97,6 +97,16 @@ try {
 } catch (e) {
   console.log("⚠️ 페스티벌허브 데이터를 가져오지 못해 이번 빌드는 근처 축제 섹션을 생략합니다");
 }
+// ── 형제 사이트(펫트립허브) 데이터: 상세 "근처 애견동반 카페·식당" 섹션용 (2026-10-12, 반려동물 캠핑장 1,128곳과 궁합) ──
+let crossPets = [];
+try {
+  crossPets = JSON.parse(
+    execSync("curl -s -m 30 https://pettriphub.kr/pets-list.json", { maxBuffer: 20 * 1024 * 1024 }).toString("utf8")
+  ).filter((p) => p.lat && p.lng);
+  console.log(`🐾 펫트립허브 데이터 ${crossPets.length}곳 로드 (근처 애견동반 섹션용)`);
+} catch (e) {
+  console.log("⚠️ 펫트립허브 데이터를 가져오지 못해 이번 빌드는 근처 애견동반 섹션을 생략합니다");
+}
 
 // 두 지점 사이 거리(km) — 하버사인 공식
 function distKm(lat1, lng1, lat2, lng2) {
@@ -558,6 +568,29 @@ function buildPage(c, all) {
         .join("")}</div></section>`
     : "";
 
+  // ── 형제 사이트 연결: 근처 애견동반 카페·식당 (펫트립허브, 10km 안 4곳 — 반려동물 가능 캠핑장은 15km까지, 사진·식약처 등록 우선) ──
+  const petRadius = (c.pet || "").startsWith("가능") ? 15 : 10;
+  const nearPets = c.lat && c.lng
+    ? crossPets
+        .map((p) => ({ ...p, dist: distKm(Number(c.lat), Number(c.lng), p.lat, p.lng) }))
+        .filter((p) => p.dist <= petRadius)
+        .sort((a, b) => (b.image ? 1 : 0) - (a.image ? 1 : 0) || (b.official ? 1 : 0) - (a.official ? 1 : 0) || a.dist - b.dist)
+        .slice(0, 4)
+    : [];
+  const petSection = nearPets.length
+    ? `<section class="nearby-section"><h2>🐾 근처 애견동반 카페·식당</h2><div class="nearby-row">${nearPets
+        .map(
+          (p) => `
+        <a class="nearby-card nearby-link cross-link" target="_blank" rel="noopener"
+           href="https://pettriphub.kr/place/${p.id}.html" title="펫트립허브에서 보기">
+          ${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" />` : `<div class="nearby-noimg">🐾</div>`}
+          <div class="nearby-name">${esc(p.name)}</div>
+          <div class="nearby-dist">📍 ${p.dist < 10 ? p.dist.toFixed(1) : Math.round(p.dist)}km · ${esc(p.category || "")}${p.official ? " · 식약처 등록" : ""} ↗</div>
+        </a>`
+        )
+        .join("")}</div><p class="coupang-notice">${(c.pet || "").startsWith("가능") ? "반려동물 동반 캠핑장이라 강아지와 들를 수 있는 곳을 모았어요. " : ""}식약처에 반려동물 동반 음식점으로 등록된 곳 위주이며, 동반 조건은 펫트립허브에서 확인하세요.</p></section>`
+    : "";
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Campground",
@@ -628,6 +661,7 @@ function buildPage(c, all) {
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}
       ${nearbySection("주변 맛집", "🍜", c.nearbyFood)}
       ${festSection}
+      ${petSection}
       ${COUPANG_ITEMS.length ? `<section class="nearby-section coupang-section">
         <h2>🎒 캠핑 준비물</h2>
         <div class="dir-buttons">

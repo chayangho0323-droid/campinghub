@@ -359,14 +359,25 @@ function autoIntroText(c) {
 }
 
 // 📅 예약·홈페이지 큰 버튼 — 방문자 17%가 누르는 1등 기능 (2026-09-21 GA). 둘 다 없으면 네이버에서 예약처 찾기
+// 링크 생존 검사 결과 (check-links.js → link-status.json). dead(404·5xx·접속 불가 확정)만 버튼에서 뺀다. 403 같은 봇 차단(unknown)과 첫 실패(suspect)는 유지.
+let LINKS = {};
+try { LINKS = JSON.parse(fs.readFileSync("link-status.json", "utf-8")); } catch {}
+const linkDead = (u) => !!(u && LINKS[String(u).trim()] && LINKS[String(u).trim()].state === "dead");
+const linkOk = (u) => !!u && !linkDead(u);
+
 function reserveBlock(c) {
   const q = encodeURIComponent(`${c.name} 예약`);
   const btns = [];
-  if (c.reserveUrl) btns.push(`<a class="dir-btn reserve big-btn" target="_blank" rel="noopener" href="${esc(c.reserveUrl)}">📅 예약 바로가기</a>`);
-  if (c.homepage && c.homepage !== c.reserveUrl) btns.push(`<a class="dir-btn homepage big-btn" target="_blank" rel="noopener" href="${esc(c.homepage)}">🌐 공식 홈페이지</a>`);
+  const rsv = linkOk(c.reserveUrl) ? c.reserveUrl : "";
+  const hp = linkOk(c.homepage) ? c.homepage : "";
+  if (rsv) btns.push(`<a class="dir-btn reserve big-btn" target="_blank" rel="noopener" href="${esc(rsv)}">📅 예약 바로가기</a>`);
+  if (hp && hp !== rsv) btns.push(`<a class="dir-btn homepage big-btn" target="_blank" rel="noopener" href="${esc(hp)}">🌐 공식 홈페이지</a>`);
   if (!btns.length) btns.push(`<a class="dir-btn reserve-search big-btn" target="_blank" rel="noopener" href="https://search.naver.com/search.naver?query=${q}">🔎 네이버에서 예약처 찾기</a>`);
   if (c.tel) btns.push(`<a class="dir-btn tel" href="tel:${esc(c.tel.replace(/[^0-9+]/g, ""))}">📞 ${esc(c.tel)}</a>`);
-  const note = c.reserveUrl || c.homepage ? "" : `<p class="coupang-notice">고캠핑 공공데이터에 이 캠핑장의 예약 페이지가 등록돼 있지 않아요. 네이버 검색이나 전화로 확인해 주세요.</p>`;
+  const deadAny = linkDead(c.reserveUrl) || linkDead(c.homepage);
+  const note = deadAny && !rsv && !hp
+    ? `<p class="coupang-notice">⚠️ 고캠핑에 등록된 예약·홈페이지 주소가 현재 열리지 않아요(사이트 이전·폐쇄 추정). 네이버 검색이나 전화로 확인해 주세요. 새 주소를 아시면 제보해 주세요.</p>`
+    : c.reserveUrl || c.homepage ? "" : `<p class="coupang-notice">고캠핑 공공데이터에 이 캠핑장의 예약 페이지가 등록돼 있지 않아요. 네이버 검색이나 전화로 확인해 주세요.</p>`;
   return `<div class="reserve-block"><div class="dir-buttons">${btns.join("")}</div>${note}</div>`;
 }
 
@@ -494,9 +505,9 @@ function buildPage(c, all) {
     .split(",").filter(Boolean)
     .map((f) => `<span class="chip">${esc(f.trim())}</span>`).join(" ");
 
-  const homepage = c.homepage
+  const homepage = linkOk(c.homepage)
     ? `<a href="${esc(c.homepage)}" target="_blank" rel="noopener">${esc(c.homepage)}</a>`
-    : "";
+    : c.homepage ? `<span class="muted">등록된 주소가 열리지 않음 (사이트 이전·폐쇄 추정)</span>` : "";
 
   // 예약·홈페이지 버튼은 정보표 아래 reserveBlock()으로 올렸다 (길찾기 줄에서는 뺌)
   const directions = `

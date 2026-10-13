@@ -309102,8 +309102,8 @@
     "lat": "36.0658097",
     "lng": "126.8754394",
     "tel": "063-862-1578",
-    "homepage": "http://camping.iksan.go.kr/",
-    "reserveUrl": "http://camping.iksan.go.kr/",
+    "homepage": "https://www.iksan.go.kr/camping",
+    "reserveUrl": "https://www.iksan.go.kr/camping",
     "image": "https://gocamping.or.kr/upload/camp/2460/thumb/thumb_720_2772dufw1XE9JmhSfF5pQvIz.jpg",
     "facilities": "온수,놀이터,산책로,운동장,운동시설",
     "pet": "불가능",
@@ -309208,7 +309208,8 @@
         "image": "http://tong.visitkorea.or.kr/cms/resource/79/2607979_image2_1.jpg",
         "addr": "전북특별자치도 익산시 황등면 황등로 158"
       }
-    ]
+    ],
+    "corrected": "2026-10-13 운영자 확인 — 고캠핑에 적힌 예약 주소(camping.iksan.go.kr)가 502로 죽어 있고, 익산시 캠핑장 예약은 iksan.go.kr/camping 으로 옮겨감"
   },
   {
     "contentId": "7318",

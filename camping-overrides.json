@@ -1,0 +1,11 @@
+[
+  {
+    "contentId": "2460",
+    "key": "웅포관광지 캠핑장",
+    "note": "2026-10-13 운영자 확인 — 고캠핑에 적힌 예약 주소(camping.iksan.go.kr)가 502로 죽어 있고, 익산시 캠핑장 예약은 iksan.go.kr/camping 으로 옮겨감",
+    "set": {
+      "reserveUrl": "https://www.iksan.go.kr/camping",
+      "homepage": "https://www.iksan.go.kr/camping"
+    }
+  }
+]

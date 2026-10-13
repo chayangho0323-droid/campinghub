@@ -247,6 +247,14 @@ async function main() {
     return { ...c, nearbySpots, nearbyFood };
   });
 
+  // 제보로 확인된 정정(camping-overrides.json)을 공공데이터 위에 덮어쓴 뒤 저장 — 랜딩이 읽는 campings-list.json도 이 파일에서 만들어지므로 여기서 적용
+  try {
+    const { applyOverrides } = require("./apply-overrides");
+    const n = applyOverrides(enriched);
+    if (n) console.log(`✏️ 정정 덧쓰기 ${n}건 적용 (camping-overrides.json)`);
+  } catch (err) {
+    console.log(`⚠️ 정정 덧쓰기 실패 (계속 진행): ${err.message}`);
+  }
   fs.writeFileSync("campings.json", JSON.stringify(enriched, null, 2), "utf-8");
   console.log(`✅ campings.json 저장 완료 — 캠핑장 ${enriched.length}건`);
   console.log(`   주변 정보 확보: ${enriched.filter((c) => Array.isArray(c.nearbyFood) && c.nearbyFood.length).length}건`);

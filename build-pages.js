@@ -45,6 +45,8 @@ const COUPANG_ITEMS = [
 ];
 
 const campings = JSON.parse(fs.readFileSync("campings.json", "utf-8"));
+// 제보 정정(camping-overrides.json) — fetch 단계에서도 적용되지만, 제보 온 날 fetch 없이 빌드만 할 때를 위해 여기서도 한 번 더
+try { const n = require("./apply-overrides").applyOverrides(campings); if (n) console.log(`✏️ 정정 덧쓰기 ${n}건 적용`); } catch {}
 
 // 정적 파일 캐시 무력화 (GitHub Pages 캐시 10분) — report.css/js에 빌드 날짜가 붙음
 const BUILD_VER = (() => { const d = new Date(Date.now() + 9 * 3600 * 1000); return `${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, "0")}${String(d.getUTCDate()).padStart(2, "0")}`; })();
@@ -646,6 +648,7 @@ function buildPage(c, all) {
         ${infoRow("🔗", "홈페이지", homepage)}
       </div>
       ${reserveBlock(c)}
+      ${c.corrected ? `<p class="coupang-notice">✏️ 예약·연락처 정보를 제보로 확인해 정정했습니다 (${esc(String(c.corrected).slice(0, 10))}). 고캠핑 원본과 다를 수 있으며 이 페이지가 최신입니다.</p>` : ""}
       ${weatherHtml(c)}
       ${ADFIT_BODY}
       ${campNoteHtml(c)}

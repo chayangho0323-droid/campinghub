@@ -647,6 +647,7 @@ function buildPage(c, all) {
       </div>
       ${reserveBlock(c)}
       ${weatherHtml(c)}
+      ${ADFIT_BODY}
       ${campNoteHtml(c)}
       ${checkBeforeHtml(c)}
       ${facChips ? `<section class="overview"><h2>부대시설</h2><p>${facChips}</p></section>` : ""}
@@ -655,7 +656,6 @@ function buildPage(c, all) {
       ${intro}
       ${VP.galleryHtml(vph, { name: c.name, href: reportMailto(c) })}
       ${photoCallHtml(c)}
-      ${ADFIT_BODY}
       <section class="map-section"><h2>오시는 길</h2><div id="map"></div>${directions}</section>
       ${relatedSection}
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}

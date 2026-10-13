@@ -13319,5 +13319,611 @@
   "status": 0,
   "checkedAt": "2026-10-13T07:43:19.237Z",
   "error": "20"
+ },
+ "http://xn--vv5bv4gixb68ic0b.com/": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://map.naver.com/p/entry/place/1306286004?lng": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://iwall.barunweb.co.kr/": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://hcddrancamping.modoo.at/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://map.naver.com/p/search/%ED%83%9C%EC%95%88%EB%85%B8%EC%9D%84%EA%B3%BC%EB%B0%94%EB%8B%A4%EC%BA%A0%ED%95%91%EC%95%A4%EA%B8%80%EB%9E%A8%ED%95%91/place/1203562948?c=15.00,0,0,0,dh&isCorrectAnswer=true": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://camfit.co.kr/camp/636b690657070f001e454d4e": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://eulsugolbyeolbit.modoo.at/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.instagram.com/_camp_darling/": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://blog.naver.com/floracamp": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://café.naver.com/campingjungdog": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://r.camperstory.com/resMain.hbb?reserve_path=RP&campseq=4149": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://r.camperstory.com/resMain.hbb?reserve_path=RP&campseq=4009": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://map.naver.com/p/entry/place/1034284570?c=15.00,0,0,0,dh&isCorrectAnswer=true": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://cafe.naver.com/campingjungdog": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.instagram.com/jackson_glamping": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.instagram.com/beakunsunvalley/": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.osha-camping.co.kr": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://www.instagram.com/aracamp_caravan/": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://map.naver.com/p/entry/place/1212309742?c=17.53,0,0,0,dh": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.instagram.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.camfit.co.kr/camp/638d58a9d05094001e295a79": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/638d58a9d05094001e295a79"
+ },
+ "https://taeanautocamping.modoo.at/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.camfit.co.kr/camp/629edbe3692d55001e3ef9ba": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/629edbe3692d55001e3ef9ba"
+ },
+ "http://r.camperstory.com/resMain.hbb?reserve_path=RP&campseq=1790": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.camfit.co.kr/camp/63bfaa364cbe7c001ee422c1": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/63bfaa364cbe7c001ee422c1"
+ },
+ "https://r.camperstory.com/resMain.hbb?reserve_path=RP&campseq=4136": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://map.naver.com/p/entry/place/1333975450?c=19.00,0,0,0,dh&isCorrectAnswer=true": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://xn--n-wt8e98utzj89n.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://campinthesoope.co.kr/": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://campinglaforet.modoo.at/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://map.naver.com/p/entry/place/1001365488?c=8.46,0,0,0,dh&isCorrectAnswer=true": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://map.naver.com/p/entry/place/1027811886?c=18.00,0,0,0,dh": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.instagram.com/explore/tags/%EB%B3%84%ED%92%88%EC%9D%80%EC%88%B2%EC%86%8D%EC%BA%A0%ED%95%91%EC%9E%A5/top/": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://camfit.co.kr/camp/65118dfa875975001e6f1631": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.instagram.com/miso6648/?hl=ko": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://map.naver.com/p/entry/place/1271087703?c=15.00,0,0,0,dh&isCorrectAnswer=true": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://blog.naver.com/hwayangvalley": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.camfit.co.kr/camp/636c59a252306e002032af00": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/636c59a252306e002032af00"
+ },
+ "http://goglamping.co.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.instagram.com/thecozycamping": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://cafe.naver.com/campinggsung": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://camfit.co.kr/camp/636cbe47f8561b001f308586": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://camfit.co.kr/camp/646d7817f0e72c001e2bff5b": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://northumbria.co.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.camfit.co.kr/camp/6347bb5bf93d15001e3b508e": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/6347bb5bf93d15001e3b508e"
+ },
+ "http://www.skyocean.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://www.onthebeachpoolvilla.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://www.xn--v20b662avzeeob84iwndvwq.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://stay.yd.go.kr/wellbeing/pages/index.htm": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://www.xn--wh1bx90au2c9wbj5qwtebvhpb.com/page/page4": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://www.xn--wh1bx90au2c9wbj5qwtebvhpb.com/#__344745__item2": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "http://www.xn--wh1bx90au2c9wbj5qwtebvhpb.com/"
+ },
+ "https://www.ylangcamp.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://yumyoungsan-valley.co.kr": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://www.camfit.co.kr/camp/625d36bc0b5a84001eea82b8": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/625d36bc0b5a84001eea82b8"
+ },
+ "https://cafe.naver.com/ascamping": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://xn--sk4bt5i0ylgd44g.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.instagram.com/gloria88796": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://www.leadglamping.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://cafe.daum.net/csdpension": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://g-park.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.gmuc.co.kr/user/conn/campIntro.do": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://farmhousecamp.com/": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://naver.me/GgPjBZeb": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://cafe.naver.com/woodenbridge/3": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://camplink.co.kr/?camp=csd128": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camplink.co.kr/?camp=csd128"
+ },
+ "https://naver.me/GmfOm3kw": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://hwarangcamp.ansanuc.net/index.do": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.camfit.co.kr/camp/623818516fa4ab001e00c448": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/623818516fa4ab001e00c448"
+ },
+ "https://www.yc.go.kr/toursub/starlight/main.do": {
+  "state": "dead",
+  "status": 404,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://withhealing.campingt.me/3632/home/index": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://naver.me/F7xPqtlz": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.geochang.go.kr/ssd/Index.do": {
+  "state": "unknown",
+  "status": 403,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://xn--9i1bq8po4ef3d.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://엄둔밸리.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "http://xn--lu1bj5h48bjyp.com/"
+ },
+ "http://songhotour.yd21.go.kr": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://songhotour.yd21.go.kr/"
+ },
+ "http://www.hwayacamp.com": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "http://www.hwayacamp.com/"
+ },
+ "https://naver.me/xEMHGSSc": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://camp.pcfac.or.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.coupang.com/np/search?q=%EA%B0%80%ED%8F%89+%EC%84%B8%EB%9D%BC%ED%95%8C+%EA%B8%80%EB%9E%A8%ED%95%91&channel=relate": {
+  "state": "unknown",
+  "status": 403,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://cafe.daum.net/megacamping": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://cafe.daum.net/megacamping"
+ },
+ "http://camplink.co.kr/?camp=whlee1962": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camplink.co.kr/?camp=whlee1962"
+ },
+ "http://www.cyfarm.kr/index.php": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "http://pinehillvillage.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://cafe.naver.com/seraphimcamp": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://cafe.naver.com/seraphimcamp"
+ },
+ "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=18006149": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://nol.yanolja.com/ticket/products/18006149"
+ },
+ "http://www.숲에정원.com": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://booking.naver.com/booking/3/bizes/678482": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://www.yolocamp..co.kr/": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "https://wavepark.co.kr/wave/caravanInfo": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://booking.naver.com/booking/3/bizes/987689": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.camfit.co.kr/camp/62e50bbf65c952001f7f53b5?fbclid=PAAaZMpo3oo7ZlYh73faJOolvXUCd5wKcUOObn5KKzgjeLc2HJmHwpzFmH_U0": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/62e50bbf65c952001f7f53b5?fbclid=PAAaZMpo3oo7ZlYh73faJOolvXUCd5wKcUOObn5KKzgjeLc2HJmHwpzFmH_U0"
+ },
+ "http://yeyak.seoul.go.kr/search/totalSearchView.web?sort=SSORT&sortOld=SSORT&searchField=ALL&submenu=0&areaname=25&checkpay=&svsStats=0&svsData=0&useInfo=0&areaNum=25&SortUD=1&sortOne=SSORT,1&viewCng=": {
+  "state": "dead",
+  "status": 404,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.clovercamp.co.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.ddnayo.com/RsvSys/Calendar.aspx?id_hotel=11860": {
+  "state": "unknown",
+  "status": 403,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://naver.me/xt55OWGD": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://gwp.hana-pnc.co.kr/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://cafe.naver.com/gumbang2": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://cafe.naver.com/gumbang2"
+ },
+ "https://booking.naver.com/booking/3/bizes/900456": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://www.campunak.co.kr": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://www.campunak.co.kr/intro_main.aspx?ReturnUrl=%2f"
+ },
+ "https://www.efmc.or.kr/fmcs/1": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://cafe.naver.com/hyggeforest": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://map.naver.com/v5/entry/place/1183807687?c=14139918.4947074,4577650.3162217,13,0,0,0,dh&placePath=%2F&entry=plt": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://map.naver.com/p/entry/place/1183807687?c=14139918.4947074,4577650.3162217,13,0,0,0,dh&placePath=%2F&entry=plt"
+ },
+ "https://www.camfit.co.kr/camp/6528902d67b59c001fdbbe5f": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://camfit.co.kr/camp/6528902d67b59c001fdbbe5f"
+ },
+ "https://www.instagram.com/jyb_camping": {
+  "state": "unknown",
+  "status": 429,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://www.j-glamping.com/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://www.j-glamping.com/html/index.html"
+ },
+ "https://blog.naver.com/haewol_caravan": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://urnarucamp.modoo.at/": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://urnarucamp.modoo.at/?link=53vdr5tr": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://www.naver.com/ocamping": {
+  "state": "dead",
+  "status": 404,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "http://rhinoglamping.com": {
+  "state": "unknown",
+  "status": 403,
+  "checkedAt": "2026-10-13T23:52:10.428Z"
+ },
+ "https://jindongri.zapza.me/": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "fetch failed"
+ },
+ "http://516glamravan.co.kr": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "final": "https://516glamravan.co.kr/"
+ },
+ "https://camp.xticket.kr/web/main?shopEncode=a12d6508ae5ea0562923cb1f2762761f3413ab4c988a6c8aa92ea7873e263bec": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "20"
+ },
+ "https://www.the-village.co.kr/": {
+  "state": "dead",
+  "status": 0,
+  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "error": "20"
  }
 }

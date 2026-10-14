@@ -36,6 +36,9 @@ jobs:
           PHOTO_BUDGET: "350"
         continue-on-error: true
 
+      # 캠핑장마다 가까운 지하철역·버스정류장·공영주차장 계산 (API 없음 — data/stations.json, busstops.json.gz, parking.json.gz)
+      - run: node fetch-transit.js
+
       # 기상청 단기·중기예보 → 시군구별 7일 날씨 weather.json (같은 공공데이터포털 키, 하루 약 220회 호출)
       # 실패하면 전날 weather.json을 그대로 써서 빌드는 계속된다
       - run: node fetch-weather.js

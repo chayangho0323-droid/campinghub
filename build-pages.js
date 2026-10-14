@@ -310,6 +310,31 @@ function campNoteHtml(c) {
       </section>`;
 }
 
+// ─── 🚇 대중교통 · 🅿️ 주차장 (fetch-transit.js: 3km 안 지하철역, 800m 안 정류장 2곳, 1.5km 안 공영주차장 3곳 — 축제·펫트립과 같은 구조) ───
+// 캠핑은 차로 가는 경우가 많지만 "뚜벅이 캠핑" 검색이 있고, 휴양림·공립 야영장은 주차장이 떨어져 있어 공영주차장 정보가 쓸모 있다.
+function transitHtml(c) {
+  const t = c.transit || {};
+  const mapLink = (q, cls) => `<a class="${cls}" target="_blank" rel="noopener" href="https://map.naver.com/p/search/${encodeURIComponent(q)}">`;
+  const km = (m) => (m >= 1000 ? (m / 1000).toFixed(1) + "km" : m + "m");
+  const sigunguOf = `${normSidoW(c.region)} ${c.sigungu || ""}`.trim();
+  const parkingHtml = t.parking && t.parking.length
+    ? `<h3>🅿️ 가까운 공영주차장 <span class="transit-sub">(캠핑장 자체 주차와 별개)</span></h3>
+        <ul>
+          ${t.parking.map((x) => `<li>${mapLink(`${sigunguOf} ${x.name}`, "parking-link")}<strong>${esc(x.name)}</strong></a> <span class="transit-tag">${esc(x.se)}${x.type ? "·" + esc(x.type) : ""}</span> ${km(x.dist)} · 도보 약 ${x.walkMin}분${x.cap ? ` · ${x.cap}면` : ""}${x.fee ? ` · <b>${esc(x.fee)}</b>` : ""}${x.hours ? ` · ${esc(x.hours)}` : ""}</li>`).join("")}
+        </ul>`
+    : "";
+  if (!t.station && !(t.stops && t.stops.length) && !parkingHtml) return "";
+  return `<div class="transit-box">
+        ${t.station || (t.stops && t.stops.length) ? `<h3>🚇 대중교통으로 가는 법 <span class="transit-sub">(뚜벅이 캠핑)</span></h3>
+        <ul>
+          ${t.station ? `<li>🚈 ${mapLink(`${t.station.name}역`, "transit-link")}<strong>${esc(t.station.name)}역</strong></a> (${t.station.lines.map(esc).join("·")}) 에서 <strong>${km(t.station.dist)}</strong> · 도보 약 ${t.station.walkMin}분${t.station.dist > 1500 ? " (멀어서 역에서 버스·택시 환승 권장)" : ""}</li>` : ""}
+          ${(t.stops || []).map((s) => `<li>🚌 ${mapLink(`${sigunguOf} ${s.name} 정류장`, "transit-link")}<strong>${esc(s.name)}</strong></a> 정류장 ${s.dist}m · 도보 약 ${s.walkMin}분</li>`).join("")}
+        </ul>` : ""}
+        ${parkingHtml}
+        <p class="coupang-notice">캠핑장 좌표 기준 직선거리라 실제 걷는 거리는 더 길 수 있어요. 이름을 누르면 네이버지도에서 위치·노선을 볼 수 있습니다. 시골 정류장은 배차가 하루 몇 번뿐인 곳이 많으니 시간표를 꼭 확인하세요. 역 철도산업정보센터(2026.6) · 정류장 국토교통부(2025.10) · 주차장 행정안전부(2026.4).</p>
+      </div>`;
+}
+
 function checkBeforeHtml(c) {
   const rows = [];
   if (c.siteBottom) rows.push(["🟫", "바닥 형태", c.siteBottom.split(",").join(" · ")]);
@@ -670,7 +695,7 @@ function buildPage(c, all) {
       ${intro}
       ${VP.galleryHtml(vph, { name: c.name, href: reportMailto(c) })}
       ${photoCallHtml(c)}
-      <section class="map-section"><h2>오시는 길</h2><div id="map"></div>${directions}</section>
+      <section class="map-section"><h2>오시는 길</h2><div id="map"></div>${directions}${transitHtml(c)}</section>
       ${relatedSection}
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}
       ${nearbySection("주변 맛집", "🍜", c.nearbyFood)}

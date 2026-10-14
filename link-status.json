@@ -63,11 +63,6 @@
   "checkedAt": "2026-10-13T07:43:19.237Z",
   "error": "fetch failed"
  },
- "https://www.camfit.co.kr/camp/665ec3ea26adf6001e2a9b60": {
-  "state": "unknown",
-  "status": 403,
-  "checkedAt": "2026-10-13T07:43:19.237Z"
- },
  "http://okhwacamping.netfuhosting.com/n_camp/": {
   "state": "dead",
   "status": 404,
@@ -13925,5 +13920,27 @@
   "status": 0,
   "checkedAt": "2026-10-13T23:52:10.428Z",
   "error": "20"
+ },
+ "https://www.sglamping.com/order_cal.html?year=2020&month=05": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-14T23:25:37.687Z"
+ },
+ "https://www.sglamping.com/index.html": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-14T23:25:37.687Z"
+ },
+ "http://gamponuri.co.kr": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-14T23:25:37.687Z",
+  "final": "http://gamponuri.co.kr/"
+ },
+ "https://m.thankqcamping.com": {
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-10-14T23:25:37.687Z",
+  "final": "https://m.thankqcamping.com/"
  }
 }

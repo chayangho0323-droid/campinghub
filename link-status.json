@@ -13336,7 +13336,7 @@
  "http://xn--vv5bv4gixb68ic0b.com/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://map.naver.com/p/entry/place/1306286004?lng": {
@@ -13347,7 +13347,7 @@
  "http://iwall.barunweb.co.kr/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://hcddrancamping.modoo.at/": {
@@ -13383,7 +13383,7 @@
  "https://café.naver.com/campingjungdog": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://r.camperstory.com/resMain.hbb?reserve_path=RP&campseq=4149": {
@@ -13419,7 +13419,7 @@
  "https://www.osha-camping.co.kr": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://www.instagram.com/aracamp_caravan/": {
@@ -13483,7 +13483,7 @@
  "http://campinthesoope.co.kr/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://campinglaforet.modoo.at/": {
@@ -13607,7 +13607,7 @@
  "http://yumyoungsan-valley.co.kr": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://www.camfit.co.kr/camp/625d36bc0b5a84001eea82b8": {
@@ -13654,7 +13654,7 @@
  "https://farmhousecamp.com/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://naver.me/GgPjBZeb": {
@@ -13692,7 +13692,7 @@
  "https://www.yc.go.kr/toursub/starlight/main.do": {
   "state": "dead",
   "status": 404,
-  "checkedAt": "2026-10-13T23:52:10.428Z"
+  "checkedAt": "2026-10-17T22:36:47.703Z"
  },
  "https://withhealing.campingt.me/3632/home/index": {
   "state": "ok",
@@ -13762,7 +13762,7 @@
  "http://www.cyfarm.kr/index.php": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "http://pinehillvillage.kr/": {
@@ -13785,7 +13785,7 @@
  "http://www.숲에정원.com": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://booking.naver.com/booking/3/bizes/678482": {
@@ -13796,7 +13796,7 @@
  "http://www.yolocamp..co.kr/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "https://wavepark.co.kr/wave/caravanInfo": {
@@ -13818,7 +13818,7 @@
  "http://yeyak.seoul.go.kr/search/totalSearchView.web?sort=SSORT&sortOld=SSORT&searchField=ALL&submenu=0&areaname=25&checkpay=&svsStats=0&svsData=0&useInfo=0&areaNum=25&SortUD=1&sortOne=SSORT,1&viewCng=": {
   "state": "dead",
   "status": 404,
-  "checkedAt": "2026-10-13T23:52:10.428Z"
+  "checkedAt": "2026-10-17T22:36:47.703Z"
  },
  "https://www.clovercamp.co.kr/": {
   "state": "ok",
@@ -13908,7 +13908,7 @@
  "https://www.naver.com/ocamping": {
   "state": "dead",
   "status": 404,
-  "checkedAt": "2026-10-13T23:52:10.428Z"
+  "checkedAt": "2026-10-17T22:36:47.703Z"
  },
  "http://rhinoglamping.com": {
   "state": "unknown",
@@ -13918,7 +13918,7 @@
  "https://jindongri.zapza.me/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "fetch failed"
  },
  "http://516glamravan.co.kr": {
@@ -13930,13 +13930,13 @@
  "https://camp.xticket.kr/web/main?shopEncode=a12d6508ae5ea0562923cb1f2762761f3413ab4c988a6c8aa92ea7873e263bec": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "20"
  },
  "https://www.the-village.co.kr/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-13T23:52:10.428Z",
+  "checkedAt": "2026-10-17T22:36:47.703Z",
   "error": "20"
  },
  "https://www.sglamping.com/order_cal.html?year=2020&month=05": {

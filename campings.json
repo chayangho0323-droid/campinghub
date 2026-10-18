@@ -1792,11 +1792,6 @@
         "addr": "경상남도 김해시 활천로186번길 28"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/64/3541864_image2_1.jpg",
-      "name": "가야랜드",
-      "dist": 750
-    },
     "transit": {
       "station": {
         "name": "장신대",
@@ -1832,6 +1827,11 @@
           "walkMin": 20
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/64/3541864_image2_1.jpg",
+      "name": "가야랜드",
+      "dist": 750
     }
   },
   {
@@ -2648,11 +2648,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/38/3042738_image2_1.JPG",
-      "name": "대진해수욕장",
-      "dist": 6
-    },
     "transit": {
       "stops": [
         {
@@ -2666,6 +2661,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/38/3042738_image2_1.JPG",
+      "name": "대진해수욕장",
+      "dist": 6
     }
   },
   {
@@ -2788,11 +2788,6 @@
         "addr": "충청북도 단양군 중앙2로 13 왕릉숯불갈비"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3390413_image2_1.JPG",
-      "name": "새밭계곡",
-      "dist": 441
-    },
     "transit": {
       "stops": [
         {
@@ -2801,6 +2796,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3390413_image2_1.JPG",
+      "name": "새밭계곡",
+      "dist": 441
     }
   },
   {
@@ -3578,11 +3578,6 @@
         "addr": "충청남도 서산시 홍안벌로 136 (수석동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/16/3560116_image2_1.jpg",
-      "name": "강댕이 미륵불",
-      "dist": 10
-    },
     "transit": {
       "stops": [
         {
@@ -3596,6 +3591,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/16/3560116_image2_1.jpg",
+      "name": "강댕이 미륵불",
+      "dist": 10
     }
   },
   {
@@ -3957,11 +3957,6 @@
         "addr": "경상북도 포항시 남구 구룡포읍 호미로 259-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3528213_image2_1.jpg",
-      "name": "모포항",
-      "dist": 264
-    },
     "transit": {
       "stops": [
         {
@@ -3975,6 +3970,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3528213_image2_1.jpg",
+      "name": "모포항",
+      "dist": 264
     }
   },
   {
@@ -6464,11 +6464,6 @@
         "addr": "경기도 포천시 관인면 창동로 895"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/91/2481891_image2_1.jpg",
-      "name": "열쇠전망대",
-      "dist": 310
-    },
     "transit": {
       "stops": [
         {
@@ -6482,6 +6477,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/91/2481891_image2_1.jpg",
+      "name": "열쇠전망대",
+      "dist": 310
     }
   },
   {
@@ -7334,11 +7334,6 @@
         "addr": "인천광역시 강화군 화도면 해안남로1691번길 43-12"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/54/3355854_image2_1.jpg",
-      "name": "장봉도 옹암해변",
-      "dist": 263
-    },
     "transit": {
       "parking": [
         {
@@ -7366,6 +7361,11 @@
           "walkMin": 18
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/54/3355854_image2_1.jpg",
+      "name": "장봉도 옹암해변",
+      "dist": 263
     }
   },
   {
@@ -10817,11 +10817,6 @@
         "addr": "경상북도 포항시 남구 구룡포읍 구룡포길 133-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/12/3476412_image2_1.jpg",
-      "name": "해봉사(포항)",
-      "dist": 271
-    },
     "transit": {
       "stops": [
         {
@@ -10835,6 +10830,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/12/3476412_image2_1.jpg",
+      "name": "해봉사(포항)",
+      "dist": 271
     }
   },
   {
@@ -12532,11 +12532,6 @@
         "addr": "경상남도 산청군 지리산대로 670-6 드라마산장가든"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3550210_image2_1.jpg",
-      "name": "백암동천",
-      "dist": 963
-    },
     "transit": {
       "stops": [
         {
@@ -12545,6 +12540,11 @@
           "walkMin": 1
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3550210_image2_1.jpg",
+      "name": "백암동천",
+      "dist": 963
     }
   },
   {
@@ -12667,11 +12667,6 @@
         "addr": "제주특별자치도 제주시 해맞이해안로 460"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/35/3408135_image2_1.jpg",
-      "name": "금룡사(제주)",
-      "dist": 807
-    },
     "transit": {
       "stops": [
         {
@@ -12723,6 +12718,11 @@
           "walkMin": 15
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/35/3408135_image2_1.jpg",
+      "name": "금룡사(제주)",
+      "dist": 807
     }
   },
   {
@@ -13464,11 +13464,6 @@
         "addr": "경기도 여주시 강천면 부평로 407"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/32/3383432_image2_1.jpg",
-      "name": "여주참숯마을",
-      "dist": 51
-    },
     "transit": {
       "stops": [
         {
@@ -13482,6 +13477,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/32/3383432_image2_1.jpg",
+      "name": "여주참숯마을",
+      "dist": 51
     }
   },
   {
@@ -15182,11 +15182,6 @@
         "addr": "제주특별자치도 제주시 한림읍 한림로 158"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/61/3352661_image2_1.jpg",
-      "name": "판포포구",
-      "dist": 274
-    },
     "transit": {
       "stops": [
         {
@@ -15238,6 +15233,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/61/3352661_image2_1.jpg",
+      "name": "판포포구",
+      "dist": 274
     }
   },
   {
@@ -17390,11 +17390,6 @@
         "addr": "경기도 화성시 마도면 해운로 676"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/83/3537383_image2_1.jpg",
-      "name": "궁평해송군락지",
-      "dist": 770
-    },
     "transit": {
       "stops": [
         {
@@ -17408,6 +17403,11 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/83/3537383_image2_1.jpg",
+      "name": "궁평해송군락지",
+      "dist": 770
     }
   },
   {
@@ -17506,11 +17506,6 @@
         "addr": "충청남도 태안군 이원면 원이로 1539"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/17/3055617_image2_1.jpg",
-      "name": "구례포해수욕장",
-      "dist": 347
-    },
     "transit": {
       "stops": [
         {
@@ -17519,6 +17514,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/17/3055617_image2_1.jpg",
+      "name": "구례포해수욕장",
+      "dist": 347
     }
   },
   {
@@ -17833,12 +17833,6 @@
         "addr": "전북특별자치도 완주군 동상면 대아수목로 209"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/15/2727415.jpg",
-      "name": "운일암반일암관광지",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 라이브스튜디오"
-    },
     "transit": {
       "stops": [
         {
@@ -17847,6 +17841,12 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/15/2727415.jpg",
+      "name": "운일암반일암관광지",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 라이브스튜디오"
     }
   },
   {
@@ -19538,11 +19538,6 @@
         "addr": "경기도 파주시 선유울1길 210"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/19/3540819_image2_1.jpg",
-      "name": "파평용연",
-      "dist": 930
-    },
     "transit": {
       "stops": [
         {
@@ -19570,6 +19565,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/19/3540819_image2_1.jpg",
+      "name": "파평용연",
+      "dist": 930
     }
   },
   {
@@ -19692,11 +19692,6 @@
         "addr": "충청남도 태안군 안면읍 백사장1길 24"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/88/3340788_image2_1.jpg",
-      "name": "마검포해수욕장",
-      "dist": 192
-    },
     "transit": {
       "stops": [
         {
@@ -19710,6 +19705,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/88/3340788_image2_1.jpg",
+      "name": "마검포해수욕장",
+      "dist": 192
     }
   },
   {
@@ -20045,11 +20045,6 @@
         "addr": "전남광주통합특별시 여수시 죽림2길 23-8  "
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/46/2605246_image2_1.bmp",
-      "name": "디오션리조트 워터파크",
-      "dist": 889
-    },
     "transit": {
       "stops": [
         {
@@ -20072,6 +20067,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/46/2605246_image2_1.bmp",
+      "name": "디오션리조트 워터파크",
+      "dist": 889
     }
   },
   {
@@ -20194,11 +20194,6 @@
         "addr": "제주특별자치도 제주시 조천읍 비자림로 607"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/67/3389767_image2_1.jpg",
-      "name": "제주 노루생태관찰원",
-      "dist": 832
-    },
     "transit": {
       "stops": [
         {
@@ -20212,6 +20207,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/67/3389767_image2_1.jpg",
+      "name": "제주 노루생태관찰원",
+      "dist": 832
     }
   },
   {
@@ -21316,11 +21316,6 @@
         "addr": "경기도 용인시 처인구 양지면 양지로 284"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3559650_image2_1.jpg",
-      "name": "양지향교",
-      "dist": 576
-    },
     "transit": {
       "stops": [
         {
@@ -21372,6 +21367,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3559650_image2_1.jpg",
+      "name": "양지향교",
+      "dist": 576
     }
   },
   {
@@ -21494,11 +21494,6 @@
         "addr": "충청남도 공주시 사곡면 정안마곡사로 1198"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/58/3337558_image2_1.JPG",
-      "name": "광덕산 관광농원",
-      "dist": 209
-    },
     "transit": {
       "stops": [
         {
@@ -21538,6 +21533,11 @@
           "walkMin": 21
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/58/3337558_image2_1.JPG",
+      "name": "광덕산 관광농원",
+      "dist": 209
     }
   },
   {
@@ -22180,11 +22180,6 @@
         "addr": "울산광역시 울주군 상북면 배내로 1116"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/81/3374781_image2_1.JPG",
-      "name": "단장 이팝꽃 터널길",
-      "dist": 789
-    },
     "transit": {
       "stops": [
         {
@@ -22198,6 +22193,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/81/3374781_image2_1.JPG",
+      "name": "단장 이팝꽃 터널길",
+      "dist": 789
     }
   },
   {
@@ -22661,11 +22661,6 @@
         "addr": "경상북도 경주시 봉황로 79 (서부동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/51/3538051_image2_1.jpg",
-      "name": "경주축구공원",
-      "dist": 742
-    },
     "transit": {
       "stops": [
         {
@@ -22693,6 +22688,11 @@
           "walkMin": 19
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/51/3538051_image2_1.jpg",
+      "name": "경주축구공원",
+      "dist": 742
     }
   },
   {
@@ -22815,11 +22815,6 @@
         "addr": "울산광역시 울주군 상북면 소야정길 115"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/38/3573038_image2_1.jpg",
-      "name": "가지산도립공원(밀양)",
-      "dist": 747
-    },
     "transit": {
       "stops": [
         {
@@ -22842,6 +22837,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/38/3573038_image2_1.jpg",
+      "name": "가지산도립공원(밀양)",
+      "dist": 747
     }
   },
   {
@@ -24232,11 +24232,6 @@
         "addr": "경기도 양평군 옥천면 마유산로 586"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/86/607986_image2_1.jpg",
-      "name": "중미산자연휴양림",
-      "dist": 573
-    },
     "transit": {
       "stops": [
         {
@@ -24245,6 +24240,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/86/607986_image2_1.jpg",
+      "name": "중미산자연휴양림",
+      "dist": 573
     }
   },
   {
@@ -24836,11 +24836,6 @@
         "addr": "인천광역시 강화군 길상면 마니산로 106"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/43/3532443_image2_1.jpg",
-      "name": "강화 삼랑성",
-      "dist": 697
-    },
     "transit": {
       "stops": [
         {
@@ -24892,6 +24887,11 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/43/3532443_image2_1.jpg",
+      "name": "강화 삼랑성",
+      "dist": 697
     }
   },
   {
@@ -26893,11 +26893,6 @@
         "addr": "경기도 화성시 서신면 해안길 330-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/56/3539956_image2_1.jpg",
-      "name": "궁평관광지",
-      "dist": 196
-    },
     "transit": {
       "stops": [
         {
@@ -26906,6 +26901,11 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/56/3539956_image2_1.jpg",
+      "name": "궁평관광지",
+      "dist": 196
     }
   },
   {
@@ -27246,11 +27246,6 @@
         "addr": "충청북도 충주시 산척면 샛강영길 65"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/31/3062631_image2_1.JPG",
-      "name": "덕동계곡",
-      "dist": 785
-    },
     "transit": {
       "stops": [
         {
@@ -27264,6 +27259,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/31/3062631_image2_1.JPG",
+      "name": "덕동계곡",
+      "dist": 785
     }
   },
   {
@@ -29305,11 +29305,6 @@
         "addr": "충청남도 천안시 동남구 한우물2길 90"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/58/3337558_image2_1.JPG",
-      "name": "광덕산 관광농원",
-      "dist": 106
-    },
     "transit": {
       "stops": [
         {
@@ -29337,6 +29332,11 @@
           "walkMin": 15
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/58/3337558_image2_1.JPG",
+      "name": "광덕산 관광농원",
+      "dist": 106
     }
   },
   {
@@ -31076,11 +31076,6 @@
         "addr": "경상남도 남해군 서면 남서대로1517번길 31"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/36/2486336_image2_1.jpg",
-      "name": "사촌해수욕장",
-      "dist": 578
-    },
     "transit": {
       "stops": [
         {
@@ -31132,6 +31127,11 @@
           "walkMin": 13
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/36/2486336_image2_1.jpg",
+      "name": "사촌해수욕장",
+      "dist": 578
     }
   },
   {
@@ -31915,12 +31915,6 @@
         "addr": "경기도 양주시 백석읍 기산로440번길 177"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/08/3332708.jpg",
-      "name": "마장호수 출렁다리",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 황성훈"
-    },
     "transit": {
       "stops": [
         {
@@ -31943,6 +31937,12 @@
           "walkMin": 13
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/08/3332708.jpg",
+      "name": "마장호수 출렁다리",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 황성훈"
     }
   },
   {
@@ -33252,11 +33252,6 @@
         "addr": "경기도 김포시 약암로 853"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/18/3350618_image2_1.JPG",
-      "name": "초지대교",
-      "dist": 462
-    },
     "transit": {
       "stops": [
         {
@@ -33284,6 +33279,11 @@
           "walkMin": 15
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/18/3350618_image2_1.JPG",
+      "name": "초지대교",
+      "dist": 462
     }
   },
   {
@@ -34445,11 +34445,6 @@
         "addr": "인천광역시 옹진군 영흥면 영흥북로 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/61/3044361_image2_1.jpg",
-      "name": "소사나무 군락지",
-      "dist": 256
-    },
     "transit": {
       "stops": [
         {
@@ -34489,6 +34484,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/61/3044361_image2_1.jpg",
+      "name": "소사나무 군락지",
+      "dist": 256
     }
   },
   {
@@ -36023,11 +36023,6 @@
         "addr": "경상북도 경주시 알천북로 325 (동천동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/85/3575785_image2_1.jpg",
-      "name": "백률사(경주)",
-      "dist": 764
-    },
     "transit": {
       "parking": [
         {
@@ -36067,6 +36062,11 @@
           "walkMin": 19
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/85/3575785_image2_1.jpg",
+      "name": "백률사(경주)",
+      "dist": 764
     }
   },
   {
@@ -40328,11 +40328,6 @@
         "addr": "전남광주통합특별시 서구 송풍로17번길 15 (풍암동, 수정빌라)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/52/3454552_image2_1.png",
-      "name": "양과동정",
-      "dist": 484
-    },
     "transit": {
       "stops": [
         {
@@ -40346,6 +40341,11 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/52/3454552_image2_1.png",
+      "name": "양과동정",
+      "dist": 484
     }
   },
   {
@@ -43371,11 +43371,6 @@
         "addr": "대구광역시 달성군 가창면 가창로176길 9"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/93/3576093_image2_1.JPG",
-      "name": "박곡서당",
-      "dist": 761
-    },
     "transit": {
       "stops": [
         {
@@ -43389,6 +43384,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/93/3576093_image2_1.JPG",
+      "name": "박곡서당",
+      "dist": 761
     }
   },
   {
@@ -44280,12 +44280,6 @@
         "addr": "전남광주통합특별시 광양시 희양현로 30  "
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/47/2819747.jpg",
-      "name": "광양 구봉산 전망대",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 라이브스튜디오"
-    },
     "transit": {
       "stops": [
         {
@@ -44325,6 +44319,12 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/47/2819747.jpg",
+      "name": "광양 구봉산 전망대",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 라이브스튜디오"
     }
   },
   {
@@ -44584,12 +44584,6 @@
         "addr": "경기도 용인시 처인구 양지면 중부대로 2656"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/50/3404850.jpg",
-      "name": "곤지암도자공원",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 김주원"
-    },
     "transit": {
       "stops": [
         {
@@ -44603,6 +44597,12 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/50/3404850.jpg",
+      "name": "곤지암도자공원",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 김주원"
     }
   },
   {
@@ -48236,12 +48236,6 @@
         "addr": "전남광주통합특별시 완도군 개포로 19  "
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/80/3586980.JPG",
-      "name": "명사십리해수욕장",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 김찬영"
-    },
     "transit": {
       "stops": [
         {
@@ -48255,6 +48249,12 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/80/3586980.JPG",
+      "name": "명사십리해수욕장",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 김찬영"
     }
   },
   {
@@ -48619,11 +48619,6 @@
         "addr": "경기도 화성시 서신면 해안길 330-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/34/3345134_image2_1.jpg",
-      "name": "선감어촌체험마을",
-      "dist": 728
-    },
     "transit": {
       "stops": [
         {
@@ -48637,6 +48632,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/34/3345134_image2_1.jpg",
+      "name": "선감어촌체험마을",
+      "dist": 728
     }
   },
   {
@@ -48759,11 +48759,6 @@
         "addr": "강원특별자치도 양양군 현남면 인구중앙길 110"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/96/2915996_image2_1.JPG",
-      "name": "남애1리해수욕장",
-      "dist": 410
-    },
     "transit": {
       "stops": [
         {
@@ -48815,6 +48810,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/96/2915996_image2_1.JPG",
+      "name": "남애1리해수욕장",
+      "dist": 410
     }
   },
   {
@@ -49067,11 +49067,6 @@
         "addr": "경상북도 칠곡군 한티로 588"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3567365_image2_1.JPG",
-      "name": "군위 남천고택",
-      "dist": 372
-    },
     "transit": {
       "stops": [
         {
@@ -49111,6 +49106,11 @@
           "walkMin": 21
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3567365_image2_1.JPG",
+      "name": "군위 남천고택",
+      "dist": 372
     }
   },
   {
@@ -49233,11 +49233,6 @@
         "addr": "경상북도 칠곡군 한티로 588"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3567365_image2_1.JPG",
-      "name": "군위 남천고택",
-      "dist": 477
-    },
     "transit": {
       "stops": [
         {
@@ -49265,6 +49260,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3567365_image2_1.JPG",
+      "name": "군위 남천고택",
+      "dist": 477
     }
   },
   {
@@ -55775,11 +55775,6 @@
         "addr": "전남광주통합특별시 영암군 금정면 여운재로 996"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/96/3382096_image2_1.JPG",
-      "name": "가야금산조테마공원",
-      "dist": 573
-    },
     "transit": {
       "stops": [
         {
@@ -55807,6 +55802,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/96/3382096_image2_1.JPG",
+      "name": "가야금산조테마공원",
+      "dist": 573
     }
   },
   {
@@ -55929,12 +55929,6 @@
         "addr": "경상북도 구미시 금오산로 126"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/19/2993419.jpg",
-      "name": "구미 낙동강체육공원",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 송재근"
-    },
     "transit": {
       "stops": [
         {
@@ -55981,6 +55975,12 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/19/2993419.jpg",
+      "name": "구미 낙동강체육공원",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 송재근"
     }
   },
   {
@@ -56629,11 +56629,6 @@
         "addr": "경기도 가평군 수목원로164번길 29"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/97/2602797_image2_1.bmp",
-      "name": "아침고요가족동물원",
-      "dist": 165
-    },
     "transit": {
       "stops": [
         {
@@ -56647,6 +56642,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/97/2602797_image2_1.bmp",
+      "name": "아침고요가족동물원",
+      "dist": 165
     }
   },
   {
@@ -58714,11 +58714,6 @@
         "addr": "충청남도 태안군 소원면 모항항길 121-7"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3340913_image2_1.jpg",
-      "name": "만리포전망타워",
-      "dist": 29
-    },
     "transit": {
       "stops": [
         {
@@ -58732,6 +58727,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3340913_image2_1.jpg",
+      "name": "만리포전망타워",
+      "dist": 29
     }
   },
   {
@@ -60003,11 +60003,6 @@
         "addr": "경상북도 포항시 북구 해안로 1777"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/30/3528330_image2_1.jpg",
-      "name": "월포해수욕장",
-      "dist": 369
-    },
     "transit": {
       "stops": [
         {
@@ -60059,6 +60054,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/30/3528330_image2_1.jpg",
+      "name": "월포해수욕장",
+      "dist": 369
     }
   },
   {
@@ -63539,11 +63539,6 @@
         "addr": "제주특별자치도 서귀포시 안덕면 대평감산로 12"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3023810_image2_1.jpg",
-      "name": "안덕계곡",
-      "dist": 929
-    },
     "transit": {
       "stops": [
         {
@@ -63571,6 +63566,11 @@
           "walkMin": 17
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3023810_image2_1.jpg",
+      "name": "안덕계곡",
+      "dist": 929
     }
   },
   {
@@ -64298,11 +64298,6 @@
         "addr": "강원특별자치도 양양군 현남면 화상천로 634"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/76/3393976_image2_1.JPG",
-      "name": "기사문항",
-      "dist": 40
-    },
     "transit": {
       "stops": [
         {
@@ -64354,6 +64349,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/76/3393976_image2_1.JPG",
+      "name": "기사문항",
+      "dist": 40
     }
   },
   {
@@ -64879,11 +64879,6 @@
         "addr": "경기도 양주시 옥정동로5나길 5-9 (옥정동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3350065_image2_1.jpg",
-      "name": "양주 회암사지",
-      "dist": 804
-    },
     "transit": {
       "stops": [
         {
@@ -64897,6 +64892,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3350065_image2_1.jpg",
+      "name": "양주 회암사지",
+      "dist": 804
     }
   },
   {
@@ -65441,11 +65441,6 @@
         "addr": "인천광역시 영종구 잠진도길 28"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/84/3586984_image2_1.jpg",
-      "name": "국사봉(인천)",
-      "dist": 732
-    },
     "transit": {
       "stops": [
         {
@@ -65459,6 +65454,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/84/3586984_image2_1.jpg",
+      "name": "국사봉(인천)",
+      "dist": 732
     }
   },
   {
@@ -65704,11 +65704,6 @@
         "addr": "경상북도 포항시 남구 해맞이로46번길 164"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/12/3409912_image2_1.jpg",
-      "name": "포항 독수리바위",
-      "dist": 346
-    },
     "transit": {
       "stops": [
         {
@@ -65760,6 +65755,11 @@
           "walkMin": 20
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/12/3409912_image2_1.jpg",
+      "name": "포항 독수리바위",
+      "dist": 346
     }
   },
   {
@@ -69307,11 +69307,6 @@
         "addr": "전남광주통합특별시 무안군 삼향읍 남악리"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/09/3535609_image2_1.jpg",
-      "name": "무안회산백련지",
-      "dist": 606
-    },
     "transit": {
       "stops": [
         {
@@ -69325,6 +69320,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/09/3535609_image2_1.jpg",
+      "name": "무안회산백련지",
+      "dist": 606
     }
   },
   {
@@ -78670,11 +78670,6 @@
         "addr": "경기도 안산시 단원구 대부황금로 732 (대부동동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/18/3530818_image2_1.jpg",
-      "name": "탄도어촌체험마을",
-      "dist": 120
-    },
     "transit": {
       "stops": [
         {
@@ -78714,6 +78709,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/18/3530818_image2_1.jpg",
+      "name": "탄도어촌체험마을",
+      "dist": 120
     }
   },
   {
@@ -80491,11 +80491,6 @@
         "addr": "전남광주통합특별시 함평군 함평읍 시장길 96"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3536105_image2_1.jpg",
-      "name": "함평자연생태공원",
-      "dist": 371
-    },
     "transit": {
       "parking": [
         {
@@ -80511,6 +80506,11 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3536105_image2_1.jpg",
+      "name": "함평자연생태공원",
+      "dist": 371
     }
   },
   {
@@ -83306,11 +83306,6 @@
         "addr": "전남광주통합특별시 강진군 병영면 병영성로 87"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/16/3350816_image2_1.jpg",
-      "name": "용호정원림",
-      "dist": 537
-    },
     "transit": {
       "stops": [
         {
@@ -83324,6 +83319,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/16/3350816_image2_1.jpg",
+      "name": "용호정원림",
+      "dist": 537
     }
   },
   {
@@ -85857,11 +85857,6 @@
         "addr": "경기도 가평군 설악면 음동길 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3381879_image2_1.JPG",
-      "name": "어비계곡",
-      "dist": 266
-    },
     "transit": {
       "stops": [
         {
@@ -85875,6 +85870,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3381879_image2_1.JPG",
+      "name": "어비계곡",
+      "dist": 266
     }
   },
   {
@@ -88614,11 +88614,6 @@
         "addr": "전남광주통합특별시 곡성군 고달면 두계길 35"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/25/3530125_image2_1.jpg",
-      "name": "마천목장군과 도깨비살",
-      "dist": 685
-    },
     "transit": {
       "stops": [
         {
@@ -88658,6 +88653,11 @@
           "walkMin": 17
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/25/3530125_image2_1.jpg",
+      "name": "마천목장군과 도깨비살",
+      "dist": 685
     }
   },
   {
@@ -95009,11 +95009,6 @@
         "addr": "전북특별자치도 남원시 모정길 7-4"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/89/3547989_image2_1.jpg",
-      "name": "수락폭포",
-      "dist": 26
-    },
     "transit": {
       "stops": [
         {
@@ -95022,6 +95017,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/89/3547989_image2_1.jpg",
+      "name": "수락폭포",
+      "dist": 26
     }
   },
   {
@@ -96441,11 +96441,6 @@
         "addr": "전남광주통합특별시 여수시 하멜로 78  "
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/98/3350698_image2_1.jpg",
-      "name": "여수예술랜드",
-      "dist": 133
-    },
     "transit": {
       "stops": [
         {
@@ -96459,6 +96454,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/98/3350698_image2_1.jpg",
+      "name": "여수예술랜드",
+      "dist": 133
     }
   },
   {
@@ -98467,11 +98467,6 @@
         "addr": "전남광주통합특별시 장성군 황룡면 홍길동로 388-10"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/60/3546860_image2_1.JPG",
-      "name": "황금빛 출렁다리",
-      "dist": 553
-    },
     "transit": {
       "stops": [
         {
@@ -98499,6 +98494,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/60/3546860_image2_1.JPG",
+      "name": "황금빛 출렁다리",
+      "dist": 553
     }
   },
   {
@@ -99310,11 +99310,6 @@
         "addr": "경상북도 문경시 문경읍 새재로 926"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3041913_image2_1.jpg",
-      "name": "주흘산",
-      "dist": 419
-    },
     "transit": {
       "stops": [
         {
@@ -99366,6 +99361,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3041913_image2_1.jpg",
+      "name": "주흘산",
+      "dist": 419
     }
   },
   {
@@ -101223,11 +101223,6 @@
         "addr": "경상북도 경주시 엑스포로 9 대중음악박물관"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/07/3544407_image2_1.JPG",
-      "name": "경주월드 캘리포니아비치",
-      "dist": 669
-    },
     "transit": {
       "stops": [
         {
@@ -101241,6 +101236,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/07/3544407_image2_1.JPG",
+      "name": "경주월드 캘리포니아비치",
+      "dist": 669
     }
   },
   {
@@ -101332,11 +101332,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/66/3590166_image2_1.jpg",
-      "name": "동고리해수욕장",
-      "dist": 258
-    },
     "transit": {
       "stops": [
         {
@@ -101350,6 +101345,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/66/3590166_image2_1.jpg",
+      "name": "동고리해수욕장",
+      "dist": 258
     }
   },
   {
@@ -101704,11 +101704,6 @@
         "addr": "충청북도 제천시 수산면 옥순봉로10길 2"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/48/3583948_image2_1.jpg",
-      "name": "청풍리조트",
-      "dist": 720
-    },
     "transit": {
       "stops": [
         {
@@ -101722,6 +101717,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/48/3583948_image2_1.jpg",
+      "name": "청풍리조트",
+      "dist": 720
     }
   },
   {
@@ -103107,11 +103107,6 @@
         "addr": "전북특별자치도 고창군 성산1길 13 고창부안축협한우명품관"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3560765_image2_1.jpg",
-      "name": "고창오거리당산",
-      "dist": 832
-    },
     "transit": {
       "stops": [
         {
@@ -103163,6 +103158,11 @@
           "walkMin": 14
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3560765_image2_1.jpg",
+      "name": "고창오거리당산",
+      "dist": 832
     }
   },
   {
@@ -103285,11 +103285,6 @@
         "addr": "강원특별자치도 강릉시 주문진읍 연주로 571"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/96/2915996_image2_1.JPG",
-      "name": "남애1리해수욕장",
-      "dist": 300
-    },
     "transit": {
       "stops": [
         {
@@ -103341,6 +103336,11 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/96/2915996_image2_1.JPG",
+      "name": "남애1리해수욕장",
+      "dist": 300
     }
   },
   {
@@ -103463,11 +103463,6 @@
         "addr": "강원특별자치도 양양군 현남면 화상천로 634"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/79/2603579_image2_1.jpg",
-      "name": "애견전용해수욕장 멍비치",
-      "dist": 635
-    },
     "transit": {
       "stops": [
         {
@@ -103519,6 +103514,11 @@
           "walkMin": 13
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/79/2603579_image2_1.jpg",
+      "name": "애견전용해수욕장 멍비치",
+      "dist": 635
     }
   },
   {
@@ -103641,11 +103641,6 @@
         "addr": "강원특별자치도 양양군 현남면 화상천로 634"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/15/3076915_image2_1.jpg",
-      "name": "북분리해수욕장",
-      "dist": 7
-    },
     "transit": {
       "stops": [
         {
@@ -103697,6 +103692,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/15/3076915_image2_1.jpg",
+      "name": "북분리해수욕장",
+      "dist": 7
     }
   },
   {
@@ -103993,11 +103993,6 @@
         "addr": "충청남도 태안군 서해로 364-16"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3083850_image2_1.JPG",
-      "name": "태안 신두리 해안사구",
-      "dist": 81
-    },
     "transit": {
       "stops": [
         {
@@ -104011,6 +104006,11 @@
           "walkMin": 1
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3083850_image2_1.JPG",
+      "name": "태안 신두리 해안사구",
+      "dist": 81
     }
   },
   {
@@ -104388,11 +104388,6 @@
         "addr": "경기도 여주시 북내면 당전로 1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/73/3466573_image2_1.jpg",
-      "name": "흥왕사",
-      "dist": 909
-    },
     "transit": {
       "stops": [
         {
@@ -104406,6 +104401,11 @@
           "walkMin": 1
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/73/3466573_image2_1.jpg",
+      "name": "흥왕사",
+      "dist": 909
     }
   },
   {
@@ -104632,11 +104632,6 @@
         "addr": "인천광역시 강화군 내가면 중앙로 1200"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3388779_image2_1.JPG",
-      "name": "강화 용두레마을",
-      "dist": 725
-    },
     "transit": {
       "stops": [
         {
@@ -104650,6 +104645,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3388779_image2_1.JPG",
+      "name": "강화 용두레마을",
+      "dist": 725
     }
   },
   {
@@ -106226,11 +106226,6 @@
         "addr": "경상북도 영덕군 강산로 10"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/17/3576417_image2_1.jpg",
-      "name": "장사상륙작전 전승기념공원",
-      "dist": 325
-    },
     "transit": {
       "stops": [
         {
@@ -106244,6 +106239,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/17/3576417_image2_1.jpg",
+      "name": "장사상륙작전 전승기념공원",
+      "dist": 325
     }
   },
   {
@@ -106921,11 +106921,6 @@
         "addr": "경기도 가평군 설악면 유명로 1594"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/97/3546997_image2_1.jpg",
-      "name": "반딧불마을",
-      "dist": 772
-    },
     "transit": {
       "stops": [
         {
@@ -106939,6 +106934,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/97/3546997_image2_1.jpg",
+      "name": "반딧불마을",
+      "dist": 772
     }
   },
   {
@@ -108209,11 +108209,6 @@
         "addr": "강원특별자치도 영월군 한반도면 서면장터로 335-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/60/2990960_image2_1.jpg",
-      "name": "요선암 돌개구멍 (강원고생대 국가지질공원)",
-      "dist": 852
-    },
     "transit": {
       "stops": [
         {
@@ -108241,6 +108236,11 @@
           "walkMin": 19
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/60/2990960_image2_1.jpg",
+      "name": "요선암 돌개구멍 (강원고생대 국가지질공원)",
+      "dist": 852
     }
   },
   {
@@ -108498,11 +108498,6 @@
         "addr": "충청남도 태안군 안면읍 백사장1길 24"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/88/3340788_image2_1.jpg",
-      "name": "마검포해수욕장",
-      "dist": 150
-    },
     "transit": {
       "stops": [
         {
@@ -108516,6 +108511,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/88/3340788_image2_1.jpg",
+      "name": "마검포해수욕장",
+      "dist": 150
     }
   },
   {
@@ -108638,11 +108638,6 @@
         "addr": "제주특별자치도 제주시 조천읍 비자림로 645"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/67/3389767_image2_1.jpg",
-      "name": "제주 노루생태관찰원",
-      "dist": 645
-    },
     "transit": {
       "stops": [
         {
@@ -108656,6 +108651,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/67/3389767_image2_1.jpg",
+      "name": "제주 노루생태관찰원",
+      "dist": 645
     }
   },
   {
@@ -111279,11 +111279,6 @@
         "addr": "강원특별자치도 고성군 자작도선사1길 18-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/73/483073_image2_1.jpg",
-      "name": "공현진1리해변",
-      "dist": 924
-    },
     "transit": {
       "parking": [
         {
@@ -111323,6 +111318,11 @@
           "walkMin": 19
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/73/483073_image2_1.jpg",
+      "name": "공현진1리해변",
+      "dist": 924
     }
   },
   {
@@ -118639,12 +118639,6 @@
         "addr": "강원특별자치도 양양군 동명로 81"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/94/3566594.jpg",
-      "name": "하조대",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 황성훈"
-    },
     "transit": {
       "stops": [
         {
@@ -118653,6 +118647,12 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/94/3566594.jpg",
+      "name": "하조대",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 황성훈"
     }
   },
   {
@@ -121659,11 +121659,6 @@
         "addr": "경기도 화성시 서신면 해안길 330-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/29/3031629_image2_1.JPG",
-      "name": "화성 궁평어촌체험휴양마을",
-      "dist": 5
-    },
     "transit": {
       "stops": [
         {
@@ -121677,6 +121672,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/29/3031629_image2_1.JPG",
+      "name": "화성 궁평어촌체험휴양마을",
+      "dist": 5
     }
   },
   {
@@ -121799,11 +121799,6 @@
         "addr": "제주특별자치도 제주시 소길1길 19"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3555479_image2_1.jpg",
-      "name": "제주불빛정원",
-      "dist": 881
-    },
     "transit": {
       "stops": [
         {
@@ -121843,6 +121838,11 @@
           "walkMin": 18
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3555479_image2_1.jpg",
+      "name": "제주불빛정원",
+      "dist": 881
     }
   },
   {
@@ -122508,11 +122508,6 @@
         "addr": "경상북도 영주시 풍기읍 소백로 1933"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/78/3553278_image2_1.JPG",
-      "name": "무쇠달마을",
-      "dist": 176
-    },
     "transit": {
       "stops": [
         {
@@ -122540,6 +122535,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/78/3553278_image2_1.JPG",
+      "name": "무쇠달마을",
+      "dist": 176
     }
   },
   {
@@ -122662,11 +122662,6 @@
         "addr": "충청북도 충주시 중앙탑면 중앙탑길 109"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/30/3561230_image2_1.JPG",
-      "name": "목계나루",
-      "dist": 695
-    },
     "transit": {
       "stops": [
         {
@@ -122675,6 +122670,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/30/3561230_image2_1.JPG",
+      "name": "목계나루",
+      "dist": 695
     }
   },
   {
@@ -122797,11 +122797,6 @@
         "addr": "경기도 안성시 양성면 구장길 8"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/33/2892933_image2_1.JPG",
-      "name": "만세고개",
-      "dist": 857
-    },
     "transit": {
       "stops": [
         {
@@ -122815,6 +122810,11 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/33/2892933_image2_1.JPG",
+      "name": "만세고개",
+      "dist": 857
     }
   },
   {
@@ -122937,11 +122937,6 @@
         "addr": "경상북도 성주군 지산로 64"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3590810_image2_1.jpg",
-      "name": "꿀벌나라테마공원",
-      "dist": 863
-    },
     "transit": {
       "station": {
         "name": "왜관역",
@@ -123001,6 +122996,11 @@
           "walkMin": 21
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3590810_image2_1.jpg",
+      "name": "꿀벌나라테마공원",
+      "dist": 863
     }
   },
   {
@@ -123207,11 +123207,6 @@
         "addr": "경상북도 포항시 북구 칠포로 80-23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/51/3528351_image2_1.jpg",
-      "name": "칠포해수욕장",
-      "dist": 306
-    },
     "transit": {
       "stops": [
         {
@@ -123251,6 +123246,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/51/3528351_image2_1.jpg",
+      "name": "칠포해수욕장",
+      "dist": 306
     }
   },
   {
@@ -124890,11 +124890,6 @@
         "addr": "경기도 양주시 백석읍 기산로440번길 177"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/76/3332576_image2_1.jpg",
-      "name": "마장호수",
-      "dist": 277
-    },
     "transit": {
       "stops": [
         {
@@ -124922,6 +124917,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/76/3332576_image2_1.jpg",
+      "name": "마장호수",
+      "dist": 277
     }
   },
   {
@@ -125507,11 +125507,6 @@
         "addr": "경상남도 합천군 합천읍 충효로 81"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/58/2992058_image2_1.jpg",
-      "name": "씨파크",
-      "dist": 6
-    },
     "transit": {
       "stops": [
         {
@@ -125520,6 +125515,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/58/2992058_image2_1.jpg",
+      "name": "씨파크",
+      "dist": 6
     }
   },
   {
@@ -126743,11 +126743,6 @@
         "addr": "경기도 파주시 탄현면 헤이리마을길 48-8"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/91/3382791_image2_1.JPG",
-      "name": "모산목장",
-      "dist": 185
-    },
     "transit": {
       "stops": [
         {
@@ -126775,6 +126770,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/91/3382791_image2_1.JPG",
+      "name": "모산목장",
+      "dist": 185
     }
   },
   {
@@ -126897,11 +126897,6 @@
         "addr": "경상남도 함안군 함안면 북촌2길 50-29"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/81/2865481_image2_1.JPG",
-      "name": "입곡문화공원",
-      "dist": 312
-    },
     "transit": {
       "stops": [
         {
@@ -126941,6 +126936,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/81/2865481_image2_1.JPG",
+      "name": "입곡문화공원",
+      "dist": 312
     }
   },
   {
@@ -130342,11 +130342,6 @@
         "addr": "경기도 의왕시 학현로 170-70 선비묵집"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3529205_image2_1.jpg",
-      "name": "백운호수 음식마을",
-      "dist": 782
-    },
     "transit": {
       "stops": [
         {
@@ -130398,6 +130393,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3529205_image2_1.jpg",
+      "name": "백운호수 음식마을",
+      "dist": 782
     }
   },
   {
@@ -130502,11 +130502,6 @@
         "addr": "충청남도 청양군 나래미길 60-4"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/25/3565125_image2_1.jpg",
-      "name": "지천구곡",
-      "dist": 212
-    },
     "transit": {
       "stops": [
         {
@@ -130520,6 +130515,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/25/3565125_image2_1.jpg",
+      "name": "지천구곡",
+      "dist": 212
     }
   },
   {
@@ -130642,11 +130642,6 @@
         "addr": "제주특별자치도 서귀포시 표선면 가시로 572"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/64/3552664_image2_1.jpg",
-      "name": "물영아리오름",
-      "dist": 443
-    },
     "transit": {
       "stops": [
         {
@@ -130660,6 +130655,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/64/3552664_image2_1.jpg",
+      "name": "물영아리오름",
+      "dist": 443
     }
   },
   {
@@ -133890,11 +133890,6 @@
         "addr": "충청북도 괴산군 괴산읍 읍내로 282"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/96/3338996_image2_1.JPG",
-      "name": "달천",
-      "dist": 360
-    },
     "transit": {
       "stops": [
         {
@@ -133908,6 +133903,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/96/3338996_image2_1.JPG",
+      "name": "달천",
+      "dist": 360
     }
   },
   {
@@ -136686,11 +136686,6 @@
         "addr": "세종특별자치시 소정면 도래말길 5"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/72/3535272_image2_1.jpg",
-      "name": "광덕사(천안)",
-      "dist": 944
-    },
     "transit": {
       "stops": [
         {
@@ -136730,6 +136725,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/72/3535272_image2_1.jpg",
+      "name": "광덕사(천안)",
+      "dist": 944
     }
   },
   {
@@ -137304,11 +137304,6 @@
         "addr": "충청남도 서산시 삼길포7로 37"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/69/3047169_image2_1.JPG",
-      "name": "왜목마을 해수욕장",
-      "dist": 658
-    },
     "transit": {
       "stops": [
         {
@@ -137322,6 +137317,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/69/3047169_image2_1.JPG",
+      "name": "왜목마을 해수욕장",
+      "dist": 658
     }
   },
   {
@@ -137920,12 +137920,6 @@
         "addr": "강원특별자치도 철원군 동송읍 금학로 31-10"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/33/2592633.jpg",
-      "name": "고대산캠핑리조트",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 한반도관광센터 비켄"
-    },
     "transit": {
       "parking": [
         {
@@ -137941,6 +137935,12 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/33/2592633.jpg",
+      "name": "고대산캠핑리조트",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한반도관광센터 비켄"
     }
   },
   {
@@ -139189,11 +139189,6 @@
         "addr": "제주특별자치도 제주시 하소로 1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/45/3553545_image2_1.jpg",
-      "name": "물뫼힐링팜",
-      "dist": 233
-    },
     "transit": {
       "stops": [
         {
@@ -139245,6 +139240,11 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/45/3553545_image2_1.jpg",
+      "name": "물뫼힐링팜",
+      "dist": 233
     }
   },
   {
@@ -142876,11 +142876,6 @@
         "addr": "경기도 가평군 미사리로 267-293"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/83/3494183_image2_1.jpg",
-      "name": "홍천 배바위카누마을",
-      "dist": 28
-    },
     "transit": {
       "stops": [
         {
@@ -142889,6 +142884,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/83/3494183_image2_1.jpg",
+      "name": "홍천 배바위카누마을",
+      "dist": 28
     }
   },
   {
@@ -143146,11 +143146,6 @@
         "addr": "인천광역시 옹진군 영흥면 영흥북로 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/01/3395901_image2_1.JPG",
-      "name": "통일사",
-      "dist": 823
-    },
     "transit": {
       "stops": [
         {
@@ -143202,6 +143197,11 @@
           "walkMin": 17
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/01/3395901_image2_1.JPG",
+      "name": "통일사",
+      "dist": 823
     }
   },
   {
@@ -143324,12 +143324,6 @@
         "addr": "충청남도 서천군 서면 서인로 95"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/00/1951600.jpg",
-      "name": "춘장대해수욕장",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 김지호"
-    },
     "transit": {
       "stops": [
         {
@@ -143343,6 +143337,12 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/00/1951600.jpg",
+      "name": "춘장대해수욕장",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 김지호"
     }
   },
   {
@@ -146604,11 +146604,6 @@
         "addr": "제주특별자치도 서귀포시 일주서로 508"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/27/3023727_image2_1.jpg",
-      "name": "서귀포자연휴양림",
-      "dist": 917
-    },
     "transit": {
       "stops": [
         {
@@ -146622,6 +146617,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/27/3023727_image2_1.jpg",
+      "name": "서귀포자연휴양림",
+      "dist": 917
     }
   },
   {
@@ -147772,11 +147772,6 @@
         "addr": "경상북도 포항시 북구 해안로2064번길 48"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/17/3586617_image2_1.jpg",
-      "name": "사방기념공원",
-      "dist": 398
-    },
     "transit": {
       "stops": [
         {
@@ -147804,6 +147799,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/17/3586617_image2_1.jpg",
+      "name": "사방기념공원",
+      "dist": 398
     }
   },
   {
@@ -150777,11 +150777,6 @@
         "addr": "충청남도 서천군 판교면 종판로 882-2"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/93/3566693_image2_1.jpg",
-      "name": "서천 치유의 숲",
-      "dist": 452
-    },
     "transit": {
       "stops": [
         {
@@ -150790,6 +150785,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/93/3566693_image2_1.jpg",
+      "name": "서천 치유의 숲",
+      "dist": 452
     }
   },
   {
@@ -171807,11 +171807,6 @@
         "addr": "인천광역시 강화군 길상면 해안동로 76"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/58/3081458_image2_1.JPG",
-      "name": "몬스터리움",
-      "dist": 796
-    },
     "transit": {
       "stops": [
         {
@@ -171825,6 +171820,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/58/3081458_image2_1.JPG",
+      "name": "몬스터리움",
+      "dist": 796
     }
   },
   {
@@ -172781,11 +172781,6 @@
         "addr": "서울특별시 서초구 청계산로 434 (신원동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/25/1796725_image2_1.jpg",
-      "name": "청계산",
-      "dist": 938
-    },
     "transit": {
       "station": {
         "name": "청계산입구",
@@ -172845,6 +172840,11 @@
           "walkMin": 18
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/25/1796725_image2_1.jpg",
+      "name": "청계산",
+      "dist": 938
     }
   },
   {
@@ -173930,11 +173930,6 @@
         "addr": "경기도 김포시 약암로 853"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/18/3350618_image2_1.JPG",
-      "name": "초지대교",
-      "dist": 604
-    },
     "transit": {
       "stops": [
         {
@@ -173962,6 +173957,11 @@
           "walkMin": 17
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/18/3350618_image2_1.JPG",
+      "name": "초지대교",
+      "dist": 604
     }
   },
   {
@@ -179180,11 +179180,6 @@
         "addr": "충청남도 태안군 안면읍 백사장1길 95"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/41/3055541_image2_1.jpg",
-      "name": "청포대해수욕장",
-      "dist": 294
-    },
     "transit": {
       "stops": [
         {
@@ -179198,6 +179193,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/41/3055541_image2_1.jpg",
+      "name": "청포대해수욕장",
+      "dist": 294
     }
   },
   {
@@ -181927,11 +181927,6 @@
         "addr": "경상북도 경주시 동해안로 1858-4"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/46/3034246_image2_1.jpg",
-      "name": "오류고아라해변",
-      "dist": 211
-    },
     "transit": {
       "stops": [
         {
@@ -181959,6 +181954,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/46/3034246_image2_1.jpg",
+      "name": "오류고아라해변",
+      "dist": 211
     }
   },
   {
@@ -188507,11 +188507,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3335679_image2_1.JPG",
-      "name": "조동산촌마을",
-      "dist": 5
-    },
     "transit": {
       "stops": [
         {
@@ -188525,6 +188520,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3335679_image2_1.JPG",
+      "name": "조동산촌마을",
+      "dist": 5
     }
   },
   {
@@ -188926,11 +188926,6 @@
         "addr": "경상남도 양산시 매곡3길 12-9"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/07/3078007_image2_1.bmp",
-      "name": "대운산",
-      "dist": 824
-    },
     "transit": {
       "stops": [
         {
@@ -188958,6 +188953,11 @@
           "walkMin": 14
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/07/3078007_image2_1.bmp",
+      "name": "대운산",
+      "dist": 824
     }
   },
   {
@@ -189215,11 +189215,6 @@
         "addr": "강원특별자치도 속초시 대포항희망길 53 (대포동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3077265_image2_1.jpg",
-      "name": "물치마을",
-      "dist": 895
-    },
     "transit": {
       "stops": [
         {
@@ -189271,6 +189266,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3077265_image2_1.jpg",
+      "name": "물치마을",
+      "dist": 895
     }
   },
   {
@@ -191546,11 +191546,6 @@
         "addr": "경기도 가평군 여울길 47"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/90/3077290_image2_1.jpg",
-      "name": "산장관광지",
-      "dist": 574
-    },
     "transit": {
       "stops": [
         {
@@ -191564,6 +191559,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/90/3077290_image2_1.jpg",
+      "name": "산장관광지",
+      "dist": 574
     }
   },
   {
@@ -191872,12 +191872,6 @@
         "addr": "충청북도 제천시 수산면 월악로 2970"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/71/3098471.jpg",
-      "name": "월악산국립공원",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 임태진"
-    },
     "transit": {
       "stops": [
         {
@@ -191886,6 +191880,12 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/71/3098471.jpg",
+      "name": "월악산국립공원",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 임태진"
     }
   },
   {
@@ -192008,12 +192008,6 @@
         "addr": "경기도 고양시 덕양구 일영로 139-14"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/07/3550607.jpg",
-      "name": "북한산",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 한건우"
-    },
     "transit": {
       "station": {
         "name": "지축",
@@ -192049,6 +192043,12 @@
           "walkMin": 14
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/07/3550607.jpg",
+      "name": "북한산",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한건우"
     }
   },
   {
@@ -193607,11 +193607,6 @@
         "addr": "강원특별자치도 고성군 자작도선사1길 18-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/73/483073_image2_1.jpg",
-      "name": "공현진1리해변",
-      "dist": 574
-    },
     "transit": {
       "parking": [
         {
@@ -193651,6 +193646,11 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/73/483073_image2_1.jpg",
+      "name": "공현진1리해변",
+      "dist": 574
     }
   },
   {
@@ -193742,11 +193742,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/20/3405020_image2_1.jpg",
-      "name": "영천 자천리 오리장림",
-      "dist": 476
-    },
     "transit": {
       "stops": [
         {
@@ -193786,6 +193781,11 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/20/3405020_image2_1.jpg",
+      "name": "영천 자천리 오리장림",
+      "dist": 476
     }
   },
   {
@@ -194429,11 +194429,6 @@
         "addr": "강원특별자치도 태백시 상장3길 26"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/85/3375685_image2_1.JPG",
-      "name": "본적사지3층석탑",
-      "dist": 355
-    },
     "transit": {
       "stops": [
         {
@@ -194485,6 +194480,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/85/3375685_image2_1.JPG",
+      "name": "본적사지3층석탑",
+      "dist": 355
     }
   },
   {
@@ -195311,11 +195311,6 @@
         "addr": "울산광역시 울주군 삼남읍 등억알프스로 50"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/74/3581374_image2_1.jpg",
-      "name": "번개맨 체험관",
-      "dist": 344
-    },
     "transit": {
       "stops": [
         {
@@ -195329,6 +195324,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/74/3581374_image2_1.jpg",
+      "name": "번개맨 체험관",
+      "dist": 344
     }
   },
   {
@@ -195813,11 +195813,6 @@
         "addr": "경기도 의정부시 동일로150번길 114 (장암동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/48/3531548_image2_1.jpg",
-      "name": "다락원체육공원",
-      "dist": 741
-    },
     "transit": {
       "station": {
         "name": "도봉산역",
@@ -195877,6 +195872,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/48/3531548_image2_1.jpg",
+      "name": "다락원체육공원",
+      "dist": 741
     }
   },
   {
@@ -197798,11 +197798,6 @@
         "addr": "경상남도 창녕군 창녕읍 계성화왕산로 575"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/62/3374762_image2_1.JPG",
-      "name": "용안서원",
-      "dist": 727
-    },
     "transit": {
       "stops": [
         {
@@ -197816,6 +197811,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/62/3374762_image2_1.JPG",
+      "name": "용안서원",
+      "dist": 727
     }
   },
   {
@@ -198163,11 +198163,6 @@
         "addr": "강원특별자치도 강릉시 사천면 해안로 1121-131"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/41/3464341_image2_1.jpg",
-      "name": "호린파크(경포대허브농장)",
-      "dist": 79
-    },
     "transit": {
       "parking": [
         {
@@ -198207,6 +198202,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/41/3464341_image2_1.jpg",
+      "name": "호린파크(경포대허브농장)",
+      "dist": 79
     }
   },
   {
@@ -199622,11 +199622,6 @@
         "addr": "경기도 가평군 수목원로164번길 29"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/97/2602797_image2_1.bmp",
-      "name": "아침고요가족동물원",
-      "dist": 829
-    },
     "transit": {
       "stops": [
         {
@@ -199640,6 +199635,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/97/2602797_image2_1.bmp",
+      "name": "아침고요가족동물원",
+      "dist": 829
     }
   },
   {
@@ -200547,11 +200547,6 @@
         "addr": "충청북도 괴산군 괴산읍 읍내로 282"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/76/3353476_image2_1.JPG",
-      "name": "고산 9경",
-      "dist": 632
-    },
     "transit": {
       "stops": [
         {
@@ -200565,6 +200560,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/76/3353476_image2_1.JPG",
+      "name": "고산 9경",
+      "dist": 632
     }
   },
   {
@@ -201554,12 +201554,6 @@
         "addr": "제주특별자치도 제주시 애월읍 중산간서로 5642"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/05/2761905.jpg",
-      "name": "핑크뮬리와 나홀로나무",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 김대형"
-    },
     "transit": {
       "parking": [
         {
@@ -201599,6 +201593,12 @@
           "walkMin": 21
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/05/2761905.jpg",
+      "name": "핑크뮬리와 나홀로나무",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 김대형"
     }
   },
   {
@@ -206152,11 +206152,6 @@
         "addr": "서울특별시 종로구 창경궁로 269-1 (혜화동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/94/3536794_image2_1.jpg",
-      "name": "창경궁",
-      "dist": 419
-    },
     "transit": {
       "station": {
         "name": "혜화",
@@ -206216,6 +206211,11 @@
           "walkMin": 17
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/94/3536794_image2_1.jpg",
+      "name": "창경궁",
+      "dist": 419
     }
   },
   {
@@ -207103,11 +207103,6 @@
         "addr": "경기도 용인시 처인구 남사읍 경기동로 67"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/29/3541029_image2_1.jpg",
-      "name": "만기사(평택)",
-      "dist": 803
-    },
     "transit": {
       "stops": [
         {
@@ -207135,6 +207130,11 @@
           "walkMin": 21
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/29/3541029_image2_1.jpg",
+      "name": "만기사(평택)",
+      "dist": 803
     }
   },
   {
@@ -212578,12 +212578,6 @@
         "addr": "충청북도 충주시 살미면 용천갈마길 45"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/71/3098471.jpg",
-      "name": "월악산국립공원",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 임태진"
-    },
     "transit": {
       "stops": [
         {
@@ -212597,6 +212591,12 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/71/3098471.jpg",
+      "name": "월악산국립공원",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 임태진"
     }
   },
   {
@@ -213087,11 +213087,6 @@
         "addr": "충청북도 제천시 수산면 월악로 2970"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/98/3349798_image2_1.JPG",
-      "name": "황강 영당 및 수암사",
-      "dist": 643
-    },
     "transit": {
       "stops": [
         {
@@ -213105,6 +213100,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/98/3349798_image2_1.JPG",
+      "name": "황강 영당 및 수암사",
+      "dist": 643
     }
   },
   {
@@ -213964,11 +213964,6 @@
         "addr": "충청북도 단양군 중앙2로 13 왕릉숯불갈비"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3390413_image2_1.JPG",
-      "name": "새밭계곡",
-      "dist": 443
-    },
     "transit": {
       "stops": [
         {
@@ -213977,6 +213972,11 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/13/3390413_image2_1.JPG",
+      "name": "새밭계곡",
+      "dist": 443
     }
   },
   {
@@ -219384,11 +219384,6 @@
         "addr": "전북특별자치도 순창군 순창읍 순창로 102-2"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/25/3351325_image2_1.jpg",
-      "name": "순창군 채계산 출렁다리",
-      "dist": 399
-    },
     "transit": {
       "stops": [
         {
@@ -219397,6 +219392,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/25/3351325_image2_1.jpg",
+      "name": "순창군 채계산 출렁다리",
+      "dist": 399
     }
   },
   {
@@ -220751,11 +220751,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/75/3576575_image2_1.jpg",
-      "name": "기성망양해수욕장",
-      "dist": 45
-    },
     "transit": {
       "stops": [
         {
@@ -220795,6 +220790,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/75/3576575_image2_1.jpg",
+      "name": "기성망양해수욕장",
+      "dist": 45
     }
   },
   {
@@ -223244,11 +223244,6 @@
         "addr": "충청북도 제천시 백운면 금봉로 365"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/47/3569847_image2_1.jpg",
-      "name": "덕동생태숲",
-      "dist": 576
-    },
     "transit": {
       "stops": [
         {
@@ -223257,6 +223252,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/47/3569847_image2_1.jpg",
+      "name": "덕동생태숲",
+      "dist": 576
     }
   },
   {
@@ -229569,11 +229569,6 @@
         "addr": "충청남도 공주시 사곡면 정안마곡사로 1198"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/72/3535272_image2_1.jpg",
-      "name": "광덕사(천안)",
-      "dist": 371
-    },
     "transit": {
       "stops": [
         {
@@ -229613,6 +229608,11 @@
           "walkMin": 18
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/72/3535272_image2_1.jpg",
+      "name": "광덕사(천안)",
+      "dist": 371
     }
   },
   {
@@ -232670,11 +232670,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/45/3387145_image2_1.JPG",
-      "name": "월천해수욕장",
-      "dist": 864
-    },
     "transit": {
       "stops": [
         {
@@ -232683,6 +232678,11 @@
           "walkMin": 1
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/45/3387145_image2_1.JPG",
+      "name": "월천해수욕장",
+      "dist": 864
     }
   },
   {
@@ -232805,11 +232805,6 @@
         "addr": "경상북도 영덕군 강산로 10"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/17/3576417_image2_1.jpg",
-      "name": "장사상륙작전 전승기념공원",
-      "dist": 325
-    },
     "transit": {
       "stops": [
         {
@@ -232823,6 +232818,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/17/3576417_image2_1.jpg",
+      "name": "장사상륙작전 전승기념공원",
+      "dist": 325
     }
   },
   {
@@ -233316,11 +233316,6 @@
         "addr": "충청남도 태안군 안면읍 백사장1길 95"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/41/3055541_image2_1.jpg",
-      "name": "청포대해수욕장",
-      "dist": 269
-    },
     "transit": {
       "stops": [
         {
@@ -233334,6 +233329,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/41/3055541_image2_1.jpg",
+      "name": "청포대해수욕장",
+      "dist": 269
     }
   },
   {
@@ -234160,11 +234160,6 @@
         "addr": "경기도 가평군 수목원로164번길 29"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/97/2602797_image2_1.bmp",
-      "name": "아침고요가족동물원",
-      "dist": 236
-    },
     "transit": {
       "stops": [
         {
@@ -234178,6 +234173,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/97/2602797_image2_1.bmp",
+      "name": "아침고요가족동물원",
+      "dist": 236
     }
   },
   {
@@ -234387,11 +234387,6 @@
         "addr": "경상남도 합천군 합천호수로 102"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/43/3501943_image2_1.jpg",
-      "name": "금성산(합천)",
-      "dist": 770
-    },
     "transit": {
       "parking": [
         {
@@ -234431,6 +234426,11 @@
           "walkMin": 22
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/43/3501943_image2_1.jpg",
+      "name": "금성산(합천)",
+      "dist": 770
     }
   },
   {
@@ -234553,11 +234553,6 @@
         "addr": "경기도 가평군 수목원로 98"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/27/3386227_image2_1.JPG",
-      "name": "가평 영양잣마을",
-      "dist": 698
-    },
     "transit": {
       "stops": [
         {
@@ -234571,6 +234566,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/27/3386227_image2_1.JPG",
+      "name": "가평 영양잣마을",
+      "dist": 698
     }
   },
   {
@@ -234953,11 +234953,6 @@
         "addr": "충청남도 태안군 서해로 364-16"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3083850_image2_1.JPG",
-      "name": "태안 신두리 해안사구",
-      "dist": 290
-    },
     "transit": {
       "stops": [
         {
@@ -234971,6 +234966,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3083850_image2_1.JPG",
+      "name": "태안 신두리 해안사구",
+      "dist": 290
     }
   },
   {
@@ -241093,11 +241093,6 @@
         "addr": "경상남도 거제시 거제대로 921"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/87/3095687_image2_1.jpg",
-      "name": "거제 우제봉전망대",
-      "dist": 677
-    },
     "transit": {
       "stops": [
         {
@@ -241106,6 +241101,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/87/3095687_image2_1.jpg",
+      "name": "거제 우제봉전망대",
+      "dist": 677
     }
   },
   {
@@ -241867,11 +241867,6 @@
         "addr": "경상북도 봉화군 봉성면 농업인길 47"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/48/3038148_image2_1.jpg",
-      "name": "다덕약수탕",
-      "dist": 445
-    },
     "transit": {
       "stops": [
         {
@@ -241885,6 +241880,11 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/48/3038148_image2_1.jpg",
+      "name": "다덕약수탕",
+      "dist": 445
     }
   },
   {
@@ -242926,11 +242926,6 @@
         "addr": "인천광역시 옹진군 덕적면 덕적북로 32"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/08/3566308_image2_1.jpg",
-      "name": "소야도 떼뿌리 해변",
-      "dist": 119
-    },
     "transit": {
       "parking": [
         {
@@ -242946,6 +242941,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/08/3566308_image2_1.jpg",
+      "name": "소야도 떼뿌리 해변",
+      "dist": 119
     }
   },
   {
@@ -243179,11 +243179,6 @@
         "addr": "충청남도 태안군 이원면 원이로 1539"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/36/3558536_image2_1.jpg",
-      "name": "[태안 해변길] 1코스 바라길",
-      "dist": 302
-    },
     "transit": {
       "stops": [
         {
@@ -243197,6 +243192,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/36/3558536_image2_1.jpg",
+      "name": "[태안 해변길] 1코스 바라길",
+      "dist": 302
     }
   },
   {
@@ -245035,12 +245035,6 @@
         "addr": "경기도 파주시 적성면 감악산로 1473"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/86/4062086.jpg",
-      "name": "임진강 댑싸리정원",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 정규진"
-    },
     "transit": {
       "stops": [
         {
@@ -245054,6 +245048,12 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/86/4062086.jpg",
+      "name": "임진강 댑싸리정원",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 정규진"
     }
   },
   {
@@ -249327,11 +249327,6 @@
         "addr": "충청남도 태안군 소원면 서해로 8"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/73/3340773_image2_1.jpg",
-      "name": "어은돌해수욕장",
-      "dist": 814
-    },
     "transit": {
       "stops": [
         {
@@ -249345,6 +249340,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/73/3340773_image2_1.jpg",
+      "name": "어은돌해수욕장",
+      "dist": 814
     }
   },
   {
@@ -250560,12 +250560,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/85/3311785.jpg",
-      "name": "용궐산 하늘길",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 김지호"
-    },
     "transit": {
       "stops": [
         {
@@ -250574,6 +250568,12 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/85/3311785.jpg",
+      "name": "용궐산 하늘길",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 김지호"
     }
   },
   {
@@ -251404,11 +251404,6 @@
         "addr": "경기도 파주시 탄현면 새오리로 94"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/49/3383749_image2_1.JPG",
-      "name": "파주 맛고을 음식문화거리",
-      "dist": 111
-    },
     "transit": {
       "stops": [
         {
@@ -251422,6 +251417,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/49/3383749_image2_1.JPG",
+      "name": "파주 맛고을 음식문화거리",
+      "dist": 111
     }
   },
   {
@@ -251544,11 +251544,6 @@
         "addr": "경기도 파주시 탄현면 새오리로 94"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/49/3383749_image2_1.JPG",
-      "name": "파주 맛고을 음식문화거리",
-      "dist": 111
-    },
     "transit": {
       "stops": [
         {
@@ -251562,6 +251557,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/49/3383749_image2_1.JPG",
+      "name": "파주 맛고을 음식문화거리",
+      "dist": 111
     }
   },
   {
@@ -251653,11 +251653,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/55/3406055_image2_1.jpg",
-      "name": "오산항",
-      "dist": 595
-    },
     "transit": {
       "stops": [
         {
@@ -251671,6 +251666,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/55/3406055_image2_1.jpg",
+      "name": "오산항",
+      "dist": 595
     }
   },
   {
@@ -251985,12 +251985,6 @@
         "addr": "전북특별자치도 임실군 임실읍 중동로 16"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/99/2727399.jpg",
-      "name": "오수의견관광지",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 라이브스튜디오"
-    },
     "transit": {
       "stops": [
         {
@@ -252042,6 +252036,12 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/99/2727399.jpg",
+      "name": "오수의견관광지",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 라이브스튜디오"
     }
   },
   {
@@ -252564,11 +252564,6 @@
         "addr": "경상남도 창녕군 창녕시장길 90"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/61/3376161_image2_1.JPG",
-      "name": "옥천계곡",
-      "dist": 373
-    },
     "transit": {
       "stops": [
         {
@@ -252603,6 +252598,11 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/61/3376161_image2_1.JPG",
+      "name": "옥천계곡",
+      "dist": 373
     }
   },
   {
@@ -255450,11 +255450,6 @@
         "addr": "경상남도 함안군 북촌1길 15-15"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/81/2865481_image2_1.JPG",
-      "name": "입곡문화공원",
-      "dist": 443
-    },
     "transit": {
       "stops": [
         {
@@ -255494,6 +255489,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/81/2865481_image2_1.JPG",
+      "name": "입곡문화공원",
+      "dist": 443
     }
   },
   {
@@ -256035,11 +256035,6 @@
         "addr": "강원특별자치도 강릉시 참샘길 12"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/47/2793447_image2_1.jpg",
-      "name": "포매리 백로와 왜가리 번식지",
-      "dist": 359
-    },
     "transit": {
       "stops": [
         {
@@ -256062,6 +256057,11 @@
           "walkMin": 19
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/47/2793447_image2_1.jpg",
+      "name": "포매리 백로와 왜가리 번식지",
+      "dist": 359
     }
   },
   {
@@ -257312,11 +257312,6 @@
         "addr": "경상북도 성주군 수륜면 참별로 1415-14"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/88/3590588_image2_1.jpg",
-      "name": "무흘구곡 선바위",
-      "dist": 838
-    },
     "transit": {
       "stops": [
         {
@@ -257330,6 +257325,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/88/3590588_image2_1.jpg",
+      "name": "무흘구곡 선바위",
+      "dist": 838
     }
   },
   {
@@ -260949,11 +260949,6 @@
         "addr": "경기도 의정부시 망월로28번길 137 (호원동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/1051350_image2_1.jpg",
-      "name": "노강서원",
-      "dist": 707
-    },
     "transit": {
       "station": {
         "name": "장암",
@@ -261013,6 +261008,11 @@
           "walkMin": 17
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/1051350_image2_1.jpg",
+      "name": "노강서원",
+      "dist": 707
     }
   },
   {
@@ -261701,11 +261701,6 @@
         "addr": "경상북도 칠곡군 한티로 588"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3529905_image2_1.jpg",
-      "name": "군위 아미타여래삼존 석굴",
-      "dist": 792
-    },
     "transit": {
       "stops": [
         {
@@ -261745,6 +261740,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3529905_image2_1.jpg",
+      "name": "군위 아미타여래삼존 석굴",
+      "dist": 792
     }
   },
   {
@@ -261988,11 +261988,6 @@
         "addr": "경상남도 하동군 화개면 쌍계로 35"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/32/3351932_image2_1.jpg",
-      "name": "십리벚꽃길",
-      "dist": 218
-    },
     "transit": {
       "stops": [
         {
@@ -262032,6 +262027,11 @@
           "walkMin": 21
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/32/3351932_image2_1.jpg",
+      "name": "십리벚꽃길",
+      "dist": 218
     }
   },
   {
@@ -262154,11 +262154,6 @@
         "addr": "경기도 가평군 설악면 음동길 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/99/2794699_image2_1.jpg",
-      "name": "소리산마을",
-      "dist": 255
-    },
     "transit": {
       "stops": [
         {
@@ -262172,6 +262167,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/99/2794699_image2_1.jpg",
+      "name": "소리산마을",
+      "dist": 255
     }
   },
   {
@@ -266083,11 +266083,6 @@
         "addr": "경상북도 칠곡군 한티로 588"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/68/3571368_image2_1.jpg",
-      "name": "한밤마을",
-      "dist": 377
-    },
     "transit": {
       "stops": [
         {
@@ -266115,6 +266110,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/68/3571368_image2_1.jpg",
+      "name": "한밤마을",
+      "dist": 377
     }
   },
   {
@@ -266367,11 +266367,6 @@
         "addr": "경기도 포천시 이동면 성장로 1287-13"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/84/3003784_image2_1.jpg",
-      "name": "산정랜드",
-      "dist": 389
-    },
     "transit": {
       "stops": [
         {
@@ -266385,6 +266380,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/84/3003784_image2_1.jpg",
+      "name": "산정랜드",
+      "dist": 389
     }
   },
   {
@@ -268241,11 +268241,6 @@
         "addr": "경기도 가평군 청평면 강변로 45-7"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/90/3077290_image2_1.jpg",
-      "name": "산장관광지",
-      "dist": 607
-    },
     "transit": {
       "station": {
         "name": "청평역",
@@ -268267,6 +268262,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/90/3077290_image2_1.jpg",
+      "name": "산장관광지",
+      "dist": 607
     }
   },
   {
@@ -268707,11 +268707,6 @@
         "addr": "경기도 여주시 북내면 당전로 345-24"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/46/3002846_image2_1.JPG",
-      "name": "북내체육공원",
-      "dist": 839
-    },
     "transit": {
       "stops": [
         {
@@ -268739,6 +268734,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/46/3002846_image2_1.JPG",
+      "name": "북내체육공원",
+      "dist": 839
     }
   },
   {
@@ -268861,11 +268861,6 @@
         "addr": "인천광역시 강화군 화도면 해안남로2845번길 10"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/49/2780149_image2_1.jpg",
-      "name": "티라시아 리조트",
-      "dist": 588
-    },
     "transit": {
       "stops": [
         {
@@ -268893,6 +268888,11 @@
           "walkMin": 15
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/49/2780149_image2_1.jpg",
+      "name": "티라시아 리조트",
+      "dist": 588
     }
   },
   {
@@ -269015,11 +269015,6 @@
         "addr": "경상남도 사천시 진삼로 269"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/42/3583242_image2_1.jpg",
-      "name": "비토섬 신우리조트",
-      "dist": 1000
-    },
     "transit": {
       "stops": [
         {
@@ -269033,6 +269028,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/42/3583242_image2_1.jpg",
+      "name": "비토섬 신우리조트",
+      "dist": 1000
     }
   },
   {
@@ -272711,11 +272711,6 @@
         "addr": "울산광역시 울주군 삼남읍 남상평2길 34-12"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/35/3549535_image2_1.jpg",
-      "name": "자수정 동굴나라",
-      "dist": 899
-    },
     "transit": {
       "stops": [
         {
@@ -272724,6 +272719,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/35/3549535_image2_1.jpg",
+      "name": "자수정 동굴나라",
+      "dist": 899
     }
   },
   {
@@ -272846,11 +272846,6 @@
         "addr": "충청남도 태안군 안면읍 방포항길 64"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/69/3340569_image2_1.jpg",
-      "name": "장삼포해수욕장",
-      "dist": 235
-    },
     "transit": {
       "stops": [
         {
@@ -272864,6 +272859,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/69/3340569_image2_1.jpg",
+      "name": "장삼포해수욕장",
+      "dist": 235
     }
   },
   {
@@ -272986,11 +272986,6 @@
         "addr": "충청남도 태안군 안면읍 백사장1길 95"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/41/3055541_image2_1.jpg",
-      "name": "청포대해수욕장",
-      "dist": 648
-    },
     "transit": {
       "stops": [
         {
@@ -273004,6 +272999,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/41/3055541_image2_1.jpg",
+      "name": "청포대해수욕장",
+      "dist": 648
     }
   },
   {
@@ -273126,11 +273126,6 @@
         "addr": "강원특별자치도 속초시 대포항희망길 53 (대포동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3077265_image2_1.jpg",
-      "name": "물치마을",
-      "dist": 463
-    },
     "transit": {
       "stops": [
         {
@@ -273182,6 +273177,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3077265_image2_1.jpg",
+      "name": "물치마을",
+      "dist": 463
     }
   },
   {
@@ -276269,11 +276269,6 @@
         "addr": "대전광역시 서구 만년로68번길 21"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/27/3486427_image2_1.jpg",
-      "name": "대전엑스포과학공원",
-      "dist": 456
-    },
     "transit": {
       "station": {
         "name": "갈마",
@@ -276333,6 +276328,11 @@
           "walkMin": 16
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/27/3486427_image2_1.jpg",
+      "name": "대전엑스포과학공원",
+      "dist": 456
     }
   },
   {
@@ -277599,11 +277599,6 @@
         "addr": "경상북도 상주시 중앙로 177-7"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/90/3082790_image2_1.jpg",
-      "name": "낙동강 경천대(경천대 전망대)",
-      "dist": 641
-    },
     "transit": {
       "stops": [
         {
@@ -277612,6 +277607,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/90/3082790_image2_1.jpg",
+      "name": "낙동강 경천대(경천대 전망대)",
+      "dist": 641
     }
   },
   {
@@ -277734,11 +277734,6 @@
         "addr": "강원특별자치도 영월군 영월읍 덕포시장길 9"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/06/3544506_image2_1.jpg",
-      "name": "영월관광센터",
-      "dist": 657
-    },
     "transit": {
       "stops": [
         {
@@ -277790,6 +277785,11 @@
           "walkMin": 14
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/06/3544506_image2_1.jpg",
+      "name": "영월관광센터",
+      "dist": 657
     }
   },
   {
@@ -302801,11 +302801,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/72/3335672_image2_1.JPG",
-      "name": "민주지산 자연휴양림",
-      "dist": 220
-    },
     "transit": {
       "stops": [
         {
@@ -302819,6 +302814,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/72/3335672_image2_1.JPG",
+      "name": "민주지산 자연휴양림",
+      "dist": 220
     }
   },
   {
@@ -303720,11 +303720,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/69/3376069_image2_1.jpg",
-      "name": "문양서원",
-      "dist": 623
-    },
     "transit": {
       "stops": [
         {
@@ -303764,6 +303759,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/69/3376069_image2_1.jpg",
+      "name": "문양서원",
+      "dist": 623
     }
   },
   {
@@ -314870,11 +314870,6 @@
         "addr": "전북특별자치도 임실군 성수면 도인2길 45"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/84/3536784_image2_1.jpg",
-      "name": "사선대관광지&조각공원",
-      "dist": 825
-    },
     "transit": {
       "stops": [
         {
@@ -314926,6 +314921,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/84/3536784_image2_1.jpg",
+      "name": "사선대관광지&조각공원",
+      "dist": 825
     }
   },
   {
@@ -315430,11 +315430,6 @@
         "addr": "울산광역시 울주군 신암해안2길 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3583350_image2_1.jpg",
-      "name": "간절곶",
-      "dist": 370
-    },
     "transit": {
       "stops": [
         {
@@ -315448,6 +315443,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3583350_image2_1.jpg",
+      "name": "간절곶",
+      "dist": 370
     }
   },
   {
@@ -316117,11 +316117,6 @@
         "addr": "경상북도 울릉군 추산길 137"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/63/3464063_image2_1.jpg",
-      "name": "남서일몰전망대",
-      "dist": 291
-    },
     "transit": {
       "stops": [
         {
@@ -316130,6 +316125,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/63/3464063_image2_1.jpg",
+      "name": "남서일몰전망대",
+      "dist": 291
     }
   },
   {
@@ -318167,11 +318167,6 @@
         "addr": "충청북도 증평군 증평읍 율리휴양로 307"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/91/3057291_image2_1.jpg",
-      "name": "초정약수",
-      "dist": 401
-    },
     "transit": {
       "stops": [
         {
@@ -318185,6 +318180,11 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/91/3057291_image2_1.jpg",
+      "name": "초정약수",
+      "dist": 401
     }
   },
   {
@@ -318464,11 +318464,6 @@
         "addr": "경기도 양평군 서종면 북한강로 1167"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/63/2796363_image2_1.jpg",
-      "name": "노산사지",
-      "dist": 633
-    },
     "transit": {
       "stops": [
         {
@@ -318477,6 +318472,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/63/2796363_image2_1.jpg",
+      "name": "노산사지",
+      "dist": 633
     }
   },
   {
@@ -318734,11 +318734,6 @@
         "addr": "울산광역시 울주군 상북면 소야정길 115"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/38/3573038_image2_1.jpg",
-      "name": "가지산도립공원(밀양)",
-      "dist": 571
-    },
     "transit": {
       "parking": [
         {
@@ -318754,6 +318749,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/38/3573038_image2_1.jpg",
+      "name": "가지산도립공원(밀양)",
+      "dist": 571
     }
   },
   {
@@ -319255,11 +319255,6 @@
       }
     ],
     "nearbyFood": [],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/64/3096264_image2_1.jpg",
-      "name": "고산정",
-      "dist": 284
-    },
     "transit": {
       "stops": [
         {
@@ -319268,6 +319263,11 @@
           "walkMin": 1
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/64/3096264_image2_1.jpg",
+      "name": "고산정",
+      "dist": 284
     }
   },
   {
@@ -319502,11 +319502,6 @@
         "addr": "경상남도 하동군 금남면 노량해안길 217"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/39/3476239_image2_1.jpg",
-      "name": "왕지등대마을",
-      "dist": 499
-    },
     "transit": {
       "stops": [
         {
@@ -319515,6 +319510,11 @@
           "walkMin": 7
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/39/3476239_image2_1.jpg",
+      "name": "왕지등대마을",
+      "dist": 499
     }
   },
   {
@@ -321855,11 +321855,6 @@
         "addr": "제주특별자치도 서귀포시 안덕면 대평감산로 12"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3023810_image2_1.jpg",
-      "name": "안덕계곡",
-      "dist": 295
-    },
     "transit": {
       "stops": [
         {
@@ -321873,6 +321868,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/10/3023810_image2_1.jpg",
+      "name": "안덕계곡",
+      "dist": 295
     }
   },
   {
@@ -322368,11 +322368,6 @@
         "addr": "충청북도 단양군 단양읍 수변로 85"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/32/3081032_image2_1.jpg",
-      "name": "단양 관광특구",
-      "dist": 259
-    },
     "transit": {
       "stops": [
         {
@@ -322424,6 +322419,11 @@
           "walkMin": 13
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/32/3081032_image2_1.jpg",
+      "name": "단양 관광특구",
+      "dist": 259
     }
   },
   {
@@ -322931,12 +322931,6 @@
         "addr": "충청남도 보령시 해수욕장6길 118"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/21/3542721.jpg",
-      "name": "원산도해수욕장",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 김석태"
-    },
     "transit": {
       "stops": [
         {
@@ -322950,6 +322944,12 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/21/3542721.jpg",
+      "name": "원산도해수욕장",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 김석태"
     }
   },
   {
@@ -323072,11 +323072,6 @@
         "addr": "경상남도 남해군 삼동면 독일로 30"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/51/3374351_image2_1.JPG",
-      "name": "송정한솔체험마을",
-      "dist": 786
-    },
     "transit": {
       "stops": [
         {
@@ -323111,6 +323106,11 @@
           "walkMin": 14
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/51/3374351_image2_1.JPG",
+      "name": "송정한솔체험마을",
+      "dist": 786
     }
   },
   {
@@ -323362,11 +323362,6 @@
         "addr": "충청남도 태안군 군청9길 6"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/86/3344186_image2_1.jpg",
-      "name": "몽산포해수욕장",
-      "dist": 112
-    },
     "transit": {
       "stops": [
         {
@@ -323406,6 +323401,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/86/3344186_image2_1.jpg",
+      "name": "몽산포해수욕장",
+      "dist": 112
     }
   },
   {
@@ -324003,11 +324003,6 @@
         "addr": "경상남도 사천시 해안관광로 381-5 씨맨스"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/43/2714843_image2_1.jpg",
-      "name": "부잔교갯벌탐방로",
-      "dist": 294
-    },
     "transit": {
       "stops": [
         {
@@ -324016,6 +324011,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/43/2714843_image2_1.jpg",
+      "name": "부잔교갯벌탐방로",
+      "dist": 294
     }
   },
   {
@@ -324607,11 +324607,6 @@
         "addr": "경상남도 남해군 동부대로 1286"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/97/3554097_image2_1.jpg",
-      "name": "장포항",
-      "dist": 672
-    },
     "transit": {
       "stops": [
         {
@@ -324620,6 +324615,11 @@
           "walkMin": 6
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/97/3554097_image2_1.jpg",
+      "name": "장포항",
+      "dist": 672
     }
   },
   {
@@ -328479,11 +328479,6 @@
         "addr": "경기도 안성시 양성면 교동길 19-8"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/33/2892933_image2_1.JPG",
-      "name": "만세고개",
-      "dist": 757
-    },
     "transit": {
       "stops": [
         {
@@ -328497,6 +328492,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/33/2892933_image2_1.JPG",
+      "name": "만세고개",
+      "dist": 757
     }
   },
   {
@@ -328619,11 +328619,6 @@
         "addr": "경기도 안성시 양성면 교동길 19-8"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/33/2892933_image2_1.JPG",
-      "name": "만세고개",
-      "dist": 686
-    },
     "transit": {
       "stops": [
         {
@@ -328637,6 +328632,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/33/2892933_image2_1.JPG",
+      "name": "만세고개",
+      "dist": 686
     }
   },
   {
@@ -329029,11 +329029,6 @@
         "addr": "경기도 가평군 수목원로 68"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/27/3386227_image2_1.JPG",
-      "name": "가평 영양잣마을",
-      "dist": 827
-    },
     "transit": {
       "stops": [
         {
@@ -329047,6 +329042,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/27/3386227_image2_1.JPG",
+      "name": "가평 영양잣마을",
+      "dist": 827
     }
   },
   {
@@ -330034,11 +330034,6 @@
         "addr": "경기도 의왕시 오매기백운산길 54-13"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/75/3532275_image2_1.jpg",
-      "name": "고천체육공원",
-      "dist": 915
-    },
     "transit": {
       "stops": [
         {
@@ -330090,6 +330085,11 @@
           "walkMin": 20
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/75/3532275_image2_1.jpg",
+      "name": "고천체육공원",
+      "dist": 915
     }
   },
   {
@@ -332453,11 +332453,6 @@
         "addr": "울산광역시 울주군 상북면 배내로 1116"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/81/3374781_image2_1.JPG",
-      "name": "단장 이팝꽃 터널길",
-      "dist": 876
-    },
     "transit": {
       "stops": [
         {
@@ -332471,6 +332466,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/81/3374781_image2_1.JPG",
+      "name": "단장 이팝꽃 터널길",
+      "dist": 876
     }
   },
   {
@@ -335340,11 +335340,6 @@
         "addr": "경상남도 하동군 화개면 신촌도심길 43-22"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/94/3549694_image2_1.jpg",
-      "name": "평촌마을",
-      "dist": 336
-    },
     "transit": {
       "stops": [
         {
@@ -335358,6 +335353,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/94/3549694_image2_1.jpg",
+      "name": "평촌마을",
+      "dist": 336
     }
   },
   {
@@ -343383,11 +343383,6 @@
         "addr": "제주특별자치도 제주시 광성로 76"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/25/3477725_image2_1.jpg",
-      "name": "유수암마을",
-      "dist": 699
-    },
     "transit": {
       "stops": [
         {
@@ -343439,6 +343434,11 @@
           "walkMin": 15
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/25/3477725_image2_1.jpg",
+      "name": "유수암마을",
+      "dist": 699
     }
   },
   {
@@ -343561,11 +343561,6 @@
         "addr": "전북특별자치도 무주군 안성면 원통사로 373-7"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/47/3372947_image2_1.JPG",
-      "name": "성천서원",
-      "dist": 417
-    },
     "transit": {
       "stops": [
         {
@@ -343579,6 +343574,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/47/3372947_image2_1.JPG",
+      "name": "성천서원",
+      "dist": 417
     }
   },
   {
@@ -343838,11 +343838,6 @@
         "addr": "충청남도 천안시 서북구 입장면 성진로 1406"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/86/3341286_image2_1.JPG",
-      "name": "연곡저수지",
-      "dist": 596
-    },
     "transit": {
       "stops": [
         {
@@ -343851,6 +343846,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/86/3341286_image2_1.JPG",
+      "name": "연곡저수지",
+      "dist": 596
     }
   },
   {
@@ -344108,11 +344108,6 @@
         "addr": "경기도 의정부시 평화로 311 (호원동)"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/1051350_image2_1.jpg",
-      "name": "노강서원",
-      "dist": 601
-    },
     "transit": {
       "station": {
         "name": "장암",
@@ -344172,6 +344167,11 @@
           "walkMin": 21
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/1051350_image2_1.jpg",
+      "name": "노강서원",
+      "dist": 601
     }
   },
   {
@@ -344519,11 +344519,6 @@
         "addr": "제주특별자치도 서귀포시 대정읍 중산간서로 2985"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/74/3524874_image2_1.jpg",
-      "name": "청수곶자왈",
-      "dist": 259
-    },
     "transit": {
       "stops": [
         {
@@ -344537,6 +344532,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/74/3524874_image2_1.jpg",
+      "name": "청수곶자왈",
+      "dist": 259
     }
   },
   {
@@ -348655,11 +348655,6 @@
         "addr": "경상남도 하동군 고전면 재첩길 286-1"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/55/2790855_image2_1.jpg",
-      "name": "금정사",
-      "dist": 340
-    },
     "transit": {
       "stops": [
         {
@@ -348668,6 +348663,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/55/2790855_image2_1.jpg",
+      "name": "금정사",
+      "dist": 340
     }
   },
   {
@@ -351777,11 +351777,6 @@
         "addr": "경상북도 경주시 숲머리길 120"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/06/3575906_image2_1.jpg",
-      "name": "경주 동방동 와요지",
-      "dist": 436
-    },
     "transit": {
       "stops": [
         {
@@ -351809,6 +351804,11 @@
           "walkMin": 17
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/06/3575906_image2_1.jpg",
+      "name": "경주 동방동 와요지",
+      "dist": 436
     }
   },
   {
@@ -352500,11 +352500,6 @@
         "addr": "경기도 안성시 원곡면 반제호수길 40"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/15/3579715_image2_1.jpg",
-      "name": "운수암",
-      "dist": 509
-    },
     "transit": {
       "stops": [
         {
@@ -352518,6 +352513,11 @@
           "walkMin": 11
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/15/3579715_image2_1.jpg",
+      "name": "운수암",
+      "dist": 509
     }
   },
   {
@@ -352775,11 +352775,6 @@
         "addr": "경기도 양주시 백석읍 권율로847번길 68"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/96/2751396_image2_1.jpg",
-      "name": "백석생활체육공원",
-      "dist": 479
-    },
     "transit": {
       "stops": [
         {
@@ -352831,6 +352826,11 @@
           "walkMin": 10
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/96/2751396_image2_1.jpg",
+      "name": "백석생활체육공원",
+      "dist": 479
     }
   },
   {
@@ -375831,11 +375831,6 @@
         "addr": "울산광역시 울주군 신암해안2길 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3583350_image2_1.jpg",
-      "name": "간절곶",
-      "dist": 395
-    },
     "transit": {
       "stops": [
         {
@@ -375849,6 +375844,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3583350_image2_1.jpg",
+      "name": "간절곶",
+      "dist": 395
     }
   },
   {
@@ -378294,11 +378294,6 @@
         "addr": "대전광역시 서구 도산로 141"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3077505_image2_1.JPG",
-      "name": "용화사(대전)",
-      "dist": 672
-    },
     "transit": {
       "stops": [
         {
@@ -378350,6 +378345,11 @@
           "walkMin": 13
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3077505_image2_1.JPG",
+      "name": "용화사(대전)",
+      "dist": 672
     }
   },
   {
@@ -378472,11 +378472,6 @@
         "addr": "충청남도 논산시 해월로 132"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/30/3533430_image2_1.jpg",
-      "name": "관촉사(논산)",
-      "dist": 478
-    },
     "transit": {
       "stops": [
         {
@@ -378528,6 +378523,11 @@
           "walkMin": 19
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/30/3533430_image2_1.jpg",
+      "name": "관촉사(논산)",
+      "dist": 478
     }
   },
   {
@@ -378785,11 +378785,6 @@
         "addr": "울산광역시 울주군 신암해안2길 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3583350_image2_1.jpg",
-      "name": "간절곶",
-      "dist": 371
-    },
     "transit": {
       "stops": [
         {
@@ -378803,6 +378798,11 @@
           "walkMin": 2
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3583350_image2_1.jpg",
+      "name": "간절곶",
+      "dist": 371
     }
   },
   {
@@ -378925,11 +378925,6 @@
         "addr": "울산광역시 울주군 신암해안2길 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3583350_image2_1.jpg",
-      "name": "간절곶",
-      "dist": 425
-    },
     "transit": {
       "stops": [
         {
@@ -378943,6 +378938,11 @@
           "walkMin": 1
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/50/3583350_image2_1.jpg",
+      "name": "간절곶",
+      "dist": 425
     }
   },
   {
@@ -379065,11 +379065,6 @@
         "addr": "울산광역시 울주군 신암해안2길 23"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3534665_image2_1.jpg",
-      "name": "솔개공원",
-      "dist": 595
-    },
     "transit": {
       "stops": [
         {
@@ -379083,6 +379078,11 @@
           "walkMin": 3
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/65/3534665_image2_1.jpg",
+      "name": "솔개공원",
+      "dist": 595
     }
   },
   {
@@ -380792,11 +380792,6 @@
         "addr": "경상북도 울릉군 봉래길 6"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/43/3575343_image2_1.jpg",
-      "name": "학포해안 (울릉도, 독도 국가지질공원)",
-      "dist": 348
-    },
     "transit": {
       "stops": [
         {
@@ -380810,6 +380805,11 @@
           "walkMin": 9
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/43/3575343_image2_1.jpg",
+      "name": "학포해안 (울릉도, 독도 국가지질공원)",
+      "dist": 348
     }
   },
   {
@@ -387169,12 +387169,6 @@
         "addr": "경상북도 경주시 불국로 168-3"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/83/3097783.jpg",
-      "name": "불국사",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 오경택"
-    },
     "transit": {
       "stops": [
         {
@@ -387188,6 +387182,12 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/83/3097783.jpg",
+      "name": "불국사",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 오경택"
     }
   },
   {
@@ -404355,12 +404355,6 @@
         "addr": "경기도 파주시 새꽃로 125 (금촌동)"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/09/3001509.jpg",
-      "name": "파주 프로방스마을",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 송재근"
-    },
     "transit": {
       "station": {
         "name": "금촌역",
@@ -404396,6 +404390,12 @@
           "walkMin": 15
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/09/3001509.jpg",
+      "name": "파주 프로방스마을",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한국관광공사 송재근"
     }
   },
   {
@@ -405844,12 +405844,6 @@
         "addr": "강원특별자치도 철원군 서면 와수로184번길 7"
       }
     ],
-    "venuePhoto": {
-      "image": "https://tong.visitkorea.or.kr/cms2/website/90/2593090.jpg",
-      "name": "두루미평화마을",
-      "dist": null,
-      "credit": "한국관광공사 포토코리아 · 촬영 한반도관광센터 비켄"
-    },
     "transit": {
       "stops": [
         {
@@ -405858,6 +405852,12 @@
           "walkMin": 4
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "https://tong.visitkorea.or.kr/cms2/website/90/2593090.jpg",
+      "name": "두루미평화마을",
+      "dist": null,
+      "credit": "한국관광공사 포토코리아 · 촬영 한반도관광센터 비켄"
     }
   },
   {
@@ -407081,11 +407081,6 @@
         "addr": "제주특별자치도 서귀포시 안덕면 중산간서로 2026"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/15/3024315_image2_1.jpg",
-      "name": "동광리농촌체험마을",
-      "dist": 277
-    },
     "transit": {
       "stops": [
         {
@@ -407125,6 +407120,11 @@
           "walkMin": 12
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/15/3024315_image2_1.jpg",
+      "name": "동광리농촌체험마을",
+      "dist": 277
     }
   },
   {
@@ -407525,11 +407525,6 @@
         "addr": "서울특별시 금천구 가산디지털1로 128 에스티엑스브이타워"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/43/3468043_image2_1.jpg",
-      "name": "구로리어린이공원",
-      "dist": 520
-    },
     "transit": {
       "station": {
         "name": "남구로",
@@ -407589,6 +407584,11 @@
           "walkMin": 8
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/43/3468043_image2_1.jpg",
+      "name": "구로리어린이공원",
+      "dist": 520
     }
   },
   {
@@ -409042,11 +409042,6 @@
         "addr": "서울특별시 중구 남대문로 29"
       }
     ],
-    "venuePhoto": {
-      "image": "http://tong.visitkorea.or.kr/cms/resource/35/3082835_image2_1.png",
-      "name": "남대문 갈치조림골목",
-      "dist": 269
-    },
     "transit": {
       "station": {
         "name": "회현(남대문시장)",
@@ -409106,6 +409101,11 @@
           "walkMin": 5
         }
       ]
+    },
+    "venuePhoto": {
+      "image": "http://tong.visitkorea.or.kr/cms/resource/35/3082835_image2_1.png",
+      "name": "남대문 갈치조림골목",
+      "dist": 269
     }
   },
   {

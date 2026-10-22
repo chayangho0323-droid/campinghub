@@ -1,5 +1,238 @@
 [
   {
+    "contentId": "978",
+    "name": "정읍로하스캠핑장",
+    "type": "자동차야영장",
+    "operator": "민간",
+    "lineIntro": "청정자연 고지대의 시원함과 상쾌함이 있는 로하스 캠핑!",
+    "intro": "로하스캠핑은 해발 200~650M에 위치해 있는 정읍시 산내면 산호수마을에 있는 작고 조용한 캠핑장이다. 캠핑사이트도 14개의 데크 사이크로 복잡하지 않고 옹기종기 모여 가족 같은 분위기에서 하루를 보낼 수 있다. 더불어 4인용 카라반 5대, 6인용 카라반 10대가 운영 중인데 TV설치 및 와이파이가 잘 되어 있어 캠핑 중 네트워크 문제도 걱정 없다. 카라반 내부는 깨끗한 편이며 캠핑장 주변도 관리가 잘 되어 있는 편이다.    이곳은 고지대에 위치한 만큼 청정 자연환경을 자랑한다. 산호수마을 입구 지척에 섬진강댐이 있어 수영을 하거나 물고기를 잡을 수 있고 가을이면 근처에 밤나무가 있어 밤을 따먹을 수도 있다. 가을 무렵 캠핑장에 앉아 해가 지는 노을을 바라보면 환상인지 현실인지 헷갈릴 정도로 아름다운 풍경을 자아낸다.    한편, 고랭지 지대라 배추밭에서 매년 배추를 비롯한 각종 채소와 산나물도 판매한다. 또한 캠핑장에서 10분 거리의 구절초축제장이 있어 매년 이곳 인근에서 매년 구절초 축제를 즐길 수 있다. 정읍 옥정호 구절초축제는 조용한 산골 시골마을임에도 많은 관광객을 유치하는 유명한 행사다.",
+    "address": "전북특별자치도 정읍시 산내면 종성리 662",
+    "region": "전북특별자치도",
+    "sigungu": "정읍시",
+    "lat": "35.5338423",
+    "lng": "127.0819153",
+    "tel": "",
+    "homepage": "http://로하스캠핑.kr/main",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/978/thumb/thumb_720_58392bjXFKM414z7cW7ihx47.jpg",
+    "facilities": "전기,물놀이장,놀이터",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "봄꽃여행,여름물놀이,가을단풍명소,겨울눈꽃명소,걷기길",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 38,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 5
+    },
+    "toilets": 1,
+    "showers": 1,
+    "glampFacilities": "",
+    "caravanFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실",
+    "siteBottom": "",
+    "location": "산",
+    "insurance": true,
+    "program": " 치즈만들기 체험, 치즈 돈가스 만들기, 피자만들기 체험, 점심식사 참가비 : 22,000원 이외에도 야외프로그램과 계절별 프로그램이 다양하게 운영됨",
+    "rental": "",
+    "nearbyFac": "산책로",
+    "feature": "",
+    "tooltip": "",
+    "siteDistance": 0,
+    "siteSize": "",
+    "trailerOk": false,
+    "caravanOk": false,
+    "safety": {
+      "extinguisher": 0,
+      "water": 0,
+      "sand": 0,
+      "sensor": 0
+    },
+    "reserveType": "온라인실시간예약",
+    "operDays": "평일+주말",
+    "event": "",
+    "status": "운영",
+    "offSeason": "",
+    "direction": "",
+    "updated": "2026-10-22",
+    "nearbySpots": [
+      {
+        "name": "임병찬창의유적지",
+        "dist": 574,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/09/3364509_image2_1.JPG",
+        "addr": "전북특별자치도 정읍시 산내면 종성리"
+      },
+      {
+        "name": "양떼목장임실치즈마을",
+        "dist": 939,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/25/3082725_image2_1.JPG",
+        "addr": "전북특별자치도 정읍시 산내면 산호수길 157"
+      },
+      {
+        "name": "애플트리 힐링팜",
+        "dist": 3005,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/95/3353495_image2_1.png",
+        "addr": "전북특별자치도 임실군 강진면 옥정호로 937-12"
+      },
+      {
+        "name": "선비문화체험관 우리누리",
+        "dist": 4945,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3564485_image2_1.jpg",
+        "addr": "전북특별자치도 정읍시 산내면 청정로 1694"
+      },
+      {
+        "name": "국립 회문산자연휴양림",
+        "dist": 5032,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3519551_image2_1.jpg",
+        "addr": "전북특별자치도 순창군 구림면 안심길 249"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "상록수",
+        "dist": 6761,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/27/2837927_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 운정길 29 상록수"
+      },
+      {
+        "name": "옥정호산장",
+        "dist": 6975,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/04/2780004_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 운암면 운정길 7"
+      },
+      {
+        "name": "강나루횟집",
+        "dist": 7526,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2837907_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 종운로 802-5 강나루횟집"
+      },
+      {
+        "name": "코티지683",
+        "dist": 7654,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/78/2837978_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 운암2길 9"
+      },
+      {
+        "name": "하루",
+        "dist": 8249,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/95/2837995_image2_1.jpg",
+        "addr": "전북특별자치도 임실군 강운로 1175-17"
+      }
+    ],
+    "transit": {
+      "stops": [
+        {
+          "name": "이화동",
+          "dist": 718,
+          "walkMin": 11
+        }
+      ]
+    }
+  },
+  {
+    "contentId": "100179",
+    "name": "영월가자 펜션&캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "신선들의정원 무릉도원 느티나무숲과 법흥계곡이 어우러진 펜션과 캠핑장",
+    "intro": "영월가자는 신선들의 정원이라 불리는 무릉도원면 법흥계곡 맑은천가에 위치하고 팬션, 수영장, 오토캠핑장, 매점 ,족구장등을 갖춘 느티나무숲속 캠핑장입니다",
+    "address": "강원특별자치도 영월군 무릉도원면 무릉법흥로 852-24",
+    "region": "강원특별자치도",
+    "sigungu": "영월군",
+    "lat": "37.3336001615033",
+    "lng": "128.282837677679",
+    "tel": "033-375-8505",
+    "homepage": "https://www.campingtalk.me/partner/calendar?campid=3896",
+    "reserveUrl": "",
+    "image": "https://gocamping.or.kr/upload/camp/100179/thumb/thumb_720_0268EjGzRSCVzeGc6mzlXj7y.jpg",
+    "facilities": "전기,무선인터넷,장작판매,온수,트렘폴린,물놀이장,놀이터",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "봄꽃여행,여름물놀이",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 14,
+      "auto": 3,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 4,
+    "showers": 4,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "siteBottom": "파쇄석,테크",
+    "location": "산,숲,계곡,강",
+    "insurance": true,
+    "program": "",
+    "rental": "화로대",
+    "nearbyFac": "계곡 물놀이",
+    "feature": "법흥계곡 중간 펜션을 겸한 럭셔리 캠핑장  맑은 법흥계곡 근처에 위치한 느티나무 숲 속 오토캠핑장입니다. 사이트는 큰 텐트도 충분히 치고 여유가 있을 만큼 넓고 개방감이 있으며,사무실 겸 매점에서 간단한 먹을거리와 캠핑에 필요한 물품들을 구할 수 있씀니다. 건너편 계곡은 아이들이 물놀이하기에도 좋고, 펜션동 앞의 수영장도 이용할 수 있습니다. 아름다운 자연의 풍경과 유럽풍의 펜션과 캠핑장, 수영장, 카페, 화장실 샤워실 등 깨끗한 시설을 갖추고 있습니다.",
+    "tooltip": "사이트에 있는 화로및 데이블은 사용하시고 화로재는  재버리는곳에비우고 제자리에 두시면 됩니다",
+    "siteDistance": 1,
+    "siteSize": "6×8m",
+    "trailerOk": true,
+    "caravanOk": true,
+    "safety": {
+      "extinguisher": 12,
+      "water": 3,
+      "sand": 1,
+      "sensor": 0
+    },
+    "reserveType": "전화,온라인실시간예약,현장",
+    "operDays": "평일+주말",
+    "event": "",
+    "status": "운영",
+    "offSeason": "",
+    "direction": "  제천- 주천- 무릉도원 -영월가자, 중앙고속도로  신림IC- 황둔 -주천- 무릉도원- 영월가자 ",
+    "updated": "2026-10-22",
+    "nearbySpots": [
+      {
+        "name": "법흥계곡",
+        "dist": 2875,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/77/3039977_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 수주면"
+      },
+      {
+        "name": "요선정·요선암",
+        "dist": 4402,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/46/2922046_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
+      },
+      {
+        "name": "요선암 돌개구멍 (강원고생대 국가지질공원)",
+        "dist": 4435,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/60/2990960_image2_1.jpg",
+        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
+      },
+      {
+        "name": "영월 무릉리 마애여래좌상",
+        "dist": 4435,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3375994_image2_1.JPG",
+        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
+      },
+      {
+        "name": "밧도내마을",
+        "dist": 6266,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3379305_image2_1.JPG",
+        "addr": "강원특별자치도 영월군 주천면 밧도내길 11-34"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "약수돌집",
+        "dist": 7855,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/76/2795976_image2_1.jpg",
+        "addr": "강원특별자치도 평창군 평창읍 평창강로 1110"
+      },
+      {
+        "name": "옹달샘",
+        "dist": 9216,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/87/2793587_image2_1.jpg",
+        "addr": "강원특별자치도 평창군 평창읍 평창강로 1423-3"
+      }
+    ]
+  },
+  {
     "contentId": "355",
     "name": "구름포오토캠핑장",
     "type": "일반야영장",
@@ -1465,109 +1698,6 @@
         }
       ]
     }
-  },
-  {
-    "contentId": "100179",
-    "name": "영월가자 펜션&캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "신선들의정원 무릉도원 느티나무숲과 법흥계곡이 어우러진 펜션과 캠핑장",
-    "intro": "영월가자는 신선들의 정원이라 불리는 무릉도원면 법흥계곡 맑은천가에 위치하고 팬션, 수영장, 오토캠핑장, 매점 ,족구장등을 갖춘 느티나무숲속 캠핑장입니다",
-    "address": "강원특별자치도 영월군 무릉도원면 무릉법흥로 852-24",
-    "region": "강원특별자치도",
-    "sigungu": "영월군",
-    "lat": "37.3336001615033",
-    "lng": "128.282837677679",
-    "tel": "033-375-8505",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100179/thumb/thumb_720_0268EjGzRSCVzeGc6mzlXj7y.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,트렘폴린,물놀이장,놀이터",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "봄꽃여행,여름물놀이",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 14,
-      "auto": 3,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 4,
-    "showers": 4,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "siteBottom": "파쇄석,테크",
-    "location": "산,숲,계곡,강",
-    "insurance": true,
-    "program": "",
-    "rental": "화로대",
-    "nearbyFac": "계곡 물놀이",
-    "feature": "법흥계곡 중간 펜션을 겸한 럭셔리 캠핑장  맑은 법흥계곡 근처에 위치한 느티나무 숲 속 오토캠핑장입니다. 사이트는 큰 텐트도 충분히 치고 여유가 있을 만큼 넓고 개방감이 있으며,사무실 겸 매점에서 간단한 먹을거리와 캠핑에 필요한 물품들을 구할 수 있씀니다. 건너편 계곡은 아이들이 물놀이하기에도 좋고, 펜션동 앞의 수영장도 이용할 수 있습니다. 아름다운 자연의 풍경과 유럽풍의 펜션과 캠핑장, 수영장, 카페, 화장실 샤워실 등 깨끗한 시설을 갖추고 있습니다.",
-    "tooltip": "사이트에 있는 화로및 데이블은 사용하시고 화로재는  재버리는곳에비우고 제자리에 두시면 됩니다",
-    "siteDistance": 1,
-    "siteSize": "6×8m",
-    "trailerOk": true,
-    "caravanOk": true,
-    "safety": {
-      "extinguisher": 12,
-      "water": 3,
-      "sand": 1,
-      "sensor": 0
-    },
-    "reserveType": "온라인실시간예약",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "  제천- 주천- 무릉도원 -영월가자, 중앙고속도로  신림IC- 황둔 -주천- 무릉도원- 영월가자 ",
-    "updated": "2026-10-19",
-    "nearbySpots": [
-      {
-        "name": "법흥계곡",
-        "dist": 2875,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/77/3039977_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 수주면"
-      },
-      {
-        "name": "요선정·요선암",
-        "dist": 4402,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/46/2922046_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
-      },
-      {
-        "name": "요선암 돌개구멍 (강원고생대 국가지질공원)",
-        "dist": 4435,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/60/2990960_image2_1.jpg",
-        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
-      },
-      {
-        "name": "영월 무릉리 마애여래좌상",
-        "dist": 4435,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3375994_image2_1.JPG",
-        "addr": "강원특별자치도 영월군 무릉도원면 도원운학로 13-39"
-      },
-      {
-        "name": "밧도내마을",
-        "dist": 6266,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/05/3379305_image2_1.JPG",
-        "addr": "강원특별자치도 영월군 주천면 밧도내길 11-34"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "약수돌집",
-        "dist": 7855,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/2795976_image2_1.jpg",
-        "addr": "강원특별자치도 평창군 평창읍 평창강로 1110"
-      },
-      {
-        "name": "옹달샘",
-        "dist": 9216,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/87/2793587_image2_1.jpg",
-        "addr": "강원특별자치도 평창군 평창읍 평창강로 1423-3"
-      }
-    ]
   },
   {
     "contentId": "100311",
@@ -120878,136 +121008,6 @@
           "tel": "054-779-6531",
           "dist": 667,
           "walkMin": 10
-        }
-      ]
-    }
-  },
-  {
-    "contentId": "978",
-    "name": "정읍로하스캠핑장",
-    "type": "자동차야영장",
-    "operator": "민간",
-    "lineIntro": "청정자연 고지대의 시원함과 상쾌함이 있는 로하스 캠핑!",
-    "intro": "로하스캠핑은 해발 200~650M에 위치해 있는 정읍시 산내면 산호수마을에 있는 작고 조용한 캠핑장이다. 캠핑사이트도 14개의 데크 사이크로 복잡하지 않고 옹기종기 모여 가족 같은 분위기에서 하루를 보낼 수 있다. 더불어 4인용 카라반 5대, 6인용 카라반 10대가 운영 중인데 TV설치 및 와이파이가 잘 되어 있어 캠핑 중 네트워크 문제도 걱정 없다. 카라반 내부는 깨끗한 편이며 캠핑장 주변도 관리가 잘 되어 있는 편이다.    이곳은 고지대에 위치한 만큼 청정 자연환경을 자랑한다. 산호수마을 입구 지척에 섬진강댐이 있어 수영을 하거나 물고기를 잡을 수 있고 가을이면 근처에 밤나무가 있어 밤을 따먹을 수도 있다. 가을 무렵 캠핑장에 앉아 해가 지는 노을을 바라보면 환상인지 현실인지 헷갈릴 정도로 아름다운 풍경을 자아낸다.    한편, 고랭지 지대라 배추밭에서 매년 배추를 비롯한 각종 채소와 산나물도 판매한다. 또한 캠핑장에서 10분 거리의 구절초축제장이 있어 매년 이곳 인근에서 매년 구절초 축제를 즐길 수 있다. 정읍 옥정호 구절초축제는 조용한 산골 시골마을임에도 많은 관광객을 유치하는 유명한 행사다.",
-    "address": "전북특별자치도 정읍시 산내면 종성리 662",
-    "region": "전북특별자치도",
-    "sigungu": "정읍시",
-    "lat": "35.5338423",
-    "lng": "127.0819153",
-    "tel": "",
-    "homepage": "http://로하스캠핑.kr/main",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/978/thumb/thumb_720_58392bjXFKM414z7cW7ihx47.jpg",
-    "facilities": "전기,물놀이장,놀이터",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "봄꽃여행,여름물놀이,가을단풍명소,겨울눈꽃명소,걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 14,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 15
-    },
-    "toilets": 1,
-    "showers": 1,
-    "glampFacilities": "",
-    "caravanFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실",
-    "siteBottom": "",
-    "location": "산",
-    "insurance": true,
-    "program": " 치즈만들기 체험, 치즈 돈가스 만들기, 피자만들기 체험, 점심식사 참가비 : 22,000원 이외에도 야외프로그램과 계절별 프로그램이 다양하게 운영됨",
-    "rental": "",
-    "nearbyFac": "산책로",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 0,
-    "siteSize": "",
-    "trailerOk": false,
-    "caravanOk": false,
-    "safety": {
-      "extinguisher": 0,
-      "water": 0,
-      "sand": 0,
-      "sensor": 0
-    },
-    "reserveType": "온라인실시간예약",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2026-05-07",
-    "nearbySpots": [
-      {
-        "name": "임병찬창의유적지",
-        "dist": 574,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/09/3364509_image2_1.JPG",
-        "addr": "전북특별자치도 정읍시 산내면 종성리"
-      },
-      {
-        "name": "양떼목장임실치즈마을",
-        "dist": 939,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/25/3082725_image2_1.JPG",
-        "addr": "전북특별자치도 정읍시 산내면 산호수길 157"
-      },
-      {
-        "name": "애플트리 힐링팜",
-        "dist": 3005,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/95/3353495_image2_1.png",
-        "addr": "전북특별자치도 임실군 강진면 옥정호로 937-12"
-      },
-      {
-        "name": "선비문화체험관 우리누리",
-        "dist": 4945,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/85/3564485_image2_1.jpg",
-        "addr": "전북특별자치도 정읍시 산내면 청정로 1694"
-      },
-      {
-        "name": "국립 회문산자연휴양림",
-        "dist": 5032,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3519551_image2_1.jpg",
-        "addr": "전북특별자치도 순창군 구림면 안심길 249"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "상록수",
-        "dist": 6761,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/27/2837927_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 운정길 29 상록수"
-      },
-      {
-        "name": "옥정호산장",
-        "dist": 6975,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/04/2780004_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 운암면 운정길 7"
-      },
-      {
-        "name": "강나루횟집",
-        "dist": 7526,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2837907_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 종운로 802-5 강나루횟집"
-      },
-      {
-        "name": "코티지683",
-        "dist": 7654,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/78/2837978_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 운암2길 9"
-      },
-      {
-        "name": "하루",
-        "dist": 8249,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/95/2837995_image2_1.jpg",
-        "addr": "전북특별자치도 임실군 강운로 1175-17"
-      }
-    ],
-    "transit": {
-      "stops": [
-        {
-          "name": "이화동",
-          "dist": 718,
-          "walkMin": 11
         }
       ]
     }
@@ -410695,127 +410695,6 @@
         "dist": 3147,
         "image": "",
         "addr": "경상남도 통영시 욕지면 욕지일주로 95-6"
-      }
-    ]
-  },
-  {
-    "contentId": "8137",
-    "name": "더 빌리지",
-    "type": "자동차야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "아늑하고 깊은 10만평의 비밀의 숲으로 둘러싸인 더빌리지 더빌리지는 머무는 순간 모든것을 멈출 수 있는 고요한 힐링과 자유롭고 액티브한 환상적인 순간을 모두 즐길수 있는 감성캠핑 복합문화리조트입니다",
-    "address": "충북 진천군 문백면 봉죽2길 20-78",
-    "region": "충청북도",
-    "sigungu": "진천군",
-    "lat": "36.7850795",
-    "lng": "127.4238732",
-    "tel": "",
-    "homepage": "https://www.the-village.co.kr/",
-    "reserveUrl": "https://www.the-village.co.kr/",
-    "image": "https://gocamping.or.kr/upload/camp/8137/thumb/thumb_720_1179kIVjOLR30qtGDmGE20mD.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,물놀이장,산책로,마트.편의점",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "여름물놀이",
-    "operPeriod": "봄,여름,가을",
-    "siteCounts": {
-      "general": 0,
-      "auto": 160,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 18,
-    "showers": 23,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "siteBottom": "",
-    "location": "산",
-    "insurance": true,
-    "program": "",
-    "rental": "",
-    "nearbyFac": "산책로",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 0,
-    "siteSize": "",
-    "trailerOk": true,
-    "caravanOk": true,
-    "safety": {
-      "extinguisher": 80,
-      "water": 0,
-      "sand": 0,
-      "sensor": 0
-    },
-    "reserveType": "온라인실시간예약",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2023-10-23",
-    "nearbySpots": [
-      {
-        "name": "진천 정송강사",
-        "dist": 1895,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/92/3341292_image2_1.JPG",
-        "addr": "충청북도 진천군 문백면 송강로 523"
-      },
-      {
-        "name": "옥성저수지",
-        "dist": 2660,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/64/3355464_image2_1.JPG",
-        "addr": "충청북도 진천군 문백면 옥성리"
-      },
-      {
-        "name": "진천공예마을",
-        "dist": 2977,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/25/3560225_image2_1.jpg",
-        "addr": "충청북도 진천군 문백면 옥성리"
-      },
-      {
-        "name": "문수암",
-        "dist": 4897,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/94/3561894_image2_1.jpg",
-        "addr": "충청북도 진천군 진천읍 금사로 252-106"
-      },
-      {
-        "name": "서한순 효자문",
-        "dist": 4998,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/73/3341173_image2_1.JPG",
-        "addr": "충청북도 진천군 진천읍 사석리"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "청원한우마실",
-        "dist": 4903,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/90/2859690_image2_1.jpg",
-        "addr": "충청북도 청주시 청원구 성산2길 5 청원군한우협회영농조합법인"
-      },
-      {
-        "name": "기린",
-        "dist": 6378,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/07/2857007_image2_1.jpg",
-        "addr": "충청북도 청주시 청원구 주성1길 9-1"
-      },
-      {
-        "name": "김산기염소탕",
-        "dist": 6807,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/05/2857105_image2_1.jpg",
-        "addr": "충청북도 청주시 청원구 양청6길 9"
-      },
-      {
-        "name": "들녘애농원",
-        "dist": 7217,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/47/2858147_image2_1.jpg",
-        "addr": "충청북도 진천군 농다리로 1294"
-      },
-      {
-        "name": "옛날손짜장천안문",
-        "dist": 7332,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/92/2835492_image2_1.jpg",
-        "addr": "충청북도 청주시 청원구 양청2길 22"
       }
     ]
   },

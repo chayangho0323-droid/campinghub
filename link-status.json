@@ -14149,12 +14149,6 @@
   "checkedAt": "2026-10-24T22:44:31.623Z",
   "final": "https://map.naver.com/p/entry/place/1183807687?c=14139918.4947074,4577650.3162217,13,0,0,0,dh&placePath=%2F&entry=plt"
  },
- "https://www.camfit.co.kr/camp/6528902d67b59c001fdbbe5f": {
-  "state": "ok",
-  "status": 200,
-  "checkedAt": "2026-10-24T22:44:31.623Z",
-  "final": "https://camfit.co.kr/camp/6528902d67b59c001fdbbe5f"
- },
  "https://www.instagram.com/jyb_camping": {
   "state": "ok",
   "status": 200,
@@ -14180,11 +14174,6 @@
  "https://urnarucamp.modoo.at/?link=53vdr5tr": {
   "state": "ok",
   "status": 200,
-  "checkedAt": "2026-10-24T22:44:31.623Z"
- },
- "https://www.naver.com/ocamping": {
-  "state": "dead",
-  "status": 404,
   "checkedAt": "2026-10-24T22:44:31.623Z"
  },
  "https://jindongri.zapza.me/": {

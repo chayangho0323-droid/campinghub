@@ -64,6 +64,26 @@ const reportHead = (prefix = "") => `
 const VP = require("./visitor-photos");
 const REPORT_EMAIL = "chayangho0323@gmail.com";
 const visitorPhotos = VP.loadVisitorPhotos(SITE_URL);
+
+// ─── ✨ 스폰서(직접 광고) 자리 — sponsors.json (2026-10-26, 수익화 로드맵 1단계: 지금은 비어 있음, 무료 시범 → 2027년 유료) ───
+// 노출 위치 3곳: 지역 페이지 상단 "추천 캠핑장", 메인 "추천 캠핑장" 줄(app.js, sponsors-home.json), 상세 배지. 모두 "광고" 표시 자동.
+let SPONSORS = { items: [] };
+try { SPONSORS = JSON.parse(fs.readFileSync("sponsors.json", "utf-8")); } catch {}
+const SPONSOR_ACTIVE = (SPONSORS.items || []).filter((x) => (!x.until || x.until >= BUILD_VER) && (!x.from || x.from <= BUILD_VER));
+const sponsorOf = (id) => SPONSOR_ACTIVE.find((x) => String(x.contentId) === String(id));
+const AD_TAG = `<span class="ad-tag" title="캠핑장과 협의해 노출하는 광고 자리입니다">광고</span>`;
+function sponsorBlock(scope, region) {
+  const list = SPONSOR_ACTIVE
+    .filter((x) => (x.scope || []).includes(scope) && (scope !== "region" || x.region === region))
+    .map((x) => campings.find((c) => String(c.contentId) === String(x.contentId))).filter(Boolean);
+  if (!list.length) return "";
+  return `
+  <section class="sponsor-section">
+    <h2>✨ 추천 캠핑장 ${AD_TAG}</h2>
+    <div class="festival-grid sponsor-grid">${list.map(listCard).join("")}</div>
+    <p class="coupang-notice">이 칸은 캠핑장과 협의해 노출하는 광고입니다. 캠핑장 정보 자체는 다른 곳과 같은 공공데이터 기준이에요. <a href="partners.html">광고·제휴 안내 →</a></p>
+  </section>`;
+}
 for (const c of campings) {
   const list = visitorPhotos[String(c.contentId)];
   if (list && !c.image && VP.firstImage(list)) { c.image = VP.firstImage(list); c.photoCredit = (list.find((x) => x.image && !x.video) || list[0]).credit; }
@@ -191,7 +211,7 @@ function footerHtml(prefix = "") {
   return `
   <footer class="site-footer">
     <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
-    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}privacy.html">개인정보처리방침</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a> · <a href="${prefix}theme-carcamping.html">🚗 차박</a> · <a href="${prefix}theme-pet.html">🐕 반려동물</a> · <a href="${prefix}gallery.html">📸 방문자 사진·후기</a></p>
+    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}privacy.html">개인정보처리방침</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a> · <a href="${prefix}theme-carcamping.html">🚗 차박</a> · <a href="${prefix}theme-pet.html">🐕 반려동물</a> · <a href="${prefix}gallery.html">📸 방문자 사진·후기</a> · <a href="${prefix}partners.html">🤝 광고·제휴</a></p>
     <p><a href="${prefix}guide-beginner.html">🔰 첫 캠핑 준비물</a> · <a href="${prefix}guide-gear.html">💰 예산별 장비</a> · <a href="${prefix}guide-compare.html">📚 장비 비교</a> · <a href="${prefix}guide-safety.html">⚠️ 안전·매너</a></p>
     <p><a href="${prefix}guide-reserve.html">📅 예약·취소 가이드</a> · <a href="${prefix}guide-carcamping.html">🚗 차박 되는 곳</a> · <a href="${prefix}guide-fire.html">🔥 화로대·불멍 규정</a> · <a href="${prefix}guide-holiday.html">🗓️ 연휴 예약 타이밍</a></p>
     <p><a class="report-link" href="${REPORT_FORM_URL}" target="_blank" rel="noopener">📮 여기 없는 캠핑장 제보하기</a></p>
@@ -479,6 +499,7 @@ function buildListPage({ filename, title, heading, subtitle, description, items,
   ${nav}
   ${region ? regionWeatherHtml(items, region) : ""}
   ${photoCallHtml(null)}
+  ${region ? sponsorBlock("region", region) : ""}
   <p class="result-count">${items.length}개의 캠핑장</p>
   <main class="festival-grid">${cards || `<p style="grid-column:1/-1;text-align:center;color:#888;">해당하는 캠핑장이 없습니다.</p>`}</main>
   <a class="to-top" href="#" aria-label="맨 위로">↑</a>
@@ -506,6 +527,7 @@ function buildPage(c, all) {
       : `<div class="ph-hero"><span class="ph-icon">🏕️</span><span class="ph-label">아직 사진이 없는 캠핑장</span><a class="ph-report report-link" href="${esc(reportMailto(c))}">📷 이곳 사진 제보하기</a></div>`;
 
   const badges = [
+    sponsorOf(c.contentId) ? `<span class="badge sponsor">✨ 추천 캠핑장 · 광고</span>` : "",
     isForest(c) ? `<span class="badge ongoing">🌲 국공립·휴양림</span>` : "",
     ...(c.type ? c.type.split(",").map((t) => `<span class="badge upcoming">${esc(t.trim())}</span>`) : []),
     (c.pet || "").startsWith("가능") ? `<span class="badge long">🐕 반려동물 ${esc(c.pet)}</span>` : "",
@@ -1696,6 +1718,64 @@ const todayYmd = BUILD_VER;
   fs.writeFileSync("pinned.json", JSON.stringify(pinned), "utf-8");
   console.log(`📌 방문자 사진 고정 ${pinned.length}건 (pinned.json, ${VP.PIN_DAYS}일 고정)`);
 }
+// 🤝 광고·제휴 안내(미디어킷) — 수익화 로드맵 1단계 (2026-10-26). 숫자는 월요일 점검 때 갱신 (아래 KIT 상수만 고치면 됨)
+const KIT = { asOf: "2026년 10월 셋째 주", weekUsers: "3,592", monthUsers: "약 1만 3천", naverImpr: "207만", naverClick: "1만", reserveClicks: "1,846", reserveRate: "25%", camps: campings.length.toLocaleString("ko-KR"), guides: "17" };
+GUIDE_PAGES.push({
+  slug: "partners", icon: "🤝", title: "광고·제휴 안내",
+  desc: `캠핑장·캠핑용품·지자체 담당자를 위한 CampingHub 광고·제휴 안내. 주간 방문 ${KIT.weekUsers}명, 방문자 4명 중 1명이 예약 버튼을 누르는 '예약 직전' 방문자에게 캠핑장을 알리세요.`,
+  body: `
+      <section class="overview">
+        <h2>CampingHub는 어떤 곳인가요?</h2>
+        <p>전국 캠핑장 <strong>${KIT.camps}곳</strong>의 예약처·요금·사이트 구성·날씨·주차·대중교통·블로그 후기를 한 페이지씩 정리한 사이트입니다.
+        한국관광공사 고캠핑 공공데이터를 매일 새벽 자동으로 갱신하고, 운영자가 직접 쓴 캠핑장 이야기와 입문 가이드 ${KIT.guides}편을 더했습니다.
+        방문자 대부분은 <strong>네이버에서 특정 캠핑장 이름이나 "OO 캠핑장 예약"을 검색해</strong> 들어옵니다. 즉, 이미 갈 캠핑장을 고르는 중인 분들이에요.</p>
+      </section>
+      <section class="overview">
+        <h2>숫자로 보는 방문자 <span class="product-updated">${KIT.asOf} 기준 · Google Analytics·네이버 서치어드바이저</span></h2>
+        <table class="kit-table">
+          <tr><th>주간 방문자</th><td><strong>${KIT.weekUsers}명</strong> (월 ${KIT.monthUsers}명, 매주 증가 중)</td></tr>
+          <tr><th>네이버 검색 노출 / 클릭</th><td>월 <strong>${KIT.naverImpr}회</strong> 노출 · <strong>${KIT.naverClick}회</strong> 클릭</td></tr>
+          <tr><th>예약·홈페이지 버튼 클릭</th><td>주 <strong>${KIT.reserveClicks}회</strong> — 방문자 <strong>${KIT.reserveRate}</strong>가 예약 행동으로 이어짐</td></tr>
+          <tr><th>주 이용 기기</th><td>모바일 중심 (네이버 모바일 검색 유입이 대부분)</td></tr>
+          <tr><th>관심 지역</th><td>경기·강원·충남·전북·경남·제주 순 (지역 페이지별 방문 기준)</td></tr>
+        </table>
+        <p class="coupang-notice">광고주께는 매월 노출 수·클릭 수를 GA 기준으로 정리해 보내드립니다.</p>
+      </section>
+      <section class="overview">
+        <h2>광고 상품 3가지</h2>
+        <table class="kit-table">
+          <tr><th>① 지역 페이지 상단 추천</th><td>"경기 캠핑장", "충남 캠핑장" 같은 지역 페이지 맨 위 <strong>✨ 추천 캠핑장</strong> 칸에 카드 노출. 지역당 최대 2곳.</td></tr>
+          <tr><th>② 메인 추천 줄</th><td>첫 화면 상단 <strong>✨ 추천 캠핑장</strong> 줄에 노출. 전체 방문자가 봅니다. 최대 4곳.</td></tr>
+          <tr><th>③ 상세 페이지 배지</th><td>해당 캠핑장 페이지에 <strong>✨ 추천 캠핑장</strong> 배지 + 사진·소개·예약 링크를 운영자가 직접 보강.</td></tr>
+        </table>
+        <p>모든 광고 노출에는 <strong>"광고" 표시</strong>가 붙습니다. 방문자가 광고와 일반 정보를 구분할 수 있어야 사이트와 광고주 모두에게 신뢰가 남기 때문이에요.</p>
+      </section>
+      <section class="overview">
+        <h2>비용과 일정</h2>
+        <p><strong>2026년 12월까지는 무료 시범 운영</strong>입니다 (선착순 5곳). 한 달 노출 후 클릭 수와 예약 문의 변화를 함께 확인하고, 효과가 확인된 상품만 2027년 1월부터 유료로 전환합니다.</p>
+        <table class="kit-table">
+          <tr><th>지역 페이지 상단</th><td>월 30,000원 (예정)</td></tr>
+          <tr><th>메인 추천 줄</th><td>월 50,000원 (예정)</td></tr>
+          <tr><th>지역 + 메인 + 상세 배지 묶음</th><td>월 70,000원 (예정)</td></tr>
+        </table>
+        <p class="coupang-notice">부가세 별도, 세금계산서·현금영수증 발행. 성수기(3~5월, 9~10월) 가격은 별도 안내. 시범 참여 캠핑장은 유료 전환 첫 달 할인.</p>
+      </section>
+      <section class="overview">
+        <h2>이런 광고는 받지 않습니다</h2>
+        <ul>
+          <li>고캠핑(한국관광공사)에 등록되지 않은 미등록 캠핑장</li>
+          <li>실제와 다른 사진·요금·시설 표기를 요청하는 경우</li>
+          <li>방문자 후기·블로그 글을 지워 달라는 요청 (운영자가 쓴 글이 아니라 지울 수 없고, 지우지도 않습니다)</li>
+          <li>캠핑과 무관한 상품·서비스 (대부업·도박·성인 등)</li>
+        </ul>
+      </section>
+      <section class="overview">
+        <h2>신청·문의</h2>
+        <p>이메일 <strong>chayangho0323@gmail.com</strong> 으로 <strong>캠핑장 이름, 지역, 원하는 상품(①②③), 연락처</strong>를 보내주세요. 영업일 기준 2일 안에 답장드립니다.
+        캠핑용품 브랜드·지자체 관광과의 제휴(가이드 글 협업, 지역 특집 페이지)도 같은 메일로 문의해 주세요.</p>
+        <p class="coupang-notice">CampingHub는 개인이 운영하는 사이트이며, 광고 수익은 서버·데이터 갱신·콘텐츠 제작에 쓰입니다. 자세한 운영 원칙은 <a href="about.html">사이트 소개</a>에 있습니다.</p>
+      </section>`,
+});
 for (const g of GUIDE_PAGES) {
   const filename = `${g.slug}.html`;
   // ★★☆ 텍스트 별점을 컬러 게이지 바로 변환 (표가 한눈에 읽히게)
@@ -1780,6 +1860,10 @@ const slim = campings.map((c) => ({
   lng: c.lng ? Number(Number(c.lng).toFixed(4)) : undefined,
 }));
 fs.writeFileSync("campings-list.json", JSON.stringify(slim), "utf-8");
+fs.writeFileSync("sponsors-home.json", JSON.stringify(SPONSOR_ACTIVE.filter((x) => (x.scope || []).includes("home")).map((x) => {
+  const c = campings.find((k) => String(k.contentId) === String(x.contentId)); if (!c) return null;
+  return { contentId: c.contentId, name: c.name, region: getRegion(c), sigungu: c.sigungu || "", image: c.image || (c.venuePhoto && c.venuePhoto.image) || "", type: (c.type || "").split(",")[0], pet: (c.pet || "").startsWith("가능") };
+}).filter(Boolean)), "utf-8");
 console.log(`✅ campings-list.json 생성 (목록용 경량본, ${Math.round(JSON.stringify(slim).length / 1024)}KB)`);
 
 // ─── 메인 페이지용 주말 날씨 요약 (weather-summary.json, 약 10KB) ───

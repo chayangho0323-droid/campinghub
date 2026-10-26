@@ -1,0 +1,18 @@
+{
+  "_설명": "직접 광고(협찬) 자리. items가 비면 사이트에 아무것도 안 보임. contentId=campings.json 아이디, scope: home(메인 '추천 캠핑장' 줄)·region(해당 지역 페이지 상단)·detail(상세 '✨ 추천 캠핑장 · 광고' 배지), region은 getRegion 표기(예: 충남, 경기, 전남·광주, 제주), from/until=YYYYMMDD(없으면 무제한), plan: trial(무료 시범)|paid, note: 메모. 모든 노출에 '광고' 표시가 자동으로 붙음.",
+  "_example": {
+    "contentId": "101355",
+    "name": "재리캠핑",
+    "scope": [
+      "home",
+      "region",
+      "detail"
+    ],
+    "region": "충남",
+    "from": "20261101",
+    "until": "20261130",
+    "plan": "trial",
+    "note": "무료 시범 1호"
+  },
+  "items": []
+}

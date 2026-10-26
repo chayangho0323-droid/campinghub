@@ -231,6 +231,26 @@ function fillQuickLinks() {
   }
 }
 
+// ─── ✨ 추천 캠핑장(광고) 줄 — build-pages.js가 만든 sponsors-home.json (비면 아무것도 안 그림, 2026-10-26) ───
+async function loadSponsors() {
+  try {
+    const res = await fetch("sponsors-home.json");
+    if (!res.ok) return;
+    const list = await res.json();
+    const el = document.getElementById("sponsor-home");
+    if (!el || !list.length) return;
+    el.innerHTML = `<h2 class="sponsor-title">✨ 추천 캠핑장 <span class="ad-tag" title="캠핑장과 협의해 노출하는 광고 자리입니다">광고</span></h2>
+      <div class="sponsor-row">${list.map((c) => `
+        <a class="sponsor-card sponsor-link" href="camping/${c.contentId}.html">
+          ${c.image ? `<img src="${c.image}" alt="${c.name}" loading="lazy" />` : `<div class="sponsor-noimg">🏕️</div>`}
+          <div class="sponsor-name">${c.name}</div>
+          <div class="sponsor-meta">📍 ${c.region} ${c.sigungu}${c.type ? ` · ${c.type}` : ""}${c.pet ? " · 🐕" : ""}</div>
+        </a>`).join("")}</div>
+      <p class="sponsor-note">캠핑장과 협의해 노출하는 광고예요. <a href="partners.html">광고·제휴 안내 →</a></p>`;
+  } catch (e) {}
+}
+loadSponsors();
+
 // ─── 이번 주말 캠핑 날씨 (build-pages.js가 만든 weather-summary.json: 시도별 요약 + 시군구별 등급) ───
 // 상단 띠에 시도별 주말 날씨 칩, 카드에 "☀️ 주말 좋음" 배지. 상세 페이지 weatherHtml과 같은 기준(비 60%↑=비 예보, 30%↑=보통)
 let WX = null;

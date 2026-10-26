@@ -34,6 +34,7 @@
     if (el.closest(".dir-btn.kakao, .dir-btn.naver")) return "click_map";
     if (el.closest(".review-link")) return "click_review"; // 네이버 후기 보기 (캠핑 카드)
     if (el.closest("#near-me")) return "click_nearme"; // 내 주변 가까운 순 (캠핑)
+    if (el.closest(".sponsor-section a, .sponsor-link")) return "click_sponsor"; // 2026-10-26 스폰서(광고) 자리 — 광고주 리포트용
     if (el.closest(".gallery-link")) return "click_gallery"; // 2026-10-26 상세 하단 "방문자 사진·후기 보기"
     if (el.closest('a.report-link[href^="mailto:"], .report-modal a, .report-copy, .ph-report')) return "click_photo"; // 방문자 사진 제보
     if (el.closest(".report-btn, .report-link")) return "click_report";

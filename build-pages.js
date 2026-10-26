@@ -775,6 +775,7 @@ SITE_NAV = `
     <a class="chip" href="theme-pet.html">🐕 반려동물</a>
     <a class="chip" href="theme-carcamping.html">🚗 차박</a>
     <a class="chip chip-photo" href="gallery.html">📸 방문자 사진</a>
+    <a class="chip chip-partner" href="partners.html">🤝 광고·제휴</a>
     ${regionsAll.map((r) => `<a class="chip" href="region-${REGION_SLUGS[r] || "etc"}.html">${esc(r)}</a>`).join("")}
   </nav>`;
 

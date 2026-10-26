@@ -222,6 +222,8 @@ function fillQuickLinks() {
     "차 옆에 바로 자리 잡는 자동차야영장 — 차박·오토캠핑이 가능한 곳만 모았습니다.");
   addChip("gallery.html", "📸 방문자 사진", "chip chip-photo",
     "다녀온 분들이 보내주신 캠핑장 현장 사진과 후기 모음입니다.");
+  addChip("partners.html", "🤝 광고·제휴", "chip chip-partner",
+    "캠핑장·캠핑용품 담당자를 위한 광고·제휴 안내 — 12월까지 무료 시범 노출 중.");
 
   const regions = [...new Set(allCampings.map(getRegion))]
     .filter((r) => REGION_SLUGS[r])

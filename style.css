@@ -1291,3 +1291,5 @@ body {
 .kit-table th, .kit-table td { text-align: left; padding: 9px 10px; border-bottom: 1px solid #eee; vertical-align: top; line-height: 1.6; }
 .kit-table th { width: 34%; color: #444; background: #fafbfc; font-weight: 600; }
 .sponsor-home:empty { display: none; } /* 광고주 없을 땐 빈 테두리도 안 보이게 */
+
+.chip.chip-partner { background: #eef6ff; border-color: #b9d4f5; color: #1f4e8c; }

@@ -1293,3 +1293,6 @@ body {
 .sponsor-home:empty { display: none; } /* 광고주 없을 땐 빈 테두리도 안 보이게 */
 
 .chip.chip-partner { background: #eef6ff; border-color: #b9d4f5; color: #1f4e8c; }
+
+.owner-cta { margin: 2px 0 14px; padding: 8px 12px; border-radius: 10px; background: #f5f8fc; border: 1px dashed #c9d8ea; color: #456; font-size: .84rem; line-height: 1.6; }
+.owner-cta a { color: #1f4e8c; font-weight: 600; }

@@ -718,6 +718,7 @@ function buildPage(c, all) {
       ${VP.galleryHtml(vph, { name: c.name, href: reportMailto(c) })}
       ${photoCallHtml(c)}
       <p class="guide-tip gallery-cta">📸 <a class="gallery-link" href="../gallery.html">다른 캠퍼들이 보낸 캠핑장 사진·후기 보기 →</a> <span class="muted">웅포관광지 캠핑장 현장 사진·영상</span></p>
+      <p class="owner-cta">🏕️ 이 캠핑장을 운영하시나요? 사진·소개 보강과 추천 노출(무료 시범) 안내는 <a class="partner-link" href="../partners.html">광고·제휴 안내</a>에서 확인하세요.</p>
       <section class="map-section"><h2>오시는 길</h2><div id="map"></div>${directions}${transitHtml(c)}</section>
       ${relatedSection}
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}

@@ -114,6 +114,8 @@ function render() {
   } else {
     // 사진 있는 캠핑장을 먼저 보여주고 (첫 화면 인상), 그 안에서 매일 셔플
     shown.sort((a, b) => {
+      const pin = (b._pinned ? 1 : 0) - (a._pinned ? 1 : 0); // 방문자 사진 막 올라온 곳은 며칠간 맨 위
+      if (pin) return pin;
       const aImg = a.image ? 0 : 1;
       const bImg = b.image ? 0 : 1;
       if (aImg !== bImg) return aImg - bImg;
@@ -139,8 +141,8 @@ function render() {
       const faved = favorites.includes(c.contentId);
       // 사진 없는 곳은 주변 풍경(campings-list.json venuePhoto)을 "📍 주변 풍경" 표시와 함께
       const venueImg = !c.image && c.venuePhoto && c.venuePhoto.image;
-      const img = c.image
-        ? `<img src="${c.image}" alt="${c.name}" loading="lazy" />`
+      const img = (c._pinned && c._pinImage) || c.image
+        ? `<img src="${(c._pinned && c._pinImage) || c.image}" alt="${c.name}" loading="lazy" />`
         : venueImg
           ? `<img src="${venueImg}" alt="${c.name} 주변 ${c.venuePhoto.name}" loading="lazy" /><span class="venue-tag">📍 주변 풍경</span>`
           : `<div class="no-image">🏕️</div>`;
@@ -158,7 +160,8 @@ function render() {
 
       return `
         <a class="card-link" href="camping/${c.contentId}.html">
-          <article class="card">
+          <article class="card${c._pinned ? " pinned" : ""}">
+            ${c._pinned ? `<span class="pin-ribbon">📸 방문자 ${c._pinVideo ? "사진·영상" : "사진"} 도착!</span>` : ""}
             <button class="fav-heart${faved ? " faved" : ""}" data-id="${c.contentId}" aria-label="찜하기">${faved ? "❤️" : "🤍"}</button>
             ${img}
             <div class="card-body">
@@ -217,6 +220,8 @@ function fillQuickLinks() {
     "반려동물 동반이 가능한 캠핑장만 모았습니다.");
   addChip("theme-carcamping.html", "🚗 차박", "chip",
     "차 옆에 바로 자리 잡는 자동차야영장 — 차박·오토캠핑이 가능한 곳만 모았습니다.");
+  addChip("gallery.html", "📸 방문자 사진", "chip chip-photo",
+    "다녀온 분들이 보내주신 캠핑장 현장 사진과 후기 모음입니다.");
 
   const regions = [...new Set(allCampings.map(getRegion))]
     .filter((r) => REGION_SLUGS[r])
@@ -303,6 +308,19 @@ async function init() {
     const res = await fetch("campings-list.json");
     if (!res.ok) throw new Error(`campings-list.json 로드 실패 (${res.status})`);
     allCampings = await res.json();
+    // 최근 방문자 사진·영상이 올라온 캠핑장은 며칠간 맨 위에 고정 (pinned.json — build-pages.js가 생성, 없어도 동작)
+    try {
+      const pr = await fetch("pinned.json");
+      if (pr.ok) {
+        const kst = new Date(Date.now() + 9 * 3600 * 1000);
+        const todayY = `${kst.getUTCFullYear()}${String(kst.getUTCMonth() + 1).padStart(2, "0")}${String(kst.getUTCDate()).padStart(2, "0")}`;
+        for (const p of await pr.json()) {
+          if (!p.pinnedUntil || p.pinnedUntil <= todayY) continue;
+          const c = allCampings.find((x) => String(x.contentId) === String(p.contentId));
+          if (c) { c._pinned = true; c._pinImage = p.image; c._pinCount = p.photoCount; c._pinVideo = p.hasVideo; }
+        }
+      }
+    } catch (e) {}
     fillRegionOptions();
     fillQuickLinks();
     render();

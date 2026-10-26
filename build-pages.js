@@ -191,7 +191,7 @@ function footerHtml(prefix = "") {
   return `
   <footer class="site-footer">
     <p>캠핑장 정보 출처: 한국관광공사 고캠핑 (공공데이터) · 정기 자동 갱신</p>
-    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}privacy.html">개인정보처리방침</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a> · <a href="${prefix}theme-carcamping.html">🚗 차박</a> · <a href="${prefix}theme-pet.html">🐕 반려동물</a></p>
+    <p><a href="${prefix}about.html">사이트 소개</a> · <a href="${prefix}privacy.html">개인정보처리방침</a> · <a href="${prefix}index.html">전체 캠핑장</a> · <a href="${prefix}theme-forest.html">🌲 휴양림·국공립</a> · <a href="${prefix}theme-glamping.html">⛺ 글램핑</a> · <a href="${prefix}theme-carcamping.html">🚗 차박</a> · <a href="${prefix}theme-pet.html">🐕 반려동물</a> · <a href="${prefix}gallery.html">📸 방문자 사진·후기</a></p>
     <p><a href="${prefix}guide-beginner.html">🔰 첫 캠핑 준비물</a> · <a href="${prefix}guide-gear.html">💰 예산별 장비</a> · <a href="${prefix}guide-compare.html">📚 장비 비교</a> · <a href="${prefix}guide-safety.html">⚠️ 안전·매너</a></p>
     <p><a href="${prefix}guide-reserve.html">📅 예약·취소 가이드</a> · <a href="${prefix}guide-carcamping.html">🚗 차박 되는 곳</a> · <a href="${prefix}guide-fire.html">🔥 화로대·불멍 규정</a> · <a href="${prefix}guide-holiday.html">🗓️ 연휴 예약 타이밍</a></p>
     <p><a class="report-link" href="${REPORT_FORM_URL}" target="_blank" rel="noopener">📮 여기 없는 캠핑장 제보하기</a></p>
@@ -695,6 +695,7 @@ function buildPage(c, all) {
       ${intro}
       ${VP.galleryHtml(vph, { name: c.name, href: reportMailto(c) })}
       ${photoCallHtml(c)}
+      <p class="guide-tip gallery-cta">📸 <a class="gallery-link" href="../gallery.html">다른 캠퍼들이 보낸 캠핑장 사진·후기 보기 →</a> <span class="muted">웅포관광지 캠핑장 현장 사진·영상</span></p>
       <section class="map-section"><h2>오시는 길</h2><div id="map"></div>${directions}${transitHtml(c)}</section>
       ${relatedSection}
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}
@@ -751,6 +752,7 @@ SITE_NAV = `
     <a class="chip" href="theme-caravan.html">🚐 카라반</a>
     <a class="chip" href="theme-pet.html">🐕 반려동물</a>
     <a class="chip" href="theme-carcamping.html">🚗 차박</a>
+    <a class="chip chip-photo" href="gallery.html">📸 방문자 사진</a>
     ${regionsAll.map((r) => `<a class="chip" href="region-${REGION_SLUGS[r] || "etc"}.html">${esc(r)}</a>`).join("")}
   </nav>`;
 
@@ -1567,6 +1569,133 @@ function productSection(slug) {
 }
 
 const guideFiles = [];
+
+// ─── 📸 방문자 사진·후기 모음 (gallery.html) — 축제허브 10/13 구조 이식 (2026-10-26, 첫 제보: 익산시민 님 웅포관광지 캠핑장) ───
+// 7일 상단 고정이 끝난 제보도 여기 계속 남는다. 제보 한 건(캠핑장×닉네임) = 카드 한 장, 누르면 모달로 사진·영상·후기.
+const todayYmd = BUILD_VER;
+{
+  const byId = Object.fromEntries(campings.map((c) => [String(c.contentId), c]));
+  const entries = Object.entries(visitorPhotos)
+    .map(([id, list]) => ({ id, c: byId[id], list: Array.isArray(list) ? list : [list] }))
+    .filter((e) => e.c && e.list.length);
+  const totalPhotos = entries.reduce((s, e) => s + e.list.length, 0);
+  const contributors = new Set(entries.flatMap((e) => e.list.map((p) => p.credit).filter(Boolean))).size;
+  const fmtD = (d) => (d ? `${d.slice(0, 4)}.${d.slice(4, 6)}.${d.slice(6, 8)}` : "");
+  const posts = [];
+  for (const { id, c, list } of entries) {
+    const groups = new Map();
+    for (const p of list) { const k = p.credit || "방문자"; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(p); }
+    for (const [credit, items] of groups) posts.push({ id, c, credit, items, date: Math.max(...items.map((p) => Number(p.date || 0))) });
+  }
+  posts.sort((a, b) => b.date - a.date);
+  const sections = posts.map(({ id, c, credit, items, date }, i) => {
+    const cover = VP.firstImage(items) || c.image || "";
+    const review = (items.find((p) => p.review) || {}).review || "";
+    const captions = items.map((p) => p.caption).filter(Boolean);
+    const photoN = items.filter((p) => !p.video).length, videoN = items.filter((p) => p.video).length;
+    const body = review || captions.slice(0, 2).join(" · ") || `${esc(c.name)} 현장 사진`;
+    const where = (items.find((p) => p.place) || {}).place || `${getRegion(c)} ${c.sigungu || ""}`.trim();
+    return `
+      <article class="vp-card" id="p-${i}" data-camp="${esc(id)}" tabindex="0" role="button" aria-label="${esc(credit)} 님의 ${esc(c.name)} 제보 보기">
+        <div class="vp-head">
+          <div class="vp-avatar">${cover ? `<img src="${esc(cover)}" alt="" loading="lazy" />` : "📸"}</div>
+          <div class="vp-who">
+            <p class="vp-name">${esc(credit)} <span>님</span></p>
+            <p class="vp-fest">🏕️ ${esc(c.name)}</p>
+            <p class="vp-count">📍 ${esc(where)} · 📷 ${photoN}장${videoN ? ` · 🎬 ${videoN}개` : ""}</p>
+          </div>
+        </div>
+        <div class="vp-body">
+          <p class="vp-text">${esc(body.length > 90 ? body.slice(0, 90) + "…" : body)}</p>
+          <p class="vp-foot"><span>${fmtD(String(date))}</span><span class="vp-open">사진·후기 보기 →</span></p>
+        </div>
+        <template class="vp-tpl">
+          <div class="vp-modal-head">
+            <h2>${esc(c.name)}</h2>
+            <p class="gc-meta">📍 ${esc(c.address || where)}${c.type ? ` · ${esc(String(c.type).split(",")[0])}` : ""} · 제보 ${fmtD(String(date))}</p>
+          </div>
+          ${VP.galleryHtml(items, { name: c.name, href: reportMailto(c) })}
+          <p class="gallery-link"><a href="camping/${esc(id)}.html">캠핑장 정보·예약·날씨 보러 가기 →</a></p>
+        </template>
+      </article>`;
+  }).join("");
+  const desc = `캠핑장에 다녀온 분들이 보내주신 현장 사진과 후기 ${totalPhotos}장을 캠핑장별로 모았습니다. 공공데이터에 없는 진짜 사이트 분위기를 확인하세요.`;
+  fs.writeFileSync("gallery.html", `<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>방문자 사진·후기 모음 — 다녀온 분들이 보내준 캠핑장 현장 | CampingHub</title>
+  <meta name="description" content="${esc(desc)}" />
+  <link rel="canonical" href="${SITE_URL}/gallery.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="방문자 사진·후기 모음 | CampingHub" />
+  <meta property="og:description" content="${esc(desc)}" />
+  <meta property="og:url" content="${SITE_URL}/gallery.html" />
+  ${entries[0] ? `<meta property="og:image" content="${esc(VP.firstImage(entries[0].list) || "")}" />` : ""}
+  <link rel="stylesheet" href="style.css?v=${BUILD_VER}" />
+  <link rel="stylesheet" href="report.css?v=${BUILD_VER}" />
+  ${GA_SNIPPET}
+</head>
+<body>
+  <header class="site-header">
+    <h1>📸 방문자 사진·후기</h1>
+    <p class="subtitle">다녀온 분들이 보내주신 캠핑장 현장 — ${entries.length}개 캠핑장, 사진 ${totalPhotos}장, 제보자 ${contributors}명</p>
+    <p class="home-link"><a href="index.html">← 전체 캠핑장 보기</a></p>
+  </header>
+  ${SITE_NAV}
+  <main class="detail-container gallery-page">
+    <p class="gallery-intro">캠핑장 페이지 상단에 7일 동안 고정됐던 제보 사진이 여기에 계속 남습니다. 사진을 누르면 크게 볼 수 있고, 닉네임은 제보해 주신 분이 정한 이름이에요. 내 사진도 올리고 싶다면 아래 띠의 버튼을 눌러 보내 주세요.</p>
+    ${photoCallHtml(null)}
+    ${sections ? `<div class="vp-grid">${sections}</div>` : `<p class="gallery-intro">아직 제보 사진이 없어요. 첫 제보의 주인공이 되어 주세요!</p>`}
+  </main>
+  <div class="vp-modal" id="vp-modal" hidden>
+    <div class="vp-modal-box" role="dialog" aria-modal="true" aria-label="방문자 사진·후기">
+      <button type="button" class="vp-modal-close" aria-label="닫기">✕</button>
+      <div class="vp-modal-content"></div>
+    </div>
+  </div>
+  <a class="to-top" href="#" aria-label="맨 위로">↑</a>
+  ${footerHtml("")}
+  <script src="track-clicks.js"></script>
+  <script src="report.js?v=${BUILD_VER}"></script>
+  <script>
+    (function () {
+      var modal = document.getElementById("vp-modal"), box = modal.querySelector(".vp-modal-content");
+      function open(card) {
+        var tpl = card.querySelector("template.vp-tpl");
+        if (!tpl) return;
+        box.innerHTML = ""; box.appendChild(tpl.content.cloneNode(true));
+        modal.hidden = false; document.body.style.overflow = "hidden";
+        modal.querySelector(".vp-modal-box").scrollTop = 0;
+        if (typeof gtag === "function") gtag("event", "open_visitor_post", { item_name: card.getAttribute("aria-label") || "" });
+      }
+      function close() { modal.hidden = true; box.innerHTML = ""; document.body.style.overflow = ""; }
+      document.querySelectorAll(".vp-card").forEach(function (card) {
+        card.addEventListener("click", function () { open(card); });
+        card.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(card); } });
+      });
+      modal.querySelector(".vp-modal-close").addEventListener("click", close);
+      modal.addEventListener("click", function (e) { if (e.target === modal) close(); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !modal.hidden && !document.querySelector(".report-lightbox, .lightbox")) close(); });
+      var m = location.hash.match(/^#c-(.+)$/);
+      if (m) { var first = document.querySelector('.vp-card[data-camp="' + m[1] + '"]'); if (first) { first.scrollIntoView({ block: "center" }); open(first); } }
+    })();
+  </script>
+</body>
+</html>`, "utf-8");
+  guideFiles.push("gallery.html");
+  console.log(`✅ gallery.html (방문자 사진 ${totalPhotos}장, 캠핑장 ${entries.length}개)`);
+
+  // pinned.json: 최근 PIN_DAYS 안에 사진이 올라온 캠핑장 → 메인 맨 위 고정 (app.js가 읽음)
+  const pins = VP.pinnedMap(visitorPhotos, todayYmd);
+  const pinned = Object.entries(pins).map(([id, p]) => {
+    const c = byId[id]; if (!c) return null;
+    return { contentId: c.contentId, name: c.name, image: p.image || c.image || "", photoCount: p.count, hasVideo: p.hasVideo, pinnedUntil: p.until };
+  }).filter(Boolean).sort((a, b) => b.pinnedUntil.localeCompare(a.pinnedUntil));
+  fs.writeFileSync("pinned.json", JSON.stringify(pinned), "utf-8");
+  console.log(`📌 방문자 사진 고정 ${pinned.length}건 (pinned.json, ${VP.PIN_DAYS}일 고정)`);
+}
 for (const g of GUIDE_PAGES) {
   const filename = `${g.slug}.html`;
   // ★★☆ 텍스트 별점을 컬러 게이지 바로 변환 (표가 한눈에 읽히게)

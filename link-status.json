@@ -4327,7 +4327,7 @@
  "https://guriuc.or.kr/cmsManage/contents.do?cmsSeq=101": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "20"
  },
  "https://reservation.knps.or.kr/contents/C/serviceGuide.do?prdDvcd=C&parkId=B01&deptId=B011005": {
@@ -4757,10 +4757,9 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://tfmc.huyang.co.kr:452/reservation.asp?wloc=B01": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "error": "20"
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-11-01T23:50:38.563Z"
  },
  "https://sj.go.kr/gayasan/camping/page.do?mnu_uid=4151": {
   "state": "ok",
@@ -4891,10 +4890,9 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://www.jgcamp.kr:456/introduce.asp?location=001": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "error": "20"
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-11-01T23:50:38.563Z"
  },
  "http://www.gp-valley.co.kr/": {
   "state": "dead",
@@ -4949,10 +4947,10 @@
   "checkedAt": "2026-10-30T00:11:33.993Z"
  },
  "http://www.jgcamp.kr/": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "error": "fetch failed"
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-11-01T23:50:38.563Z",
+  "final": "https://www.jgcamp.kr:456/"
  },
  "http://jh2085.cafe24.com": {
   "state": "ok",
@@ -5030,7 +5028,7 @@
  "http://lucerneglamping.com/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "https://테라피크닉.kr/": {
@@ -5418,7 +5416,7 @@
  "http://sol-bat.com/wanee/index.php": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "http://mongsanporesort.cafe24.com/?page_id=951": {
@@ -6355,10 +6353,9 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://dongback.brsisul.or.kr:451/": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "error": "20"
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-11-01T23:50:38.563Z"
  },
  "https://naver.me/G58H6dnA": {
   "state": "unknown",
@@ -6421,7 +6418,7 @@
  "http://www.violinglamping.co.kr/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "http://xn--ok0bo7fm1e4tfnx1alojppa.com/": {
@@ -6651,10 +6648,10 @@
   "final": "https://cafe.naver.com/4seasonpark"
  },
  "http://www.riverguide.go.kr/camp/duri/index.do": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "error": "20"
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-11-01T23:50:38.563Z",
+  "final": "https://www.riverguide.go.kr/camp/duri/index.do"
  },
  "https://xn--ej5b84a3hy7uz2ikqb.kr/": {
   "state": "ok",
@@ -6709,7 +6706,7 @@
  "http://xn--bj0bw3p2dq74gd1h.kr/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "https://m.thankqcamping.com/resv/view.hbb?cseq=18196&chk=sns": {
@@ -6857,7 +6854,7 @@
  "http://완주소양캠핑장.com": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "http://www.dungjigarden.com/": {
@@ -6909,7 +6906,7 @@
  "http://yanggu.ticketplay.zone/portal/index": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "http://www.후평숲유원지.com/sub/menu4_1.php": {
@@ -7286,7 +7283,7 @@
  "http://worak.knps.or.kr/front/portal/visit/visitCourseMain.do?parkId=121400&menuNo=7020097": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "https://www.instagram.com/jafari_camp": {
@@ -7317,8 +7314,8 @@
  "http://worak.knps.or.kr/front/portal/visit/visitCourseMain.do?parkId=121400&amp;parkNavGb=park_facView&amp;vnewsId=169": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "error": "fetch failed"
+  "checkedAt": "2026-11-01T23:50:38.563Z",
+  "error": "20"
  },
  "https://pureunsoop.co.kr": {
   "state": "ok",
@@ -7329,14 +7326,14 @@
  "http://worak.knps.or.kr/front/portal/visit/visitCourseMain.do?parkId=121400&parkNavGb=park_facView&vnewsId=169": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "error": "fetch failed"
+  "checkedAt": "2026-11-01T23:50:38.563Z",
+  "error": "20"
  },
  "http://www.벨하우스.com": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "error": "fetch failed"
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-11-01T23:50:38.563Z",
+  "final": "http://www.xn--il3bm3i1wd13t.com/"
  },
  "https://blog.naver.com/syda8383": {
   "state": "ok",
@@ -7435,13 +7432,13 @@
  "http://www.eoeundol.net/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "http://www.eoeundol.net/theme/sample06/html/reservation.php": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
+  "checkedAt": "2026-11-01T23:50:38.563Z",
   "error": "fetch failed"
  },
  "https://naver.me/x7nWD2WJ": {

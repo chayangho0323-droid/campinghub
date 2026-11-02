@@ -1296,3 +1296,31 @@ body {
 
 .owner-cta { margin: 2px 0 14px; padding: 8px 12px; border-radius: 10px; background: #f5f8fc; border: 1px dashed #c9d8ea; color: #456; font-size: .84rem; line-height: 1.6; }
 .owner-cta a { color: #1f4e8c; font-weight: 600; }
+
+/* ── 📝 블로그 후기 (build-pages.js reviewsHtml — 네이버 블로그 검색 결과 3개, 2026-10-16) ── */
+.review-list { list-style: none; padding: 0; margin: 0 0 12px; }
+.review-list li { padding: 10px 12px; margin-bottom: 8px; background: #f3fbf5; border: 1px solid #cdeedb; border-left: 4px solid #03c75a; border-radius: 10px; } /* 네이버 블로그 초록(#03c75a) — 2026-10-16 사용자 요청 */
+.review-list .blog-review-link { color: #0b6b35; text-decoration: none; font-size: 0.98rem; line-height: 1.5; display: block; }
+.review-list .blog-review-link:hover { text-decoration: underline; color: #03c75a; }
+.review-list .review-meta { display: block; color: #2f8a52; font-size: 0.8rem; margin-top: 2px; }
+.review-box .blog-review-more { background: #03c75a; border-color: #03c75a; color: #fff; }
+.review-list .review-desc { margin: 6px 0 0; color: #555; font-size: 0.88rem; line-height: 1.6; }
+.review-box .dir-buttons { margin: 4px 0 6px; }
+.muted.small { font-size: 0.78rem; }
+.official-brief p { line-height: 1.7; }
+/* ── 🔥 이번 주 많이 찾은 캠핑장 + 요즘 뜨는 검색어 (2026-10-26, popular.json) ── */
+.trend-chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: center; max-width: 900px; margin: 6px auto 10px; padding: 0 16px; box-sizing: border-box; }
+.trend-label { font-size: 0.85rem; color: #666; margin-right: 2px; }
+.trend-chip { cursor: pointer; font: inherit; font-size: 0.84rem; border: 1px solid #f3cf8a; background: #fff8e8; color: #7a4b00; }
+.trend-chip:hover { background: #ffefc9; }
+.popular-home { max-width: 900px; margin: 6px auto 14px; padding: 0 16px; box-sizing: border-box; }
+.popular-title { font-size: 1.05rem; margin: 0 0 8px; }
+.popular-week { font-size: 0.78rem; color: #888; font-weight: 400; margin-left: 6px; }
+.popular-row { display: flex; justify-content: flex-start; gap: 12px; overflow-x: auto; padding-bottom: 6px; scroll-snap-type: x proximity; width: 100%; }
+.popular-card { position: relative; flex: 0 0 150px; scroll-snap-align: start; text-decoration: none; color: inherit; }
+.popular-card img, .popular-noimg { width: 150px; height: 100px; object-fit: cover; border-radius: 10px; background: #e9ecf1; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; }
+.popular-name { font-size: 0.85rem; font-weight: 600; margin-top: 6px; line-height: 1.3; }
+.popular-meta { font-size: 0.76rem; color: #888; margin-top: 2px; line-height: 1.4; }
+.popular-why { color: #b45309; }
+.pop-rank { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: #e8491e; color: #fff; font-size: 0.72rem; font-weight: 700; }
+.popular-card .pop-rank { position: absolute; top: 6px; left: 6px; z-index: 1; }

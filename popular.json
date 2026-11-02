@@ -1,0 +1,77 @@
+{
+  "_설명": "월요일 점검 때 GA '페이지 및 화면' 상위 + 서치어드바이저 검색어로 손으로 갱신. build-pages.js가 popular-list.json(메인 app.js용)과 상세 하단 '요즘 많이 찾는 캠핑장'에 반영. places는 campings.json contentId 순서대로 = 순위. keywords는 {label, q}(사이트 검색어) 또는 {label, href}(페이지 링크).",
+  "week": "10/19~10/25",
+  "updated": "20261102",
+  "places": [
+    {
+      "id": "101355",
+      "why": "아산 · 이번 주 조회 1위"
+    },
+    {
+      "id": "102286",
+      "why": "포천 숲속 캠핑"
+    },
+    {
+      "id": "102230",
+      "why": "제주 · 가을 캠핑"
+    },
+    {
+      "id": "101080",
+      "why": "김제 글램핑·바비큐"
+    },
+    {
+      "id": "102234",
+      "why": "군위 계곡 캠핑"
+    },
+    {
+      "id": "102298",
+      "why": "횡성 가을 단풍"
+    },
+    {
+      "id": "101902",
+      "why": "의성 숲속야영장"
+    },
+    {
+      "id": "102031",
+      "why": "울주 · 예약 검색 상위"
+    },
+    {
+      "id": "101622",
+      "why": "순창 오토캠핑 · 예약 검색 상위"
+    }
+  ],
+  "keywords": [
+    {
+      "label": "🔰 캠핑 준비물 리스트",
+      "href": "guide-beginner.html"
+    },
+    {
+      "label": "⛺ 글램핑",
+      "href": "theme-glamping.html"
+    },
+    {
+      "label": "🐕 반려동물 캠핑장",
+      "href": "theme-pet.html"
+    },
+    {
+      "label": "🚗 차박",
+      "href": "theme-carcamping.html"
+    },
+    {
+      "label": "강원 캠핑장",
+      "href": "region-gangwon.html"
+    },
+    {
+      "label": "경기 캠핑장",
+      "href": "region-gyeonggi.html"
+    },
+    {
+      "label": "재리캠핑",
+      "q": "재리"
+    },
+    {
+      "label": "봄빛글램핑",
+      "q": "봄빛"
+    }
+  ]
+}

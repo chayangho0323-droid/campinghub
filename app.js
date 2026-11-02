@@ -253,6 +253,40 @@ async function loadSponsors() {
 }
 loadSponsors();
 
+// ── 🔥 이번 주 많이 찾은 캠핑장 + 요즘 뜨는 검색어 (popular-list.json ← popular.json 월요일 손 갱신, 2026-11-02) ──
+async function loadPopular() {
+  try {
+    const res = await fetch("popular-list.json");
+    if (!res.ok) return;
+    const pop = await res.json();
+    const chipsEl = document.getElementById("trend-chips");
+    if (chipsEl && pop.keywords && pop.keywords.length) {
+      chipsEl.innerHTML = `<span class="trend-label">🔎 요즘 뜨는 검색어</span>` + pop.keywords.map((k) => k.href
+        ? `<a class="chip trend-chip" href="${k.href}">${k.label}</a>`
+        : `<button type="button" class="chip trend-chip" data-q="${(k.q || k.label).replace(/"/g, "&quot;")}">${k.label}</button>`).join("");
+      chipsEl.addEventListener("click", (e) => {
+        const b = e.target.closest("button.trend-chip");
+        if (!b) return;
+        searchEl.value = b.dataset.q; regionEl.value = ""; typeEl.value = ""; render();
+        const ql = document.getElementById("quick-links");
+        if (ql) ql.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+    const homeEl = document.getElementById("popular-home");
+    if (homeEl && pop.places && pop.places.length) {
+      homeEl.innerHTML = `<h2 class="popular-title">🔥 이번 주 많이 찾은 캠핑장 <span class="popular-week">${pop.week} 조회 기준</span></h2>
+        <div class="popular-row">${pop.places.map((c) => `
+          <a class="popular-card popular-link" href="camping/${c.contentId}.html">
+            <span class="pop-rank">${c.rank}</span>
+            ${c.image ? `<img src="${c.image}" alt="${c.name}" loading="lazy" />` : `<div class="popular-noimg">🏕️</div>`}
+            <div class="popular-name">${c.name}</div>
+            <div class="popular-meta">📍 ${c.region} ${c.sigungu}${c.type ? ` · ${c.type}` : ""}${c.pet ? " · 🐕" : ""}${c.why ? `<br /><span class="popular-why">${c.why}</span>` : ""}</div>
+          </a>`).join("")}</div>`;
+    }
+  } catch (e) {}
+}
+loadPopular();
+
 // ─── 이번 주말 캠핑 날씨 (build-pages.js가 만든 weather-summary.json: 시도별 요약 + 시군구별 등급) ───
 // 상단 띠에 시도별 주말 날씨 칩, 카드에 "☀️ 주말 좋음" 배지. 상세 페이지 weatherHtml과 같은 기준(비 60%↑=비 예보, 30%↑=보통)
 let WX = null;

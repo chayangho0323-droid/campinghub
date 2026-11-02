@@ -34,6 +34,9 @@
     if (el.closest(".dir-btn.kakao, .dir-btn.naver")) return "click_map";
     if (el.closest(".review-link")) return "click_review"; // 네이버 후기 보기 (캠핑 카드)
     if (el.closest("#near-me")) return "click_nearme"; // 내 주변 가까운 순 (캠핑)
+    if (el.closest(".blog-review-link, .blog-review-more")) return "click_blog_review"; // 2026-11-02 블로그 후기 칸
+    if (el.closest(".popular-link")) return "click_popular"; // 2026-11-02 이번 주 많이 찾은 캠핑장
+    if (el.closest(".trend-chip")) return "click_trend_chip"; // 2026-11-02 요즘 뜨는 검색어 칩
     if (el.closest(".sponsor-section a, .sponsor-link")) return "click_sponsor"; // 2026-10-26 스폰서(광고) 자리 — 광고주 리포트용
     if (el.closest(".partner-link, .chip-partner")) return "click_partner"; // 광고·제휴 안내로 이동 (사장님 관심 측정)
     if (el.closest(".gallery-link")) return "click_gallery"; // 2026-10-26 상세 하단 "방문자 사진·후기 보기"

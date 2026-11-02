@@ -72,6 +72,46 @@ try { SPONSORS = JSON.parse(fs.readFileSync("sponsors.json", "utf-8")); } catch 
 const SPONSOR_ACTIVE = (SPONSORS.items || []).filter((x) => (!x.until || x.until >= BUILD_VER) && (!x.from || x.from <= BUILD_VER));
 const sponsorOf = (id) => SPONSOR_ACTIVE.find((x) => String(x.contentId) === String(id));
 const AD_TAG = `<span class="ad-tag" title="캠핑장과 협의해 노출하는 광고 자리입니다">광고</span>`;
+// ─── 📝 블로그 후기 (fetch-reviews.js → reviews.json: contentId → {at, q, items:[{t,l,d,b,dt}]}) — 펫트립·축제 이식 2026-11-02 ───
+let REVIEWS = { updated: "", places: {} };
+try { REVIEWS = JSON.parse(fs.readFileSync("reviews.json", "utf-8")); } catch {}
+const fmtPostDate = (s) => (s && s.length === 8 ? `${s.slice(0, 4)}.${s.slice(4, 6)}.${s.slice(6, 8)}` : "");
+function reviewsHtml(c) {
+  const r = REVIEWS.places && REVIEWS.places[String(c.contentId)];
+  if (!r || !r.items || !r.items.length) return "";
+  const moreQ = encodeURIComponent(r.q || `${c.sigungu || ""} ${c.name}`.trim());
+  return `
+      <section class="overview review-box" id="reviews">
+        <h2>📝 다녀온 캠퍼들의 블로그 후기</h2>
+        <ul class="review-list">
+          ${r.items.map((it) => `<li>
+            <a class="blog-review-link" target="_blank" rel="noopener nofollow" href="${esc(it.l)}"><strong>${esc(it.t)}</strong></a>
+            <span class="review-meta">${esc(it.b)}${it.dt ? ` · ${fmtPostDate(it.dt)}` : ""}</span>
+            ${it.d ? `<p class="review-desc">${esc(it.d)}…</p>` : ""}
+          </li>`).join("")}
+        </ul>
+        <div class="dir-buttons">
+          <a class="dir-btn hotel blog-review-more" target="_blank" rel="noopener" href="https://search.naver.com/search.naver?where=blog&query=${moreQ}">네이버 블로그에서 더 보기</a>
+        </div>
+        <p class="coupang-notice">네이버 블로그 검색 결과예요. 제목을 누르면 글쓴이의 블로그로 이동하며, 내용은 각 글쓴이의 의견입니다. 이름이 비슷한 다른 캠핑장 글이 섞일 수 있어요. (${fmtPostDate(r.at)} 기준)</p>
+      </section>`;
+}
+
+// ─── 🔥 이번 주 많이 찾은 캠핑장 (popular.json — 월요일 점검 때 GA 상위 페이지로 손 갱신, 펫트립 10/26 이식) ───
+let POPULAR = { week: "", updated: "", places: [], keywords: [] };
+try { POPULAR = JSON.parse(fs.readFileSync("popular.json", "utf-8")); } catch {}
+const POPULAR_PLACES = (POPULAR.places || []).map((x, i) => { const c = campings.find((q) => String(q.contentId) === String(x.id)); return c ? { rank: i + 1, why: x.why || "", c } : null; }).filter(Boolean);
+function popularHtml(cur) {
+  const items = POPULAR_PLACES.filter((x) => String(x.c.contentId) !== String(cur.contentId)).slice(0, 8);
+  if (!items.length) return "";
+  return `<section class="nearby-section popular-section" id="popular"><h2>🔥 요즘 많이 찾는 캠핑장 <span class="muted small">${esc(POPULAR.week)} 조회 기준</span></h2><div class="nearby-row">${items.map(({ rank, c }) => `
+      <a class="nearby-card popular-link" href="${c.contentId}.html">
+        ${c.image ? `<img src="${esc(c.image)}" alt="${esc(c.name)}" loading="lazy" />` : c.venuePhoto && c.venuePhoto.image ? `<img src="${esc(c.venuePhoto.image)}" alt="${esc(c.name)} 주변" loading="lazy" />` : `<div class="nearby-noimg">🏕️</div>`}
+        <div class="nearby-name"><span class="pop-rank">${rank}</span> ${esc(c.name)}</div>
+        <div class="nearby-dist">${esc(getRegion(c))} ${esc(c.sigungu || "")}${c.type ? ` · ${esc(String(c.type).split(",")[0])}` : ""}</div>
+      </a>`).join("")}</div></section>`;
+}
+
 function sponsorBlock(scope, region) {
   const list = SPONSOR_ACTIVE
     .filter((x) => (x.scope || []).includes(scope) && (scope !== "region" || x.region === region))
@@ -563,11 +603,24 @@ function buildPage(c, all) {
       <a class="dir-btn naver" target="_blank" rel="noopener" href="https://map.naver.com/p/search/${encodeURIComponent(c.address || c.name)}">🧭 네이버지도에서 보기</a>
     </div>`;
 
-  const intro = c.intro
-    ? `<section class="overview"><h2>소개</h2><p>${c.intro}</p></section>`
-    : c.lineIntro
-      ? `<section class="overview"><h2>소개</h2><p>${esc(c.lineIntro)}</p></section>`
-      : `<section class="overview auto-intro"><h2>한눈에 보기</h2><p>${esc(auto)}</p>${c.direction ? `<p>🚗 오시는 길: ${esc(c.direction)}</p>` : ""}</section>`;
+  // 고캠핑 소개문 전문 → "공식 소개 요약" 2~3문장 + 출처 링크 (2026-11-02, 애드센스 2차 거절 대응 — 축제·펫트립과 같은 방식.
+  // 같은 소개문이 고캠핑·네이버 등에 그대로 있어 "복제" 신호가 됨. 캠핑장 이야기·가기 전 확인·날씨·후기가 본문 주인공이 되도록)
+  const briefOf = (html, max = 220) => {
+    const text = stripHtml(String(html || "")).replace(/\s+/g, " ").trim();
+    if (!text) return "";
+    const parts = text.match(/[^.!?。]+[.!?。]?\s*/g) || [text];
+    let out = "";
+    for (const part of parts) { if (out.length >= 120 || (out + part).length > max) break; out += part; }
+    out = (out || text.slice(0, max)).trim();
+    return out.length < text.length ? out.replace(/[,，·\s]+$/, "") + "…" : out;
+  };
+  const introBrief = briefOf(c.intro) || briefOf(c.lineIntro, 160);
+  const introSource = c.homepage && /^https?:\/\//i.test(c.homepage)
+    ? `<a target="_blank" rel="noopener" href="${esc(c.homepage)}">공식 홈페이지</a>`
+    : `<a target="_blank" rel="noopener" href="https://gocamping.or.kr/bsite/camp/info/list.do?searchKeyword=${encodeURIComponent(c.name)}">고캠핑</a>`;
+  const intro = introBrief
+    ? `<section class="overview official-brief"><h2>📄 공식 소개 요약</h2><p>${esc(introBrief)}</p>${c.direction ? `<p>🚗 오시는 길: ${esc(c.direction)}</p>` : ""}<p class="coupang-notice">한국관광공사 고캠핑 소개문을 캠핑허브가 요약했어요. 전문·최신 안내는 ${introSource}에서 확인하세요.</p></section>`
+    : `<section class="overview auto-intro"><h2>한눈에 보기</h2><p>${esc(auto)}</p>${c.direction ? `<p>🚗 오시는 길: ${esc(c.direction)}</p>` : ""}</section>`;
 
   // 같은 지역 다른 캠핑장 추천 4곳 (사진 있는 곳 우선)
   const sameRegion = all
@@ -715,11 +768,13 @@ function buildPage(c, all) {
       ${c.glampFacilities ? `<section class="overview"><h2>글램핑 내부시설</h2><p>${esc(c.glampFacilities)}</p></section>` : ""}
       ${c.caravanFacilities ? `<section class="overview"><h2>카라반 내부시설</h2><p>${esc(c.caravanFacilities)}</p></section>` : ""}
       ${intro}
+      ${reviewsHtml(c)}
       ${VP.galleryHtml(vph, { name: c.name, href: reportMailto(c) })}
       ${photoCallHtml(c)}
       <p class="guide-tip gallery-cta">📸 <a class="gallery-link" href="../gallery.html">다른 캠퍼들이 보낸 캠핑장 사진·후기 보기 →</a> <span class="muted">웅포관광지 캠핑장 현장 사진·영상</span></p>
       <p class="owner-cta">🏕️ 이 캠핑장을 운영하시나요? 사진·소개 보강과 추천 노출(무료 시범) 안내는 <a class="partner-link" href="../partners.html">광고·제휴 안내</a>에서 확인하세요.</p>
       <section class="map-section"><h2>오시는 길</h2><div id="map"></div>${directions}${transitHtml(c)}</section>
+      ${popularHtml(c)}
       ${relatedSection}
       ${nearbySection("주변 관광지", "🏞️", c.nearbySpots)}
       ${nearbySection("주변 맛집", "🍜", c.nearbyFood)}
@@ -1862,6 +1917,12 @@ const slim = campings.map((c) => ({
   lng: c.lng ? Number(Number(c.lng).toFixed(4)) : undefined,
 }));
 fs.writeFileSync("campings-list.json", JSON.stringify(slim), "utf-8");
+fs.writeFileSync("popular-list.json", JSON.stringify({
+  week: POPULAR.week || "", updated: POPULAR.updated || "",
+  places: POPULAR_PLACES.map(({ rank, why, c }) => ({ rank, why, contentId: c.contentId, name: c.name, region: getRegion(c), sigungu: c.sigungu || "", image: c.image || (c.venuePhoto && c.venuePhoto.image) || "", type: (c.type || "").split(",")[0], pet: (c.pet || "").startsWith("가능") })),
+  keywords: POPULAR.keywords || [],
+}), "utf-8");
+console.log(`✅ popular-list.json (인기 ${POPULAR_PLACES.length}곳 · 검색어 칩 ${(POPULAR.keywords || []).length}개)`);
 fs.writeFileSync("sponsors-home.json", JSON.stringify(SPONSOR_ACTIVE.filter((x) => (x.scope || []).includes("home")).map((x) => {
   const c = campings.find((k) => String(k.contentId) === String(x.contentId)); if (!c) return null;
   return { contentId: c.contentId, name: c.name, region: getRegion(c), sigungu: c.sigungu || "", image: c.image || (c.venuePhoto && c.venuePhoto.image) || "", type: (c.type || "").split(",")[0], pet: (c.pet || "").startsWith("가능") };

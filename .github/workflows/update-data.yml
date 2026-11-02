@@ -36,6 +36,15 @@ jobs:
           PHOTO_BUDGET: "350"
         continue-on-error: true
 
+      # 네이버 블로그 검색(NAVER API HUB) → 캠핑장별 '다녀온 캠퍼 글' 3개 reviews.json (하루 350곳, 14일마다 재검색 — 펫트립·축제와 같은 키·코드)
+      #   Secrets에 NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 등록 필요. 없거나 실패하면 전날 reviews.json으로 빌드 계속
+      - run: node fetch-reviews.js
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          REVIEW_BUDGET: "350"
+        continue-on-error: true
+
       # 캠핑장마다 가까운 지하철역·버스정류장·공영주차장 계산 (API 없음 — data/stations.json, busstops.json.gz, parking.json.gz)
       - run: node fetch-transit.js
 

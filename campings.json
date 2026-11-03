@@ -1,5 +1,243 @@
 [
   {
+    "contentId": "100843",
+    "name": "농업회사 법인 주식회사 프라임카라반",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "",
+    "intro": "코앞에 바다가 펼쳐지는 곳  TITF카라반은 경북 포항시 남구 장기면에 자리 잡고 있다. 포항 앞바다가 눈앞에 펼쳐지는 덕분에 낭만적인 캠핑을 만끽할 수 있다. 캠핑장에는 카라반 16대와 글램핑 1개 동이 마련되어 있다. 각 객실 내부에는 일상 생활이 가능할 정도의 물품이 구비되어 있다. 일부 객실은 스파 시설을 갖추고 있다. 고급스러운 분위기의 개별 수영장이 있어 프라이빗하게 한여름 무더위를 날리기 좋다. 소형견에 한해 반려견 동반 입장이 가능하다. 주변에 오류고아라해변과 양포항 등이 있어 연계 여행에서 나서기 좋다. ",
+    "address": "경상북도 포항시 남구 장기면 동해안로3072번길 23-17",
+    "region": "경상북도",
+    "sigungu": "포항시",
+    "lat": "35.8682240",
+    "lng": "129.5321547",
+    "tel": "1522-3726-",
+    "homepage": "http://titfcaravan.com/",
+    "reserveUrl": "http://titfcaravan.com/",
+    "image": "https://gocamping.or.kr/upload/camp/100843/thumb/thumb_720_55654VzV5PWHP5fScXbVY5ed.jpg",
+    "facilities": "전기,무선인터넷,장작판매,온수,물놀이장,운동시설",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "일출명소,수상레저,낚시,액티비티,여름물놀이",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 1,
+      "caravan": 16
+    },
+    "toilets": 17,
+    "showers": 17,
+    "glampFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실",
+    "caravanFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실",
+    "siteBottom": "",
+    "location": "해변",
+    "insurance": true,
+    "program": "",
+    "rental": "",
+    "nearbyFac": "해수욕",
+    "feature": "",
+    "tooltip": "",
+    "siteDistance": 0,
+    "siteSize": "",
+    "trailerOk": false,
+    "caravanOk": false,
+    "safety": {
+      "extinguisher": 19,
+      "water": 0,
+      "sand": 0,
+      "sensor": 19
+    },
+    "reserveType": "온라인실시간예약",
+    "operDays": "평일+주말",
+    "event": "",
+    "status": "운영",
+    "offSeason": "",
+    "direction": "",
+    "updated": "2026-11-02",
+    "nearbySpots": [
+      {
+        "name": "양포항",
+        "dist": 1833,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/83/3528283_image2_1.jpg",
+        "addr": "경상북도 포항시 남구 장기면 양포리 9-32"
+      },
+      {
+        "name": "신창 간이 해수욕장",
+        "dist": 3171,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/88/3529888_image2_1.jpg",
+        "addr": "경상북도 포항시 남구 장기면 신창리"
+      },
+      {
+        "name": "금산서원",
+        "dist": 3976,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/47/3409847_image2_1.jpg",
+        "addr": "경상북도 포항시 남구 장기면 신창길191번길 25-12"
+      },
+      {
+        "name": "덕림서원",
+        "dist": 4040,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3409863_image2_1.jpg",
+        "addr": "경상북도 포항시 남구 장기면 읍내길13번길 47"
+      },
+      {
+        "name": "장기척화비와 근민당",
+        "dist": 4647,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/11/3583111_image2_1.jpg",
+        "addr": "경상북도 포항시 남구 장기면 읍내길 99"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "히든씨",
+        "dist": 4610,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/57/2840957_image2_1.jpg",
+        "addr": "경상북도 경주시 감포읍 동해안로 2560"
+      },
+      {
+        "name": "카페더헤이븐",
+        "dist": 6628,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/53/2842553_image2_1.png",
+        "addr": "경상북도 포항시 남구 장기면 동해안로 3952-44"
+      }
+    ],
+    "transit": {
+      "stops": [
+        {
+          "name": "손재림박물관",
+          "dist": 174,
+          "walkMin": 3
+        },
+        {
+          "name": "계원리",
+          "dist": 434,
+          "walkMin": 6
+        }
+      ]
+    }
+  },
+  {
+    "contentId": "102381",
+    "name": "파운더스홀 관광농원",
+    "type": "일반야영장",
+    "operator": "",
+    "lineIntro": "",
+    "intro": "",
+    "address": "경기도 안성시 일죽면 산북리 716",
+    "region": "경기도",
+    "sigungu": "안성시",
+    "lat": "37.0839950951128",
+    "lng": "127.502285248034",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "",
+    "image": "",
+    "facilities": "",
+    "pet": "",
+    "brazier": "",
+    "theme": "",
+    "operPeriod": "",
+    "siteCounts": {
+      "general": 0,
+      "auto": 0,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 0,
+    "showers": 0,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "siteBottom": "",
+    "location": "",
+    "insurance": true,
+    "program": "",
+    "rental": "",
+    "nearbyFac": "",
+    "feature": "",
+    "tooltip": "",
+    "siteDistance": 0,
+    "siteSize": "",
+    "trailerOk": false,
+    "caravanOk": false,
+    "safety": {
+      "extinguisher": 0,
+      "water": 0,
+      "sand": 0,
+      "sensor": 0
+    },
+    "reserveType": "",
+    "operDays": "",
+    "event": "",
+    "status": "운영",
+    "offSeason": "",
+    "direction": "",
+    "updated": "2026-11-02",
+    "nearbySpots": [
+      {
+        "name": "파크엘림",
+        "dist": 1331,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/28/3404728_image2_1.jpg",
+        "addr": "경기도 안성시 일죽면 주래본죽로 124-26"
+      },
+      {
+        "name": "망이산성",
+        "dist": 3739,
+        "image": "",
+        "addr": "충청북도 음성군 삼성면 양덕리"
+      },
+      {
+        "name": "죽산성지(이진터성지)",
+        "dist": 4763,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/14/3404714_image2_1.jpg",
+        "addr": "경기도 안성시 일죽면 종배길 115"
+      },
+      {
+        "name": "이천 부래미마을",
+        "dist": 4910,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/04/3541404_image2_1.jpg",
+        "addr": "경기도 이천시 율면 금율로640번길 177"
+      },
+      {
+        "name": "삼성 반려견 놀이터",
+        "dist": 6697,
+        "image": "",
+        "addr": "충청북도 음성군 삼성면 양덕리"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "일죽한우타운",
+        "dist": 2537,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/21/2863421_image2_1.jpeg",
+        "addr": "경기도 안성시 일죽면 금일로 495-6"
+      },
+      {
+        "name": "웅골손두부",
+        "dist": 3172,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/84/2758984_image2_1.png",
+        "addr": "경기도 안성시 일죽면 내둔길 16"
+      },
+      {
+        "name": "두부마을과돌솥밥일죽점",
+        "dist": 3963,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/42/2893842_image2_1.jpeg",
+        "addr": "경기도 안성시 일죽면 서동대로 7321-72"
+      },
+      {
+        "name": "갑오징어와코다리",
+        "dist": 5233,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/70/2767270_image2_1.jpg",
+        "addr": "충청북도 음성군 삼성면 금일로 1274"
+      },
+      {
+        "name": "최미자원조양평해장국",
+        "dist": 6777,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/77/2835477_image2_1.jpg",
+        "addr": "충청북도 음성군 금일로 1050-10"
+      }
+    ]
+  },
+  {
     "contentId": "29",
     "name": "80 SS 오토캠핑장",
     "type": "자동차야영장",
@@ -136376,127 +136614,6 @@
     }
   },
   {
-    "contentId": "102075",
-    "name": "하나농원캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경기도 파주시 탄현면 남북로 586",
-    "region": "경기도",
-    "sigungu": "파주시",
-    "lat": "37.7574754583641",
-    "lng": "126.722679771208",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "",
-    "facilities": "",
-    "pet": "",
-    "brazier": "",
-    "theme": "",
-    "operPeriod": "",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "siteBottom": "",
-    "location": "",
-    "insurance": false,
-    "program": "",
-    "rental": "",
-    "nearbyFac": "",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 0,
-    "siteSize": "",
-    "trailerOk": false,
-    "caravanOk": false,
-    "safety": {
-      "extinguisher": 0,
-      "water": 0,
-      "sand": 0,
-      "sensor": 0
-    },
-    "reserveType": "",
-    "operDays": "",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2026-03-19",
-    "nearbySpots": [
-      {
-        "name": "파주 장릉(인조·인열왕후) [유네스코 세계유산]",
-        "dist": 1686,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/01/3383601_image2_1.JPG",
-        "addr": "경기도 파주시 탄현면 장릉로 90"
-      },
-      {
-        "name": "교하동 고인돌 산림욕장",
-        "dist": 2009,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/30/3383530_image2_1.JPG",
-        "addr": "경기도 파주시 교하로1290번길 91-1 (당하동)"
-      },
-      {
-        "name": "교하중앙공원",
-        "dist": 3892,
-        "image": "",
-        "addr": "경기도 파주시 숲속노을로 256 (동패동)"
-      },
-      {
-        "name": "파주장단콩웰빙마루",
-        "dist": 4145,
-        "image": "",
-        "addr": "경기도 파주시 필승로 396 파주장단콩웰빙마루"
-      },
-      {
-        "name": "운정체육공원",
-        "dist": 4589,
-        "image": "",
-        "addr": "경기도 파주시 가람로150번길 41-33 (와동동)"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "앤드테라스",
-        "dist": 1112,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/52/2764452_image2_1.jpg",
-        "addr": "경기도 파주시 오도로 91 (오도동)"
-      },
-      {
-        "name": "드디어커피",
-        "dist": 1382,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/23/2783623_image2_1.jpg",
-        "addr": "경기도 파주시 교하로 1229-36 (오도동)"
-      },
-      {
-        "name": "교하정",
-        "dist": 1595,
-        "image": "",
-        "addr": "경기도 파주시 교하로 1290 (교하동)"
-      },
-      {
-        "name": "장터원조국수집",
-        "dist": 1654,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/00/2904500_image2_1.jpg",
-        "addr": "경기도 파주시 탄현면 갈현로 31"
-      },
-      {
-        "name": "수라한식뷔페",
-        "dist": 1695,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/19/2859919_image2_1.JPG",
-        "addr": "경기도 파주시 교하로 1320 (교하동)"
-      }
-    ]
-  },
-  {
     "contentId": "102076",
     "name": "하늘정원 캠핑장",
     "type": "일반야영장",
@@ -144828,127 +144945,6 @@
         "dist": 6900,
         "image": "http://tong.visitkorea.or.kr/cms/resource/08/2892308_image2_1.jpg",
         "addr": "강원특별자치도 홍천군 서면 한서로 2045"
-      }
-    ]
-  },
-  {
-    "contentId": "100428",
-    "name": "(주)함안레저캠프",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경상남도 함안군 산인면 모곡리 809-4 ",
-    "region": "경상남도",
-    "sigungu": "함안군",
-    "lat": "35.2805230735981",
-    "lng": "128.451497955535",
-    "tel": "055-583-5114",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100428/thumb/thumb_720_7181YGXCLqLmPKvbQQanVrJY.jpg",
-    "facilities": "전기,온수,물놀이장,운동시설",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 12,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 0,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "siteBottom": "파쇄석,테크",
-    "location": "산",
-    "insurance": true,
-    "program": "",
-    "rental": "",
-    "nearbyFac": "강/물놀이",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 0,
-    "siteSize": "",
-    "trailerOk": false,
-    "caravanOk": false,
-    "safety": {
-      "extinguisher": 0,
-      "water": 0,
-      "sand": 0,
-      "sensor": 0
-    },
-    "reserveType": "",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2026-02-04",
-    "nearbySpots": [
-      {
-        "name": "입곡군립공원",
-        "dist": 1649,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/18/3502918_image2_1.jpg",
-        "addr": "경상남도 함안군 산인면 입곡공원길"
-      },
-      {
-        "name": "입곡 저수지 드라이브길",
-        "dist": 1765,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/34/3070434_image2_1.JPG",
-        "addr": "경상남도 함안군 산인면 입곡공원길 225"
-      },
-      {
-        "name": "입곡문화공원",
-        "dist": 2135,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/81/2865481_image2_1.JPG",
-        "addr": "경상남도 함안군 산인면 입곡공원길 224-41"
-      },
-      {
-        "name": "황곡서원",
-        "dist": 2810,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/23/3376023_image2_1.JPG",
-        "addr": "경상남도 함안군 가야읍 상검길 22-35"
-      },
-      {
-        "name": "함안 연꽃테마파크",
-        "dist": 5026,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/15/2755215_image2_1.JPG",
-        "addr": "경상남도 함안군 가야읍 왕궁1길 38-20"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "27도씨제빵소",
-        "dist": 1651,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/54/2843854_image2_1.JPG",
-        "addr": "경상남도 함안군 산인면 모곡5길 19-59"
-      },
-      {
-        "name": "국보반상",
-        "dist": 2103,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/62/2844562_image2_1.JPG",
-        "addr": "경상남도 함안군 산인로 331"
-      },
-      {
-        "name": "카페1946",
-        "dist": 2795,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/83/2841783_image2_1.JPG",
-        "addr": "경상남도 함안군 하검길 125-3"
-      },
-      {
-        "name": "산인길",
-        "dist": 3142,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/2843876_image2_1.JPG",
-        "addr": "경상남도 함안군 함마대로 2367-1"
-      },
-      {
-        "name": "무진",
-        "dist": 3785,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/49/2841749_image2_1.JPG",
-        "addr": "경상남도 함안군 함안대로 257 만수정가든"
       }
     ]
   },
@@ -238280,127 +238276,6 @@
     }
   },
   {
-    "contentId": "100133",
-    "name": "한별 도그파크",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "",
-    "address": "경남 함안군 법수면 이묵골로 135",
-    "region": "경상남도",
-    "sigungu": "함안군",
-    "lat": "35.3365951",
-    "lng": "128.3562584",
-    "tel": "1899-2610-",
-    "homepage": "",
-    "reserveUrl": "",
-    "image": "https://gocamping.or.kr/upload/camp/100133/thumb/thumb_720_0732iwNkHB9jdQ9Jldo6OP8n.jpg",
-    "facilities": "전기,무선인터넷,온수,물놀이장,산책로,운동시설,마트.편의점",
-    "pet": "불가능",
-    "brazier": "개별",
-    "theme": "봄꽃여행,걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 15,
-      "auto": 0,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 6,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "siteBottom": "파쇄석,테크",
-    "location": "숲,강",
-    "insurance": true,
-    "program": "",
-    "rental": "텐트,릴선,화로대,식기,침낭",
-    "nearbyFac": "산책로",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 2,
-    "siteSize": "",
-    "trailerOk": true,
-    "caravanOk": false,
-    "safety": {
-      "extinguisher": 9,
-      "water": 0,
-      "sand": 0,
-      "sensor": 0
-    },
-    "reserveType": "",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2025-07-30",
-    "nearbySpots": [
-      {
-        "name": "강주 해바라기마을",
-        "dist": 2661,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3552151_image2_1.jpg",
-        "addr": "경상남도 함안군 법수면 강주4길 37"
-      },
-      {
-        "name": "주식회사꽃초린두레",
-        "dist": 3279,
-        "image": "",
-        "addr": "경상남도 함안군 법수면 장백로 1209-14"
-      },
-      {
-        "name": "악양생태공원",
-        "dist": 3734,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/16/3538216_image2_1.jpg",
-        "addr": "경상남도 함안군 대산면 하기2길 208-49"
-      },
-      {
-        "name": "탑바위",
-        "dist": 4322,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3580463_image2_1.jpg",
-        "addr": "경상남도 의령군 정곡면 죽전리 252"
-      },
-      {
-        "name": "남강서원(함안)",
-        "dist": 6602,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/23/3377023_image2_1.JPG",
-        "addr": "경상남도 함안군 군북면 소포5길 82"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "뜬",
-        "dist": 3789,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/00/2841700_image2_1.JPG",
-        "addr": "경상남도 함안군 법수면 부남1길 24-15"
-      },
-      {
-        "name": "부자한우촌",
-        "dist": 5559,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/45/2874145_image2_1.jpg",
-        "addr": "경상남도 의령군 법정로8길 4-6"
-      },
-      {
-        "name": "그린프로그",
-        "dist": 5743,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/76/2832676_image2_1.JPG",
-        "addr": "경상남도 의령군 법정로 971"
-      },
-      {
-        "name": "수정식당",
-        "dist": 8487,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/88/2832688_image2_1.JPG",
-        "addr": "경상남도 의령군 의병로23길 6 수정식당"
-      },
-      {
-        "name": "중동식당",
-        "dist": 8641,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/10/2832710_image2_1.JPG",
-        "addr": "경상남도 의령군 충익로 47-14 중동식당"
-      }
-    ]
-  },
-  {
     "contentId": "100594",
     "name": "산가원글램핑",
     "type": "일반야영장,글램핑",
@@ -307582,123 +307457,6 @@
     }
   },
   {
-    "contentId": "100843",
-    "name": "TITF 카라반",
-    "type": "카라반,글램핑",
-    "operator": "민간",
-    "lineIntro": "",
-    "intro": "코앞에 바다가 펼쳐지는 곳  TITF카라반은 경북 포항시 남구 장기면에 자리 잡고 있다. 포항 앞바다가 눈앞에 펼쳐지는 덕분에 낭만적인 캠핑을 만끽할 수 있다. 캠핑장에는 카라반 16대와 글램핑 1개 동이 마련되어 있다. 각 객실 내부에는 일상 생활이 가능할 정도의 물품이 구비되어 있다. 일부 객실은 스파 시설을 갖추고 있다. 고급스러운 분위기의 개별 수영장이 있어 프라이빗하게 한여름 무더위를 날리기 좋다. 소형견에 한해 반려견 동반 입장이 가능하다. 주변에 오류고아라해변과 양포항 등이 있어 연계 여행에서 나서기 좋다. ",
-    "address": "경북 포항시 남구 장기면 동해안로3072번길 23-17",
-    "region": "경상북도",
-    "sigungu": "포항시",
-    "lat": "35.8682240",
-    "lng": "129.5321547",
-    "tel": "1522-3726-",
-    "homepage": "http://titfcaravan.com/",
-    "reserveUrl": "http://titfcaravan.com/",
-    "image": "https://gocamping.or.kr/upload/camp/100843/thumb/thumb_720_55654VzV5PWHP5fScXbVY5ed.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,물놀이장,운동시설",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "일출명소,수상레저,낚시,액티비티,여름물놀이",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 0,
-      "glamp": 1,
-      "caravan": 16
-    },
-    "toilets": 17,
-    "showers": 17,
-    "glampFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실",
-    "caravanFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실",
-    "siteBottom": "",
-    "location": "해변",
-    "insurance": true,
-    "program": "",
-    "rental": "",
-    "nearbyFac": "해수욕",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 0,
-    "siteSize": "",
-    "trailerOk": false,
-    "caravanOk": false,
-    "safety": {
-      "extinguisher": 19,
-      "water": 0,
-      "sand": 0,
-      "sensor": 19
-    },
-    "reserveType": "온라인실시간예약",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2024-12-02",
-    "nearbySpots": [
-      {
-        "name": "양포항",
-        "dist": 1833,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/83/3528283_image2_1.jpg",
-        "addr": "경상북도 포항시 남구 장기면 양포리 9-32"
-      },
-      {
-        "name": "신창 간이 해수욕장",
-        "dist": 3171,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/88/3529888_image2_1.jpg",
-        "addr": "경상북도 포항시 남구 장기면 신창리"
-      },
-      {
-        "name": "금산서원",
-        "dist": 3976,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/47/3409847_image2_1.jpg",
-        "addr": "경상북도 포항시 남구 장기면 신창길191번길 25-12"
-      },
-      {
-        "name": "덕림서원",
-        "dist": 4040,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/63/3409863_image2_1.jpg",
-        "addr": "경상북도 포항시 남구 장기면 읍내길13번길 47"
-      },
-      {
-        "name": "장기척화비와 근민당",
-        "dist": 4647,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/11/3583111_image2_1.jpg",
-        "addr": "경상북도 포항시 남구 장기면 읍내길 99"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "히든씨",
-        "dist": 4610,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/57/2840957_image2_1.jpg",
-        "addr": "경상북도 경주시 감포읍 동해안로 2560"
-      },
-      {
-        "name": "카페더헤이븐",
-        "dist": 6628,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/53/2842553_image2_1.png",
-        "addr": "경상북도 포항시 남구 장기면 동해안로 3952-44"
-      }
-    ],
-    "transit": {
-      "stops": [
-        {
-          "name": "손재림박물관",
-          "dist": 174,
-          "walkMin": 3
-        },
-        {
-          "name": "계원리",
-          "dist": 434,
-          "walkMin": 6
-        }
-      ]
-    }
-  },
-  {
     "contentId": "100861",
     "name": "천안 트리하우스",
     "type": "일반야영장,글램핑",
@@ -357885,141 +357643,6 @@
           "name": "초사1통 갱티",
           "dist": 771,
           "walkMin": 12
-        }
-      ]
-    }
-  },
-  {
-    "contentId": "100295",
-    "name": "원산도비치캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": " 보령 해저터널 경유지 인 원산도 에 위치하며 원산도 해수욕장 인근 에 있는 자동차 야영장",
-    "intro": "바다가 한눈에 담기는 낭만적인 캠핑장  원산도비치캠핑장은 충남 보령시 오천면에 자리 잡고 있다. 보령 앞바다가 눈앞에 펼쳐지는 덕분에 낭만적인 캠핑을 만끽하기 제격이다. 도보로 무리 없이 닿을 수 있는 해수욕장도 있어 한여름 피서지로도 훌륭하다. 캠핑장에는 파쇄석과 데크로 이루어진 오토캠핑 사이트 14면과 카라반 1대, 방갈로 2개 동이 마련되어 있다. 사이트 크기는 파쇄석 6.5x8, 데크 4.3x6.3이다. 트레일러와 카라반 동반 입장이 가능하다. 반려동물은 소형견에 한해 함께 출입할 수 있다. 주변에 저두해수욕장, 저두선착장 등 관광 자원이 풍부하다.",
-    "address": "충남 보령시 오천면 원산도4길 59",
-    "region": "충청남도",
-    "sigungu": "보령시",
-    "lat": "36.3650274",
-    "lng": "126.4343379",
-    "tel": "041-935-1182",
-    "homepage": "",
-    "reserveUrl": "https://m.thankqcamping.com/",
-    "image": "https://gocamping.or.kr/upload/camp/100295/thumb/thumb_720_56211ClFJSTI1SPVXMQEWXGr.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,물놀이장,놀이터",
-    "pet": "가능(소형견)",
-    "brazier": "개별",
-    "theme": "일몰명소,수상레저,액티비티,여름물놀이,걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 14,
-      "glamp": 0,
-      "caravan": 1
-    },
-    "toilets": 4,
-    "showers": 2,
-    "glampFacilities": "",
-    "caravanFacilities": "침대,TV,에어컨,냉장고,유무선인터넷,난방기구",
-    "siteBottom": "파쇄석,테크",
-    "location": "해변,산",
-    "insurance": true,
-    "program": "",
-    "rental": "",
-    "nearbyFac": "산책로,수상레저,낚시,해수욕,청소년체험시설",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 0,
-    "siteSize": "",
-    "trailerOk": true,
-    "caravanOk": false,
-    "safety": {
-      "extinguisher": 8,
-      "water": 0,
-      "sand": 0,
-      "sensor": 1
-    },
-    "reserveType": "온라인실시간예약",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2024-04-19",
-    "nearbySpots": [
-      {
-        "name": "모래미 해변",
-        "dist": 1737,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/51/3381951_image2_1.JPG",
-        "addr": "전남광주통합특별시 영광군 백수읍 구수리"
-      },
-      {
-        "name": "소도",
-        "dist": 3805,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/72/2608572_image2_1.jpg",
-        "addr": "충청남도 보령시 오천면"
-      },
-      {
-        "name": "영목항",
-        "dist": 3904,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/15/3084515_image2_1.jpg",
-        "addr": "충청남도 태안군 고남면 월고지길 55"
-      },
-      {
-        "name": "조개부리마을",
-        "dist": 6186,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/88/3055588_image2_1.jpg",
-        "addr": "충청남도 태안군 고남면 옷점길 141-26"
-      },
-      {
-        "name": "보령에너지월드(보령발전본부)",
-        "dist": 6442,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/52/3048052_image2_1.jpg",
-        "addr": "충청남도 보령시 오천면"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "원산도명가식당",
-        "dist": 1955,
-        "image": "",
-        "addr": "충청남도 보령시 원산도1길 39-2"
-      },
-      {
-        "name": "멜로우데이즈",
-        "dist": 6598,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/93/2851293_image2_1.jpg",
-        "addr": "충청남도 태안군 안면대로 4269-11"
-      },
-      {
-        "name": "김가네 전통사골수제비",
-        "dist": 8950,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/21/3048121_image2_1.JPG",
-        "addr": "충청남도 보령시 석서1길 57"
-      },
-      {
-        "name": "대천키조개삼합",
-        "dist": 9071,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/81/2766981_image2_1.jpg",
-        "addr": "충청남도 보령시 해수욕장8길 51 (신흑동)"
-      },
-      {
-        "name": "해물상회",
-        "dist": 9362,
-        "image": "",
-        "addr": "충청남도 보령시 해수욕장6길 118"
-      }
-    ],
-    "transit": {
-      "stops": [
-        {
-          "name": "원의",
-          "dist": 268,
-          "walkMin": 4
-        },
-        {
-          "name": "점촌",
-          "dist": 552,
-          "walkMin": 8
         }
       ]
     }

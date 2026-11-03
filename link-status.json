@@ -256,10 +256,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://sinsudocamping.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "https://sinsudocamping.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.riverguide.go.kr/campingTour/areaCamp.do?RIVER_CD=RVRK&FAC_NO=1231": {
   "state": "ok",
@@ -469,9 +469,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://0539833737.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.hongcheon.go.kr/palbong": {
   "state": "ok",
@@ -485,10 +486,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://thepark12.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "https://thepark12.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/emoonriver": {
   "state": "ok",
@@ -771,10 +772,10 @@
   "final": "https://cafe.naver.com/yangpyeongcamping"
  },
  "http://ypcamp.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "http://ypcamp.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.jeongeup.go.kr/reserve/index.jeongeup?menuCd=DOM_000001207001000000": {
   "state": "ok",
@@ -1229,9 +1230,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://neulyesol1384.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://seorak.knps.or.kr": {
   "state": "ok",
@@ -1240,10 +1242,10 @@
   "final": "http://www.knps.or.kr/seorak"
  },
  "http://odalsanysyoung.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "http://odalsanysyoung.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/starsinbicheon": {
   "state": "ok",
@@ -1564,9 +1566,10 @@
   "final": "http://xn--299a941ap1h.com/"
  },
  "https://caravan1004.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.pensionflower.net/sub5_1.php": {
   "state": "dead",
@@ -1603,10 +1606,10 @@
   "error": "20"
  },
  "https://hbdcamp.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "https://hbdcamp.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://gjcamping.co/": {
   "state": "ok",
@@ -1918,9 +1921,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://slcamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/v5/entry/place/1027024612?c=14093315.7921373,4244195.9606344,15,0,0,0,dh&placePath=%2Fbooking%3Fentry=plt": {
   "state": "ok",
@@ -1961,9 +1965,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://healingpark.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://autocamp.haenam.go.kr/bbs/board.php?bo_table=reserv": {
   "state": "dead",
@@ -2161,10 +2166,10 @@
   "final": "https://cafe.naver.com/whitelotus1593"
  },
  "http://dreamcam.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "http://dreamcam.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://grandpark.seoul.go.kr/korea_grand/camping/reserv/reserv01.jsp?headerId=41263&menuid=41281&parentId=41282": {
   "state": "dead",
@@ -2178,10 +2183,10 @@
   "final": "https://camplink.co.kr/?camp=jh0105007"
  },
  "http://seomji.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "http://seomji.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://booking.naver.com/booking/3/bizes/81832": {
   "state": "ok",
@@ -2387,9 +2392,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://heal3001.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://포천리컴펜글.com/": {
   "state": "ok",
@@ -2603,14 +2609,16 @@
   "error": "fetch failed"
  },
  "https://jamaerocamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://bullsglampinghp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.camfit.co.kr/camp/61303f1a13b75b001efd2c7e": {
   "state": "ok",
@@ -2652,9 +2660,10 @@
   "final": "https://map.naver.com/p/entry/place/1414632879?c=14200685.4781541,4135556.9389744,13,0,0,0,dh&placePath=%2Fbooking%3FbookingRedirectUrl=https:%2F%2Fm.booking.naver.com%2Fbooking%2F3%2Fbizes%2F426361%26entry=plt"
  },
  "https://meariglamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.campingingokseong.co.kr/": {
   "state": "ok",
@@ -2738,10 +2747,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "http://limsglamping.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "http://limsglamping.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://naver.me/FtThK3iL": {
   "state": "ok",
@@ -2756,9 +2765,10 @@
   "final": "https://camfit.co.kr/camp/6321e6e27c91db001eed88b9"
  },
  "https://starrynaight.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://naver.me/G6fbY5X1": {
   "state": "unknown",
@@ -2766,9 +2776,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://ddangddange.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://blog.naver.com/cheongnacamping": {
   "state": "ok",
@@ -2786,9 +2797,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://dronecamping.modoo.at/?link=cxcui9jf": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://dc.hwasun.go.kr": {
   "state": "ok",
@@ -2797,9 +2809,10 @@
   "final": "https://dc.hwasun.go.kr/index.do?S=S01"
  },
  "http://hwasundome.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/p/search/%EA%B1%B0%EA%B8%88%EB%8F%84%20%EC%B2%AD%EC%84%9D%20%EC%98%A4%ED%86%A0%EC%BA%A0%ED%95%91%EC%9E%A5/place/1513537347?c=15.00,0,0,0,dh&isCorrectAnswer=true": {
   "state": "ok",
@@ -2812,15 +2825,16 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://saltcamping.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "https://saltcamping.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://storywoodsglamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://booking.naver.com/booking/3/bizes/598254": {
   "state": "ok",
@@ -2897,9 +2911,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://andocamping.modoo.at/?link=aq3ax6ld": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/p/entry/place/1263438655?lng=127.1341211&lat=34.4775892&placePath=%2Fhome&entry=plt&c=15.00,0,0,0,dh": {
   "state": "ok",
@@ -2947,9 +2962,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://masilcamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/dodo_glamping_/": {
   "state": "unknown",
@@ -3522,10 +3538,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "http://nonsancamping.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "http://nonsancamping.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://naver.me/xsZjNHb9": {
   "state": "ok",
@@ -3549,9 +3565,10 @@
   "checkedAt": "2026-10-27T23:59:41.731Z"
  },
  "https://nonsancamping.modoo.at/?link=gno8mugj": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://병지방오토캠핑장.kr": {
   "state": "ok",
@@ -3743,10 +3760,10 @@
   "final": "https://cafe.naver.com/1305"
  },
  "http://turningpoint.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z",
-  "final": "http://turningpoint.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://cafe.naver.com/daddycam": {
   "state": "ok",
@@ -3869,9 +3886,10 @@
   "final": "https://camfit.co.kr/camp/63b5222c22142f001eff6f62"
  },
  "https://sindu57camping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-27T23:59:41.731Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/gaechabancamp": {
   "state": "ok",
@@ -4189,9 +4207,10 @@
   "error": "fetch failed"
  },
  "https://waterstar.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.pcamp.kr/": {
   "state": "ok",
@@ -4380,9 +4399,10 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://halfmooncamp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://naver.me/5ObYDMYE": {
   "state": "unknown",
@@ -4467,9 +4487,10 @@
   "final": "https://map.naver.com/p/entry/place/2077453188?placePath=%2Fhome"
  },
  "https://arammal.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://moonlight.letsnowgo.com/v2/deploy": {
   "state": "ok",
@@ -4477,9 +4498,10 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://staygreen71.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/pinegrovecamping": {
   "state": "ok",
@@ -5766,9 +5788,10 @@
   "final": "https://map.naver.com/p/entry/place/1162539080?c=14202286.2079039,4572938.1757507,13,0,0,0,dh&placePath=%2Fhome%3Fentry=plt"
  },
  "https://hongsunggloria.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.o-stay.kr/html/index.html": {
   "state": "ok",
@@ -6678,9 +6701,10 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://goldenvalleycamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.fireflycamping.com/default/app/app_online.php?topmenu=3&submenu=2": {
   "state": "ok",
@@ -7099,9 +7123,10 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "http://jeongipumsong.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.gilcamp.co.kr/": {
   "state": "dead",
@@ -7252,9 +7277,10 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "http://daeduncamp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.camfit.co.kr/camp/65f2f7ab6e3b28001e6b8982": {
   "state": "ok",
@@ -7381,9 +7407,10 @@
   "error": "fetch failed"
  },
  "https://camping4282.modoo.at/?link=6zzjv756": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/odaecheonhyu": {
   "state": "ok",
@@ -7391,9 +7418,10 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://camping4282.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.camfit.co.kr/camp/64085297977d29001ed4701e": {
   "state": "ok",
@@ -7473,9 +7501,10 @@
   "final": "https://map.naver.com/p/entry/place/1201523789?placePath=%2Fhome"
  },
  "https://pigujifarm.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://forest.maketicket.co.kr/ticket/GD129": {
   "state": "ok",
@@ -7585,10 +7614,10 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://deepcamp.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-29T00:16:46.568Z",
-  "final": "https://deepcamp.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://lizvalley.com/bbs/board.php?bo_table=04_02": {
   "state": "dead",
@@ -7737,9 +7766,10 @@
   "checkedAt": "2026-10-29T00:16:46.568Z"
  },
  "https://bbalganjib.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/sosocamp_jecheon": {
   "state": "ok",
@@ -7850,9 +7880,10 @@
   "final": "http://xn--9y5bi6fiyb8vl.com/"
  },
  "https://hanghwachon.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://booking.naver.com/booking/3/bizes/1247314": {
   "state": "ok",
@@ -7983,9 +8014,10 @@
   "checkedAt": "2026-11-02T06:29:28.217Z"
  },
  "https://starrynight2016.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://letsgobluewhale.com/": {
   "state": "dead",
@@ -8066,9 +8098,10 @@
   "checkedAt": "2026-10-30T00:11:33.993Z"
  },
  "https://antcamp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.andongtour.com/sub3/sub3_1.htm": {
   "state": "dead",
@@ -8108,9 +8141,10 @@
   "final": "https://cafe.naver.com/cmng727"
  },
  "https://huerim.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://camp850.com/sub01/?menu=sub01_1": {
   "state": "ok",
@@ -8201,9 +8235,10 @@
   "checkedAt": "2026-10-30T00:11:33.993Z"
  },
  "https://myhealingcamp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/kjcamping": {
   "state": "ok",
@@ -8625,9 +8660,10 @@
   "checkedAt": "2026-10-30T00:11:33.993Z"
  },
  "https://dalcam0421.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/0315855995": {
   "state": "ok",
@@ -8912,9 +8948,10 @@
   "final": "http://www.xn--bb0b86vv9i3ka70em64aga038d.kr/home/"
  },
  "https://sogeumganges.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://camfit.co.kr/camp/67f34e2daa6e4e001d71ad2e": {
   "state": "ok",
@@ -8966,9 +9003,10 @@
   "checkedAt": "2026-10-30T00:11:33.993Z"
  },
  "https://woosungfishing.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.camfit.co.kr/camp/66f11d5ed9ceac001e9a4114": {
   "state": "ok",
@@ -9036,10 +9074,10 @@
   "error": "fetch failed"
  },
  "http://gpstory.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z",
-  "final": "http://gpstory.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/petsrunpark_/": {
   "state": "ok",
@@ -9112,9 +9150,10 @@
   "checkedAt": "2026-10-30T00:11:33.993Z"
  },
  "https://glampinggarden.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://m.site.naver.com/1mCwy": {
   "state": "unknown",
@@ -9122,14 +9161,16 @@
   "checkedAt": "2026-10-30T00:11:33.993Z"
  },
  "https://nochusan.modoo.at/?link=9qbis568": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://nochusan.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cheonghwasancamp.imweb.me/": {
   "state": "ok",
@@ -9230,10 +9271,10 @@
   "checkedAt": "2026-11-02T06:29:28.217Z"
  },
  "http://kwangdeoksannongwon.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z",
-  "final": "http://kwangdeoksannongwon.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://jhwesternglamping.co.kr": {
   "state": "dead",
@@ -9414,9 +9455,10 @@
   "error": "fetch failed"
  },
  "https://seaseecamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://blog.naver.com/kek8821": {
   "state": "ok",
@@ -9461,9 +9503,10 @@
   "final": "https://map.naver.com/p/search/%EB%91%98%EB%A0%88%EC%BA%A0%ED%94%84/place/1848741171?placePath=%3Fentry%253Dpll&c=15,0,0,0,dh"
  },
  "https://2023staygajo.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/themungstay/": {
   "state": "ok",
@@ -9528,10 +9571,10 @@
   "final": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fhiwaycamping%2F&is_from_rle"
  },
  "https://pccamping.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z",
-  "final": "https://pccamping.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/chungchoon587": {
   "state": "ok",
@@ -9708,9 +9751,10 @@
   "checkedAt": "2026-10-30T00:11:33.993Z"
  },
  "https://dinocaravan.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/walk_ansan_bbq": {
   "state": "ok",
@@ -9741,10 +9785,10 @@
   "final": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbetween__official%2F&is_from_rle"
  },
  "https://joongrangsoop.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-30T00:11:33.993Z",
-  "final": "https://joongrangsoop.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://xn--hl1bnop6a.kr/": {
   "state": "dead",
@@ -9997,9 +10041,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://beulgoeul.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://booking.ddnayo.com/booking-calendar-status?accommodationId=104279": {
   "state": "unknown",
@@ -10107,9 +10152,10 @@
   "final": "https://camfit.co.kr/camp/60d95a78d3d980001ebcc219"
  },
  "https://forest41928.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://blog.naver.com/end_over_": {
   "state": "ok",
@@ -10273,9 +10319,10 @@
   "final": "https://hackberryville.com/"
  },
  "https://swglamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.camfit.co.kr/camp/64c72068334860001ef9120d": {
   "state": "ok",
@@ -10436,9 +10483,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://gaeunmoonlight.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://r.camperstory.com/?7332": {
   "state": "ok",
@@ -10447,9 +10495,10 @@
   "final": "https://m.thankqcamping.com/resv/view.hbb?cseq=7332&go_main=Y&path=RP"
  },
  "https://campgroundhwaon.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://booking.ddnayo.com/booking-calendar-status?accommodationId=100394": {
   "state": "unknown",
@@ -10468,9 +10517,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://bombit5450700.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.camfit.co.kr/camp/65c486b61fd4f2001edb7b2e": {
   "state": "ok",
@@ -10544,9 +10594,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://campingclass0.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://campgongzone.co.kr/": {
   "state": "ok",
@@ -10675,9 +10726,10 @@
   "error": "20"
  },
  "https://thebomnal2791.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/woony_cheongju/": {
   "state": "unknown",
@@ -10749,9 +10801,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://banggil.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://blog.naver.com/sorara2": {
   "state": "ok",
@@ -10880,10 +10933,10 @@
   "error": "fetch failed"
  },
  "https://kuenjip.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "final": "https://kuenjip.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/netcamp": {
   "state": "ok",
@@ -10918,10 +10971,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://jejuormhouse.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "final": "https://jejuormhouse.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://naver.me/5mI1rRnk": {
   "state": "unknown",
@@ -10946,9 +10999,10 @@
   "final": "http://www.thebestcamp.co.kr/home/"
  },
  "https://bnmg.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.seoul.go.kr/storyw/campingjang/seocheon.do": {
   "state": "ok",
@@ -11079,10 +11133,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://habibic.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "final": "http://habibic.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.무주양지뜰.com": {
   "state": "ok",
@@ -11093,10 +11147,10 @@
   "lastError": "fetch failed"
  },
  "https://wondongforest.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "final": "http://wondongforest.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://camfit.co.kr/camp/6698815898ab12001e3597ff": {
   "state": "ok",
@@ -11115,9 +11169,10 @@
   "error": "fetch failed"
  },
  "https://bbqzone.modoo.at/?link=z5hl3zrd": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://naver.me/x2kroS3I": {
   "state": "unknown",
@@ -11169,10 +11224,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://podocamp.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "final": "https://podocamp.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://xn--qz2b0zc8k0wgbkr.jdweb.kr/": {
   "state": "ok",
@@ -11252,9 +11307,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://seungbongcamp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://naver.me/Fvn7E1Ja": {
   "state": "unknown",
@@ -11359,9 +11415,10 @@
   "error": "fetch failed"
  },
  "https://mwdpp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/ddoborycamp": {
   "state": "ok",
@@ -11438,9 +11495,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://camvly.modoo.at/?link=8dgaq8tx": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/seulteo/67": {
   "state": "ok",
@@ -11458,10 +11516,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://ddscampingland.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "final": "https://ddscampingland.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.sanddune.co.kr/reserve/index.php": {
   "state": "unknown",
@@ -11495,10 +11553,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "http://naepocamping.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "final": "http://naepocamping.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://baramcamp.com/": {
   "state": "ok",
@@ -11590,9 +11648,10 @@
   "error": "fetch failed"
  },
  "https://gosan9.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://naver.me/5ITBcpmE": {
   "state": "unknown",
@@ -11622,9 +11681,10 @@
   "final": "https://map.naver.com/p/entry/place/1738872995?lng=128.0820639&lat=36.7423188&placePath=%2Fhome&searchType=place"
  },
  "https://bookculture1315.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://xn--h49a69znpeseq4zkuextkvlkpzd.com/": {
   "state": "ok",
@@ -11632,9 +11692,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://gentlepetparadise.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://moraejaecamp.com/": {
   "state": "dead",
@@ -11685,9 +11746,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://campariul.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.allkorea.co.kr/netfu_rpension/res/realtime.html?year=2014&month=06&day=12&span=1&group=netfu_316769829": {
   "state": "ok",
@@ -11930,9 +11992,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://hmvil.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://camfit.co.kr/camp/6232a3a6ebb46e001e72ee68": {
   "state": "ok",
@@ -12028,9 +12091,10 @@
   "error": "fetch failed"
  },
  "https://tcamp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://booking.naver.com/booking/3/bizes/728178": {
   "state": "ok",
@@ -12085,9 +12149,10 @@
   "final": "https://camfit.co.kr/camp/6271eb8cdc51e1001e435650"
  },
  "https://farmandtour.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/naturehumanbeing": {
   "state": "ok",
@@ -12105,9 +12170,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://goginams.modoo.at/?link=alakyrki": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/p/entry/place/1967001089?c=13.00,0,0,0,dh&placePath=%2Fhome%3Fentry=plt": {
   "state": "ok",
@@ -12115,9 +12181,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://daeyasan.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/p/entry/place/1241393441?c=15.00,0,0,0,dh&isCorrectAnswer=true": {
   "state": "ok",
@@ -12166,9 +12233,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://anddeulcamp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.sdcamp.kr/": {
   "state": "dead",
@@ -12209,9 +12277,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://4ourseason.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/p/entry/place/1121962691?c=15.00,0,0,0,dh": {
   "state": "ok",
@@ -12259,9 +12328,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://starlitpension.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://cafe.naver.com/boracamping": {
   "state": "ok",
@@ -12332,9 +12402,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://campingdream.modoo.at/?link=14jqcpnx": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://blog.naver.com/sbh0823": {
   "state": "ok",
@@ -12420,9 +12491,10 @@
   "final": "https://camfit.co.kr/camp/6360c035445fbf001eeef13d"
  },
  "https://blueislandcamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://booking.naver.com/booking/3/bizes/753133/items/4632049": {
   "state": "ok",
@@ -12446,9 +12518,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://muheulgugokpension.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.camfit.co.kr/camp/6501b143f04b3a001edef9c6": {
   "state": "ok",
@@ -12508,9 +12581,10 @@
   "checkedAt": "2026-11-03T02:36:25.364Z"
  },
  "https://healingtime365.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://towoomaru.com/default/": {
   "state": "ok",
@@ -12570,14 +12644,16 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://birdglamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://yglamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://m.thankqcamping.com/resv/view.hbb?cseq=3997": {
   "state": "ok",
@@ -12669,9 +12745,10 @@
   "final": "https://www.campmap.co.kr/vr/raonvalley/"
  },
  "https://samsai.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://booking.naver.com/booking/3/bizes/769485": {
   "state": "ok",
@@ -12679,9 +12756,10 @@
   "checkedAt": "2026-11-03T02:36:25.364Z"
  },
  "https://279.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/p/entry/place/1703807056?lng=127.8626692&lat=36.1338012&placePath=%2Fhome&entry=plt&c=15.00,0,0,0,dh": {
   "state": "ok",
@@ -12723,11 +12801,10 @@
   "error": "20"
  },
  "https://akdml21c.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "suspect": true,
-  "lastError": "20"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://band.us/band/85804753": {
   "state": "ok",
@@ -12751,11 +12828,10 @@
   "lastError": "20"
  },
  "https://aurora3223.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "suspect": true,
-  "lastError": "20"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.foresttrip.go.kr/rep/or/sssn/fcfsRsrvtPssblGoodsDetls.do?hmpgId=ID02030022&menuId=001001": {
   "state": "unknown",
@@ -12783,11 +12859,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://subokcamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z",
-  "suspect": true,
-  "lastError": "20"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://ganegol.net/contents/main.html": {
   "state": "ok",
@@ -12807,9 +12882,10 @@
   "checkedAt": "2026-10-31T23:37:19.710Z"
  },
  "https://seocheoncamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.ercamp.net": {
   "state": "dead",
@@ -12903,10 +12979,10 @@
   "checkedAt": "2026-10-31T23:37:19.710Z"
  },
  "http://bwhealingcamp.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z",
-  "final": "http://bwhealingcamp.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://rev.yapen.co.kr/external?ypIdx=33587": {
   "state": "ok",
@@ -13307,9 +13383,10 @@
   "final": "https://choripunggyeong1.campingt.me/error/404.html;jsessionid=4B58DC394516D971E389EF684C57EC79"
  },
  "https://greatoceanpower.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://naver.me/GTgSSSAR": {
   "state": "unknown",
@@ -13350,10 +13427,10 @@
   "checkedAt": "2026-10-31T23:37:19.710Z"
  },
  "https://illoogram.modoo.at": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z",
-  "final": "https://illoogram.modoo.at/"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/jajaknamoosoopcamp/": {
   "state": "unknown",
@@ -13398,9 +13475,10 @@
   "checkedAt": "2026-10-31T23:37:19.710Z"
  },
  "https://haemil365camping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "http://www.xn--9y2bk8m6xcn4pg9h.kr/index.php": {
   "state": "ok",
@@ -13501,9 +13579,10 @@
   "error": "fetch failed"
  },
  "https://hcddrancamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/p/search/%ED%83%9C%EC%95%88%EB%85%B8%EC%9D%84%EA%B3%BC%EB%B0%94%EB%8B%A4%EC%BA%A0%ED%95%91%EC%95%A4%EA%B8%80%EB%9E%A8%ED%95%91/place/1203562948?c=15.00,0,0,0,dh&isCorrectAnswer=true": {
   "state": "ok",
@@ -13516,9 +13595,10 @@
   "checkedAt": "2026-10-31T23:37:19.710Z"
  },
  "https://eulsugolbyeolbit.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.instagram.com/_camp_darling/": {
   "state": "unknown",
@@ -13594,9 +13674,10 @@
   "final": "https://camfit.co.kr/camp/638d58a9d05094001e295a79"
  },
  "https://taeanautocamping.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://www.camfit.co.kr/camp/629edbe3692d55001e3ef9ba": {
   "state": "ok",
@@ -13637,9 +13718,10 @@
   "error": "fetch failed"
  },
  "https://campinglaforet.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T23:37:19.710Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://map.naver.com/p/entry/place/1001365488?c=8.46,0,0,0,dh&isCorrectAnswer=true": {
   "state": "ok",
@@ -14118,9 +14200,10 @@
   "checkedAt": "2026-10-31T00:01:50.002Z"
  },
  "https://htcamp.modoo.at/": {
-  "state": "ok",
+  "state": "dead",
   "status": 200,
-  "checkedAt": "2026-10-31T00:01:50.002Z"
+  "checkedAt": "2026-11-03T08:19:33.000Z",
+  "error": "modoo 서비스 종료"
  },
  "https://store.camfit.co.kr/camp/642cdbaacc25eb001e0ec4e9": {
   "state": "dead",

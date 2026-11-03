@@ -447,7 +447,8 @@ function autoIntroText(c) {
 // 링크 생존 검사 결과 (check-links.js → link-status.json). dead(404·5xx·접속 불가 확정)만 버튼에서 뺀다. 403 같은 봇 차단(unknown)과 첫 실패(suspect)는 유지.
 let LINKS = {};
 try { LINKS = JSON.parse(fs.readFileSync("link-status.json", "utf-8")); } catch {}
-const linkDead = (u) => !!(u && LINKS[String(u).trim()] && LINKS[String(u).trim()].state === "dead");
+const isModoo = (u) => /^https?:\/\/[^/]*modoo\.at(\/|$)/i.test(String(u || "").trim()); // 네이버 modoo! 종료(2025-06-26) → 항상 죽은 링크 취급
+const linkDead = (u) => !!(u && (isModoo(u) || (LINKS[String(u).trim()] && LINKS[String(u).trim()].state === "dead")));
 const linkOk = (u) => !!u && !linkDead(u);
 
 function reserveBlock(c) {
@@ -615,7 +616,7 @@ function buildPage(c, all) {
     return out.length < text.length ? out.replace(/[,，·\s]+$/, "") + "…" : out;
   };
   const introBrief = briefOf(c.intro) || briefOf(c.lineIntro, 160);
-  const introSource = c.homepage && /^https?:\/\//i.test(c.homepage)
+  const introSource = linkOk(c.homepage) && /^https?:\/\//i.test(c.homepage)
     ? `<a target="_blank" rel="noopener" href="${esc(c.homepage)}">공식 홈페이지</a>`
     : `<a target="_blank" rel="noopener" href="https://gocamping.or.kr/bsite/camp/info/list.do?searchKeyword=${encodeURIComponent(c.name)}">고캠핑</a>`;
   const intro = introBrief

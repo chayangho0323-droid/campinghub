@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://campinghub.kr/sitemap-core.xml
 Sitemap: https://campinghub.kr/sitemap.xml

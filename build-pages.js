@@ -21,8 +21,11 @@ const GA_SNIPPET = `
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-8273JMD6NN');
-  </script>
-  <!-- Google AdSense (사이트 소유 확인 + 광고 게재) -->
+  </script>`;
+
+// 애드센스 로더 — 2026-11-05 재심사 대응: 모든 페이지가 아니라 "우리가 쓴 내용이 있는 페이지"에만 넣는다.
+// (10/23 축제 "복제된 콘텐츠 화면에 광고·가치 낮은 콘텐츠", 11/2 캠핑 "가치 낮은 콘텐츠" 사유. 얇은 페이지·끝난 행사 데이터 페이지엔 광고도 색인도 없음)
+const ADSENSE_SNIPPET = `
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5951913667078413" crossorigin="anonymous"></script>`;
 
 // 쿠팡 파트너스 — 캠핑용품이라 이 사이트와 궁합이 더 좋다 (FestivalHub과 같은 링크)
@@ -87,7 +90,6 @@ function reviewsHtml(c) {
           ${r.items.map((it) => `<li>
             <a class="blog-review-link" target="_blank" rel="noopener nofollow" href="${esc(it.l)}"><strong>${esc(it.t)}</strong></a>
             <span class="review-meta">${esc(it.b)}${it.dt ? ` · ${fmtPostDate(it.dt)}` : ""}</span>
-            ${it.d ? `<p class="review-desc">${esc(it.d)}…</p>` : ""}
           </li>`).join("")}
         </ul>
         <div class="dir-buttons">
@@ -529,7 +531,7 @@ function buildListPage({ filename, title, heading, subtitle, description, items,
   <meta property="og:description" content="${esc(description)}" />
   <meta property="og:url" content="${SITE_URL}/${filename}" />
   <link rel="stylesheet" href="style.css" />${reportHead("")}
-  ${GA_SNIPPET}
+  ${GA_SNIPPET}${ADSENSE_SNIPPET}
 </head>
 <body>
   <header class="site-header">
@@ -552,6 +554,15 @@ function buildListPage({ filename, title, heading, subtitle, description, items,
 }
 
 // ─── 캠핑장 한 곳 → 상세 페이지 ───
+// ── 색인·광고 등급 (2026-11-05 애드센스 재심사 "가치가 별로 없는 콘텐츠" 대응) ──
+// own: 캠핑장 이야기·방문자 사진·제보 정정 = 우리만 가진 내용. 소개문도 사진도 own도 없는 캠핑장(676곳)은 고캠핑 표 데이터뿐이라 색인·광고 제외.
+// 소개문이나 사진이 있으면 색인은 하되, 광고는 own이 있거나 소개문이 있는 페이지에만.
+const campHasIntro = (c) => String(c.intro || "").length + String(c.lineIntro || "").length >= 50;
+const campHasImage = (c) => !!(c.image || c.firstImage);
+const campOwn = (c) => !!(findCampNote(c) || visitorPhotos[String(c.contentId)] || c.corrected);
+const isLowValueCamp = (c) => !campOwn(c) && !campHasIntro(c) && !campHasImage(c);
+const campShowAds = (c) => !isLowValueCamp(c) && (campOwn(c) || campHasIntro(c));
+
 function buildPage(c, all) {
   const region = getRegion(c);
   const auto = autoIntroText(c);
@@ -560,6 +571,8 @@ function buildPage(c, all) {
   const description = (stripHtml(c.lineIntro || c.intro) || (campNote && campNote.intro[0]) || auto).slice(0, 150);
 
   const vph = visitorPhotos[String(c.contentId)];
+  const lowValue = isLowValueCamp(c);
+  const showAds = campShowAds(c);
   // 대표 사진 우선순위: 공식/제보 사진 > 주변 풍경(fetch-photos.js venuePhoto, "주변 풍경" 안내문 포함) > 초록 타일+제보 버튼
   const img = c.image
     ? `<img class="hero" src="${esc(c.image)}" alt="${esc(c.name)}" />${c.photoCredit ? `<p class="photo-credit">📷 사진 제보: ${esc(c.photoCredit)} 님</p>` : c.photoSource ? `<p class="venue-photo-note">📷 사진: ${esc(c.photoSource)} (공공누리 1유형)</p>` : ""}`
@@ -725,6 +738,7 @@ function buildPage(c, all) {
   <title>${esc(c.name)} — ${region} ${esc(c.sigungu || "")} 캠핑장 예약·시설·반려동물 정보 | CampingHub</title>
   <meta name="description" content="${esc(description)}" />
   <link rel="canonical" href="${SITE_URL}/camping/${c.contentId}.html" />
+  ${lowValue ? `<meta name="googlebot" content="noindex,follow" /><!-- 구글만 제외: 네이버 검색 유입(신규 캠핑장 검색이 1위)은 유지 -->` : ""}
   <meta property="og:type" content="website" />
   <meta property="og:title" content="${esc(c.name)} — ${region} 캠핑장" />
   <meta property="og:description" content="${esc(description)}" />
@@ -734,7 +748,7 @@ function buildPage(c, all) {
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
-  ${GA_SNIPPET}
+  ${GA_SNIPPET}${showAds ? ADSENSE_SNIPPET : ""}
 </head>
 <body>
   <main class="detail-container">
@@ -761,7 +775,7 @@ function buildPage(c, all) {
       </div>
       ${reserveBlock(c)}
       ${c.corrected ? `<p class="coupang-notice">✏️ 예약·연락처 정보를 제보로 확인해 정정했습니다 (${esc(String(c.corrected).slice(0, 10))}). 고캠핑 원본과 다를 수 있으며 이 페이지가 최신입니다.</p>` : ""}
-      ${ADFIT_BODY}
+      ${showAds ? ADFIT_BODY : ""}
       ${weatherHtml(c)}
       ${campNoteHtml(c)}
       ${checkBeforeHtml(c)}
@@ -1715,7 +1729,7 @@ const todayYmd = BUILD_VER;
   ${entries[0] ? `<meta property="og:image" content="${esc(VP.firstImage(entries[0].list) || "")}" />` : ""}
   <link rel="stylesheet" href="style.css?v=${BUILD_VER}" />
   <link rel="stylesheet" href="report.css?v=${BUILD_VER}" />
-  ${GA_SNIPPET}
+  ${GA_SNIPPET}${ADSENSE_SNIPPET}
 </head>
 <body>
   <header class="site-header">
@@ -1854,7 +1868,7 @@ for (const g of GUIDE_PAGES) {
   <meta property="og:description" content="${esc(g.desc)}" />
   <meta property="og:url" content="${SITE_URL}/${filename}" />
   <link rel="stylesheet" href="style.css" />${reportHead("")}
-  ${GA_SNIPPET}
+  ${GA_SNIPPET}${ADSENSE_SNIPPET}
 </head>
 <body>
   <header class="site-header">
@@ -1886,7 +1900,7 @@ const urls = [
   ...guideFiles.map((f) => `${SITE_URL}/${f}`),
   ...themeFiles.map((f) => `${SITE_URL}/${f}`),
   ...regionFiles.map((f) => `${SITE_URL}/${f}`),
-  ...campings.map((c) => `${SITE_URL}/camping/${c.contentId}.html`),
+  ...campings.filter((c) => !isLowValueCamp(c)).map((c) => `${SITE_URL}/camping/${c.contentId}.html`), // 2026-11-05: 빈 페이지(noindex) 제외
 ];
 fs.writeFileSync(
   "sitemap.xml",

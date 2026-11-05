@@ -1,5 +1,249 @@
 [
   {
+    "contentId": "100472",
+    "name": "금산 자연 오토캠핑장",
+    "type": "자동차야영장",
+    "operator": "민간",
+    "lineIntro": "충남 금산 남이면에 위치한 나무그늘의 야영장",
+    "intro": "충남_금산군_금산자연오토캠핑장  금산자연오토캠핑장은 충남 금산군 남이면에 자리 잡고 있다. 숲속에 자리한 덕분에 더없이 자연친화적인 분위기다. 캠핑장에서는 파쇄석과 데크로 이루어진 오토캠핑 사이트 10면이 마련돼 있다. 파쇄석 10면은 10X8로 널찍해 대형 텐트를 설치하는 데 무리가 없다. 소형 트레일러 동반 입장은 가능하지만, 캠핑카나 카라반은 불가능하다. 데크 2면은 3.6X6이다. 개별 화장실과 샤워실이 눈에 띈다. 주변에 보석사, 십이폭포가 있어 가볍게 들러보기 좋다.",
+    "address": "충청남도 금산군 남이면 휴양림로 375-15",
+    "region": "충청남도",
+    "sigungu": "금산군",
+    "lat": "36.0424130",
+    "lng": "127.4309057",
+    "tel": "",
+    "homepage": "",
+    "reserveUrl": "https://camfit.co.kr/camp/62eb410d1b512e001f25fe28",
+    "image": "https://gocamping.or.kr/upload/camp/100472/thumb/thumb_720_7677EIvR6HzuKEJeRT5vVx6y.jpg",
+    "facilities": "전기,무선인터넷,장작판매,온수,놀이터",
+    "pet": "불가능",
+    "brazier": "개별",
+    "theme": "봄꽃여행,가을단풍명소,겨울눈꽃명소,걷기길",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 0,
+      "auto": 10,
+      "glamp": 0,
+      "caravan": 0
+    },
+    "toilets": 12,
+    "showers": 12,
+    "glampFacilities": "",
+    "caravanFacilities": "",
+    "siteBottom": "테크,자갈",
+    "location": "숲,계곡",
+    "insurance": true,
+    "program": "",
+    "rental": "릴선",
+    "nearbyFac": "",
+    "feature": "",
+    "tooltip": "",
+    "siteDistance": 0,
+    "siteSize": "",
+    "trailerOk": true,
+    "caravanOk": false,
+    "safety": {
+      "extinguisher": 10,
+      "water": 0,
+      "sand": 0,
+      "sensor": 0
+    },
+    "reserveType": "온라인실시간예약",
+    "operDays": "평일+주말",
+    "event": "",
+    "status": "운영",
+    "offSeason": "",
+    "direction": "",
+    "updated": "2026-11-04",
+    "nearbySpots": [
+      {
+        "name": "금산 백령성",
+        "dist": 3899,
+        "image": "",
+        "addr": "충청남도 금산군 남이면 역평리"
+      },
+      {
+        "name": "보석사(금산)",
+        "dist": 4211,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/65/3559665_image2_1.jpg",
+        "addr": "충청남도 금산군 남이면 보석사1길 30"
+      },
+      {
+        "name": "금산산림문화타운",
+        "dist": 5158,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/40/2952540_image2_1.jpg",
+        "addr": "충청남도 금산군 남이면 느티골길 200"
+      },
+      {
+        "name": "진악산",
+        "dist": 5257,
+        "image": "",
+        "addr": "충청남도 금산군 남이면 성곡리"
+      },
+      {
+        "name": "느티골산림욕장",
+        "dist": 6050,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/34/3338634_image2_1.jpg",
+        "addr": "충청남도 금산군 남이면 느티골길 228-17"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "운일암송어횟집",
+        "dist": 8356,
+        "image": "",
+        "addr": "전북특별자치도 진안군 주천면 동상주천로 2094-53"
+      },
+      {
+        "name": "캐슬1477",
+        "dist": 8715,
+        "image": "",
+        "addr": "충청남도 금산군 금산읍 금산로 1477"
+      },
+      {
+        "name": "금산원조김정이삼계탕",
+        "dist": 8745,
+        "image": "",
+        "addr": "충청남도 금산군 금산읍 인삼약초로 33"
+      }
+    ],
+    "transit": {
+      "stops": [
+        {
+          "name": "대양",
+          "dist": 585,
+          "walkMin": 9
+        },
+        {
+          "name": "남이면사무소",
+          "dist": 625,
+          "walkMin": 9
+        }
+      ]
+    }
+  },
+  {
+    "contentId": "101994",
+    "name": "화금지 숲속캠핑장",
+    "type": "일반야영장",
+    "operator": "민간",
+    "lineIntro": "청도의 높은 산세에 감싸인 우리 캠핑장은 쏟아질 듯한 별과 유성, 입구 저수지에 피어오르는 신비로운 새벽 안개를 품은 자연 휴식처입니다.",
+    "intro": "",
+    "address": "경상북도 청도군 풍각면 원명길 235-10",
+    "region": "경상북도",
+    "sigungu": "청도군",
+    "lat": "35.6523877666948",
+    "lng": "128.546648628075",
+    "tel": "010-7759-2044",
+    "homepage": "",
+    "reserveUrl": "https://naver.me/F9hiJRCE",
+    "image": "https://gocamping.or.kr/upload/camp/101994/thumb/thumb_720_95733HsPoVMXLScumdYHpKFv.jpg",
+    "facilities": "전기,무선인터넷,장작판매,온수,놀이터,산책로,마트.편의점",
+    "pet": "가능(소형견)",
+    "brazier": "개별",
+    "theme": "일출명소,낚시,가을단풍명소",
+    "operPeriod": "봄,여름,가을,겨울",
+    "siteCounts": {
+      "general": 30,
+      "auto": 0,
+      "glamp": 1,
+      "caravan": 0
+    },
+    "toilets": 2,
+    "showers": 2,
+    "glampFacilities": "침대,에어컨,난방기구",
+    "caravanFacilities": "",
+    "siteBottom": "파쇄석",
+    "location": "산,호수",
+    "insurance": false,
+    "program": "",
+    "rental": "",
+    "nearbyFac": "산책로,낚시,강/물놀이,어린이놀이시설",
+    "feature": "",
+    "tooltip": "",
+    "siteDistance": 2,
+    "siteSize": "9×9m",
+    "trailerOk": false,
+    "caravanOk": false,
+    "safety": {
+      "extinguisher": 15,
+      "water": 0,
+      "sand": 0,
+      "sensor": 0
+    },
+    "reserveType": "전화,온라인실시간예약",
+    "operDays": "평일+주말",
+    "event": "",
+    "status": "운영",
+    "offSeason": "",
+    "direction": "",
+    "updated": "2026-11-04",
+    "nearbySpots": [
+      {
+        "name": "풍각나무망치 (나무이야기 영농조합법인)",
+        "dist": 3007,
+        "image": "",
+        "addr": "경상북도 청도군 청려로 170-111"
+      },
+      {
+        "name": "청도 성수월마을",
+        "dist": 3413,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3572727_image2_1.jpg",
+        "addr": "경상북도 청도군 풍각면 장기길 7"
+      },
+      {
+        "name": "군불로",
+        "dist": 4725,
+        "image": "",
+        "addr": "경상북도 청도군 각북면 낙산1길 51"
+      },
+      {
+        "name": "소재사(대구)",
+        "dist": 5396,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/52/3570052_image2_1.jpg",
+        "addr": "대구광역시 달성군 유가면 휴양림길 228"
+      },
+      {
+        "name": "달창재(달창사랑 협동조합)",
+        "dist": 5625,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/41/2995841_image2_1.jpg",
+        "addr": "경상남도 창녕군 곽천길 15-6"
+      }
+    ],
+    "nearbyFood": [
+      {
+        "name": "로카커피",
+        "dist": 4797,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/25/2767025_image2_1.jpg",
+        "addr": "경상북도 청도군 각북면 낙산1길 51"
+      },
+      {
+        "name": "슬로우스톤",
+        "dist": 5953,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/38/2856238_image2_1.jpg",
+        "addr": "대구광역시 달성군 유가읍 휴양림길 109"
+      },
+      {
+        "name": "산엘",
+        "dist": 7141,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/77/2766677_image2_1.jpg",
+        "addr": "대구광역시 달성군 유가읍 휴양림길 416"
+      },
+      {
+        "name": "도케비커피 본점",
+        "dist": 7250,
+        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2846036_image2_1.jpg",
+        "addr": "대구광역시 달성군 유가읍 음동길 130-15"
+      },
+      {
+        "name": "금산곰탕",
+        "dist": 7969,
+        "image": "",
+        "addr": "대구광역시 달성군 구지면 구지동로 234"
+      }
+    ]
+  },
+  {
     "contentId": "3551",
     "name": "화암약수야영장",
     "type": "일반야영장",
@@ -171736,127 +171980,6 @@
         }
       ]
     }
-  },
-  {
-    "contentId": "101994",
-    "name": "화금지 숲속캠핑장",
-    "type": "일반야영장,자동차야영장",
-    "operator": "민간",
-    "lineIntro": "경상북도 청도군의 맑은 공기와 푸른 숲, 그리고 고요한 물소리가 어우러진 곳",
-    "intro": "",
-    "address": "경북 청도군 풍각면 원명길 235-10",
-    "region": "경상북도",
-    "sigungu": "청도군",
-    "lat": "35.6523877666948",
-    "lng": "128.546648628075",
-    "tel": "010-3502-5119",
-    "homepage": "",
-    "reserveUrl": "https://naver.me/F9hiJRCE",
-    "image": "https://gocamping.or.kr/upload/camp/101994/thumb/thumb_720_8977D08JJ9OJw3lCf5qRaSV1.png",
-    "facilities": "산책로",
-    "pet": "가능(소형견)",
-    "brazier": "불가",
-    "theme": "",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 31,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 1,
-    "showers": 0,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "siteBottom": "파쇄석",
-    "location": "산,호수",
-    "insurance": false,
-    "program": "",
-    "rental": "",
-    "nearbyFac": "낚시,강/물놀이",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 2,
-    "siteSize": "9×9m",
-    "trailerOk": true,
-    "caravanOk": false,
-    "safety": {
-      "extinguisher": 0,
-      "water": 0,
-      "sand": 0,
-      "sensor": 0
-    },
-    "reserveType": "전화,온라인실시간예약",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2026-01-13",
-    "nearbySpots": [
-      {
-        "name": "풍각나무망치 (나무이야기 영농조합법인)",
-        "dist": 3007,
-        "image": "",
-        "addr": "경상북도 청도군 청려로 170-111"
-      },
-      {
-        "name": "청도 성수월마을",
-        "dist": 3413,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/27/3572727_image2_1.jpg",
-        "addr": "경상북도 청도군 풍각면 장기길 7"
-      },
-      {
-        "name": "군불로",
-        "dist": 4725,
-        "image": "",
-        "addr": "경상북도 청도군 각북면 낙산1길 51"
-      },
-      {
-        "name": "소재사(대구)",
-        "dist": 5396,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/52/3570052_image2_1.jpg",
-        "addr": "대구광역시 달성군 유가면 휴양림길 228"
-      },
-      {
-        "name": "달창재(달창사랑 협동조합)",
-        "dist": 5625,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/41/2995841_image2_1.jpg",
-        "addr": "경상남도 창녕군 곽천길 15-6"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "로카커피",
-        "dist": 4797,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/25/2767025_image2_1.jpg",
-        "addr": "경상북도 청도군 각북면 낙산1길 51"
-      },
-      {
-        "name": "슬로우스톤",
-        "dist": 5953,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/38/2856238_image2_1.jpg",
-        "addr": "대구광역시 달성군 유가읍 휴양림길 109"
-      },
-      {
-        "name": "산엘",
-        "dist": 7141,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/77/2766677_image2_1.jpg",
-        "addr": "대구광역시 달성군 유가읍 휴양림길 416"
-      },
-      {
-        "name": "도케비커피 본점",
-        "dist": 7250,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/36/2846036_image2_1.jpg",
-        "addr": "대구광역시 달성군 유가읍 음동길 130-15"
-      },
-      {
-        "name": "금산곰탕",
-        "dist": 7969,
-        "image": "",
-        "addr": "대구광역시 달성군 구지면 구지동로 234"
-      }
-    ]
   },
   {
     "contentId": "102003",
@@ -363952,129 +364075,6 @@
           "name": "아산온천",
           "dist": 271,
           "walkMin": 4
-        }
-      ]
-    }
-  },
-  {
-    "contentId": "100472",
-    "name": "금산 자연 오토캠핑장",
-    "type": "일반야영장",
-    "operator": "민간",
-    "lineIntro": "충남 금산 남이면에 위치한 나무그늘의 야영장",
-    "intro": "충남_금산군_금산자연오토캠핑장  금산자연오토캠핑장은 충남 금산군 남이면에 자리 잡고 있다. 숲속에 자리한 덕분에 더없이 자연친화적인 분위기다. 캠핑장에서는 파쇄석과 데크로 이루어진 오토캠핑 사이트 12면이 마련돼 있다. 파쇄석 10면은 10X8로 널찍해 대형 텐트를 설치하는 데 무리가 없다. 소형 트레일러 동반 입장은 가능하지만, 캠핑카나 카라반은 불가능하다. 데크 2면은 3.6X6이다. 개별 화장실과 샤워실이 눈에 띈다. 주변에 보석사, 십이폭포가 있어 가볍게 들러보기 좋다.",
-    "address": "충남 금산군 남이면 휴양림로 375-15",
-    "region": "충청남도",
-    "sigungu": "금산군",
-    "lat": "36.0424130",
-    "lng": "127.4309057",
-    "tel": "",
-    "homepage": "",
-    "reserveUrl": "https://camfit.co.kr/camp/62eb410d1b512e001f25fe28",
-    "image": "https://gocamping.or.kr/upload/camp/100472/thumb/thumb_720_7677EIvR6HzuKEJeRT5vVx6y.jpg",
-    "facilities": "전기,무선인터넷,장작판매,온수,놀이터",
-    "pet": "가능",
-    "brazier": "개별",
-    "theme": "봄꽃여행,가을단풍명소,겨울눈꽃명소,걷기길",
-    "operPeriod": "봄,여름,가을,겨울",
-    "siteCounts": {
-      "general": 0,
-      "auto": 12,
-      "glamp": 0,
-      "caravan": 0
-    },
-    "toilets": 12,
-    "showers": 12,
-    "glampFacilities": "",
-    "caravanFacilities": "",
-    "siteBottom": "테크,자갈",
-    "location": "숲",
-    "insurance": true,
-    "program": "",
-    "rental": "릴선",
-    "nearbyFac": "",
-    "feature": "",
-    "tooltip": "",
-    "siteDistance": 0,
-    "siteSize": "",
-    "trailerOk": true,
-    "caravanOk": false,
-    "safety": {
-      "extinguisher": 10,
-      "water": 0,
-      "sand": 0,
-      "sensor": 0
-    },
-    "reserveType": "온라인실시간예약",
-    "operDays": "평일+주말",
-    "event": "",
-    "status": "운영",
-    "offSeason": "",
-    "direction": "",
-    "updated": "2024-04-19",
-    "nearbySpots": [
-      {
-        "name": "금산 백령성",
-        "dist": 3899,
-        "image": "",
-        "addr": "충청남도 금산군 남이면 역평리"
-      },
-      {
-        "name": "보석사(금산)",
-        "dist": 4211,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/65/3559665_image2_1.jpg",
-        "addr": "충청남도 금산군 남이면 보석사1길 30"
-      },
-      {
-        "name": "금산산림문화타운",
-        "dist": 5158,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/40/2952540_image2_1.jpg",
-        "addr": "충청남도 금산군 남이면 느티골길 200"
-      },
-      {
-        "name": "진악산",
-        "dist": 5257,
-        "image": "",
-        "addr": "충청남도 금산군 남이면 성곡리"
-      },
-      {
-        "name": "느티골산림욕장",
-        "dist": 6050,
-        "image": "http://tong.visitkorea.or.kr/cms/resource/34/3338634_image2_1.jpg",
-        "addr": "충청남도 금산군 남이면 느티골길 228-17"
-      }
-    ],
-    "nearbyFood": [
-      {
-        "name": "운일암송어횟집",
-        "dist": 8356,
-        "image": "",
-        "addr": "전북특별자치도 진안군 주천면 동상주천로 2094-53"
-      },
-      {
-        "name": "캐슬1477",
-        "dist": 8715,
-        "image": "",
-        "addr": "충청남도 금산군 금산읍 금산로 1477"
-      },
-      {
-        "name": "금산원조김정이삼계탕",
-        "dist": 8745,
-        "image": "",
-        "addr": "충청남도 금산군 금산읍 인삼약초로 33"
-      }
-    ],
-    "transit": {
-      "stops": [
-        {
-          "name": "대양",
-          "dist": 585,
-          "walkMin": 9
-        },
-        {
-          "name": "남이면사무소",
-          "dist": 625,
-          "walkMin": 9
         }
       ]
     }

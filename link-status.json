@@ -4405,7 +4405,7 @@
  "https://guriuc.or.kr/cmsManage/contents.do?cmsSeq=101": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "error": "20"
  },
  "https://reservation.knps.or.kr/contents/C/serviceGuide.do?prdDvcd=C&parkId=B01&deptId=B011005": {
@@ -4834,7 +4834,7 @@
  "https://tfmc.huyang.co.kr:452/reservation.asp?wloc=B01": {
   "state": "ok",
   "status": 200,
-  "checkedAt": "2026-11-01T23:50:38.563Z"
+  "checkedAt": "2026-11-08T23:58:38.249Z"
  },
  "https://sj.go.kr/gayasan/camping/page.do?mnu_uid=4151": {
   "state": "ok",
@@ -4969,7 +4969,7 @@
  "https://www.jgcamp.kr:456/introduce.asp?location=001": {
   "state": "ok",
   "status": 200,
-  "checkedAt": "2026-11-01T23:50:38.563Z"
+  "checkedAt": "2026-11-08T23:58:38.249Z"
  },
  "http://www.gp-valley.co.kr/": {
   "state": "dead",
@@ -5026,7 +5026,7 @@
  "http://www.jgcamp.kr/": {
   "state": "ok",
   "status": 200,
-  "checkedAt": "2026-11-01T23:50:38.563Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "final": "https://www.jgcamp.kr:456/"
  },
  "http://jh2085.cafe24.com": {
@@ -5105,7 +5105,7 @@
  "http://lucerneglamping.com/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "error": "fetch failed"
  },
  "https://테라피크닉.kr/": {
@@ -5493,10 +5493,9 @@
   "final": "https://camfit.co.kr/camp/6267933d5b69c8001e38b842"
  },
  "http://sol-bat.com/wanee/index.php": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
-  "error": "fetch failed"
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-11-08T23:58:38.249Z"
  },
  "http://mongsanporesort.cafe24.com/?page_id=951": {
   "state": "unknown",
@@ -6118,10 +6117,9 @@
   "final": "https://thestyle-glamping.co.kr/"
  },
  "http://www.xn--dm2b95g82rrwb37jlsb.com/reservation.php?id=1": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
-  "error": "fetch failed"
+  "state": "ok",
+  "status": 200,
+  "checkedAt": "2026-11-08T23:58:38.249Z"
  },
  "http://www.ypcleancamp.com/": {
   "state": "dead",
@@ -6424,7 +6422,7 @@
  "https://dongback.brsisul.or.kr:451/": {
   "state": "ok",
   "status": 200,
-  "checkedAt": "2026-11-01T23:50:38.563Z"
+  "checkedAt": "2026-11-08T23:58:38.249Z"
  },
  "https://naver.me/G58H6dnA": {
   "state": "unknown",
@@ -6487,7 +6485,7 @@
  "http://www.violinglamping.co.kr/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "error": "fetch failed"
  },
  "http://xn--ok0bo7fm1e4tfnx1alojppa.com/": {
@@ -6719,7 +6717,7 @@
  "http://www.riverguide.go.kr/camp/duri/index.do": {
   "state": "ok",
   "status": 200,
-  "checkedAt": "2026-11-01T23:50:38.563Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "final": "https://www.riverguide.go.kr/camp/duri/index.do"
  },
  "https://xn--ej5b84a3hy7uz2ikqb.kr/": {
@@ -6776,7 +6774,7 @@
  "http://xn--bj0bw3p2dq74gd1h.kr/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "error": "fetch failed"
  },
  "https://m.thankqcamping.com/resv/view.hbb?cseq=18196&chk=sns": {
@@ -6922,10 +6920,9 @@
   "checkedAt": "2026-11-05T01:03:01.223Z"
  },
  "http://완주소양캠핑장.com": {
-  "state": "dead",
-  "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
-  "error": "fetch failed"
+  "state": "unknown",
+  "status": 401,
+  "checkedAt": "2026-11-08T23:58:38.249Z"
  },
  "http://www.dungjigarden.com/": {
   "state": "dead",
@@ -6976,7 +6973,7 @@
  "http://yanggu.ticketplay.zone/portal/index": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "error": "fetch failed"
  },
  "http://www.후평숲유원지.com/sub/menu4_1.php": {
@@ -7402,7 +7399,7 @@
  "http://www.벨하우스.com": {
   "state": "ok",
   "status": 200,
-  "checkedAt": "2026-11-01T23:50:38.563Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "final": "http://www.xn--il3bm3i1wd13t.com/"
  },
  "https://blog.naver.com/syda8383": {
@@ -7503,13 +7500,13 @@
  "http://www.eoeundol.net/": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "error": "fetch failed"
  },
  "http://www.eoeundol.net/theme/sample06/html/reservation.php": {
   "state": "dead",
   "status": 0,
-  "checkedAt": "2026-11-05T01:03:01.223Z",
+  "checkedAt": "2026-11-08T23:58:38.249Z",
   "error": "fetch failed"
  },
  "https://naver.me/x7nWD2WJ": {
@@ -14179,11 +14176,6 @@
   "status": 200,
   "checkedAt": "2026-11-07T23:52:58.388Z",
   "final": "https://www.j-glamping.com/html/index.html"
- },
- "https://jindongri.zapza.me/": {
-  "state": "ok",
-  "status": 200,
-  "checkedAt": "2026-11-07T23:52:58.388Z"
  },
  "https://camp.xticket.kr/web/main?shopEncode=a12d6508ae5ea0562923cb1f2762761f3413ab4c988a6c8aa92ea7873e263bec": {
   "state": "dead",

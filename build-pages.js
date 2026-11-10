@@ -1791,7 +1791,7 @@ const todayYmd = BUILD_VER;
   console.log(`📌 방문자 사진 고정 ${pinned.length}건 (pinned.json, ${VP.PIN_DAYS}일 고정)`);
 }
 // 🤝 광고·제휴 안내(미디어킷) — 수익화 로드맵 1단계 (2026-10-26). 숫자는 월요일 점검 때 갱신 (아래 KIT 상수만 고치면 됨)
-const KIT = { asOf: "2026년 10월 다섯째 주", weekUsers: "3,095", monthUsers: "약 1만 3천", naverImpr: "262만", naverClick: "1만 3천", reserveClicks: "1,271", reserveRate: "25%", camps: campings.length.toLocaleString("ko-KR"), guides: "17" };
+const KIT = { asOf: "2026년 11월 둘째 주", weekUsers: "2,758", monthUsers: "약 1만 2천", naverImpr: "247만", naverClick: "1만 3천", reserveClicks: "803", reserveRate: "29%", camps: campings.length.toLocaleString("ko-KR"), guides: "17" };
 GUIDE_PAGES.push({
   slug: "partners", icon: "🤝", title: "광고·제휴 안내",
   desc: `캠핑장·캠핑용품·지자체 담당자를 위한 CampingHub 광고·제휴 안내. 주간 방문 ${KIT.weekUsers}명, 방문자 4명 중 1명이 예약 버튼을 누르는 '예약 직전' 방문자에게 캠핑장을 알리세요.`,

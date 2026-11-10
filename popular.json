@@ -1,19 +1,15 @@
 {
   "_설명": "월요일 점검 때 GA '페이지 및 화면' 상위 + 서치어드바이저 검색어로 손으로 갱신. build-pages.js가 popular-list.json(메인 app.js용)과 상세 하단 '요즘 많이 찾는 캠핑장'에 반영. places는 campings.json contentId 순서대로 = 순위. keywords는 {label, q}(사이트 검색어) 또는 {label, href}(페이지 링크).",
-  "week": "10/27~11/2",
-  "updated": "20261103",
+  "week": "11/3~11/9",
+  "updated": "20261110",
   "places": [
     {
-      "id": "102219",
-      "why": "정선 · 이번 주 조회 1위"
-    },
-    {
       "id": "101355",
-      "why": "아산 · 네이버 검색 1위"
+      "why": "아산 · 네이버 검색 1위(96명)"
     },
     {
       "id": "102286",
-      "why": "포천 숲속 캠핑"
+      "why": "포천 숲속 · 검색 2위"
     },
     {
       "id": "101080",
@@ -21,57 +17,61 @@
     },
     {
       "id": "102230",
-      "why": "제주 · 늦가을 캠핑"
+      "why": "제주 · 겨울에도 운영"
     },
     {
-      "id": "100803",
-      "why": "밀양 · 검색 급상승"
+      "id": "102219",
+      "why": "정선 동강 · 별 보기"
     },
     {
       "id": "102234",
-      "why": "군위 계곡 캠핑"
+      "why": "군위 · 아이와 캠핑"
     },
     {
       "id": "102298",
-      "why": "횡성 · 단풍 막바지"
+      "why": "횡성 · 클릭률 17%"
     },
     {
       "id": "101983",
       "why": "양평 힐링 캠프"
     },
     {
-      "id": "102007",
-      "why": "무안 · 검색 급상승"
+      "id": "102030",
+      "why": "여주 글램핑 · 이번 주 신규 진입"
+    },
+    {
+      "id": "102031",
+      "why": "울주 대운산 · 검색 클릭률 50%"
     }
   ],
   "keywords": [
     {
-      "label": "🔰 캠핑 준비물 리스트",
-      "href": "guide-beginner.html"
-    },
-    {
-      "label": "🌲 휴양림·국공립 캠핑장",
-      "href": "theme-forest.html"
+      "label": "🔥 겨울 난방·화재 안전",
+      "href": "guide-fire.html"
     },
     {
       "label": "⛺ 글램핑",
       "href": "theme-glamping.html"
     },
     {
-      "label": "🔥 겨울 난방·화재 안전",
-      "href": "guide-fire.html"
+      "label": "🌲 휴양림·국공립 캠핑장",
+      "href": "theme-forest.html"
     },
     {
-      "label": "🚗 차박",
-      "href": "theme-carcamping.html"
+      "label": "🚐 카라반",
+      "href": "theme-caravan.html"
+    },
+    {
+      "label": "🔰 캠핑 준비물 리스트",
+      "href": "guide-beginner.html"
     },
     {
       "label": "강원 휴양림",
       "href": "region-gangwon-forest.html"
     },
     {
-      "label": "집나온 거북이",
-      "q": "집나온 거북이"
+      "label": "노르딕 글램핑",
+      "q": "노르딕"
     },
     {
       "label": "재리캠핑",

@@ -40,6 +40,7 @@
     if (el.closest(".sponsor-section a, .sponsor-link")) return "click_sponsor"; // 2026-10-26 스폰서(광고) 자리 — 광고주 리포트용
     if (el.closest(".partner-link, .chip-partner")) return "click_partner"; // 광고·제휴 안내로 이동 (사장님 관심 측정)
     if (el.closest(".gallery-link")) return "click_gallery"; // 2026-10-26 상세 하단 "방문자 사진·후기 보기"
+    if (el.closest(".owner-call")) return "click_owner"; // 2026-11-13 사진 없는 캠핑장의 "사장님이신가요?" 띠
     if (el.closest('a.report-link[href^="mailto:"], .report-modal a, .report-copy, .ph-report')) return "click_photo"; // 방문자 사진 제보
     if (el.closest(".report-btn, .report-link")) return "click_report";
     if (el.closest("#cal-btn")) return "click_calendar";

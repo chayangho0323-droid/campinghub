@@ -26,13 +26,14 @@
   function openModal(m, mailtoHref) {
     closeModal();
     const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(m.to)}&su=${encodeURIComponent(m.subject)}&body=${encodeURIComponent(m.body)}`;
+    const owner = /^\[사장님/.test(m.subject || ""); // 2026-11-13 사장님용 띠(.owner-call)에서 열린 경우
     const wrap = document.createElement("div");
     wrap.className = "report-modal-bg";
     wrap.innerHTML = `
       <div class="report-modal" role="dialog" aria-label="사진 제보 방법">
         <button class="report-close" aria-label="닫기">✕</button>
-        <h3 class="photo-call-title">📷 사진 제보하기</h3>
-        <p class="report-desc">직접 찍은 사진 1~5장을 아래 주소로 보내주세요. 가족·친구·반려동물과 찍은 사진, 자랑하고 싶은 예쁜 사진 모두 환영해요! 확인 후 닉네임과 함께 올려드려요.</p>
+        <h3 class="photo-call-title">${owner ? "🏕️ 사장님 사진 등록" : "📷 사진 제보하기"}</h3>
+        <p class="report-desc">${owner ? "캠핑장 전경·사이트·편의시설 사진 3~10장을 아래 주소로 보내주세요. 확인 후 대표 사진과 사진첩에 무료로 올려드려요. 전화·예약 주소 정정도 함께 받습니다." : "직접 찍은 사진 1~5장을 아래 주소로 보내주세요. 가족·친구·반려동물과 찍은 사진, 자랑하고 싶은 예쁜 사진 모두 환영해요! 확인 후 닉네임과 함께 올려드려요."}</p>
         <div class="report-row">
           <code class="report-addr"></code>
           <button class="report-copy" data-copy="addr">주소 복사</button>

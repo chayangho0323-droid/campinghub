@@ -1324,3 +1324,10 @@ body {
 .popular-why { color: #b45309; }
 .pop-rank { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: #e8491e; color: #fff; font-size: 0.72rem; font-weight: 700; }
 .popular-card .pop-rank { position: absolute; top: 6px; left: 6px; z-index: 1; }
+
+/* 사장님용 사진 등록 띠 (2026-11-13) — 사진 없는 캠핑장 상세, 사진 자리 바로 아래 */
+.photo-call.owner-call { background: #eef7f0; border-color: #b7dcc0; color: #1f4d2e; margin: 12px auto 4px; }
+.owner-call .photo-call-title { color: #1f8a4c; }
+.owner-call .photo-call-btn { background: #1f9d55; }
+.owner-call .photo-call-btn:hover { background: #17803f; }
+@media (max-width: 560px) { .photo-call.owner-call { flex-wrap: wrap; } .owner-call .photo-call-btn { margin-left: auto; } }

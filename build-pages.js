@@ -136,6 +136,34 @@ function reportMailto(c) {
     : { email: REPORT_EMAIL, siteName: "CampingHub" });
 }
 // 제보 안내 띠 — 사진 제보(이메일 안내창)와 캠핑장 제보(구글폼)를 한곳에
+// 🏕️ 사장님용 사진 등록 띠 (2026-11-13) — 공식 사진이 없는 캠핑장(761곳) 상세의 사진 자리 바로 아래.
+// 고캠핑 데이터엔 이메일이 없어 사진 요청 메일을 보낼 수 없음 → 자기 캠핑장 이름을 검색해 들어온 사장님이 직접 보내도록 안내.
+// report.js가 제목의 "[사장님"을 보고 안내창 문구를 사장님용으로 바꾼다. GA: click_owner.
+function ownerMailto(c) {
+  const where = `${getRegion(c)} ${c.sigungu || ""}`.trim();
+  const subject = `[사장님 사진 등록] ${c.name}`;
+  const body = [
+    `캠핑장: ${c.name}${where ? ` (${where})` : ""}`,
+    `페이지: ${SITE_URL}/camping/${c.contentId}.html`,
+    "보내는 분(사장님·직원 성함): ",
+    "연락처(선택): ",
+    "고칠 정보(전화·예약 주소·홈페이지 등, 선택): ",
+    "캠핑장 한 줄 소개(선택): ",
+    "",
+    "※ 캠핑장 전경·사이트·편의시설 사진 3~10장을 첨부해 주세요. 대표 사진과 사진첩에 무료로 올려드립니다.",
+    "※ 직접 촬영했거나 사용 권한이 있는 사진만 보내주세요. 보내주신 사진은 CampingHub 게시에 동의한 것으로 보며, 요청하시면 바로 내려드립니다.",
+  ].join("\n");
+  return `mailto:${REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+function ownerCallHtml(c, vph) {
+  if (c.image || vph) return "";
+  return `<div class="photo-call owner-call">
+      <span class="photo-call-icon">🏕️</span>
+      <span class="photo-call-text"><strong class="photo-call-title">이 캠핑장 사장님이신가요?</strong> 사진을 보내주시면 <strong>무료로</strong> 대표 사진과 사진첩에 올려드려요. 전화·예약 주소가 바뀌었다면 함께 알려주세요.</span>
+      <a class="photo-call-btn report-link" href="${esc(ownerMailto(c))}">사진 등록하기 →</a>
+    </div>`;
+}
+
 function photoCallHtml(c) {
   const text = c
     ? (c.image
@@ -754,6 +782,7 @@ function buildPage(c, all) {
   <main class="detail-container">
     <a class="back-link" href="../index.html">← 전국 캠핑장 목록으로</a>
     ${img}
+    ${ownerCallHtml(c, vph)}
     <div class="detail-body">
       ${badges}
       <h1>${esc(c.name)}</h1>

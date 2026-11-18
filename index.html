@@ -80,7 +80,33 @@
   <div id="weather-banner" class="weather-banner"></div>
 
   <!-- 테마/지역 바로가기 칩. app.js가 채움 -->
-  <nav id="quick-links" class="quick-links sticky-desktop"></nav>
+  <nav id="quick-links" class="quick-links sticky-desktop">
+    <a class="chip chip-hot" href="guide-beginner.html">🔰 캠핑 입문 가이드</a>
+    <a class="chip chip-events" href="guide-compare.html">📚 장비 비교</a>
+    <a class="chip chip-hot" href="theme-forest.html">🌲 휴양림·국공립</a>
+    <a class="chip chip-events" href="theme-glamping.html">⛺ 글램핑</a>
+    <a class="chip" href="theme-caravan.html">🚐 카라반</a>
+    <a class="chip" href="theme-pet.html">🐕 반려동물</a>
+    <a class="chip" href="theme-carcamping.html">🚗 차박</a>
+    <a class="chip chip-photo" href="gallery.html">📸 방문자 사진</a>
+    <a class="chip chip-partner" href="partners.html">🤝 광고·제휴</a>
+    <a class="chip" href="region-gangwon.html">강원</a>
+    <a class="chip" href="region-gyeonggi.html">경기</a>
+    <a class="chip" href="region-gyeongnam.html">경남</a>
+    <a class="chip" href="region-gyeongbuk.html">경북</a>
+    <a class="chip" href="region-daegu.html">대구</a>
+    <a class="chip" href="region-daejeon.html">대전</a>
+    <a class="chip" href="region-busan.html">부산</a>
+    <a class="chip" href="region-seoul.html">서울</a>
+    <a class="chip" href="region-sejong.html">세종</a>
+    <a class="chip" href="region-ulsan.html">울산</a>
+    <a class="chip" href="region-incheon.html">인천</a>
+    <a class="chip" href="region-jeonnam-gwangju.html">전남·광주</a>
+    <a class="chip" href="region-jeonbuk.html">전북</a>
+    <a class="chip" href="region-jeju.html">제주</a>
+    <a class="chip" href="region-chungnam.html">충남</a>
+    <a class="chip" href="region-chungbuk.html">충북</a>
+  </nav>
 
   <!-- 방문자 사진 제보 안내 띠 (버튼을 누르면 report.js 안내창이 뜸). 캠핑장 제보(구글폼)도 여기서 같이 -->
   <div class="photo-call">
@@ -98,7 +124,848 @@
 
   <p id="result-count" class="result-count"></p>
 
-  <main id="camping-list" class="festival-grid"></main>
+  <main id="camping-list" class="festival-grid">
+
+    <a class="card-link" href="camping/102230.html">
+      <article class="card">
+        <img src="http://tong.visitkorea.or.kr/cms/resource/67/3389767_image2_1.jpg" alt="봉아름 캠핑장 주변 제주 노루생태관찰원" loading="lazy" /><span class="venue-tag">📍 주변 풍경</span>
+        <div class="card-body">
+          <span class="badge wx wx-rain" title="이번 주말 비 확률 60%">🌧️ 주말 비 예보</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>봉아름 캠핑장</h2>
+          <p class="period">📍 제주 제주시</p>
+          
+          <button class="review-link" data-query="제주시 봉아름 캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101355.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>재리캠핑</h2>
+          <p class="period">📍 충남 아산시</p>
+          
+          <button class="review-link" data-query="아산시 재리캠핑"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101080.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/101080/thumb/thumb_720_57185sFBiY3FVbyw5HU6grRF.jpg" alt="봄빛 글램핑 앤 바비큐" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span>  <span class="badge upcoming">글램핑</span> <span class="badge long">🐕</span>
+          <h2>봄빛 글램핑 앤 바비큐</h2>
+          <p class="period">📍 전북 김제시</p>
+          <p class="address">🔧 전기 · 온수 · 물놀이장</p>
+          <button class="review-link" data-query="김제시 봄빛 글램핑 앤 바비큐"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102286.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>네이처숲</h2>
+          <p class="period">📍 경기 포천시</p>
+          
+          <button class="review-link" data-query="포천시 네이처숲"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102219.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>집나온 거북이 야영장</h2>
+          <p class="period">📍 강원 정선군</p>
+          
+          <button class="review-link" data-query="정선군 집나온 거북이 야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102291.html">
+      <article class="card">
+        <img src="https://tong.visitkorea.or.kr/cms2/website/50/3404850.jpg" alt="곤지암 유정호숫길캠핑장 주변 곤지암도자공원" loading="lazy" /><span class="venue-tag">📍 주변 풍경</span>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>곤지암 유정호숫길캠핑장</h2>
+          <p class="period">📍 경기 광주시</p>
+          
+          <button class="review-link" data-query="광주시 곤지암 유정호숫길캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/2610.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/2610/thumb/thumb_720_5844uJ8SI8Wu5zus4hexCXjg.jpg" alt="임하호 수상레저타운캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>임하호 수상레저타운캠핑장</h2>
+          <p class="period">📍 경북 안동시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 온수</p>
+          <button class="review-link" data-query="안동시 임하호 수상레저타운캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102234.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>이지파크캠핑장</h2>
+          <p class="period">📍 대구 군위군</p>
+          
+          <button class="review-link" data-query="군위군 이지파크캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/1610.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/1610/thumb/thumb_720_6816CZfp2WgTq0WZvPZEGLYA.jpg" alt="서당골캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>서당골캠핑장</h2>
+          <p class="period">📍 경남 밀양시</p>
+          <p class="address">🔧 전기 · 장작판매 · 온수</p>
+          <button class="review-link" data-query="밀양시 서당골캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101267.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/101267/thumb/thumb_720_7083teeDyEvfrgCiNGl0BVSr.jpg" alt="폭포가든캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">자동차야영장</span> <span class="badge long">🐕</span>
+          <h2>폭포가든캠핑장</h2>
+          <p class="period">📍 충북 단양군</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="단양군 폭포가든캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/2460.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/2460/thumb/thumb_720_2772dufw1XE9JmhSfF5pQvIz.jpg" alt="웅포관광지 캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>웅포관광지 캠핑장</h2>
+          <p class="period">📍 전북 익산시</p>
+          <p class="address">🔧 온수 · 놀이터 · 산책로</p>
+          <button class="review-link" data-query="익산시 웅포관광지 캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102260.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/102260/thumb/thumb_720_7549dNzpJsolWv1wsMuhHDcZ.jpg" alt="유정호숫길캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>유정호숫길캠핑장</h2>
+          <p class="period">📍 경기 광주시</p>
+          <p class="address">🔧 전기 · 장작판매 · 온수</p>
+          <button class="review-link" data-query="광주시 유정호숫길캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102348.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/102348/thumb/thumb_720_0560jCrx1m7kec4Ndgc3otot.jpg" alt="썬라이즈 코스트" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">자동차야영장</span> <span class="badge long">🐕</span>
+          <h2>썬라이즈 코스트</h2>
+          <p class="period">📍 경북 포항시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="포항시 썬라이즈 코스트"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102323.html">
+      <article class="card">
+        <img src="http://tong.visitkorea.or.kr/cms/resource/56/3539956_image2_1.jpg" alt="궁평 오솔로 캠핑장 주변 궁평관광지" loading="lazy" /><span class="venue-tag">📍 주변 풍경</span>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>궁평 오솔로 캠핑장</h2>
+          <p class="period">📍 경기 화성시</p>
+          
+          <button class="review-link" data-query="화성시 궁평 오솔로 캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102298.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/102298/thumb/thumb_720_4150SeWxA2pBlVBjrnkorsIX.jpeg" alt="온휴캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>온휴캠핑장</h2>
+          <p class="period">📍 강원 횡성군</p>
+          
+          <button class="review-link" data-query="횡성군 온휴캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102363.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>개도 섬섬캠핑장</h2>
+          <p class="period">📍 전남·광주 여수시</p>
+          
+          <button class="review-link" data-query="여수시 개도 섬섬캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102364.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>포레스트 하움</h2>
+          <p class="period">📍 경남 함안군</p>
+          
+          <button class="review-link" data-query="함안군 포레스트 하움"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/387.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/387/thumb/thumb_720_45112axlrEzzciiRowpzRACp.jpg" alt="국립남해편백자연휴양림" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>국립남해편백자연휴양림</h2>
+          <p class="period">📍 경남 남해군</p>
+          <p class="address">🔧 놀이터</p>
+          <button class="review-link" data-query="남해군 국립남해편백자연휴양림"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102355.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>헤이븐캠프</h2>
+          <p class="period">📍 경기 가평군</p>
+          
+          <button class="review-link" data-query="가평군 헤이븐캠프"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102351.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">자동차야영장</span> 
+          <h2>삼척 두타산 810 숲속야영장</h2>
+          <p class="period">📍 강원 삼척시</p>
+          
+          <button class="review-link" data-query="삼척시 삼척 두타산 810 숲속야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102344.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 20%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>지우캠핑농원</h2>
+          <p class="period">📍 충남 논산시</p>
+          
+          <button class="review-link" data-query="논산시 지우캠핑농원"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102310.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>캠프앤디</h2>
+          <p class="period">📍 강원 영월군</p>
+          
+          <button class="review-link" data-query="영월군 캠프앤디"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/812.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/812/thumb/thumb_720_7960yaSA8u17lzohqEo4KF0F.jpg" alt="덕유산 자연휴양림" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>덕유산 자연휴양림</h2>
+          <p class="period">📍 전북 무주군</p>
+          <p class="address">🔧 전기 · 온수 · 산책로</p>
+          <button class="review-link" data-query="무주군 덕유산 자연휴양림"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/383.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/383/thumb/thumb_720_2283kYUIMV8AtEItVgS4QkdO.jpg" alt="국림검마산자연휴양림" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>국림검마산자연휴양림</h2>
+          <p class="period">📍 경북 영양군</p>
+          <p class="address">🔧 온수 · 놀이터 · 산책로</p>
+          <button class="review-link" data-query="영양군 국림검마산자연휴양림"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102243.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/102243/thumb/thumb_720_88637srDj1GgEjLA5yGTnYhL.png" alt="사계풀포레스트" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">자동차야영장</span> <span class="badge long">🐕</span>
+          <h2>사계풀포레스트</h2>
+          <p class="period">📍 경북 김천시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="김천시 사계풀포레스트"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/1993.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/1993/thumb/thumb_720_6015ObnCHzPVq1UoswRm3EHD.jpg" alt="아산곡교천야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>아산곡교천야영장</h2>
+          <p class="period">📍 충남 아산시</p>
+          <p class="address">🔧 전기 · 온수</p>
+          <button class="review-link" data-query="아산시 아산곡교천야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/2782.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/2782/thumb/thumb_720_5202ba8z9HkyvcbHMXUrnwyP.jpg" alt="국립자연휴양림관리소(중미산자연휴양림)" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>국립자연휴양림관리소(중미산자연휴양림)</h2>
+          <p class="period">📍 경기 양평군</p>
+          <p class="address">🔧 산책로</p>
+          <button class="review-link" data-query="양평군 국립자연휴양림관리소(중미산자연휴양림)"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/398.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/398/thumb/thumb_720_0129vDwKuHzGW7Y6a2H9bwrg.jpg" alt="국립천관산자연휴양림" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 20%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>국립천관산자연휴양림</h2>
+          <p class="period">📍 전남·광주 장흥군</p>
+          <p class="address">🔧 온수 · 놀이터</p>
+          <button class="review-link" data-query="장흥군 국립천관산자연휴양림"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101902.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/101902/thumb/thumb_720_4828PzPRgsQLLIFXqvKSkuOh.jpg" alt="의성단밀숲속야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>의성단밀숲속야영장</h2>
+          <p class="period">📍 경북 의성군</p>
+          
+          <button class="review-link" data-query="의성군 의성단밀숲속야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/395.html">
+      <article class="card">
+        <img src="https://tong.visitkorea.or.kr/cms2/website/10/2541110.jpg" alt="청태산자연휴양림캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">자동차야영장</span> 
+          <h2>청태산자연휴양림캠핑장</h2>
+          <p class="period">📍 강원 횡성군</p>
+          
+          <button class="review-link" data-query="횡성군 청태산자연휴양림캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/1513.html">
+      <article class="card">
+        <img src="https://tong.visitkorea.or.kr/cms2/website/77/1083777.jpg" alt="산음자연휴양림야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>산음자연휴양림야영장</h2>
+          <p class="period">📍 경기 양평군</p>
+          
+          <button class="review-link" data-query="양평군 산음자연휴양림야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/6971.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/6971/thumb/thumb_720_8309hsHqLblBxsnmmREcMwHj.jpg" alt="대관령자연휴양림야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>대관령자연휴양림야영장</h2>
+          <p class="period">📍 강원 강릉시</p>
+          <p class="address">🔧 놀이터 · 산책로 · 운동시설</p>
+          <button class="review-link" data-query="강릉시 대관령자연휴양림야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101622.html">
+      <article class="card">
+        <img src="https://tong.visitkorea.or.kr/cms2/website/70/3311570.jpg" alt="강천산 오토캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>강천산 오토캠핑장</h2>
+          <p class="period">📍 전북 순창군</p>
+          
+          <button class="review-link" data-query="순창군 강천산 오토캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/2445.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/2445/thumb/thumb_720_2200wcX2N3KKRmsuoWvKMvE5.jpg" alt="국립운장산자연휴양림 야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>국립운장산자연휴양림 야영장</h2>
+          <p class="period">📍 전북 진안군</p>
+          
+          <button class="review-link" data-query="진안군 국립운장산자연휴양림 야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/881.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/881/thumb/thumb_720_6924zWnOfzadSlAdTiktJGWK.jpg" alt="동산포 캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>동산포 캠핑장</h2>
+          <p class="period">📍 강원 양양군</p>
+          <p class="address">🔧 전기 · 온수 · 운동시설</p>
+          <button class="review-link" data-query="양양군 동산포 캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/2370.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/2370/thumb/thumb_720_3625czxoOI839QVlHxcPpVdQ.jpg" alt="국립용대자연휴양림" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>국립용대자연휴양림</h2>
+          <p class="period">📍 강원 인제군</p>
+          <p class="address">🔧 온수</p>
+          <button class="review-link" data-query="인제군 국립용대자연휴양림"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101803.html">
+      <article class="card">
+        <img src="http://tong.visitkorea.or.kr/cms/resource/99/2794699_image2_1.jpg" alt="온온 주변 소리산마을" loading="lazy" /><span class="venue-tag">📍 주변 풍경</span>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>온온</h2>
+          <p class="period">📍 경기 양평군</p>
+          
+          <button class="review-link" data-query="양평군 온온"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101711.html">
+      <article class="card">
+        <img src="http://tong.visitkorea.or.kr/cms/resource/90/3077290_image2_1.jpg" alt="보얀트 캠핑 주변 산장관광지" loading="lazy" /><span class="venue-tag">📍 주변 풍경</span>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">자동차야영장</span> 
+          <h2>보얀트 캠핑</h2>
+          <p class="period">📍 경기 가평군</p>
+          
+          <button class="review-link" data-query="가평군 보얀트 캠핑"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/142.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/142/thumb/thumb_720_9675EeKxp5Np0qR8xnQxVcVN.jpg" alt="강릉 노추산 힐링캠프" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">자동차야영장</span> <span class="badge long">🐕</span>
+          <h2>강릉 노추산 힐링캠프</h2>
+          <p class="period">📍 강원 강릉시</p>
+          <p class="address">🔧 전기 · 장작판매 · 놀이터</p>
+          <button class="review-link" data-query="강릉시 강릉 노추산 힐링캠프"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101438.html">
+      <article class="card">
+        <div class="no-image">🏕️</div>
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>더360캠핑장</h2>
+          <p class="period">📍 경북 고령군</p>
+          
+          <button class="review-link" data-query="고령군 더360캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/640.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/640/thumb/thumb_720_8810j3KYC4zMYUyinIStzhcl.jpg" alt="느티나무 캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>느티나무 캠핑장</h2>
+          <p class="period">📍 강원 영월군</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="영월군 느티나무 캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/3252.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/3252/thumb/thumb_720_2218iF1OgU1DQT05vFzaX88A.jpg" alt="포레스트카라반(천안무지개캠핑장)" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>포레스트카라반(천안무지개캠핑장)</h2>
+          <p class="period">📍 충남 천안시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="천안시 포레스트카라반(천안무지개캠핑장)"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/8156.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/8156/thumb/thumb_720_3329oQSrgWZwjHeiIJ5uFLpy.jpg" alt="모짜르트" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">자동차야영장</span> 
+          <h2>모짜르트</h2>
+          <p class="period">📍 경기 양평군</p>
+          <p class="address">🔧 전기 · 장작판매 · 트렘폴린</p>
+          <button class="review-link" data-query="양평군 모짜르트"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/100936.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/100936/thumb/thumb_720_4258DXbnOz0bX9vNUyQCWmML.jpg" alt="곽지몬스터캠핑" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-rain" title="이번 주말 비 확률 60%">🌧️ 주말 비 예보</span>  <span class="badge upcoming">자동차야영장</span> 
+          <h2>곽지몬스터캠핑</h2>
+          <p class="period">📍 제주 제주시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="제주시 곽지몬스터캠핑"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/29.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/29/thumb/thumb_720_0561Van8Wiia2OQKeii6UGcr.jpg" alt="80포레스트카라반캠프((주)포레스트카라반 대구점)" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">자동차야영장</span> <span class="badge long">🐕</span>
+          <h2>80포레스트카라반캠프((주)포레스트카라반 대구점)</h2>
+          <p class="period">📍 대구 군위군</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="군위군 80포레스트카라반캠프((주)포레스트카라반 대구점)"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/1744.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/1744/thumb/thumb_720_3722PDQLsEjIXgmWmoQqX1M0.jpg" alt="춘장대솔내음야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>춘장대솔내음야영장</h2>
+          <p class="period">📍 충남 서천군</p>
+          
+          <button class="review-link" data-query="서천군 춘장대솔내음야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/2459.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/2459/thumb/thumb_720_5164L5gN2Abo26MfnrG8Gycj.jpg" alt="웅천친수공원 야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>웅천친수공원 야영장</h2>
+          <p class="period">📍 전남·광주 여수시</p>
+          <p class="address">🔧 놀이터</p>
+          <button class="review-link" data-query="여수시 웅천친수공원 야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/2982.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/2982/thumb/thumb_720_6397lhnZ24xBsIEEMTT3vcCE.jpg" alt="축령산자연휴양림 야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>축령산자연휴양림 야영장</h2>
+          <p class="period">📍 경기 남양주시</p>
+          <p class="address">🔧 온수 · 물놀이장 · 놀이터</p>
+          <button class="review-link" data-query="남양주시 축령산자연휴양림 야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/8174.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/8174/thumb/thumb_720_1075GVP1DygaRYbuAdgMMXUz.jpg" alt="(주)크리스월드더레지던스" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>(주)크리스월드더레지던스</h2>
+          <p class="period">📍 경기 가평군</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="가평군 (주)크리스월드더레지던스"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/100013.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/100013/thumb/thumb_720_0116MYDYyd0g3mtKa0wliblU.jpeg" alt="약수동산" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>약수동산</h2>
+          <p class="period">📍 경기 양평군</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="양평군 약수동산"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/100076.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/100076/thumb/thumb_720_4864Lq7Fk4q751oymVD3wby0.jpg" alt="알로프랑스" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span>  <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>알로프랑스</h2>
+          <p class="period">📍 전북 무주군</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="무주군 알로프랑스"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/100096.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/100096/thumb/thumb_720_2872kwp0zU6gIHx35mILdKTh.jpg" alt="(주)젠틀펫" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>(주)젠틀펫</h2>
+          <p class="period">📍 경북 문경시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 온수</p>
+          <button class="review-link" data-query="문경시 (주)젠틀펫"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/100579.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/100579/thumb/thumb_720_3986RcXl3ewX3QzEpxteSjgj.jpg" alt="별하숲캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>별하숲캠핑장</h2>
+          <p class="period">📍 경북 문경시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="문경시 별하숲캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/100739.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/100739/thumb/thumb_720_9975hgvyO98XnIO6SzZBJfSZ.jpg" alt="쌍근오토캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">자동차야영장</span> 
+          <h2>쌍근오토캠핑장</h2>
+          <p class="period">📍 경남 거제시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 온수</p>
+          <button class="review-link" data-query="거제시 쌍근오토캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/100875.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/100875/thumb/thumb_720_9534JCZGQAvrx4XnBQ8VxB2L.jpg" alt="금오산 힐링캠프" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>금오산 힐링캠프</h2>
+          <p class="period">📍 경북 김천시</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="김천시 금오산 힐링캠프"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/101197.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/101197/thumb/thumb_720_9791PTMbJdl84pZQV5y6FLXV.jpg" alt="천안 놀이터 캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>천안 놀이터 캠핑장</h2>
+          <p class="period">📍 충남 천안시</p>
+          <p class="address">🔧 전기 · 장작판매 · 온수</p>
+          <button class="review-link" data-query="천안시 천안 놀이터 캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/102337.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/102337/thumb/thumb_720_5309Y1EnLBuLuja0reYpDf2a.jpg" alt="글램인(GLAMIN)" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-good" title="이번 주말 비 확률 10%">☀️ 주말 좋음</span>  <span class="badge upcoming">일반야영장</span> 
+          <h2>글램인(GLAMIN)</h2>
+          <p class="period">📍 경기 양평군</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="양평군 글램인(GLAMIN)"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/2815.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/2815/thumb/thumb_720_56340SWRWHmIxxvHPpwoOncl.jpg" alt="지리산천왕봉오토캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span>  <span class="badge upcoming">일반야영장</span> <span class="badge long">🐕</span>
+          <h2>지리산천왕봉오토캠핑장</h2>
+          <p class="period">📍 전북 남원시</p>
+          <p class="address">🔧 전기 · 장작판매 · 온수</p>
+          <button class="review-link" data-query="남원시 지리산천왕봉오토캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/6984.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/6984/thumb/thumb_720_6731lK3vO2ZAXlUxvnX3e4SL.jpg" alt="몽산포자동차야영장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-soso" title="이번 주말 비 확률 30%">⛅ 주말 보통</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">자동차야영장</span> 
+          <h2>몽산포자동차야영장</h2>
+          <p class="period">📍 충남 태안군</p>
+          <p class="address">🔧 전기 · 무선인터넷 · 장작판매</p>
+          <button class="review-link" data-query="태안군 몽산포자동차야영장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+
+    <a class="card-link" href="camping/7442.html">
+      <article class="card">
+        <img src="https://gocamping.or.kr/upload/camp/7442/thumb/thumb_720_3965uDhpsLsmjYP4iZ5eGlQV.jpg" alt="회산백련지 오토캠핑장" loading="lazy" />
+        <div class="card-body">
+          <span class="badge wx wx-rain" title="이번 주말 비 확률 60%">🌧️ 주말 비 예보</span> <span class="badge ongoing">🌲 국공립·휴양림</span> <span class="badge upcoming">일반야영장</span> 
+          <h2>회산백련지 오토캠핑장</h2>
+          <p class="period">📍 전남·광주 무안군</p>
+          <p class="address">🔧 전기 · 장작판매 · 온수</p>
+          <button class="review-link" data-query="무안군 회산백련지 오토캠핑장"
+            onclick="event.preventDefault();window.open('https://map.naver.com/p/search/'+encodeURIComponent(this.dataset.query)+'?placePath=%2Freview','_blank','noopener');">📝 네이버 후기 보기</button>
+        </div>
+      </article>
+    </a>
+  </main>
 
   <!-- 우측 하단 맨 위로 버튼 -->
   <a class="to-top" href="#" aria-label="맨 위로">↑</a>

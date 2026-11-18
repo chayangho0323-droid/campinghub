@@ -2051,3 +2051,33 @@ console.log(`✅ campings-list.json 생성 (목록용 경량본, ${Math.round(JS
   fs.writeFileSync("weather-summary.json", JSON.stringify(summary), "utf-8");
   console.log(`✅ weather-summary.json 생성 (시도 ${Object.keys(summary.sido).length}·시군구 ${Object.keys(summary.areas).length}, ${Math.round(JSON.stringify(summary).length / 1024)}KB)`);
 }
+
+
+// ── 메인(index.html) 정적 콘텐츠 (2026-11-18) ──
+// 서치콘솔 확인: 메인 HTML에 캠핑장 링크 0개(목록이 app.js로만 그려짐) → 크롤러에게 메인이 빈 페이지. 크롤링됨-미색인 139쪽 중 허브·가이드 18쪽 포함.
+// 빌드가 index.html의 <nav id="quick-links">와 <main id="camping-list"> 안을 실제 링크·카드로 채운다. app.js는 로드 후 같은 자리를 다시 그린다(먼저 비우고).
+{
+  const idx = "index.html";
+  let html = fs.readFileSync(idx, "utf-8");
+  const chip = (href, label, cls = "chip") => `<a class="${cls}" href="${href}">${label}</a>`;
+  const navHtml = [
+    chip("guide-beginner.html", "🔰 캠핑 입문 가이드", "chip chip-hot"), chip("guide-compare.html", "📚 장비 비교", "chip chip-events"),
+    chip("theme-forest.html", "🌲 휴양림·국공립", "chip chip-hot"), chip("theme-glamping.html", "⛺ 글램핑", "chip chip-events"),
+    chip("theme-caravan.html", "🚐 카라반"), chip("theme-pet.html", "🐕 반려동물"), chip("theme-carcamping.html", "🚗 차박"),
+    chip("gallery.html", "📸 방문자 사진", "chip chip-photo"), chip("partners.html", "🤝 광고·제휴", "chip chip-partner"),
+    ...Object.entries(REGION_SLUGS).filter(([, slug]) => fs.existsSync(`region-${slug}.html`)).sort((a, b) => a[0].localeCompare(b[0], "ko")).map(([name, slug]) => chip(`region-${slug}.html`, name)),
+  ].join("\n    ");
+  const seen = new Set();
+  const picked = [];
+  const add = (c) => { if (c && !seen.has(String(c.contentId))) { seen.add(String(c.contentId)); picked.push(c); } };
+  POPULAR_PLACES.forEach((x) => add(x.c));
+  campings.filter((c) => visitorPhotos[String(c.contentId)]).forEach(add);
+  campings.filter((c) => findCampNote(c)).forEach(add);
+  campings.filter((c) => c.image && String(c.intro || "").length >= 200).forEach(add);
+  const cards = picked.slice(0, 60).map(listCard).join("\n");
+  const before = html;
+  html = html.replace(/(<nav id="quick-links" class="quick-links sticky-desktop">)[\s\S]*?(<\/nav>)/, `$1\n    ${navHtml}\n  $2`);
+  html = html.replace(/(<main id="camping-list" class="festival-grid">)[\s\S]*?(<\/main>)/, `$1\n${cards}\n  $2`);
+  if (html !== before) fs.writeFileSync(idx, html, "utf-8");
+  console.log(`✅ index.html 정적 콘텐츠 (카드 ${Math.min(picked.length, 60)}개 · 칩 ${navHtml.split("<a ").length - 1}개)`);
+}

@@ -5439,6 +5439,69 @@
     "photos": [],
     "checked": "20261117"
   },
+  "102395": {
+    "tier": 1,
+    "query": "방태산",
+    "photos": [
+      {
+        "url": "https://tong.visitkorea.or.kr/cms2/website/57/2444357.jpg",
+        "title": "국립 방태산자연휴양림",
+        "keyword": "방태산 자연휴양림, 강원도 인제군, 이단폭포, 추경, 단풍",
+        "location": "강원도 인제군 기린면",
+        "month": "201610",
+        "photographer": "한국관광공사 이범수"
+      },
+      {
+        "url": "https://tong.visitkorea.or.kr/cms2/website/55/2444355.jpg",
+        "title": "국립 방태산자연휴양림",
+        "keyword": "방태산 자연휴양림, 강원도 인제군, 이단폭포, 추경, 단풍 ",
+        "location": "강원도 인제군 기린면",
+        "month": "201610",
+        "photographer": "한국관광공사 이범수"
+      },
+      {
+        "url": "https://tong.visitkorea.or.kr/cms2/website/56/2444356.jpg",
+        "title": "국립 방태산자연휴양림",
+        "keyword": "방태산 자연휴양림, 강원도 인제군, 이단폭포, 추경, 단풍",
+        "location": "강원도 인제군 기린면",
+        "month": "201610",
+        "photographer": "한국관광공사 이범수"
+      },
+      {
+        "url": "https://tong.visitkorea.or.kr/cms2/website/53/2444353.jpg",
+        "title": "국립 방태산자연휴양림",
+        "keyword": "방태산 자연휴양림, 강원도 인제군, 이단폭포, 추경, 단풍",
+        "location": "강원도 인제군 기린면",
+        "month": "201610",
+        "photographer": "한국관광공사 이범수"
+      }
+    ],
+    "checked": "20261119"
+  },
+  "102396": {
+    "tier": 0,
+    "query": "",
+    "photos": [],
+    "checked": "20261119"
+  },
+  "102397": {
+    "tier": 0,
+    "query": "",
+    "photos": [],
+    "checked": "20261119"
+  },
+  "102398": {
+    "tier": 0,
+    "query": "",
+    "photos": [],
+    "checked": "20261119"
+  },
+  "102399": {
+    "tier": 0,
+    "query": "",
+    "photos": [],
+    "checked": "20261119"
+  },
   "m0001": {
     "tier": 0,
     "query": "",

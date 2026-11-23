@@ -803,7 +803,7 @@ function buildPage(c, all) {
         ${infoRow("🔗", "홈페이지", homepage)}
       </div>
       ${reserveBlock(c)}
-      ${c.corrected ? `<p class="coupang-notice">✏️ 예약·연락처 정보를 제보로 확인해 정정했습니다 (${esc(String(c.corrected).slice(0, 10))}). 고캠핑 원본과 다를 수 있으며 이 페이지가 최신입니다.</p>` : ""}
+      ${c.corrected ? `<p class="coupang-notice">✏️ 운영자·방문자 제보로 정보를 확인해 정정했습니다 (${esc(String(c.corrected).slice(0, 10))}). 고캠핑 원본과 다를 수 있으며 이 페이지가 최신입니다.</p>` : ""}
       ${showAds ? ADFIT_BODY : ""}
       ${weatherHtml(c)}
       ${campNoteHtml(c)}

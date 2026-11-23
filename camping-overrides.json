@@ -7,5 +7,12 @@
       "reserveUrl": "https://www.iksan.go.kr/camping",
       "homepage": "https://www.iksan.go.kr/camping"
     }
+  },
+  {
+    "contentId": "100860",
+    "note": "2026-11-23 정정 요청 반영 — 반려동물 동반 불가 (고캠핑 데이터에는 '가능'으로 잘못 올라 있음)",
+    "set": {
+      "pet": "불가능"
+    }
   }
 ]
